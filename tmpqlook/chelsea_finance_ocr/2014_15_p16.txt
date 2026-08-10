@@ -1,0 +1,51 @@
+: '
+Chelsea FC plc
+Annual report and financial statements
+Year ended 30 June 2015
+Registered number 2536231
+Notes (continued)
+Accounting policies (continued)
+Turnover
+Turnover represents all income arising from the ordinary activities of the Group excluding transfer fees and
+excluding Value Added Tax. Principal sources of income include match day, media, commercial and
+operation of hotel and stadium facilities.
+Gate, match and other event day revenue is recognised over the period of the football season as games are
+played and events are staged. Sponsorship and similar commercial income is recognised over the duration of
+the respective contracts. The fixed element of broadcasting revenues is recognised over the duration of the
+football season whilst facility fees for live coverage or highlights are taken when earned at the point of
+broadcast. Merit awards are accounted for over the period of the football season based on known position in
+the league compared to the previous season's final table. UEFA pool distributions relating to participation in
+the Champions League are recognised when received whilst distributions relating to match performance are
+taken when earned; these distributions are classified as broadcasting revenues.
+Retranslation Reserve
+Balances within reserves that relate to the foreign subsidiaries within the Group are retranslated on
+consolidation and the difference shown within the Retranslation reserve. The Group currently has one foreign
+subsidiary, Chclsca FC Pte Limited, which is a company registered in Singapore. The Group also disposed of
+a foreign subsidiary in the year, Burnaby LLP, which is a partnership registered in Jersey.
+Derivative Financial Instruments
+The Group uses derivative financial instruments to reduce exposure to foreign exchange movements. The
+Group does not hold derivative financial instruments for speculative purposes.
+Leasing and hire purchase commitments
+Assets held under hire purchase contracts and finance leases, and the related obligations, are recorded in the
+balance sheet at the fair value of the assets at the inception of each contract or lease. The amounts by which
+the payments exceed the recorded obligations are amortised over each contract or lease term to give a
+constant rate of charge on the remaining balance of the obligation.
+Classification of financial instruments issued by the Group
+Under FRS 25, financial instruments issued by the Group are treated as equity (i.e. forming part of
+shareholders' funds) only to the extent that they meet the following two conditions:
+a) They include no contractual obligations upon the Group to deliver cash or other financial assets or to
+exchange financial liabilities with another party under conditions that are potentially unfavourable to the
+Group; and
+b) Where the instrument will or may be settled in the Group's own equity instruments, it is either a non-
+derivative that includes no obligation to deliver a variable number of the Company's own equity instruments
+or is a derivative that will be settled by the Company exchanging a fixed amount of cash or other financial
+assets for a fixed number of its own equity instruments.
+To the extent that this definition is not met, the proceeds of issue are classified as a financial liability. Where
+the instrument so classified takes the legal form of the Group's own shares, the amounts presented in these
+financial statements for called up share capital and share premium account exclude amounts in relation to
+those shares.
+Finance payments associated with financial liabilities are dealt with as part of interest payable and similar
+charges. Finance payments associated with financial instruments that are classified as part of shareholder's
+funds (see dividend policy) are dealt with as appropriations in the reconciliation of movements in
+shareholders' funds.
+14

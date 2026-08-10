@@ -1,0 +1,56 @@
+[
+  {
+    "club_id": "arsenal",
+    "club_name": "Arsenal",
+    "company_or_group_notes": "Use Arsenal Holdings Limited / Arsenal Football Club plc or the most relevant consolidated football group accounts.",
+    "official_financial_reports_url": "https://www.arsenal.com/the-club/corporate-info/arsenal-holdings-financial-results",
+    "companies_house_search_name": "Arsenal Holdings Limited",
+    "country": "England",
+    "currency_common": "GBP"
+  },
+  {
+    "club_id": "chelsea",
+    "club_name": "Chelsea",
+    "company_or_group_notes": "Use Chelsea FC Holdings Limited / Chelsea Football Club Limited or the most relevant consolidated football group accounts.",
+    "official_financial_reports_url": "",
+    "companies_house_search_name": "Chelsea FC Holdings Limited",
+    "country": "England",
+    "currency_common": "GBP"
+  },
+  {
+    "club_id": "liverpool",
+    "club_name": "Liverpool",
+    "company_or_group_notes": "Use The Liverpool Football Club and Athletic Grounds Limited or the most relevant consolidated football group accounts.",
+    "official_financial_reports_url": "",
+    "companies_house_search_name": "The Liverpool Football Club and Athletic Grounds Limited",
+    "country": "England",
+    "currency_common": "GBP"
+  },
+  {
+    "club_id": "manchester_city",
+    "club_name": "Manchester City",
+    "company_or_group_notes": "Use Manchester City Football Club Limited or the most relevant club-level accounts, not City Football Group consolidated accounts unless club-level data is unavailable.",
+    "official_financial_reports_url": "",
+    "companies_house_search_name": "Manchester City Football Club Limited",
+    "country": "England",
+    "currency_common": "GBP"
+  },
+  {
+    "club_id": "manchester_united",
+    "club_name": "Manchester United",
+    "company_or_group_notes": "Use Manchester United plc annual reports / SEC 20-F filings where available.",
+    "official_financial_reports_url": "https://ir.manutd.com/financial-information/annual-reports/default.aspx",
+    "companies_house_search_name": "Manchester United Football Club Limited",
+    "country": "England",
+    "currency_common": "GBP"
+  },
+  {
+    "club_id": "tottenham_hotspur",
+    "club_name": "Tottenham Hotspur",
+    "company_or_group_notes": "Use Tottenham Hotspur Limited / Tottenham Hotspur Football & Athletic Co. or the most relevant consolidated football group accounts.",
+    "official_financial_reports_url": "",
+    "companies_house_search_name": "Tottenham Hotspur Limited",
+    "country": "England",
+    "currency_common": "GBP"
+  }
+]

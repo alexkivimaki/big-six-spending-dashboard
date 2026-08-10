@@ -1,0 +1,74 @@
+[
+  {
+    "club_id": "arsenal",
+    "club_name": "Arsenal",
+    "short_name": "Arsenal",
+    "league_key": "premier_league",
+    "league_name": "Premier League",
+    "country": "England",
+    "slug": "arsenal",
+    "transfermarkt_name": "Arsenal FC",
+    "transfermarkt_club_id": 11,
+    "notes": "Big Six starter mapping."
+  },
+  {
+    "club_id": "manchester_city",
+    "club_name": "Manchester City",
+    "short_name": "Man City",
+    "league_key": "premier_league",
+    "league_name": "Premier League",
+    "country": "England",
+    "slug": "manchester-city",
+    "transfermarkt_name": "Manchester City",
+    "transfermarkt_club_id": 281,
+    "notes": "Big Six starter mapping."
+  },
+  {
+    "club_id": "manchester_united",
+    "club_name": "Manchester United",
+    "short_name": "Man United",
+    "league_key": "premier_league",
+    "league_name": "Premier League",
+    "country": "England",
+    "slug": "manchester-united",
+    "transfermarkt_name": "Manchester United",
+    "transfermarkt_club_id": 985,
+    "notes": "Big Six starter mapping."
+  },
+  {
+    "club_id": "chelsea",
+    "club_name": "Chelsea",
+    "short_name": "Chelsea",
+    "league_key": "premier_league",
+    "league_name": "Premier League",
+    "country": "England",
+    "slug": "chelsea",
+    "transfermarkt_name": "Chelsea FC",
+    "transfermarkt_club_id": 631,
+    "notes": "Big Six starter mapping."
+  },
+  {
+    "club_id": "liverpool",
+    "club_name": "Liverpool",
+    "short_name": "Liverpool",
+    "league_key": "premier_league",
+    "league_name": "Premier League",
+    "country": "England",
+    "slug": "liverpool",
+    "transfermarkt_name": "Liverpool FC",
+    "transfermarkt_club_id": 31,
+    "notes": "Big Six starter mapping."
+  },
+  {
+    "club_id": "tottenham_hotspur",
+    "club_name": "Tottenham Hotspur",
+    "short_name": "Spurs",
+    "league_key": "premier_league",
+    "league_name": "Premier League",
+    "country": "England",
+    "slug": "tottenham-hotspur",
+    "transfermarkt_name": "Tottenham Hotspur",
+    "transfermarkt_club_id": 148,
+    "notes": "Big Six starter mapping."
+  }
+]

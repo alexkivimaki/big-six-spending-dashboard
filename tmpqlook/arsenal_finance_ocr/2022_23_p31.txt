@@ -1,0 +1,49 @@
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2023
+8. Tax on loss
+2023
+£'000
+2022
+£'000
+UK corporation tax at 20% (2022 - 19%)
+Overseas tax
+Total current taxation
+Deferred taxation (see note 19)
+Total deferred taxation
+Total tax charge/(credit) on loss
+1
+1
+The Group's deferred tax liabilities have been valued based on the tax rates that are expected to apply in the
+future periods in which the underlying timing differences are predicted to reverse. The main rate of UK
+corporation tax increased from 19% to 25% effective from April 2023 resulting in a composite tax rate for the
+year of 20%. Corporation tax losses (including excess corporate interest charges) have been valued for deferred
+tax purposes up to the limit of the Group's deferred tax liabilities.
+2023
+£'000
+2022
+£'000
+The differences between the total tax shown above and the amount calculated by
+applying the standard rate of UK corporation tax to the loss before tax are as
+follows:
+Group loss before tax
+Tax on Group loss before tax at standard UK corporation tax rate of 20% (2022 -
+19%)
+Effects of:
+Expenses not deductible
+Overseas tax
+Tax losses not recognised for deferred tax
+Group total tax charge/(credit) for the year
+(52,124)
+(10,425)
+1,281
+9.141
+(45,481)
+(8,641)
+1,841
+6.800
+1
+Full provision has been made for the deferred tax liabilities related to the roll-over of profits on sale of player
+registrations into the tax cost of new qualifying player registrations (see note 19). There is no expiry date on
+any timing differences.
+30

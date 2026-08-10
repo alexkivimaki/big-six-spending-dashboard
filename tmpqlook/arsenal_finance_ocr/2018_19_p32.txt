@@ -1,0 +1,98 @@
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2019
+17.
+Financial instruments (continued)
+Financial liabilities (continued)
+The fair value of the interest rate swaps was determined by reference to the market price at the reporting date.
+The Group's cash and bank deposits earn interest at rates linked to LIBOR. The Group's other financial
+assets do not earn interest. Total interest income for the year is shown in note 5.
+The interest rates attaching the Group's fixed rate bonds, floating rate bonds and debentures are detailed in
+note 16. The Group's other financial liabilities do not attract interest. The cost for the year of the Group's
+financial liabilities was as follows (all of these costs are also disclosed within finance charges in note 5):-
+2019
+£°000
+2018
+£'000
+Fair value gains and (losses):
+A & B Debentures
+Interest rate swaps
+Interest expense at amortised cost:
+Fixed rate and floating rate bonds
+C & D Debentures
+(1)
+(693)
+(3)
+3,285
+(10,744)
+(421)
+(11,859)
+(11,257)
+(408)
+(8,383)
+18.
+Financial Derivatives
+Other derivatives:
+Interest rate swaps
+Current
+2019
+£'000
+1..
+2018
+£'000
+Non-current
+2019
+2018
+£'000
+£'000
+(23,839)
+(23,145)
+(23,839)
+(23,145)
+Interest rate risk
+The Group is exposed to interest rate risk because part of its long-term debt is at floating rates of interest.
+The Group has entered into interest rate swaps the purpose of which is to minimise its exposure to this
+interest rate risk.
+After taking into account these interest rate swaps, the interest rate profile of the Group's financial liabilities
+at 31 May 2019 was as follows:
+Bonds - fixed rate
+Bonds - floating rate
+Debenture loans
+Fixed
+rate
+2019
+£'000
+123,242
+50,000
+15,395
+188,637
+Floating
+rate
+2019
+£'000
+Interest
+free
+2019
+£°000
+35
+35
+Total
+2019
+£'000
+123,000
+15,430
+188,672
+Weighted
+Weighted average period
+average for which rate
+fixed rate
+is fixed
+%
+yrs
+5.8
+10
+7.0
+2.8
+12
+9
+31

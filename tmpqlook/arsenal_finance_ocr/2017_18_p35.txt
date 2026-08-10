@@ -1,0 +1,103 @@
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2018
+22.
+Notes to the consolidated cash flow statement
+(a)
+Reconciliation of operating profit to net cash inflow from operating activities
+2018
+£'000
+Operating (loss)/profit
+Amortisation of player registrations
+Impairment of player registrations
+Amortisation of goodwill
+Profit on disposal of tangible fixed assets
+Depreciation (net of grant amortisation)
+Operating cash flow before working capital
+Decrease/(increase) in stock
+Decrease/(increase) in debtors
+Increase/(decrease) in creditors
+Net cash inflow from operating activities
+(42,009)
+85,812
+5,948
+250
+(7)
+15,746
+65,740
+5,964
+7,925
+43,650
+123,279
+1000
+51,986
+77,126
+416
+(16)
+14,972
+144,484
+(3,675)
+(5,036)
+(26,728)
+109,045
+(b) Analysis of changes in net debt
+At 1 June
+2017
+£'000
+Cash at bank and in hand
+Cash equivalents
+103,683
+76,433
+180,116
+Debt due within one year (bonds)
+Debt due after more than one year (bonds)
+Derivative financial instruments
+Debt due after more than one year (debentures)
+Net (debt)/cash
+(8,018)
+Non cash
+changes
+Cash flows
+£'000
+£'000
+11160
+51,228
+8,522
+(178,423)
+(26,430)
+(14,597)
+(47,352)
+(9,008)
+8,504
+3,285
+(411)
+2,370
+59,750
+At 31 May
+2018
+£2000
+158180
+231,344
+(8,504)
+(169,919)
+(23,145)
+(15,008)
+14,768
+Non cash changes represent £504,000 in respect of the amortisation of costs of raising finance, £408,000 in
+respect of rolled up, unpaid debenture interest, £3,000 in respect of the change in fair value of the Group's A
+and B debentures and £3,285,000 in respect of the change in fair value of the Group's interest rate swaps.
+(c)
+Gross cash flows
+2018
+£'000
+Player registrations
+Payments for purchase of players
+Receipts from sale of players
+(109,760)
+81,111
+(28,649)
+2017
+£'000
+(111,460)
+8,936
+(102,524)

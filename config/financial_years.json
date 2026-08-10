@@ -1,0 +1,110 @@
+[
+  {
+    "season": "2008/09",
+    "financial_year_end_start": "2009-05-01",
+    "financial_year_end_end": "2009-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2009/10",
+    "financial_year_end_start": "2010-05-01",
+    "financial_year_end_end": "2010-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2010/11",
+    "financial_year_end_start": "2011-05-01",
+    "financial_year_end_end": "2011-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2011/12",
+    "financial_year_end_start": "2012-05-01",
+    "financial_year_end_end": "2012-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2012/13",
+    "financial_year_end_start": "2013-05-01",
+    "financial_year_end_end": "2013-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2013/14",
+    "financial_year_end_start": "2014-05-01",
+    "financial_year_end_end": "2014-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2014/15",
+    "financial_year_end_start": "2015-05-01",
+    "financial_year_end_end": "2015-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2015/16",
+    "financial_year_end_start": "2016-05-01",
+    "financial_year_end_end": "2016-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2016/17",
+    "financial_year_end_start": "2017-05-01",
+    "financial_year_end_end": "2017-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2017/18",
+    "financial_year_end_start": "2018-05-01",
+    "financial_year_end_end": "2018-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2018/19",
+    "financial_year_end_start": "2019-05-01",
+    "financial_year_end_end": "2019-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2019/20",
+    "financial_year_end_start": "2020-05-01",
+    "financial_year_end_end": "2020-07-31",
+    "notes": "COVID-era reporting periods may shift. Verify exact date per club."
+  },
+  {
+    "season": "2020/21",
+    "financial_year_end_start": "2021-05-01",
+    "financial_year_end_end": "2021-07-31",
+    "notes": "COVID-era reporting periods may shift. Verify exact date per club."
+  },
+  {
+    "season": "2021/22",
+    "financial_year_end_start": "2022-05-01",
+    "financial_year_end_end": "2022-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2022/23",
+    "financial_year_end_start": "2023-05-01",
+    "financial_year_end_end": "2023-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2023/24",
+    "financial_year_end_start": "2024-05-01",
+    "financial_year_end_end": "2024-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  {
+    "season": "2024/25",
+    "financial_year_end_start": "2025-05-01",
+    "financial_year_end_end": "2025-07-31",
+    "notes": "Where available, verify exact date per club."
+  },
+  {
+    "season": "2025/26",
+    "financial_year_end_start": "2026-05-01",
+    "financial_year_end_end": "2026-07-31",
+    "notes": "Future placeholder range for extensibility. Verify exact date per club."
+  }
+]

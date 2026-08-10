@@ -1,0 +1,47 @@
+CHELSEA FC PLC
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2019
+1
+Accounting policies (continued)
+Impairment of financial assets
+Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of
+impairment at each reporting end date.
+Financial assets are impaired where there is objective evidence that, as a result of one or more events that
+occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected.
+If an asset is impaired, the impairment loss is the difference between the carrying amount and the present value
+of the estimated cash flows discounted at the asset's original effective interest rate. The impairment loss is
+recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was
+recognised, the impairment is reversed. The reversal is such that the current carrying amount does not exceed
+what the carrying amount would have been, had the impairment not previously been recognised. The
+impairment reversal is recognised in profit or loss.
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or
+are settled, or when the Group transfers the financial asset and substantially all the risks and rewards of
+ownership to another entity, or if some significant risks and rewards of ownership are retained but control of the
+asset has transferred to another party that is able to sell the asset in its entirety to an unrelated third party.
+Classification of financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the assets
+of the Group after deducting all of its liabilities.
+Basic financial liabilities, including creditors, bank loans, loans from fellow group companies and preference
+shares that are classified as debt, are initially recognised at transaction price unless the arrangement
+constitutes a financing transaction, where the debt instrument is measured at the present value of the future
+receipts discounted at a market rate of interest. Financial liabilities classified as payable within one year are not
+amortised.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers. Amounts payable are classified as current liabilities if payment is due within one year
+or less. If not, they are presented as non-current liabilities. Trade creditors are recognised initially at transaction
+price and subseauentlv measured at amortised cost usina the effective interest method.
+Other financial liabilities
+Derivatives, including interest rate swaps and forward foreign exchange contracts, are not basic financial
+instruments. Derivatives are initially recognised at fair value on the date a derivative contract is entered into
+and are subsequently re-measured at their fair value. Changes in the fair value of derivatives are recognised
+in profit or loss in finance costs or finance income as appropriate, unless hedge accounting is applied and the
+hedge is a cash flow hedge.
+Dals instruments profit not me he suminis ina Be des gara as ling me subsequent area sure at
+profit or loss to eliminate or reduce an accounting mismatch or if the instruments are measured and their
+performance evaluated on a fair value basis in accordance with a documented risk management or investment
+strategy.
+- 19 -

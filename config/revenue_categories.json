@@ -1,0 +1,91 @@
+[
+  {
+    "category_id": "matchday",
+    "display_name": "Matchday Revenue",
+    "definition": "Gate receipts, season tickets, memberships, corporate hospitality and other matchday-related income recognized in the financial period.",
+    "examples": [
+      "ticketing",
+      "season tickets",
+      "hospitality",
+      "memberships",
+      "gate receipts"
+    ],
+    "exclusion_notes": "Exclude player trading and taxes where identifiable. If women's matchday revenue is separately disclosed, exclude it from this project."
+  },
+  {
+    "category_id": "broadcast",
+    "display_name": "Broadcast Revenue",
+    "definition": "Domestic league distributions, domestic cup distributions, UEFA or other continental distributions, and FIFA Club World Cup media or prize money where recognized in the financial period.",
+    "examples": [
+      "Premier League distributions",
+      "UEFA prize money",
+      "cup TV rights",
+      "continental competition broadcast receipts"
+    ],
+    "exclusion_notes": "Exclude player trading and taxes where identifiable. Preserve disclosed labels where classification is ambiguous."
+  },
+  {
+    "category_id": "commercial",
+    "display_name": "Commercial Revenue",
+    "definition": "Sponsorship, merchandising, retail, licensing, tours, museum, non-matchday stadium events and other commercial operations recognized in the period.",
+    "examples": [
+      "sponsorship",
+      "retail",
+      "licensing",
+      "stadium tours",
+      "non-matchday events"
+    ],
+    "exclusion_notes": "If commercial revenue includes non-football stadium events or women’s team activity and it cannot be separated, keep the disclosed figure and flag it in notes."
+  },
+  {
+    "category_id": "total_revenue",
+    "display_name": "Total Revenue",
+    "definition": "Total club or group revenue after excluding player trading, VAT or sales-related taxes and other non-comparable items where identifiable.",
+    "examples": [
+      "turnover",
+      "revenue",
+      "group revenue excluding player sales"
+    ],
+    "exclusion_notes": "If only a consolidated disclosed figure is available, keep it and explain any women’s team or non-football inclusion in notes."
+  },
+  {
+    "category_id": "excluded_player_trading",
+    "display_name": "Excluded Player Trading",
+    "definition": "Player or coach transfer profits, player trading income and similar disposal gains that should be excluded from revenue.",
+    "examples": [
+      "profit on disposal of player registrations",
+      "player trading income"
+    ],
+    "exclusion_notes": "Track this for transparency but do not include it in football revenue totals."
+  },
+  {
+    "category_id": "excluded_tax",
+    "display_name": "Excluded Tax",
+    "definition": "VAT and similar sales-related taxes excluded from revenue where identifiable in the source reporting.",
+    "examples": [
+      "VAT",
+      "sales taxes"
+    ],
+    "exclusion_notes": "Do not backfill taxes when they are not separately disclosed."
+  },
+  {
+    "category_id": "excluded_womens_team",
+    "display_name": "Excluded Women's Team Revenue",
+    "definition": "Women’s team revenue disclosed separately and excluded from this project’s men’s football revenue dataset.",
+    "examples": [
+      "women's team commercial revenue",
+      "women's matchday revenue"
+    ],
+    "exclusion_notes": "If women’s revenue is not separable, keep the disclosed consolidated figure and flag the limitation."
+  },
+  {
+    "category_id": "unknown_or_unclassified",
+    "display_name": "Unknown Or Unclassified",
+    "definition": "A disclosed revenue figure that cannot be confidently mapped to a Deloitte-style category without guessing.",
+    "examples": [
+      "other operating income",
+      "mixed commercial and football operations"
+    ],
+    "exclusion_notes": "Do not guess. Leave the standardized field null and explain the ambiguity."
+  }
+]

@@ -1,0 +1,73 @@
+Docusign Envelope ID: ABCCFE04-F24-4FEA-9CFC-265F42C4AF09
+CHELSEA FC HOLDINGS LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+12 Taxation
+2020
+2023
+£000
+Current tax
+Current tax on profit/loss for the year
+Total current tax
+Deferred tax (see note 24)
+Origination and reversal of timing differences
+Adjustments in respect of prior periods
+5
+5
+(1,223)
+12
+(342)
+Total deferred tax
+(1,211)
+(335)
+Total tax credit
+(1.206)
+(331)
+The charge for the year can be reconciled to the profit/(loss) per the profit and loss account as follows:
+Profit/(loss) on ordinary activities before taxation
+2024
+£000
+128,400
+2023
+£000
+(90,100)
+Expected tax credit based on the standard rate of corporation tax in the UK
+of 25% (2023: 20.5%)
+Tax effect of expenses not deductible in determining taxable profit
+Tax effect of income not taxable
+R&D expenditure credits
+Adjustments in respect of prior periods (deferred tax)
+Other timing differences
+Chargeable losses
+Fixed asset differences
+Remeasurement of recognised and unrecognised deferred tax for changes
+in tax rates
+Deferred tax remeasurement not recognised
+Other permanent differences
+Foreign tax suffered
+32,100
+1,882
+(1,150)
+(189)
+12
+136
+(48.715)
+(18,471)
+9,763
+14.713
+(675)
+(413)
+(17,319)
+(6,050)
+32,974
+68
+Tax income for the year
+(1,206)
+(331)
+A potential deferred tax asset of £275,109,000 (2023: €264,202,000) has not been recognised due to
+uncertainty over future profits.
+An increase in the UK corporation rate from 19% to 25% (effective 1 April 2023) was substantively enacted
+on 24 May 2021. This resulted in a hybrid rate of corporation tax for the year ended 30 June 2023 of 20.5%.
+The deferred tax liability at 30 June 2024 has been calculated at 25%, reflecting the expected timing of reversal
+of the related timing differences (2023: 25%).
+- 37 -

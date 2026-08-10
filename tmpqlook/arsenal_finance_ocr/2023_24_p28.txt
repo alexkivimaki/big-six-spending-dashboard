@@ -1,0 +1,55 @@
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2024
+1.
+Accounting policies (continued)
+(g)
+Finance costs (continued)
+Any non-current assets, e.g. player registrations, acquired on deferred terms are recorded at the
+discounted present value at the date of acquisition. The associated payable is then increased to the
+settlement value over the period of deferral, with this value being charged as a notional finance cost
+through the profit and loss account.
+Similarly any intangible asset disposed of on deferred terms will be initially recorded at the discounted
+present value of future receipts and the receivable is then increased to the settlement value over the
+period of deferral with this value being charged as notional finance income through the profit and loss
+account.
+(h)
+Financial instruments
+Financial assets and financial liabilities are recognised when the Group becomes a party to the
+contractual provisions of the instrument and are classified according to the substance of the contractual
+arrangements entered into.
+i. Loans from parent undertaking
+Loans from the Group's parent undertaking are recorded at their fair value based on the expected net
+present value of future cashflows and using a market rate of interest as an appropriate discount factor.
+Where the actual rate of interest applicable to the loan is below market rate the excess of cash received
+over the fair accounting value of the loan is booked as a capital contribution within Equity Capital and
+Reserves.
+it.
+Financial liabilities
+Basic financial instruments (including the C and D debentures) are measured at amortised cost, using
+the effective interest method. The effective interest rate is the rate which exactly discounts the estimated
+future payments of receipts over the life of the instrument to its carrying amount at initial recognition,
+re-estimated periodically to reflect changes in the market rate of interest.
+Non basic financial instruments (including the A and B debentures) are recognised at fair value, and
+measured at the present value of the future payments, discounted at a market rate of interest. Any
+periodic changes in fair value are recognised in the profit and loss account.
+Financial liabilities are derecognised only when the obligation specified in the contract is discharged,
+cancelled or expires.
+ill. Derivative financial instruments
+The Group uses derivative financial instruments mainly to reduce its exposure to foreign exchange risk.
+The Group does not hold or issue derivative financial instruments for speculative purposes.
+Derivatives are initially recognised at fair value at the date a derivative contract is entered into and are
+subsequently remeasured to their fair value at each reporting date. The resulting gain or loss is
+recognised in profit or loss immediately unless the derivative is designated and effective as a hedging
+instrument, in which event the timing of the recognition in profit or loss depends on the nature of the
+hedge relationship.
+Stock comprises retail merchandise and development property for onward sale and is stated at the lower
+of cost and net realisable value.
+Where properties which are intended to be sold have been acquired they have been included in stock as
+development properties. Development property comprises freehold land inclusive of the direct cost of
+acquisition and other directly attributable property development costs including interest costs.
+Grants
+Grants received in respect of tangible fixed assets are credited to the profit and loss account over the
+expected useful economic lives of the assets to which they relate. Grants received but not yet released
+to the profit and loss account are included in the balance sheet as deferred income.
+27

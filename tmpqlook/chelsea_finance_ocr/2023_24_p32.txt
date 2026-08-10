@@ -1,0 +1,43 @@
+Docusign Envelope ID: ABCCFE04-F24-4FEA-9CFC-265F42C4AF09
+CHELSEA FC HOLDINGS LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+1
+Accounting policies (continued)
+1.12 Financial instruments
+The Group has elected to apply the provisions of Section 11 'Basic Financial Instruments' and Section 12 'Other
+Financial Instruments Issues' of FRS 102 to all of its financial instruments.
+party to the contractual provisions of ie insumens statement of financial position when the Group becomes
+Financial assets and liabilities are offset and the net amounts presented in the financial statements when there
+is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a net basis
+or to realise the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at transaction
+price including transaction costs and are subsequently carried at amortised cost using the effective interest
+method unless the arrangement constitutes a financing transaction, where the transaction is measured at the
+present value of the future receipts discounted at a market rate of interest. Financial assets classified as
+receivable within one year are not amortised.
+Other financial assets
+Other financial assets, including investments in equity instruments which are not subsidiaries, associates or
+joint ventures, are initially measured at fair value, which is normally the transaction price. Such assets are
+investment equis instruments that are no pubicy traded anderse fai values cannot be measured reliably
+are measured at cost less impairment.
+Impairment of financial assets
+Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of
+impairment at each reporting end date.
+Financial assets are impaired where there is objective evidence that, as a result of one or more events that
+occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected
+If an asset is impaired, the impairment loss is the difference between the carrying amount and the present value
+of the estimated cash flows discounted at the asset's original effective interest rate. The impairment loss is
+recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was
+recognised, the impairment is reversed. The reversal is such that the current carrying amount does not exceed
+what the carrying amount would have been, had the impairment not previously been recognised. The
+impairment reversal is recognised in profit or loss.
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or
+Classification of financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the assets
+of the Group after deducting all of its liabilities.
+- 29 -

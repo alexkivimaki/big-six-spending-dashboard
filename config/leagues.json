@@ -1,0 +1,32 @@
+[
+  {
+    "league_key": "premier_league",
+    "league_name": "Premier League",
+    "country": "England",
+    "level": 1
+  },
+  {
+    "league_key": "la_liga",
+    "league_name": "La Liga",
+    "country": "Spain",
+    "level": 1
+  },
+  {
+    "league_key": "bundesliga",
+    "league_name": "Bundesliga",
+    "country": "Germany",
+    "level": 1
+  },
+  {
+    "league_key": "serie_a",
+    "league_name": "Serie A",
+    "country": "Italy",
+    "level": 1
+  },
+  {
+    "league_key": "ligue_1",
+    "league_name": "Ligue 1",
+    "country": "France",
+    "level": 1
+  }
+]

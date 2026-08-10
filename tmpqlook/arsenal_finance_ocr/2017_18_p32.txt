@@ -1,0 +1,96 @@
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2018
+Financial liabilities (continued)
+The fair value of the interest rate swaps was determined by reference to the market price at the reporting date.
+The Group's cash and bank deposits earn interest at rates linked to LIBOR. The Group's other financial
+assets do not earn interest. Total interest income for the year is shown in note 5.
+The interest rates attaching the Group's fixed rate bonds, floating rate bonds and debentures are detailed in
+note 17. The Group's other financial liabilities do not attract interest. The cost for the year of the Group's
+financial liabilities was as follows (all of these costs are also disclosed within finance charges in note 5 save
+for the change in fair value of foreign exchange derivatives which is included partly in the Statement of
+Comprehensive Income and partly in operating expenses within Profit and Loss):-
+2018
+£'000
+2017
+£'000
+Fair value gains and losses:
+A & B Debentures
+Interest rate swaps
+Interest expense at amortised cost:
+Fixed rate and floating rate bonds
+C & D Debentures
+(3)
+3,285
+(2)
+(2,019)
+(11,257)
+(408)
+(8,383)
+(11,743)
+(398)
+(14,162)
+19.
+Financial Derivatives
+Current
+2018
+£'000
+2017
+£°000
+Other derivatives:
+Interest rate swaps
+Non-current
+2018
+2017
+£'000
+£'000
+(23,145)
+(26,430)
+(23,145)
+(26,430)
+Interest rate risk
+The Group is exposed to interest rate risk because part of its long-term debt is at floating rates of interest.
+The Group has entered into interest rate swaps the purpose of which is to minimise its exposure to this interest
+rate risk.
+After taking into account these interest rate swaps, the interest rate profile of the Group's financial liabilities
+at 31 May 2018 was as follows:
+Bonds - fixed rate
+Bonds - floating rate
+Debenture loans
+Fixed
+rate
+2018
+£'000
+132,226
+50,000
+14,974
+197,200
+Floating
+rate
+2018
+£'000
+Interest
+free
+2018
+£'000
+34
+34
+Total
+2018
+£'000
+132,226
+50,000
+15,008
+197,234
+Weighted
+Weighted average period
+average for which rate
+fixed rate
+is fixed
+%
+yrs
+5.8
+11
+7.0
+2.8
+10

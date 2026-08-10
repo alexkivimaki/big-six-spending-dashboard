@@ -1,0 +1,9 @@
+{
+  "base_url": "http://localhost:8000",
+  "request_delay_seconds": 1.0,
+  "timeout_seconds": 30,
+  "club_transfers_endpoint_template": "/clubs/{transfermarkt_club_id}/transfers?season_id={season_start_year}",
+  "club_players_endpoint_template": "/clubs/{transfermarkt_club_id}/players?season_id={season_start_year}",
+  "player_transfers_endpoint_template": "/players/{transfermarkt_player_id}/transfers",
+  "market_values_endpoint_template": "/players/{transfermarkt_player_id}/market_value"
+}
