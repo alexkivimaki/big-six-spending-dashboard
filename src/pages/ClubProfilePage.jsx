@@ -158,7 +158,7 @@ export function ClubProfilePage() {
         </div>
       </section>
 
-      <section className="panel">
+      <section className="panel profileSection">
         <SectionHeader
           title="Transfers"
           description="Gross spend, income, and net spend over time, plus a quick latest-season transfer summary."
@@ -263,7 +263,7 @@ export function ClubProfilePage() {
         </div>
       </section>
 
-      <section className="panel">
+      <section className="panel profileSection">
         <SectionHeader
           title="Finances"
           description="Revenue and staff costs stay central. Secondary finance fields are available, but kept less prominent."
@@ -381,7 +381,7 @@ export function ClubProfilePage() {
         </div>
       </section>
 
-      <section className="panel">
+      <section className="panel profileSection">
         <SectionHeader
           title="Sporting performance"
           description="Results stay in service of the finance story rather than becoming a separate football stats product."
@@ -443,7 +443,7 @@ export function ClubProfilePage() {
         </div>
       </section>
 
-      <section className="panel">
+      <section className="panel profileSection">
         <SectionHeader
           title="Season history"
           description="One detailed season-by-season view of the club, newest season first."

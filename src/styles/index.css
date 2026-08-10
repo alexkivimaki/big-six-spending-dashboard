@@ -1,4 +1,7 @@
 :root {
+  --shell-padding: 24px;
+  --panel-padding: 28px;
+  --panel-padding-mobile: 20px;
   color: #0f172a;
   background: #f8fafc;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -54,11 +57,11 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 18px 24px;
+  padding: 18px var(--shell-padding);
 }
 
 .appShell {
-  padding: 28px 24px 40px;
+  padding: 28px var(--shell-padding) 40px;
   display: grid;
   gap: 24px;
 }
@@ -125,6 +128,7 @@ a {
 .pageHero,
 .controlsColumn,
 .contentColumn > .panel,
+.profileSection,
 .clubCard,
 .profileHero {
   animation: rise-in 340ms ease both;
@@ -134,8 +138,9 @@ a {
 .profileHero,
 .controlsColumn,
 .contentColumn > .panel,
+.profileSection,
 .clubCard {
-  padding: 28px;
+  padding: var(--panel-padding);
 }
 
 .pageHero {
@@ -501,7 +506,7 @@ select {
 .tableWrap {
   overflow-x: auto;
   margin-top: 18px;
-  padding: 6px 2px 2px;
+  padding: 6px;
   border-radius: 18px;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
@@ -865,8 +870,9 @@ thead th {
   .profileHero,
   .controlsColumn,
   .contentColumn > .panel,
+  .profileSection,
   .clubCard {
-    padding: 20px;
+    padding: var(--panel-padding-mobile);
   }
 
   .chartCanvas,
