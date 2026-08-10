@@ -1,0 +1,111 @@
+{
+  "club_id": "manchester_city",
+  "club_name": "Manchester City",
+  "season": "2021/22",
+  "financial_year_end": "2022-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "total_revenue_original": 613014000,
+  "matchday_revenue_original": 54482000,
+  "broadcast_revenue_original": 249060000,
+  "commercial_revenue_original": 309472000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": 67699000,
+  "staff_costs_original": 353881000,
+  "player_amortisation_original": 140708000,
+  "profit_on_player_sales_original": 67699000,
+  "net_debt_original": -13450000,
+  "profit_loss_before_tax_original": 41726000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 613014000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    13,
+    14,
+    26,
+    27,
+    32
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 54482000,
+      "page_number": 26,
+      "statement_label": "Matchday",
+      "evidence_text": "Revenue note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 249060000,
+      "page_number": 26,
+      "statement_label": "Broadcasting - UEFA and Broadcasting - all other",
+      "evidence_text": "Revenue note. UEFA and all-other broadcasting lines were combined for the broadcasting category."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 309472000,
+      "page_number": 26,
+      "statement_label": "Other commercial activities",
+      "evidence_text": "Revenue note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "excluded_player_trading_revenue_original",
+      "value_original": 67699000,
+      "page_number": 13,
+      "statement_label": "Profit on disposal of players' registrations",
+      "evidence_text": "Statement of profit or loss. Excluded from football revenue total."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 353881000,
+      "page_number": 27,
+      "statement_label": "Aggregate payroll costs",
+      "evidence_text": "Employees note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 140708000,
+      "page_number": 26,
+      "statement_label": "Amortisation of players' registrations",
+      "evidence_text": "Operating loss note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 67699000,
+      "page_number": 13,
+      "statement_label": "Profit on disposal of players' registrations",
+      "evidence_text": "Statement of profit or loss. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": 41726000,
+      "page_number": 13,
+      "statement_label": "Profit on ordinary activities before taxation",
+      "evidence_text": "Statement of profit or loss. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": -13450000,
+      "page_number": 32,
+      "statement_label": "Computed net debt from lease liabilities less cash at bank and in hand",
+      "evidence_text": "Calculated from lease liabilities of GBP 64.302m in the leases note and cash at bank and in hand of GBP 77.752m on the balance sheet."
+    }
+  ],
+  "classification_notes": "Manchester City discloses matchday, broadcasting, and commercial revenue directly in the annual accounts, with broadcasting split between UEFA and all-other lines that have been combined here. Player-trading profit is disclosed separately and excluded from football revenue.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the report.",
+  "non_football_revenue_notes": "Other commercial activities may include sponsorship, hospitality, and other club commercial operations.",
+  "confidence_level": "high",
+  "requires_manual_review": true,
+  "source_document": "Full accounts made up to 30 June 2022",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history/MzM3NDk5MzUyNmFkaXF6a2N4/document?download=0&format=pdf",
+  "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000. The report cautions that comparisons with the prior year should be read carefully because the prior year remained affected by COVID-19 disruption. Net debt has been computed from lease liabilities less cash at bank and in hand from the balance sheet."
+}

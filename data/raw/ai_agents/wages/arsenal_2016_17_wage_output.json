@@ -1,0 +1,29 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "season": "2016/17",
+  "estimated_player_wages_eur": null,
+  "estimated_player_wages_original": 102325000,
+  "estimated_player_wages_original_currency": "GBP",
+  "estimated_player_wages_original_unit": "gross annual base wages",
+  "weekly_wages_original": 1967788,
+  "source_name": "Capology",
+  "source_url": "https://www.capology.com/club/arsenal/salaries/2016-2017/",
+  "date_accessed": "2026-05-05",
+  "currency_original": "GBP",
+  "units_original": "full pounds",
+  "conversion_rate_to_eur": null,
+  "exchange_rate_source": "",
+  "evidence": [
+    {
+      "field": "estimated_player_wages_eur",
+      "value_original": 102325000,
+      "unit_original": "GBP gross annual base wages",
+      "page_or_location": "meta_description",
+      "evidence_text": "Estimated Gross Fixed Salaries for the 2016-2017 Season was £102,325,000, or £1,967,788 per week, not including bonuses."
+    }
+  ],
+  "confidence_level": "medium",
+  "requires_manual_review": true,
+  "notes": "Capology wage estimates are not official figures. Values represent estimated gross fixed player salaries and exclude bonuses. EUR conversion is pending a project-level FX methodology, so the EUR field remains null for now."
+}

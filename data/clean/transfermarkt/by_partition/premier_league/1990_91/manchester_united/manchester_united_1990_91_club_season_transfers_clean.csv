@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,manchester_united,Manchester United,1990/91,1990,all,1180000.0,236000.0,944000.0,17,11,transfermarkt_club_page,https://www.transfermarkt.com/manchester-united/transfers/verein/985/saison_id/1990,2026-04-27T18:16:00.240526+00:00,high,

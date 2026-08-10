@@ -1,0 +1,112 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "season": "2015/16",
+  "financial_year_end": "2016-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report, with debt-note borrowings disclosed in GBP millions converted to full GBP)",
+  "total_revenue_original": 230271000,
+  "matchday_revenue_original": 94854000,
+  "broadcast_revenue_original": 131395000,
+  "commercial_revenue_original": 4022000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": null,
+  "staff_costs_original": 184946000,
+  "player_amortisation_original": 87853000,
+  "profit_on_player_sales_original": -9786000,
+  "net_debt_original": 256539000,
+  "profit_loss_before_tax_original": -111741000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 230271000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    9,
+    10,
+    19,
+    20,
+    21,
+    25
+  ],
+  "evidence": [
+    {
+      "field": "total_revenue_original",
+      "value_original": 230271000,
+      "page_number": 19,
+      "statement_label": "Revenue",
+      "evidence_text": "Scanned Manchester United Football Club Limited annual accounts revenue note. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 4022000,
+      "page_number": 19,
+      "statement_label": "Commercial",
+      "evidence_text": "Revenue note in the club-limited filing. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 131395000,
+      "page_number": 19,
+      "statement_label": "Broadcasting",
+      "evidence_text": "Revenue note in the club-limited filing. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 94854000,
+      "page_number": 19,
+      "statement_label": "Matchday",
+      "evidence_text": "Revenue note in the club-limited filing. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 184946000,
+      "page_number": 21,
+      "statement_label": "Employee benefit expense",
+      "evidence_text": "Employees and directors note in the scanned annual accounts. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 87853000,
+      "page_number": 20,
+      "statement_label": "Amortisation of intangible assets",
+      "evidence_text": "Operating-expenses note in the scanned annual accounts. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": -9786000,
+      "page_number": 9,
+      "statement_label": "(Loss)/profit on disposal of intangible assets",
+      "evidence_text": "Income statement in the scanned annual accounts. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": -111741000,
+      "page_number": 9,
+      "statement_label": "Loss on ordinary activities before tax",
+      "evidence_text": "Income statement in the scanned annual accounts. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 256539000,
+      "page_number": 25,
+      "statement_label": "Estimated net debt from fellow-subsidiary senior secured notes and secured term loan less cash at bank and in hand",
+      "evidence_text": "Calculated from the debt-of-fellow-subsidiary note showing GBP 265.7m senior secured notes and GBP 140.2m secured term loan, less GBP 149.361m cash at bank and in hand from the balance sheet."
+    }
+  ],
+  "classification_notes": "This season was extracted from the downloaded Manchester United Football Club Limited Companies House filing. Under the FRS 101 layout the revenue note still discloses Commercial, Broadcasting and Matchday directly, but the commercial line remains materially narrower than the broader plc commercial segment used in later seasons.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the source used here.",
+  "non_football_revenue_notes": "The revenue note states the principal activity is the operation of a professional football club and all activities support that operation. No separate non-football revenue adjustment was identified within the club-limited revenue note used here.",
+  "confidence_level": "medium",
+  "requires_manual_review": true,
+  "source_document": "Manchester United Football Club Limited annual report and financial statements for the year ended 30 June 2016",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00095489/filing-history",
+  "notes": "Scanned PDF extraction. Debt is not disclosed as a single company net-debt line, so net debt has been estimated as fellow-subsidiary senior secured notes plus secured term loan less company cash at bank and in hand."
+}

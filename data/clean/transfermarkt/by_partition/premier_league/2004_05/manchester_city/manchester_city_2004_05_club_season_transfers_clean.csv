@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,manchester_city,Manchester City,2004/05,2004,all,1500000.0,7940000.0,-6440000.0,18,18,transfermarkt_club_page,https://www.transfermarkt.com/manchester-city/transfers/verein/281/saison_id/2004,2026-04-27T18:15:03.505347+00:00,high,

@@ -1,0 +1,246 @@
+{
+  "updatedAt": "2026-04-27T20:11:39.669962",
+  "id": "220491",
+  "transfers": [
+    {
+      "id": "5035484",
+      "clubFrom": {
+        "id": "1020",
+        "name": "Portsmouth"
+      },
+      "clubTo": {
+        "id": "1060",
+        "name": "Colchester Utd."
+      },
+      "date": "2024-01-07",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 250000
+    },
+    {
+      "id": "4817852",
+      "clubFrom": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "clubTo": {
+        "id": "1020",
+        "name": "Portsmouth"
+      },
+      "date": "2024-12-01",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 350000
+    },
+    {
+      "id": "4626072",
+      "clubFrom": {
+        "id": "1031",
+        "name": "Luton"
+      },
+      "clubTo": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "date": "2023-01-09",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 350000
+    },
+    {
+      "id": "4234926",
+      "clubFrom": {
+        "id": "1020",
+        "name": "Portsmouth"
+      },
+      "clubTo": {
+        "id": "1031",
+        "name": "Luton"
+      },
+      "date": "2023-05-31",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 400000
+    },
+    {
+      "id": "4234925",
+      "clubFrom": {
+        "id": "1031",
+        "name": "Luton"
+      },
+      "clubTo": {
+        "id": "1020",
+        "name": "Portsmouth"
+      },
+      "date": "2023-01-20",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 300000
+    },
+    {
+      "id": "3898690",
+      "clubFrom": {
+        "id": "903",
+        "name": "Hibernian FC"
+      },
+      "clubTo": {
+        "id": "1031",
+        "name": "Luton"
+      },
+      "date": "2022-01-07",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 450000,
+      "fee": 115000
+    },
+    {
+      "id": "3195681",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "903",
+        "name": "Hibernian FC"
+      },
+      "date": "2021-08-01",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 250000
+    },
+    {
+      "id": "2201445",
+      "clubFrom": {
+        "id": "2262",
+        "name": "Plymouth"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-05-31",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 500000
+    },
+    {
+      "id": "2201444",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "2262",
+        "name": "Plymouth"
+      },
+      "date": "2018-07-30",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 500000
+    },
+    {
+      "id": "1692315",
+      "clubFrom": {
+        "id": "1031",
+        "name": "Luton"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2017-05-04",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 500000
+    },
+    {
+      "id": "1692314",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1031",
+        "name": "Luton"
+      },
+      "date": "2017-01-31",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 500000
+    },
+    {
+      "id": "1459294",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2015-01-07",
+      "upcoming": false,
+      "season": "15/16"
+    },
+    {
+      "id": "1170767",
+      "clubFrom": {
+        "id": "3688",
+        "name": "Accrington"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "date": "2015-08-02",
+      "upcoming": false,
+      "season": "14/15"
+    },
+    {
+      "id": "1170766",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "3688",
+        "name": "Accrington"
+      },
+      "date": "2015-08-01",
+      "upcoming": false,
+      "season": "14/15"
+    },
+    {
+      "id": "1037019",
+      "clubFrom": {
+        "id": "14651",
+        "name": "Brist. Rov. U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "date": "2013-10-24",
+      "upcoming": false,
+      "season": "13/14",
+      "fee": 140000
+    },
+    {
+      "id": "1459593",
+      "clubFrom": {
+        "id": "53301",
+        "name": "Bristol R. Yth."
+      },
+      "clubTo": {
+        "id": "14651",
+        "name": "Brist. Rov. U18"
+      },
+      "date": "2011-01-07",
+      "upcoming": false,
+      "season": "11/12"
+    }
+  ],
+  "youthClubs": [
+    "Bristol Rovers (2009-2013)"
+  ]
+}

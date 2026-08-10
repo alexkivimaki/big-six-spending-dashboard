@@ -1,0 +1,12 @@
+{
+  "club_id": "arsenal",
+  "season": "2016/17",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/04250459/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/04250459/filing-history/MzE5MTg1NjI2OWFkaXF6a2N4/document?format=pdf&download=0",
+  "date_downloaded_utc": "2026-04-28T09:08:01.534519+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/arsenal/2016_17_group_of_companies_accounts_made_up_to_31_may_2017.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/arsenal_2016_17_statement_fetcher_output.json",
+  "report_title": "Group of companies' accounts made up to 31 May 2017",
+  "report_type": "accounts_filing"
+}

@@ -1,0 +1,21 @@
+season,Pos,Team,Pld,W,D,L,GF,GA,GD,Pts,Qualification or relegation,points_deduction,source_url
+,1,Barcelona (C),38,26,9,3,90,36,+54,87,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,2,Atlético Madrid,38,22,10,6,55,29,+26,76,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,3,Real Madrid,38,21,5,12,63,46,+17,68,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,4,Valencia,38,15,16,7,51,35,+16,61,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,5,Getafe,38,15,14,9,48,35,+13,59,Qualification for the Europa League group stage,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,6,Sevilla,38,17,8,13,62,47,+15,59,Qualification for the Europa League group stage,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,7,Espanyol,38,14,11,13,48,50,-2,53,Qualification for the Europa League second qualifying round,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,8,Athletic Bilbao,38,13,14,11,41,45,-4,53,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,9,Real Sociedad,38,13,11,14,45,46,-1,50,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,10,Real Betis,38,14,8,16,44,52,-8,50,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,11,Alavés,38,13,11,14,39,50,-11,50,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,12,Eibar,38,11,14,13,46,50,-4,47,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,13,Leganés,38,11,12,15,37,43,-6,45,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,14,Villarreal,38,10,14,14,49,52,-3,44,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,15,Levante,38,11,11,16,59,66,-7,44,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,16,Valladolid,38,10,11,17,32,51,-19,41,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,17,Celta Vigo,38,10,11,17,53,62,-9,41,,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,18,Girona (R),38,9,10,19,37,53,-16,37,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,19,Huesca (R),38,7,12,19,43,65,-22,33,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga
+,20,Rayo Vallecano (R),38,8,8,22,41,70,-29,32,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga

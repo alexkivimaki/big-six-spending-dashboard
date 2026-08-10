@@ -1,0 +1,130 @@
+{
+  "updatedAt": "2026-04-27T20:12:06.494739",
+  "id": "230784",
+  "transfers": [
+    {
+      "id": "5843811",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1050",
+        "name": "Villarreal"
+      },
+      "date": "2025-07-08",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 14000000
+    },
+    {
+      "id": "3089796",
+      "clubFrom": {
+        "id": "13",
+        "name": "Atlético"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-05-10",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 40000000,
+      "fee": 50000000
+    },
+    {
+      "id": "1378139",
+      "clubFrom": {
+        "id": "3679",
+        "name": "Atl. Madrileño"
+      },
+      "clubTo": {
+        "id": "13",
+        "name": "Atlético"
+      },
+      "date": "2015-01-07",
+      "upcoming": false,
+      "season": "15/16",
+      "marketValue": 4000000
+    },
+    {
+      "id": "1096695",
+      "clubFrom": {
+        "id": "3302",
+        "name": "UD Almería"
+      },
+      "clubTo": {
+        "id": "3679",
+        "name": "Atl. Madrileño"
+      },
+      "date": "2015-06-30",
+      "upcoming": false,
+      "season": "14/15",
+      "marketValue": 2500000
+    },
+    {
+      "id": "1096693",
+      "clubFrom": {
+        "id": "3679",
+        "name": "Atl. Madrileño"
+      },
+      "clubTo": {
+        "id": "3302",
+        "name": "UD Almería"
+      },
+      "date": "2014-07-27",
+      "upcoming": false,
+      "season": "14/15",
+      "marketValue": 1000000
+    },
+    {
+      "id": "908916",
+      "clubFrom": {
+        "id": "237",
+        "name": "RCD Mallorca"
+      },
+      "clubTo": {
+        "id": "3679",
+        "name": "Atl. Madrileño"
+      },
+      "date": "2014-06-30",
+      "upcoming": false,
+      "season": "13/14",
+      "marketValue": 1000000
+    },
+    {
+      "id": "908915",
+      "clubFrom": {
+        "id": "3679",
+        "name": "Atl. Madrileño"
+      },
+      "clubTo": {
+        "id": "237",
+        "name": "RCD Mallorca"
+      },
+      "date": "2013-12-07",
+      "upcoming": false,
+      "season": "13/14"
+    },
+    {
+      "id": "978960",
+      "clubFrom": {
+        "id": "21121",
+        "name": "Leganés U19"
+      },
+      "clubTo": {
+        "id": "3679",
+        "name": "Atl. Madrileño"
+      },
+      "date": "2012-01-07",
+      "upcoming": false,
+      "season": "12/13"
+    }
+  ],
+  "youthClubs": [
+    "Mighty Krobo Youth FC (Odumase-Krobo) (2010-2011)",
+    "Odometah (2011–2012)",
+    "Atlético Madrid (2012-2013)"
+  ]
+}

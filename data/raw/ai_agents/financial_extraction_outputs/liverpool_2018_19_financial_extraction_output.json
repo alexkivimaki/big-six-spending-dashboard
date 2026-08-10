@@ -1,0 +1,104 @@
+{
+  "club_id": "liverpool",
+  "club_name": "Liverpool",
+  "season": "2018/19",
+  "financial_year_end": "2019-05-31",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "total_revenue_original": 533022000,
+  "matchday_revenue_original": 84208000,
+  "broadcast_revenue_original": 260785000,
+  "commercial_revenue_original": 188029000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": null,
+  "staff_costs_original": 309917000,
+  "net_debt_original": 91775000,
+  "player_amortisation_original": 111772000,
+  "profit_on_player_sales_original": 45245000,
+  "profit_loss_before_tax_original": 41905000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 533022000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    11,
+    22,
+    24,
+    28,
+    29
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 84208000,
+      "page_number": 22,
+      "statement_label": "Match day",
+      "evidence_text": "Turnover note by activity. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 260785000,
+      "page_number": 22,
+      "statement_label": "Media",
+      "evidence_text": "Turnover note by activity. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 188029000,
+      "page_number": 22,
+      "statement_label": "Commercial",
+      "evidence_text": "Turnover note by activity. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 309917000,
+      "page_number": 24,
+      "statement_label": "Wages and salaries plus social security costs plus pension costs",
+      "evidence_text": "Staff numbers and costs note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 111772000,
+      "page_number": 22,
+      "statement_label": "Amortisation of players' registrations",
+      "evidence_text": "Administrative expenses note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 45245000,
+      "page_number": 11,
+      "statement_label": "Profit on disposal of players' registrations",
+      "evidence_text": "Consolidated profit and loss account and other comprehensive income. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": 41905000,
+      "page_number": 11,
+      "statement_label": "Profit on ordinary activities before taxation",
+      "evidence_text": "Consolidated profit and loss account and other comprehensive income. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 91775000,
+      "page_number": 29,
+      "statement_label": "Interest-bearing loans and borrowings less cash at bank and in hand",
+      "evidence_text": "Calculated as secured bank loans plus intercompany loan from the interest-bearing loans and borrowings note less the cash at bank and in hand line from the consolidated balance sheet. Values were disclosed in GBP thousands and converted to full GBP."
+    }
+  ],
+  "classification_notes": "Liverpool discloses media, commercial, and match day turnover directly in the annual accounts. No player trading figure was used in football revenue totals.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the report.",
+  "non_football_revenue_notes": "No separate non-football commercial adjustment was identified in the extracted note.",
+  "confidence_level": "medium",
+  "requires_manual_review": true,
+  "source_document": "Group of companies accounts made up to 31 May 2019",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history",
+  "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000. Liverpool net debt is estimated here from the dedicated interest-bearing loans and borrowings note less cash at bank and in hand from the consolidated balance sheet."
+}

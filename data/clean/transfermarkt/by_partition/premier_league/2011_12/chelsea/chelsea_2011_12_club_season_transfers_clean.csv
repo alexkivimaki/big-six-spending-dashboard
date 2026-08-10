@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,chelsea,Chelsea,2011/12,2011,all,96450000.0,31560000.0,64890000.0,22,22,transfermarkt_club_page,https://www.transfermarkt.com/chelsea/transfers/verein/631/saison_id/2011,2026-04-27T18:18:06.936070+00:00,high,

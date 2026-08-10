@@ -1,0 +1,317 @@
+{
+  "task_type": "financial_extraction_review",
+  "club_id": "manchester_city",
+  "club_name": "Manchester City",
+  "season": "2015/16",
+  "source_document": "2015 16 full accounts made up to 31 may 2016",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history/MzE3MDMwMDEyNWFkaXF6a2N4/document?format=pdf&download=0",
+  "local_statement_path": "data/raw/financial_statements/manchester_city/2015_16_full_accounts_made_up_to_31_may_2016.pdf",
+  "ocr_cache_path": "data/raw/financial_statement_ocr/manchester_city/2015_16_ocr.json",
+  "candidate_extraction": {
+    "club_id": "manchester_city",
+    "club_name": "Manchester City",
+    "season": "2015/16",
+    "financial_year_end": "2016-05-31",
+    "currency_original": "GBP",
+    "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+    "total_revenue_original": 391774000,
+    "matchday_revenue_original": 52523000,
+    "broadcast_revenue_original": 161381000,
+    "commercial_revenue_original": 177870000,
+    "other_revenue_original": null,
+    "women_team_revenue_original": null,
+    "excluded_player_trading_revenue_original": 20714000,
+    "staff_costs_original": 197584000,
+    "player_amortisation_original": 93952000,
+    "profit_on_player_sales_original": 20714000,
+    "net_debt_original": 10852000,
+    "profit_loss_before_tax_original": 19589000,
+    "total_revenue_eur": null,
+    "matchday_revenue_eur": null,
+    "broadcast_revenue_eur": null,
+    "commercial_revenue_eur": null,
+    "other_revenue_eur": null,
+    "net_debt_eur": null,
+    "profit_loss_before_tax_eur": null,
+    "exchange_rate_used": null,
+    "exchange_rate_source": "",
+    "revenue_sum_check_original": 391774000,
+    "revenue_sum_difference_original": 0,
+    "pages_used": [
+      10,
+      11,
+      24,
+      25,
+      30
+    ],
+    "evidence": [
+      {
+        "field": "matchday_revenue_original",
+        "value_original": 52523000,
+        "page_number": 24,
+        "statement_label": "Matchday",
+        "evidence_text": "Turnover note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "broadcast_revenue_original",
+        "value_original": 161381000,
+        "page_number": 24,
+        "statement_label": "Broadcasting - UEFA and Broadcasting - All Other",
+        "evidence_text": "Turnover note. UEFA and all-other broadcasting lines were combined for the broadcasting category."
+      },
+      {
+        "field": "commercial_revenue_original",
+        "value_original": 177870000,
+        "page_number": 24,
+        "statement_label": "Other commercial activities",
+        "evidence_text": "Turnover note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "excluded_player_trading_revenue_original",
+        "value_original": 20714000,
+        "page_number": 10,
+        "statement_label": "Profit on disposal of players' registrations",
+        "evidence_text": "Profit and loss account. Excluded from football revenue total."
+      },
+      {
+        "field": "staff_costs_original",
+        "value_original": 197584000,
+        "page_number": 25,
+        "statement_label": "Employee costs",
+        "evidence_text": "Employees note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "player_amortisation_original",
+        "value_original": 93952000,
+        "page_number": 24,
+        "statement_label": "Amortisation of player registrations",
+        "evidence_text": "Operating profit/(loss) note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "profit_on_player_sales_original",
+        "value_original": 20714000,
+        "page_number": 10,
+        "statement_label": "Profit on disposal of players' registrations",
+        "evidence_text": "Profit and loss account. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "profit_loss_before_tax_original",
+        "value_original": 19589000,
+        "page_number": 10,
+        "statement_label": "Profit/(loss) on ordinary activities before taxation",
+        "evidence_text": "Profit and loss account. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "net_debt_original",
+        "value_original": 10852000,
+        "page_number": 30,
+        "statement_label": "Computed net debt from borrowings less cash at bank and in hand",
+        "evidence_text": "Calculated from borrowings of GBP 66.670m in the borrowings note and cash at bank and in hand of GBP 55.818m on the balance sheet."
+      }
+    ],
+    "classification_notes": "Manchester City discloses matchday, broadcasting, and commercial revenue directly in the annual accounts, with broadcasting split between UEFA and all-other lines that have been combined here. Player-trading profit is disclosed separately and excluded from football revenue.",
+    "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the report.",
+    "non_football_revenue_notes": "Other commercial activities may include hospitality, sponsorship, and other club commercial operations classified within ordinary activities.",
+    "confidence_level": "high",
+    "requires_manual_review": true,
+    "source_document": "Full accounts made up to 31 May 2016",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history",
+    "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000. Net debt has been computed from the borrowings note less cash at bank and in hand from the balance sheet."
+  },
+  "candidate_pages_summary": [
+    {
+      "page": 1,
+      "char_count": 190,
+      "preview": "Manchester City Football Club Limited Directors' Report and Financial Statements For the year ended 31 May 2016 Registered number 40946 TUESDAY A31 *A6175EAJ* 28/02/2017 COMPANIES HOUSE #28"
+    },
+    {
+      "page": 2,
+      "char_count": 362,
+      "preview": "Manchester City Football Club Limited Contents Directors and Advisors Strategic Report Directors' Report Statement of Directors' Responsibilities Independent Auditors' Report to the Members of Manchester City Football Club Limited Profit an"
+    },
+    {
+      "page": 3,
+      "char_count": 365,
+      "preview": "Manchester City Football Club Limited Directors and Advisors Directors K Al Mubarak (Chairman) M Edelman S Pearce M Al Mazrouei J MacBeath \u2022 A Galassi Company Secretary S Cliff Registered Office Etihad Stadium, Etihad Campus, Manchester M11"
+    },
+    {
+      "page": 4,
+      "char_count": 3537,
+      "preview": "Manchester City Football Club Limited Strategic Report The Directors present their annual report on the affairs of the Group, together with the financial statements and Auditors' report, for the year ended 31 May 2016. Principal activities "
+    },
+    {
+      "page": 5,
+      "char_count": 901,
+      "preview": "Manchester City Football Club Limited Strategic Report (continued) Risks and uncertainties The Board acknowledges that there are a number of risks and uncertainties which could have a material impact on the Club's performance. The Club's in"
+    },
+    {
+      "page": 6,
+      "char_count": 1375,
+      "preview": "Manchester City Football Club Limited Directors' Report The Directors who held office during the year were as follows: K AI Mubarak (Chairman) M Edelman S Pearce M Al Mazrouei J MacBeath A Galassi Result for the year The profit for the fina"
+    },
+    {
+      "page": 7,
+      "char_count": 2225,
+      "preview": "Manchester City Football Club Limited Statement of Directors' Responsibilities Directors' responsibilities The Directors are responsible for preparing the Directors' Report and the financial statements in accordance with applicable law and "
+    },
+    {
+      "page": 8,
+      "char_count": 2361,
+      "preview": "Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited We have audited the financial statements of Manchester City Football Club Limited for the year ended 31 May 2016 whic"
+    },
+    {
+      "page": 9,
+      "char_count": 988,
+      "preview": "Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited (continued) Matters on which we are required to report by exception We have nothing to report in respect of the follo"
+    },
+    {
+      "page": 10,
+      "char_count": 1145,
+      "preview": "Manchester City Football Club Limited Profit and Loss Account for the year ended 31 May 2016 Note Turnover Other operating income Operating expenses 4 5 5 Operations excluding player trading Year ended 31 May 2016 \u00a3000 391,774 800 (295,821)"
+    },
+    {
+      "page": 11,
+      "char_count": 1310,
+      "preview": "Manchester City Football Club Limited Balance Sheet Fixed assets Intangible assets Tangible assets Investments Current assets Assets held for sale Debtors - amounts falling due within one year Debtors - amounts falling due after more than o"
+    },
+    {
+      "page": 12,
+      "char_count": 354,
+      "preview": "Manchester City Football Club Limited Statement of Changes in Equity Share capital \u00a3000 As at 31 May 2015 1,258,346 Profit for the year As at 31 May 2016 1,258,346 Share premium \u20ac000 45,008 45,008 The notes on pages 12 to 36 form part of th"
+    },
+    {
+      "page": 13,
+      "char_count": 3417,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements 1. Authorisation of financial statements and statement of compliance with FRS 101 The financial statements of Manchester City Football Club Limited (the 'Company') for "
+    },
+    {
+      "page": 14,
+      "char_count": 2951,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) The requirements of paragraphs 134(d)-134(f) and 135(c)-135(e) of IAS 36 Impairment of assets. Based on this "
+    },
+    {
+      "page": 15,
+      "char_count": 3843,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Transactions and balances Transactions in foreign currencies are recorded using the rate of exchange ruling a"
+    },
+    {
+      "page": 16,
+      "char_count": 3067,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) TV broadcasting (continued) UEFA distributions from participation in the Champions League include market pool"
+    },
+    {
+      "page": 17,
+      "char_count": 3563,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Deferred tax assets and liabilities are measured at the tax rates that are expected to apply in the year when"
+    },
+    {
+      "page": 18,
+      "char_count": 3805,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Fixed assets (continued) Likewise, when a major inspection is performed, its cost is recognised in the carryi"
+    },
+    {
+      "page": 19,
+      "char_count": 3671,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Players' registrations and football staff remuneration Initial recognition Players' registration costs includ"
+    },
+    {
+      "page": 20,
+      "char_count": 3573,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Investments The Company assesses each of its investments to assess whether control or significant influence e"
+    },
+    {
+      "page": 21,
+      "char_count": 3950,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) AFS financial assets For AFS financial assets, the Company assesses at each reporting date whether there is o"
+    },
+    {
+      "page": 22,
+      "char_count": 2897,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) Significant accounting policies (continued) Capital grants Grants receivable in respect of capital expenditure are treated as deferred income and released t"
+    },
+    {
+      "page": 23,
+      "char_count": 3462,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Obligations under finance leases After initial recognition, interest bearing obligations under finance leases"
+    },
+    {
+      "page": 24,
+      "char_count": 1321,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) Turnover Year ended 31 May 2016 \u00a3000 Matchday Broadcasting - UEFA Broadcasting - All Other Other commercial activities 52,523 61,242 100,139 177,870 391,774"
+    },
+    {
+      "page": 25,
+      "char_count": 1111,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) Directors remuneration Year ended 31 May 2016 \u20ac000 Year ended 31 May 2015 : Directors' emoluments Company contributions to money purchase pension schemes Am"
+    },
+    {
+      "page": 26,
+      "char_count": 1865,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 10. Taxation (a) Analysis of the tax credit in the year: Year ended 31 May 2016 \u20ac000 Year ended 31 May 2015 \u20ac000 Current tax UK corporation tax at 20% (2015"
+    },
+    {
+      "page": 27,
+      "char_count": 1344,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 11. Intangible fixed assets Cost As at 31 May 2015 Additions Disposals As at 31 May 2016 Amortisation As at 31 May 2015 Charge in the year Disposals As at 3"
+    },
+    {
+      "page": 28,
+      "char_count": 2518,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 12. Tangible fixed assets (continued) Finance Lease on Etihad Stadium On 5 August 2003, Maine Road was exchanged for a 250 year leasehold interest in the Et"
+    },
+    {
+      "page": 29,
+      "char_count": 1788,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 15. Debtors 16. Amounts falling due within one year Trade debtors Debtors arising from player transfers Amounts owed by group undertakings (Note 24) Amounts"
+    },
+    {
+      "page": 30,
+      "char_count": 1252,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 18. Borrowings 19. Maturity of obligations under finance leases: Within one year Between one and two years Between two and five years After more than five y"
+    },
+    {
+      "page": 31,
+      "char_count": 1682,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 20. Deferred tax The following are the deterred tax assets and liabilities recognised alongside details of the movements on each are listed below. Property "
+    },
+    {
+      "page": 32,
+      "char_count": 3185,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (contimued) 22. Pensions (continued) Defined benefit scheme Manchester City Football Club ('the Club') participates in the Football League Pension and Life Assurance Sc"
+    },
+    {
+      "page": 33,
+      "char_count": 2560,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 23. Commitments Operating leases The future aggregate minimum lease payments under non-cancellable operating leases are set out below. Expiring: Within one "
+    },
+    {
+      "page": 34,
+      "char_count": 2882,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 26. Ultimate parent company As at the 31 May 2016 the Company's ultimate parent undertaking was Abu Dhabi United Group Investment and Development Ltd, a com"
+    },
+    {
+      "page": 35,
+      "char_count": 2082,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 27. Reconciliation of equity and profit between UK GAAP and FRS 101 (continued) Reconciliation of equity UK GAAP A as at 1 June 2014 \u00a3000 B D E FRS 101 \u20ac000"
+    },
+    {
+      "page": 36,
+      "char_count": 2402,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 27. Reconciliation of equity and profit between UK GAAP and FRS 101 (continued) Reconciliation of equity as at 31 May 2015 Fixed assets Intangible assets Ta"
+    },
+    {
+      "page": 37,
+      "char_count": 1679,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 27. Reconciliation of equity and profit between UK GAAP and FRS 101 (continued) Reconciliation of total comprehensive income for the year ended 31 May 2015 "
+    }
+  ],
+  "review_reasons": [],
+  "needs_ai_review": false,
+  "suggested_save_output_to": "data/raw/ai_agents/financial_extraction_outputs/manchester_city_2015_16_financial_extraction_output.json",
+  "bank_references": [
+    "data/reference/financial_statement_extraction_bank/master_financial_statement_extraction_bank.md",
+    "data/reference/financial_statement_extraction_bank/manchester_city/README.md",
+    "data/reference/financial_statement_extraction_bank/manchester_city/manchester_city_extraction_bank.csv"
+  ],
+  "draft_source": "existing_extraction_output"
+}

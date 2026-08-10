@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,tottenham_hotspur,Tottenham Hotspur,2009/10,2009,all,40300000.0,31700000.0,8600000.0,32,31,transfermarkt_club_page,https://www.transfermarkt.com/tottenham-hotspur/transfers/verein/148/saison_id/2009,2026-04-27T18:20:47.668976+00:00,high,

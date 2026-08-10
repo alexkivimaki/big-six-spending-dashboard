@@ -1,0 +1,39 @@
+{
+  "updatedAt": "2026-04-27T20:12:23.061875",
+  "id": "655488",
+  "transfers": [
+    {
+      "id": "2533542",
+      "clubFrom": {
+        "id": "4773",
+        "name": "Ituano"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-02-07",
+      "upcoming": false,
+      "season": "19/20",
+      "fee": 7100000
+    },
+    {
+      "id": "2443729",
+      "clubFrom": {
+        "id": "18027",
+        "name": "Ituano U20"
+      },
+      "clubTo": {
+        "id": "4773",
+        "name": "Ituano"
+      },
+      "date": "2018-01-01",
+      "upcoming": false,
+      "season": "17/18"
+    }
+  ],
+  "youthClubs": [
+    "SC Corinthians Paulista (2010-2014)",
+    "Ituano Futebol Clube (2015-2017)"
+  ]
+}

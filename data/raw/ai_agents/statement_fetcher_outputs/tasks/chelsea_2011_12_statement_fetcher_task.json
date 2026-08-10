@@ -1,0 +1,24 @@
+{
+  "task_type": "statement_fetcher",
+  "club_id": "chelsea",
+  "club_name": "Chelsea",
+  "season": "2011/12",
+  "target_financial_year_end_range": {
+    "start": "2012-05-01",
+    "end": "2012-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  "preferred_sources": [
+    "official club annual report page",
+    "investor relations page",
+    "Companies House filing",
+    "SEC filing if applicable",
+    "other official registry or club source"
+  ],
+  "company_or_group_notes": "Use Chelsea FC Holdings Limited / Chelsea Football Club Limited or the most relevant consolidated football group accounts.",
+  "official_financial_reports_url": "",
+  "companies_house_search_name": "Chelsea FC Holdings Limited",
+  "currency_common": "GBP",
+  "prompt_path": "agents/statement_fetcher_agent_prompt.md",
+  "save_output_to": "data/raw/ai_agents/statement_fetcher_outputs/chelsea_2011_12_statement_fetcher_output.json"
+}

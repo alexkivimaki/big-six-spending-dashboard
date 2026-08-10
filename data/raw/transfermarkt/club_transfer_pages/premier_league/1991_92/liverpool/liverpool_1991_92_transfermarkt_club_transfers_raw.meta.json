@@ -1,0 +1,14 @@
+{
+  "club_id": "liverpool",
+  "club_name": "Liverpool",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "1991/92",
+  "season_start_year": 1991,
+  "season_dir": "1991_92",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/liverpool/transfers/verein/31/saison_id/1991",
+  "collected_at_utc": "2026-04-27T18:18:46.650067+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

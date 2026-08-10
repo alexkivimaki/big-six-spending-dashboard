@@ -1,0 +1,12 @@
+{
+  "club_id": "tottenham_hotspur",
+  "season": "2024/25",
+  "source_url": "https://www.tottenhamhotspur.com/the-club/investor-relations/annual-reports/",
+  "download_url": "https://resources.thfc.pulselive.com/thfc/document/2026/04/02/7909b5bc-9c0d-439a-bca9-c2f27b9c9f4d/AR-2025.pdf",
+  "date_downloaded_utc": "2026-04-28T08:58:17.601964+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/tottenham_hotspur/2024_25_annual_report_2025.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/tottenham_hotspur_2024_25_statement_fetcher_output.json",
+  "report_title": "Annual Report 2025",
+  "report_type": "annual_report"
+}

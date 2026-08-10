@@ -1,0 +1,9 @@
+{
+  "player_id": "160438",
+  "player_name": "Mohamed Elneny",
+  "endpoint_url": "http://localhost:8000/players/160438/transfers",
+  "collected_at_utc": "2026-04-27T17:12:09.058323+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api"
+}

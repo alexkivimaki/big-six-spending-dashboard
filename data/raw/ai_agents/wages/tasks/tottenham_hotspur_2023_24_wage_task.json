@@ -1,0 +1,35 @@
+{
+  "task_type": "wage_collection",
+  "club_id": "tottenham_hotspur",
+  "club_name": "Tottenham Hotspur",
+  "season": "2023/24",
+  "target_financial_year_end_range": {
+    "start": "2024-05-01",
+    "end": "2024-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  "preferred_sources": [
+    "licensed salary database or clearly documented wage-estimate source",
+    "official annual report note if player wages are directly disclosed",
+    "high-quality football finance reporting for cross-checking only"
+  ],
+  "prompt_path": "agents/wage_data_agent_prompt.md",
+  "expected_output_schema": {
+    "club_id": "",
+    "club_name": "",
+    "season": "",
+    "estimated_player_wages_eur": null,
+    "source_name": "",
+    "source_url": "",
+    "date_accessed": "",
+    "currency_original": "",
+    "units_original": "",
+    "conversion_rate_to_eur": null,
+    "exchange_rate_source": "",
+    "evidence": [],
+    "confidence_level": "",
+    "requires_manual_review": true,
+    "notes": ""
+  },
+  "save_output_to": "data/raw/ai_agents/wages/tottenham_hotspur_2023_24_wage_output.json"
+}

@@ -1,0 +1,14 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "2007/08",
+  "season_start_year": 2007,
+  "season_dir": "2007_08",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/manchester-united/transfers/verein/985/saison_id/2007",
+  "collected_at_utc": "2026-04-27T18:16:37.826183+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

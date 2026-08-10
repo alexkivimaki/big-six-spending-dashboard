@@ -1,0 +1,200 @@
+{
+  "task_type": "financial_extraction_review",
+  "club_id": "manchester_city",
+  "season": "2017/18",
+  "local_statement_path": "data/raw/financial_statements/manchester_city/2017_18_full_accounts_made_up_to_30_june_2018.pdf",
+  "ocr_cache_path": "data/raw/financial_statement_ocr/manchester_city/2017_18_ocr.json",
+  "candidate_extraction": {},
+  "candidate_pages_summary": [
+    {
+      "page": 1,
+      "char_count": 193,
+      "preview": "Manchester City Football Club Limited Directors' Report and Financial Statements For the year ended 30 June 2018 Registered number 0040946 FRIDAY A15 *4829079V* 29/03/2019 COMPANIES HOUSE #303"
+    },
+    {
+      "page": 2,
+      "char_count": 312,
+      "preview": "Contents Directors and Advisors Strategic Report Directors' Report Statement of Directors' Responsibilities Independent Auditors' Report to the Members of Manchester City Football Club Limited Profit and Loss Account Balance Sheet Statement"
+    },
+    {
+      "page": 3,
+      "char_count": 373,
+      "preview": "Manchester City Football Club Limited Directors and Advisors Directors K Al Mubarak (Chairman) M Edelman S Pearce M Al Mazrouei J MacBeath A Galassi A Khouri Company Secretary S Cliff Registered Office Etihad Stadium, Etihad Campus, Manches"
+    },
+    {
+      "page": 4,
+      "char_count": 3179,
+      "preview": "Manchester City Football Club Limited Directors and Advisors (continued) The Board of Directors comprises the following who are all non-Executive Directors: Khaldoon Al Mubarak, Chairman Khaldoon Al Mubarak was appointed to the Board in Sep"
+    },
+    {
+      "page": 5,
+      "char_count": 3058,
+      "preview": "Manchester City Football Club Limited Strategic Report The Directors present their annual report on the affairs of Manchester City Football Club Limited ('Manchester The pr perla ?, tighter wilt her facilia print ue und Die report, for the "
+    },
+    {
+      "page": 6,
+      "char_count": 1098,
+      "preview": "Manchester City Football Club Limited Strategic Report (continued) Risks and uncertainties The Board acknowledges that there are a number of risks and uncertainties which could have a material impact on the Club's performance. The Club's in"
+    },
+    {
+      "page": 7,
+      "char_count": 1688,
+      "preview": "Manchester City Football Club Limited Directors' Report The Directors who held office during the year were as follows: K Al Mubarak (Chairman) M Edelman S Pearce M Al Mazrouei J MacBeath A Galassi The prior period results show a longer acco"
+    },
+    {
+      "page": 8,
+      "char_count": 2242,
+      "preview": "Manchester City Football Club Limited Statement of Directors' Responsibilities Directors' responsibilities The Directors are responsible for preparing the Directors' Report and the financial statements in accordance with applicable law and "
+    },
+    {
+      "page": 9,
+      "char_count": 3409,
+      "preview": "Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited Opinion We have audited the financial statements of Manchester City Football Club Limited ('the Company') for the yea"
+    },
+    {
+      "page": 10,
+      "char_count": 2125,
+      "preview": "Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited (continued) Opinions on other matters prescribed by the Companies Act 2006 In our opinion, based on the work undertak"
+    },
+    {
+      "page": 11,
+      "char_count": 1880,
+      "preview": "Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited (continued) Auditors' responsibilities for the audit of the financial statements Our objectives are to obtain reasona"
+    },
+    {
+      "page": 12,
+      "char_count": 1169,
+      "preview": "Manchester City Football Club Limited Profit and Loss Account for the year ended 30 June 2018 Note Turnover Other operating income Operating expenses Operating profit/(loss) Profit on disposal of players' registrations Profit/(loss) before "
+    },
+    {
+      "page": 13,
+      "char_count": 1212,
+      "preview": "Manchester City Football Club Limited Balance Sheet Registered number 0040946 Fixed assets Intangible assets Tangible assets Investments Current assets Debtors - amounts falling due within one year Debtors - amounts falling due after more t"
+    },
+    {
+      "page": 14,
+      "char_count": 481,
+      "preview": "Manchester City Football Club Limited Statement of Changes in Equity Share capital \u20ac000 As at 1 June 2016 1,258,346 Profit for the year As at 30 June 2017 1,258,346 Share premium \u00a3000 45,008 45,008 Shares issued in the year 58,000 Profit fo"
+    },
+    {
+      "page": 15,
+      "char_count": 2941,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements 1. Authorisation of financial statements and statement of compliance with FRS 101 The financial statements of Manchester City Football Club Limited (the 'Company') for "
+    },
+    {
+      "page": 16,
+      "char_count": 3234,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Going Concern Manchester City Football Club Limited is reliant on its ultimate parent undertaking, Abu Dhabi "
+    },
+    {
+      "page": 17,
+      "char_count": 3753,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Transactions and balances (continued) Transactions in foreign currencies are recorded using the rate of excha"
+    },
+    {
+      "page": 18,
+      "char_count": 3260,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (contimued) 2. Significant accounting policies (continued) Other commercial Other commercial revenue includes revenue derived from the Manchester City brand through par"
+    },
+    {
+      "page": 19,
+      "char_count": 3533,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Deferred tax (continued) Deferred tax assets and deferred tax liabilities are offset if a legally enforceable"
+    },
+    {
+      "page": 20,
+      "char_count": 3746,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (continued) Fixed assets (continued) The assets' residual values, useful lives and methods of depreciation are reviewed a"
+    },
+    {
+      "page": 21,
+      "char_count": 3527,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (contimued) Renegotiation The costs associated with an extension of a playing contract are added to the residual balance "
+    },
+    {
+      "page": 22,
+      "char_count": 3805,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (contimued) Significant accounting policies (continued) Financial assets Initial recognition and measurement Financial assets are classified, at initial recognition, as"
+    },
+    {
+      "page": 23,
+      "char_count": 3635,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (contimued) 2. Significant accounting policies (continued) The dey ialie of won i sir icon or proline require judgment la aking oria uderere the less than its cost. Der"
+    },
+    {
+      "page": 24,
+      "char_count": 3367,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Significant accounting policies (contimued) Where previously impaired debtors are subsequently recovered, amounts previously written off are credited to "
+    },
+    {
+      "page": 25,
+      "char_count": 2206,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) Significant accounting judgments, estimates and assumptions (continued) Management will perform an impairment review of player registrations, if events indi"
+    },
+    {
+      "page": 26,
+      "char_count": 1615,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) Operating loss Other operating income Other operating income Operating expenses Direct cost of sales and consumables Remuneration of Auditors and its associ"
+    },
+    {
+      "page": 27,
+      "char_count": 976,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 7. Employees (continued) The aggregate payroll costs of these persons were as follows: Wages and salaries Social security costs Other pension costs Interest"
+    },
+    {
+      "page": 28,
+      "char_count": 1343,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 10. Taxation (continued) (b) Factors affecting tax credit for the year The tax credit for the period varies from the standard rate of corporation tax in the"
+    },
+    {
+      "page": 29,
+      "char_count": 1307,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 11. Intangible fixed assets 12. Cost As at 1 July 2017 Additions Disposals As at 30 June 2018 Amortisation As at 1 July 2017 Charge in the year Disposals As"
+    },
+    {
+      "page": 30,
+      "char_count": 1722,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 12. Tangible fixed assets (continued) Finance Lease on Etihad Stadium On 5 August 2003, Maine Road was exchanged for a 250 year leasehold interest in the Et"
+    },
+    {
+      "page": 31,
+      "char_count": 1802,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 14. Debtors 15. Amounts falling due within one year Trade debtors Debtors arising from player transfers Amounts owed by group undertakings (Note 23) Amounts"
+    },
+    {
+      "page": 32,
+      "char_count": 884,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 17. Borrowings Maturity of obligations under finance leases Within one year Between one and two years Between two and five years After more than five years "
+    },
+    {
+      "page": 33,
+      "char_count": 1719,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 19. Deferred tax The following are the deferred tax assets and liabilities recognised alongside details of the movements on each. Property revaluation 4000 "
+    },
+    {
+      "page": 34,
+      "char_count": 3135,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 21. Pensions (contimued) Defined benefit scheme Manchester City Football Club ('the Club') participates in the Football League Pension and Life Assurance Sc"
+    },
+    {
+      "page": 35,
+      "char_count": 2649,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 22. Commitments Operating leases The future aggregate minimum lease payments under non-cancellable operating leases are set out below. Expiring Within one y"
+    },
+    {
+      "page": 36,
+      "char_count": 1310,
+      "preview": "Manchester City Football Club Limited Notes to the Financial Statements (continued) 23. Related party transactions (continued) Key management compensation Details of key management compensation are listed in the notes of City Football Group"
+    }
+  ],
+  "review_reasons": [
+    "draft extraction failed: Matching page not found"
+  ],
+  "needs_ai_review": true,
+  "suggested_save_output_to": "data/raw/ai_agents/financial_extraction_outputs/manchester_city_2017_18_financial_extraction_output.json",
+  "bank_references": [
+    "data/reference/financial_statement_extraction_bank/master_financial_statement_extraction_bank.md",
+    "data/reference/financial_statement_extraction_bank/manchester_city/README.md",
+    "data/reference/financial_statement_extraction_bank/manchester_city/manchester_city_extraction_bank.csv"
+  ]
+}

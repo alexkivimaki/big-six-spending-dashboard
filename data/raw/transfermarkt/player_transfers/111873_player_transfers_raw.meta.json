@@ -1,0 +1,9 @@
+{
+  "player_id": "111873",
+  "player_name": "Emiliano Martínez",
+  "endpoint_url": "http://localhost:8000/players/111873/transfers",
+  "collected_at_utc": "2026-04-27T17:11:31.834410+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api"
+}

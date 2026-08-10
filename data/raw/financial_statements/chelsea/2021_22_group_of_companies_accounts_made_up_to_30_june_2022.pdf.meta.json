@@ -1,0 +1,12 @@
+{
+  "club_id": "chelsea",
+  "season": "2021/22",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/02536231/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/02536231/filing-history/MzM3NDg3MzQ5MGFkaXF6a2N4/document?download=0&format=pdf",
+  "date_downloaded_utc": "2026-04-28T08:57:49.132183+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/chelsea/2021_22_group_of_companies_accounts_made_up_to_30_june_2022.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/chelsea_2021_22_statement_fetcher_output.json",
+  "report_title": "Group of companies' accounts made up to 30 June 2022",
+  "report_type": "accounts_filing"
+}

@@ -1,0 +1,9 @@
+{
+  "player_id": "94005",
+  "player_name": "Sead Kolasinac",
+  "endpoint_url": "http://localhost:8000/players/94005/transfers",
+  "collected_at_utc": "2026-04-27T17:11:54.172721+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api"
+}

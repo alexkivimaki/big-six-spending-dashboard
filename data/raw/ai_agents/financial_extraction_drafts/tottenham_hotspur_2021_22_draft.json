@@ -1,0 +1,280 @@
+{
+  "task_type": "financial_extraction_review",
+  "club_id": "tottenham_hotspur",
+  "season": "2021/22",
+  "local_statement_path": "data/raw/financial_statements/tottenham_hotspur/2021_22_annual_report_2022.pdf",
+  "ocr_cache_path": "data/raw/financial_statement_ocr/tottenham_hotspur/2021_22_ocr.json",
+  "candidate_extraction": {},
+  "candidate_pages_summary": [
+    {
+      "page": 1,
+      "char_count": 178,
+      "preview": "Company Registration No. 1706358 Tottenham Hotspur Limited (\"Tottenham Hotspur\" or \"the Group\" or \"the Company\") Annual Report and Consolidated Financial Statements 30 June 2022"
+    },
+    {
+      "page": 2,
+      "char_count": 5391,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited The Directors present their Strategic Report on the affairs of Tottenham Hotspur Limited and its subsidiary companies ('Group') together with the Directors' Report, Financial Stat"
+    },
+    {
+      "page": 3,
+      "char_count": 3134,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Amortisation and impairment of intangible assets Amortisation and impairment of intangible assets and other football trading-related expenditure (net of income) has decreased to \u00a3"
+    },
+    {
+      "page": 4,
+      "char_count": 4220,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Results and dividends The audited consolidated income statement for the year ended 30 June 2022 is set out on page 14. The Directors have not recommended the payment of a dividend"
+    },
+    {
+      "page": 5,
+      "char_count": 4590,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited \u2022 We are committed to ensuring that male and female employees are paid equally for equivalent work and release an annual Gender Pay Gap Report to support this, in addition to our "
+    },
+    {
+      "page": 6,
+      "char_count": 3760,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited retailers, content creators, innovators, manufacturing partners and marketing experts who by learning and connecting through the platform can drive sustainable change within their"
+    },
+    {
+      "page": 7,
+      "char_count": 5196,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited The Club's core policies are: 1. Recycle any waste products generated across the Club where possible and increase waste diversion away from landfill 2. Implement the use of enviro"
+    },
+    {
+      "page": 8,
+      "char_count": 2365,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited This reporting period is defined by a return of fans to stadiums following the COVID-19 pandemic, and the first full year of major events heid at Tottenham Hotspur Stadium since i"
+    },
+    {
+      "page": 9,
+      "char_count": 4388,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Directors None of the Directors who served during the year held any beneficial interests in the ordinary share capital of the Company at 30 June 2022. For a full list of Director"
+    },
+    {
+      "page": 10,
+      "char_count": 4055,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Directors indemnities The Group has not made any qualifying third-party indemnity provisions for the benefit of its Directors during the year. Going concern The Board of Director"
+    },
+    {
+      "page": 11,
+      "char_count": 2769,
+      "preview": "Directors' responsibilities statement The Directors are responsible for preparing the Annual Report and the financial statements in accordance with applicable law and regulations. Company law requires the Directors to prepare financial stat"
+    },
+    {
+      "page": 12,
+      "char_count": 4385,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited Independent auditor's report to the members of Tottenham Hotspur Limited Report on the audit of the financial statements Opinion In our opinion the financial statement"
+    },
+    {
+      "page": 13,
+      "char_count": 5231,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited to a material misstatement in the financial statements themselves. If, based on the work we have performed, we conclude that there is a material misstatement of this o"
+    },
+    {
+      "page": 14,
+      "char_count": 2604,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited \u2022 performing analytical procedures to identify any unusual or unexpected relationships that may indicate risks of material misstatement due to fraud; \u2022 enquiring of ma"
+    },
+    {
+      "page": 15,
+      "char_count": 1156,
+      "preview": "Consolidated income statement for the year ended 30 June 2022 Revenue Operating expenses Operating profit/(loss) Profit on disposal of intangible fixed assets Profit/(loss) from operations Finance income Finance costs Loss before taxation T"
+    },
+    {
+      "page": 16,
+      "char_count": 1416,
+      "preview": "Consolidated balance sheet as at 30 June 2022 Non-current assets Property, plant and equipment Intangible assets Investments in financial assets Trade receivables due after one year Current assets Inventories Tax and social security Trade a"
+    },
+    {
+      "page": 17,
+      "char_count": 720,
+      "preview": "Consolidated statement of changes in equity for the year ended 30 June 2022 For the year ended 30 June 2022 Share capital \u00a3'000 10,644 Balance as at 1 July 2021 Impact of equity raise (note 15) Loss for the year At 30 June 2022 For the year"
+    },
+    {
+      "page": 18,
+      "char_count": 1698,
+      "preview": "Consolidated statement of cash flows for the year ended 30 June 2022 Cash flow from operating activities Loss from operations Adjustments for: Amortisation of intangible assets Impairment of intangible assets Profit on disposal of intangibl"
+    },
+    {
+      "page": 19,
+      "char_count": 4264,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 1. Accounting policies and critical accounting judgements The following accounting policies have been applied consistently by the Directors in both the current and preceding periods in d"
+    },
+    {
+      "page": 20,
+      "char_count": 5257,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 1. Accounting policies and critical accounting judgements (continued) Player costs and transactions (a) Initial capitalisation The costs associated with the acquisition of players and ke"
+    },
+    {
+      "page": 21,
+      "char_count": 4323,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 1. Accounting policies and critical accounting judgements (continued) Computer software Computer software is stated at cost net of amortisation and any provision for impairment. Amortisa"
+    },
+    {
+      "page": 22,
+      "char_count": 4322,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 1. Accounting policies and critical accounting judgements (continued) Pension costs Payments are made to the external defined contribution pension schemes of eligible employees of the Gr"
+    },
+    {
+      "page": 23,
+      "char_count": 3685,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 Accounting policies and critical accounting judgements (continued) Critical accounting judgements and sources of estimation uncertainty (continued) Critical accounting judgements and sou"
+    },
+    {
+      "page": 24,
+      "char_count": 1469,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 2. Revenue (continued) 2022 \u00a3'000 2021 \u00a3'000 Timing of revenue recognition: At a point in time Over time 39,405 404,010 443,415 22,451 337,954 360,405 All revenue is recognised over time"
+    },
+    {
+      "page": 25,
+      "char_count": 2433,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 4. Loss from operations (continued) The analysis of auditor's remuneration is as follows: 2022 \u00a3'000 2021 \u00a3'000 Fees payable to the Company's auditor for the audit of the Company's annua"
+    },
+    {
+      "page": 26,
+      "char_count": 1521,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 6. Profit on disposal of intangible fixed assets Consideration Net book value of disposals 2022 \u00a3'000 24,719 (5,569) 19,150 2021 \u00a3'000 20,039 (1,100) 18,939 7. Finance income and costs I"
+    },
+    {
+      "page": 27,
+      "char_count": 2367,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 8. Tax (credit)/charge (continued) 2022 \u00a3'000 2021 \u00a3'000 Loss before taxation Tax credit on loss before taxation at the UK statutory rate of 19% (2021: 19%) - Expenses not deductible Inc"
+    },
+    {
+      "page": 28,
+      "char_count": 1373,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 9. Property, plant and equipment (continued) For the year ended 30 June 2021 Group Cost At 1 July 2020 Additions Disposal Transfer of assets At 30 June 2021 Depreciation and impairment A"
+    },
+    {
+      "page": 29,
+      "char_count": 1315,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 10. Intangible fixed assets (continued) In the period, capitalised player registrations relating to one individual (2021: two) were impaired by \u00a31,843,000 (2021: \u00a38,536,000). Impairment "
+    },
+    {
+      "page": 30,
+      "char_count": 1249,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 12. Inventories 2022 \u00a3'000 6,070 2021 \u00a3'000 8,106 Inventories Inventories comprise merchandising goods held for resale. 13. Trade and other receivables 2022 \u00a3'000 Trade receivables due i"
+    },
+    {
+      "page": 31,
+      "char_count": 3705,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 15. Current liabilities Bank loans (secured) Interest-bearing loans and borrowings 2022 \u00a3'000 1,295 1,295 2021 \u00a3'000 1,248 1,248 Trade payables due in less than one year Other tax and so"
+    },
+    {
+      "page": 32,
+      "char_count": 3267,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 16. Non-current liabilities Bank loans (secured) Other loans (secured) Interest-bearing loans and borrowings 2022 \u00a3'000 80,948 770,359 851,307 2021 \u00a3'000 82,423 770,179 852,602 Trade pay"
+    },
+    {
+      "page": 33,
+      "char_count": 1289,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 16. Non-current liabilities (continued) The maturity profile of the Group's total borrowings at the balance sheet date which do not include interest payments are as follows: 2022 Interes"
+    },
+    {
+      "page": 34,
+      "char_count": 1879,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 16. Non-current liabilities (continued) Interest rate profile The Group has no financial assets excluding short-term receivables, other than the Sterling cash deposits of \u00a3226,500,000 (2"
+    },
+    {
+      "page": 35,
+      "char_count": 1463,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 17. Provisions for liabilities For the year ended 30 June 2022 \u00a3'000 Provisions - due in less than one year At 1 July 2021 Provided during the year Utilised during the year At 30 June 20"
+    },
+    {
+      "page": 36,
+      "char_count": 3328,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 18. Financial instruments Capital risk management The Group manages its capital to ensure that entities in the Group will be able to continue as a going concern. Strong financial managem"
+    },
+    {
+      "page": 37,
+      "char_count": 3621,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 18. Financial instruments (continued) (i) Market risk The Group's activities expose it primarily to the financial risks of changes in foreign currency exchange and interest rates. Intere"
+    },
+    {
+      "page": 38,
+      "char_count": 2229,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 18. Financial instruments (continued (ii) Credit risk (continued) There are no other significant concentrations of credit risk within the Group. Cash is deposited with one financial inst"
+    },
+    {
+      "page": 39,
+      "char_count": 1206,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 19. Called up share capital Allotted, authorised, called up and fully paid: 2022: 212,886,618 (2021: 212,886,618) ordinary shares of 5p each Total 20. Reconciliation of movements in Grou"
+    },
+    {
+      "page": 40,
+      "char_count": 3908,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 22. Net debt Cash and cash equivalents Bank loans Net debt 2022 \u00a3'000 226,500 (852,602) (626,102) 2021 \u00a3'000 147,569 (853,850) (706,281) 23. Related party transactions The following para"
+    },
+    {
+      "page": 41,
+      "char_count": 2003,
+      "preview": "Notes to the accounts for the year ended 30 June 2022 26. Post balance sheet events Since the balance sheet date the following events have occurred: \u2022 F Forster joined as a free agent; \u2022 I Perisic joined as a free agent; \u2022 Y Bissouma joined"
+    },
+    {
+      "page": 42,
+      "char_count": 1059,
+      "preview": "Company balance sheet as at 30 June 2022 Notes 2022 \u00a3'000 2021 \u00a3'000 Non-current assets Property, plant and equipment Investments Current assets Inventory Trade and other receivables Cash and cash equivalents 4 5 88,407 232,990 321,397 5,48"
+    },
+    {
+      "page": 43,
+      "char_count": 675,
+      "preview": "Statement of Changes in Equity as at 30 June 2022 For the year ended 30 June 2022 Share capital \u00a3'000 10,644 Share premium \u00a3'000 34,788 Balance as at 1 July 2021 Impact of equity raise (note 6) Profit for the year At 30 June 2022 For the ye"
+    },
+    {
+      "page": 44,
+      "char_count": 3993,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2022 1. Accounting policies and critical judgements Authorisation of financial statements and statement of compliance with FRS 101 The financial statements of the Company for the year"
+    },
+    {
+      "page": 45,
+      "char_count": 5178,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2022 1. Accounting policies and critical judgements (continued) Inventory Inventories, which comprise goods held for resale, are valued at the lower of cost and net realisable value u"
+    },
+    {
+      "page": 46,
+      "char_count": 1399,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2022 1. Accounting policies and critical judgements (continued) FVTPL Liability The issuance of 'A' ordinary shares in the period conferred warrant rights to subscribe for ordinary sh"
+    },
+    {
+      "page": 47,
+      "char_count": 825,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2022 For the year ended 30 June 2021 Land and buildings short leasehold \u00a3'000 Right of use assets \u00a3'000 Motor vehicles \u00a3'000 General plant and equipment \u00a3'000 Assets under the course "
+    },
+    {
+      "page": 48,
+      "char_count": 2242,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2022 3. Investments held as fixed assets Investments held as fixed assets by the Company represent the investments in subsidiary undertakings which are analysed as follows: Investment"
+    },
+    {
+      "page": 49,
+      "char_count": 2110,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2022 5. Current assets Trade receivables Amounts owed by Group undertakings Other receivables Prepayments and accrued income Other taxation Deferred tax asset (see note 8) 2022 \u00a3'000 "
+    },
+    {
+      "page": 50,
+      "char_count": 2648,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2022 6. Current liabilities (continued) The issuance of 'A' ordinary shares conferred warrant rights to subscribe for ordinary shares in the Club. The warrant entitlement is initially"
+    },
+    {
+      "page": 51,
+      "char_count": 1929,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2022 9. Reconciliation of movements in equity For the year ended 30 June 2022 Share capital account \u00a3'000 Share premium account \u00a3'000 Balance as at 1 July 2021 Impact of equity raise "
+    },
+    {
+      "page": 52,
+      "char_count": 490,
+      "preview": "Directors, officers and advisers Executive Chairman D P Levy Executive Directors M J Collecott D Cullen Non-Executive Director Mr J Turner (Chairman of the Audit and Remuneration Committee) Company Secretary M J Collecott Registered office "
+    }
+  ],
+  "review_reasons": [
+    "draft extraction failed: Matching page not found"
+  ],
+  "needs_ai_review": true,
+  "suggested_save_output_to": "data/raw/ai_agents/financial_extraction_outputs/tottenham_hotspur_2021_22_financial_extraction_output.json",
+  "bank_references": [
+    "data/reference/financial_statement_extraction_bank/master_financial_statement_extraction_bank.md",
+    "data/reference/financial_statement_extraction_bank/tottenham_hotspur/README.md",
+    "data/reference/financial_statement_extraction_bank/tottenham_hotspur/tottenham_hotspur_extraction_bank.csv"
+  ]
+}

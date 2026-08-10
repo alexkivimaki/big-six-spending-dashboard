@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,liverpool,Liverpool,2014/15,2014,all,151430000.0,99270000.0,52160000.0,25,21,transfermarkt_club_page,https://www.transfermarkt.com/liverpool/transfers/verein/31/saison_id/2014,2026-04-27T18:19:37.650062+00:00,high,

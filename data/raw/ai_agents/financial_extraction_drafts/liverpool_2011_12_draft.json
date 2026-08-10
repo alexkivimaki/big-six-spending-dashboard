@@ -1,0 +1,274 @@
+{
+  "task_type": "financial_extraction_review",
+  "club_id": "liverpool",
+  "club_name": "Liverpool",
+  "season": "2011/12",
+  "source_document": "2011 12 full accounts made up to 31 may 2012",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history/MzA3MzkyNTQ5NmFkaXF6a2N4/document?format=pdf&download=0",
+  "local_statement_path": "data/raw/financial_statements/liverpool/2011_12_full_accounts_made_up_to_31_may_2012.pdf",
+  "ocr_cache_path": "data/raw/financial_statement_ocr/liverpool/2011_12_ocr.json",
+  "candidate_extraction": {
+    "club_id": "liverpool",
+    "club_name": "Liverpool",
+    "season": "2011/12",
+    "financial_year_end": "2012-05-31",
+    "currency_original": "GBP",
+    "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+    "total_revenue_original": 168998000,
+    "matchday_revenue_original": 42327000,
+    "broadcast_revenue_original": 62774000,
+    "commercial_revenue_original": 63897000,
+    "other_revenue_original": null,
+    "women_team_revenue_original": null,
+    "excluded_player_trading_revenue_original": null,
+    "staff_costs_original": 109231000,
+    "player_amortisation_original": 33759000,
+    "profit_on_player_sales_original": null,
+    "net_debt_original": 87170000,
+    "profit_loss_before_tax_original": -40522000,
+    "total_revenue_eur": null,
+    "matchday_revenue_eur": null,
+    "broadcast_revenue_eur": null,
+    "commercial_revenue_eur": null,
+    "other_revenue_eur": null,
+    "net_debt_eur": null,
+    "profit_loss_before_tax_eur": null,
+    "exchange_rate_used": null,
+    "exchange_rate_source": "",
+    "revenue_sum_check_original": 168998000,
+    "revenue_sum_difference_original": 0,
+    "pages_used": [
+      17,
+      18,
+      21,
+      30
+    ],
+    "evidence": [
+      {
+        "field": "matchday_revenue_original",
+        "value_original": 42327000,
+        "page_number": 17,
+        "statement_label": "Matchday",
+        "evidence_text": "Analysis of turnover note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "broadcast_revenue_original",
+        "value_original": 62774000,
+        "page_number": 17,
+        "statement_label": "Media",
+        "evidence_text": "Analysis of turnover note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "commercial_revenue_original",
+        "value_original": 63897000,
+        "page_number": 17,
+        "statement_label": "Commercial",
+        "evidence_text": "Analysis of turnover note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "staff_costs_original",
+        "value_original": 109231000,
+        "page_number": 18,
+        "statement_label": "Staff costs",
+        "evidence_text": "Administrative expenses note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "player_amortisation_original",
+        "value_original": 33759000,
+        "page_number": 18,
+        "statement_label": "Amortisation of players' registrations",
+        "evidence_text": "Administrative expenses note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "profit_loss_before_tax_original",
+        "value_original": -40522000,
+        "page_number": 21,
+        "statement_label": "Loss on ordinary activities before taxation",
+        "evidence_text": "Taxation note. Values were disclosed in GBP thousands and converted to full GBP."
+      },
+      {
+        "field": "net_debt_original",
+        "value_original": 87170000,
+        "page_number": 30,
+        "statement_label": "Net debt at 31 May 2012",
+        "evidence_text": "Analysis of changes in net debt note. Values were disclosed in GBP thousands and converted to full GBP."
+      }
+    ],
+    "classification_notes": "Liverpool discloses matchday, media, and commercial turnover directly in the annual accounts for the shortened 10 month reporting period ended 31 May 2012. No player trading figure was used in football revenue.",
+    "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the report.",
+    "non_football_revenue_notes": "No separate non-football commercial adjustment was identified in the extracted note.",
+    "confidence_level": "high",
+    "requires_manual_review": true,
+    "source_document": "Full accounts made up to 31 May 2012",
+    "source_url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history/MzA3MzkyNTQ5NmFkaXF6a2N4/document?format=pdf&download=0",
+    "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000. This season covers a 10 month reporting period after Liverpool changed its financial year end."
+  },
+  "candidate_pages_summary": [
+    {
+      "page": 1,
+      "char_count": 248,
+      "preview": "- - - - The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements Registered number 00035668 For the period from 1 August 2011 to 31 May 2012 -- ---- THURSDAY A38 \"A236SND4\" 28/02/2013 COMPANIES HOL"
+    },
+    {
+      "page": 2,
+      "char_count": 526,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Contents Directors' report Statement of directors' responsibilit"
+    },
+    {
+      "page": 3,
+      "char_count": 2564,
+      "preview": "-- The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Directors' report The directors present their directors' repo"
+    },
+    {
+      "page": 4,
+      "char_count": 2548,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Directors' report (continued) Balance Sheet Intangible fixed ass"
+    },
+    {
+      "page": 5,
+      "char_count": 3069,
+      "preview": "- -- The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Directors' report (continued) Financial Revenue Payroll cost"
+    },
+    {
+      "page": 6,
+      "char_count": 2363,
+      "preview": "The Liverpool Football Club and Athlete Grounds Limited Directors' report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Directors' report (continued) \u2022 Interest rate risk Interest rate "
+    },
+    {
+      "page": 7,
+      "char_count": 1595,
+      "preview": "- The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Directors' report (continued) Post balance sheet events Since t"
+    },
+    {
+      "page": 8,
+      "char_count": 1985,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Statement of directors' responsibilities in respect of the Direct"
+    },
+    {
+      "page": 9,
+      "char_count": 2170,
+      "preview": "-- KPMG KPMG LLP 8 Princes Parade Liverpool L3 1QH United Kingdom Independent auditor's report to the members of The Liverpool Football Club and Athletic Grounds Limited for the period ended 31 May 2012 We have audited the financial stateme"
+    },
+    {
+      "page": 10,
+      "char_count": 1136,
+      "preview": "Independent auditor's report to the members of The Liverpool Football Club and Athletic Grounds Limited for the period ended 31 May 2012 (continued) Opinion on other matter prescribed by the Companies Act 2006 In our opinion the information"
+    },
+    {
+      "page": 11,
+      "char_count": 1561,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Profit and Loss Account for the persod from 1 August 2011 to 31 M"
+    },
+    {
+      "page": 12,
+      "char_count": 1233,
+      "preview": "-- - - ---- The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Balance Sheet at 31 May 2012 Fixed assets Intangible "
+    },
+    {
+      "page": 13,
+      "char_count": 750,
+      "preview": "- - - - - - The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 201 1 to 31 May 2012 Registered Number 00035668 Cash Flow Statement for the period from 1 August 201"
+    },
+    {
+      "page": 14,
+      "char_count": 3320,
+      "preview": "! The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (forming part of the financial statements) 1 Accounting p"
+    },
+    {
+      "page": 15,
+      "char_count": 3352,
+      "preview": "--- The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the penod from 1 August 201 1 to 31 May 2012 Registered Number 00035668 Notes (continued) 1 Accounting policies (conunued) Tangible f"
+    },
+    {
+      "page": 16,
+      "char_count": 3675,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 1 Accounting policies (continued) Taxation The "
+    },
+    {
+      "page": 17,
+      "char_count": 754,
+      "preview": "- The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements For the peniod from 1 August 201 1 to 31 May 2012 Registered Number 00035668 Notes (continued) 2 Analysis of turnover By activity Media Ma"
+    },
+    {
+      "page": 18,
+      "char_count": 1953,
+      "preview": "-- The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 4 Administrative expenses - before exception"
+    },
+    {
+      "page": 19,
+      "char_count": 1536,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 6 Directors and employees For the 10 month per"
+    },
+    {
+      "page": 20,
+      "char_count": 923,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements For the period from 1 August 201 1 to 31 May 2012 Registered Number 00035668 Notes (continued) Other interest receivable and similar income "
+    },
+    {
+      "page": 21,
+      "char_count": 1723,
+      "preview": "- The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 9 Taxation Analysis of charge in the period "
+    },
+    {
+      "page": 22,
+      "char_count": 552,
+      "preview": "- Notes (continued) 10 Intangible fixed assets Cost At 1 August 2011 Additions Disposals At 31 May 2012 Amortisation At 1 August 2011 Charged in period Impairment provision Eliminated on disposals At 31 May 2012 Net book value At 31 May 201"
+    },
+    {
+      "page": 23,
+      "char_count": 973,
+      "preview": "- - - The Liverpool Football Club and Athletic Grounds Limited Directors' report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 11 Tangible fixed assets Cost At 1 Augus"
+    },
+    {
+      "page": 24,
+      "char_count": 1097,
+      "preview": "- - - - The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the peniod from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 12 Lease commitments Annual commitments"
+    },
+    {
+      "page": 25,
+      "char_count": 775,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 16 Creditors Amounts falling due within one yea"
+    },
+    {
+      "page": 26,
+      "char_count": 1782,
+      "preview": "- The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 16 Creditors (continued) Amounts falling due "
+    },
+    {
+      "page": 27,
+      "char_count": 1146,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 17 Provisions for labilities Deferred tax This "
+    },
+    {
+      "page": 28,
+      "char_count": 1596,
+      "preview": "- -- -- The Liverpool Football Club and Athletic Grounds Limited For the proctor resus in oal says Registered Number 00035668 Notes (continued) 19 Contingent liabilities and assets Additional transfer fees payable of \u00a316 3 million (31 July "
+    },
+    {
+      "page": 29,
+      "char_count": 1606,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 23 Net cashflow from operating activities Opera"
+    },
+    {
+      "page": 30,
+      "char_count": 1306,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the period from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 25 Analysis of changes in net debt Cash at bank"
+    },
+    {
+      "page": 31,
+      "char_count": 3016,
+      "preview": "The Liverpool Football Club and Athletic Grounds Limited Directors report and financial statements For the peniod from 1 August 2011 to 31 May 2012 Registered Number 00035668 Notes (continued) 26 Pensions Defined contribution schemes Assets"
+    }
+  ],
+  "review_reasons": [
+    "women_team_treatment needs review"
+  ],
+  "needs_ai_review": true,
+  "suggested_save_output_to": "data/raw/ai_agents/financial_extraction_outputs/liverpool_2011_12_financial_extraction_output.json",
+  "bank_references": [
+    "data/reference/financial_statement_extraction_bank/master_financial_statement_extraction_bank.md",
+    "data/reference/financial_statement_extraction_bank/liverpool/README.md",
+    "data/reference/financial_statement_extraction_bank/liverpool/liverpool_extraction_bank.csv"
+  ],
+  "draft_source": "existing_extraction_output"
+}

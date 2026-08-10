@@ -1,0 +1,14 @@
+{
+  "club_id": "chelsea",
+  "club_name": "Chelsea",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "1997/98",
+  "season_start_year": 1997,
+  "season_dir": "1997_98",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/chelsea/transfers/verein/631/saison_id/1997",
+  "collected_at_utc": "2026-04-27T18:17:34.828325+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

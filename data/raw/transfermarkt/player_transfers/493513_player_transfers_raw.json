@@ -1,0 +1,171 @@
+{
+  "updatedAt": "2026-04-27T20:11:38.225093",
+  "id": "493513",
+  "transfers": [
+    {
+      "id": "5885468",
+      "clubFrom": {
+        "id": "86",
+        "name": "Werder Bremen"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2026-06-30",
+      "upcoming": true,
+      "season": "25/26",
+      "marketValue": 3000000
+    },
+    {
+      "id": "5885464",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "86",
+        "name": "Werder Bremen"
+      },
+      "date": "2025-08-22",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 3000000
+    },
+    {
+      "id": "5192164",
+      "clubFrom": {
+        "id": "366",
+        "name": "Real Valladolid"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2025-06-30",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 3000000
+    },
+    {
+      "id": "5192163",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "366",
+        "name": "Real Valladolid"
+      },
+      "date": "2024-08-13",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 2000000
+    },
+    {
+      "id": "4553677",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2022-01-07",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 800000
+    },
+    {
+      "id": "3710490",
+      "clubFrom": {
+        "id": "1032",
+        "name": "Reading"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2022-10-03",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 450000
+    },
+    {
+      "id": "3710489",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "1032",
+        "name": "Reading"
+      },
+      "date": "2022-01-24",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 450000
+    },
+    {
+      "id": "2998770",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2019-01-07",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "2112394",
+      "clubFrom": {
+        "id": "28780",
+        "name": "Nomme United"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "2051182",
+      "clubFrom": {
+        "id": "47130",
+        "name": "FC Nomme U17"
+      },
+      "clubTo": {
+        "id": "28780",
+        "name": "Nomme United"
+      },
+      "date": "2018-01-01",
+      "upcoming": false,
+      "season": "17/18"
+    },
+    {
+      "id": "2713602",
+      "clubFrom": {
+        "id": "47168",
+        "name": "Nomme Youth"
+      },
+      "clubTo": {
+        "id": "47130",
+        "name": "FC Nomme U17"
+      },
+      "date": "2017-01-01",
+      "upcoming": false,
+      "season": "16/17"
+    }
+  ],
+  "youthClubs": [
+    "JK Loo (1/2010-12/2014)",
+    "FC Nõmme United (1/2015-12/2017)"
+  ]
+}

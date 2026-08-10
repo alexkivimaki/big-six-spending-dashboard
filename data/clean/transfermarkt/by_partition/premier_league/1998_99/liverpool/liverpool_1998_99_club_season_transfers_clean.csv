@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,liverpool,Liverpool,1998/99,1998,all,10740000.0,9430000.0,1310000.0,11,10,transfermarkt_club_page,https://www.transfermarkt.com/liverpool/transfers/verein/31/saison_id/1998,2026-04-27T18:18:59.962342+00:00,high,

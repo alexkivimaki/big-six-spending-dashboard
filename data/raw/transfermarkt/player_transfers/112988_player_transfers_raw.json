@@ -1,0 +1,247 @@
+{
+  "updatedAt": "2026-04-27T20:12:05.100842",
+  "id": "112988",
+  "transfers": [
+    {
+      "id": "5488998",
+      "clubFrom": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "clubTo": {
+        "id": "585",
+        "name": "São Paulo"
+      },
+      "date": "2025-01-29",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 1200000
+    },
+    {
+      "id": "5021458",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "date": "2024-01-07",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 2000000
+    },
+    {
+      "id": "4254269",
+      "clubFrom": {
+        "id": "931",
+        "name": "Fulham"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2023-06-30",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 3000000
+    },
+    {
+      "id": "4254258",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "931",
+        "name": "Fulham"
+      },
+      "date": "2023-01-31",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 4000000
+    },
+    {
+      "id": "2942228",
+      "clubFrom": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-01-07",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 8000000
+    },
+    {
+      "id": "2780161",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "date": "2020-06-30",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 8000000
+    },
+    {
+      "id": "2780160",
+      "clubFrom": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-01-31",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 10000000
+    },
+    {
+      "id": "2383043",
+      "clubFrom": {
+        "id": "46",
+        "name": "Inter"
+      },
+      "clubTo": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "date": "2019-06-30",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 12000000
+    },
+    {
+      "id": "2383042",
+      "clubFrom": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "clubTo": {
+        "id": "46",
+        "name": "Inter"
+      },
+      "date": "2019-01-26",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 15000000,
+      "fee": 500000
+    },
+    {
+      "id": "1263058",
+      "clubFrom": {
+        "id": "336",
+        "name": "Sporting"
+      },
+      "clubTo": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "date": "2015-01-07",
+      "upcoming": false,
+      "season": "15/16",
+      "marketValue": 9500000,
+      "fee": 7000000
+    },
+    {
+      "id": "591495",
+      "clubFrom": {
+        "id": "2990",
+        "name": "Coimbra"
+      },
+      "clubTo": {
+        "id": "336",
+        "name": "Sporting"
+      },
+      "date": "2012-06-30",
+      "upcoming": false,
+      "season": "11/12",
+      "marketValue": 1700000
+    },
+    {
+      "id": "586035",
+      "clubFrom": {
+        "id": "336",
+        "name": "Sporting"
+      },
+      "clubTo": {
+        "id": "2990",
+        "name": "Coimbra"
+      },
+      "date": "2011-01-07",
+      "upcoming": false,
+      "season": "11/12",
+      "marketValue": 1100000
+    },
+    {
+      "id": "460321",
+      "clubFrom": {
+        "id": "10283",
+        "name": "Sporting U19"
+      },
+      "clubTo": {
+        "id": "336",
+        "name": "Sporting"
+      },
+      "date": "2010-01-08",
+      "upcoming": false,
+      "season": "10/11"
+    },
+    {
+      "id": "1514256",
+      "clubFrom": {
+        "id": "48365",
+        "name": "Sporting U17"
+      },
+      "clubTo": {
+        "id": "10283",
+        "name": "Sporting U19"
+      },
+      "date": "2008-01-07",
+      "upcoming": false,
+      "season": "08/09"
+    },
+    {
+      "id": "1723955",
+      "clubFrom": {
+        "id": "53956",
+        "name": "Sporting Sub-15"
+      },
+      "clubTo": {
+        "id": "48365",
+        "name": "Sporting U17"
+      },
+      "date": "2006-01-07",
+      "upcoming": false,
+      "season": "06/07"
+    },
+    {
+      "id": "1723956",
+      "clubFrom": {
+        "id": "53957",
+        "name": "Sporting Yth."
+      },
+      "clubTo": {
+        "id": "53956",
+        "name": "Sporting Sub-15"
+      },
+      "date": "2004-01-07",
+      "upcoming": false,
+      "season": "04/05"
+    }
+  ],
+  "youthClubs": [
+    "Sporting CP (1998–2010)"
+  ]
+}

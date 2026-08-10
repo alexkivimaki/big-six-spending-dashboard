@@ -1,0 +1,9 @@
+{
+  "player_id": "285845",
+  "player_name": "Ainsley Maitland-Niles",
+  "endpoint_url": "http://localhost:8000/players/285845/transfers",
+  "collected_at_utc": "2026-04-27T17:12:03.093455+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api"
+}

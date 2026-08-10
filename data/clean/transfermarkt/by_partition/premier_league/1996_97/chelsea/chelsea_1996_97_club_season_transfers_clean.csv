@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,chelsea,Chelsea,1996/97,1996,all,18920000.0,4590000.0,14330000.0,16,18,transfermarkt_club_page,https://www.transfermarkt.com/chelsea/transfers/verein/631/saison_id/1996,2026-04-27T18:17:32.512062+00:00,high,Displayed arrivals sum (18920000) differs from parsed arrivals fee sum (18915000).

@@ -1,0 +1,11 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "source_name": "transfermarkt_achievements_page",
+  "source_url": "https://www.transfermarkt.com/arsenal/erfolge/verein/11",
+  "collected_at_utc": "2026-04-28T07:46:00.357727+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

@@ -1,0 +1,168 @@
+{
+  "updatedAt": "2026-04-27T20:11:54.625385",
+  "id": "94005",
+  "transfers": [
+    {
+      "id": "4483393",
+      "clubFrom": {
+        "id": "244",
+        "name": "Marseille"
+      },
+      "clubTo": {
+        "id": "800",
+        "name": "Atalanta"
+      },
+      "date": "2023-06-07",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 8000000
+    },
+    {
+      "id": "3701526",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "244",
+        "name": "Marseille"
+      },
+      "date": "2022-01-18",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 3000000
+    },
+    {
+      "id": "3186489",
+      "clubFrom": {
+        "id": "33",
+        "name": "FC Schalke 04"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2021-06-30",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 6500000
+    },
+    {
+      "id": "3186488",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "33",
+        "name": "FC Schalke 04"
+      },
+      "date": "2021-04-01",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 8000000
+    },
+    {
+      "id": "1784133",
+      "clubFrom": {
+        "id": "33",
+        "name": "FC Schalke 04"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 15000000
+    },
+    {
+      "id": "564341",
+      "clubFrom": {
+        "id": "1463",
+        "name": "Schalke 04 U19"
+      },
+      "clubTo": {
+        "id": "33",
+        "name": "FC Schalke 04"
+      },
+      "date": "2012-01-07",
+      "upcoming": false,
+      "season": "12/13"
+    },
+    {
+      "id": "538769",
+      "clubFrom": {
+        "id": "2517",
+        "name": "Stuttgart U19"
+      },
+      "clubTo": {
+        "id": "1463",
+        "name": "Schalke 04 U19"
+      },
+      "date": "2011-01-01",
+      "upcoming": false,
+      "season": "10/11"
+    },
+    {
+      "id": "470610",
+      "clubFrom": {
+        "id": "21082",
+        "name": "Hoffenheim U17"
+      },
+      "clubTo": {
+        "id": "2517",
+        "name": "Stuttgart U19"
+      },
+      "date": "2010-01-07",
+      "upcoming": false,
+      "season": "10/11"
+    },
+    {
+      "id": "319233",
+      "clubFrom": {
+        "id": "21068",
+        "name": "Karlsruhe U17"
+      },
+      "clubTo": {
+        "id": "21082",
+        "name": "Hoffenheim U17"
+      },
+      "date": "2009-01-07",
+      "upcoming": false,
+      "season": "09/10"
+    },
+    {
+      "id": "709222",
+      "clubFrom": {
+        "id": "18065",
+        "name": "Karlsruhe Yth."
+      },
+      "clubTo": {
+        "id": "21068",
+        "name": "Karlsruhe U17"
+      },
+      "date": "2008-01-07",
+      "upcoming": false,
+      "season": "08/09"
+    },
+    {
+      "id": "2382591",
+      "clubFrom": {
+        "id": "72009",
+        "name": "Karlsruhe Yth."
+      },
+      "clubTo": {
+        "id": "18065",
+        "name": "Karlsruhe Yth."
+      },
+      "date": "2001-01-07",
+      "upcoming": false,
+      "season": "01/02"
+    }
+  ],
+  "youthClubs": [
+    "FSSV Karlsruhe (1998–01)"
+  ]
+}

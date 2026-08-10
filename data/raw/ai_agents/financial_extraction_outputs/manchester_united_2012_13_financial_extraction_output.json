@@ -1,0 +1,112 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "season": "2012/13",
+  "financial_year_end": "2013-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report, with debt-note borrowings disclosed in GBP millions converted to full GBP)",
+  "total_revenue_original": 194442000,
+  "matchday_revenue_original": 97671000,
+  "broadcast_revenue_original": 94323000,
+  "commercial_revenue_original": 2448000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": null,
+  "staff_costs_original": 145799000,
+  "player_amortisation_original": 41714000,
+  "profit_on_player_sales_original": 9162000,
+  "net_debt_original": 320923000,
+  "profit_loss_before_tax_original": -22684000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 194442000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    12,
+    13,
+    19,
+    20,
+    21,
+    29
+  ],
+  "evidence": [
+    {
+      "field": "total_revenue_original",
+      "value_original": 194442000,
+      "page_number": 19,
+      "statement_label": "Turnover",
+      "evidence_text": "Scanned Manchester United Football Club Limited annual accounts turnover note. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 2448000,
+      "page_number": 19,
+      "statement_label": "Commercial",
+      "evidence_text": "Turnover note in the club-limited filing. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 94323000,
+      "page_number": 19,
+      "statement_label": "Broadcasting",
+      "evidence_text": "Turnover note in the club-limited filing. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 97671000,
+      "page_number": 19,
+      "statement_label": "Matchday",
+      "evidence_text": "Turnover note in the club-limited filing. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 145799000,
+      "page_number": 21,
+      "statement_label": "Staff costs",
+      "evidence_text": "Staff-cost note in the scanned annual accounts. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 41714000,
+      "page_number": 20,
+      "statement_label": "Amortisation of players' registrations",
+      "evidence_text": "Operating-expenses note in the scanned annual accounts. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 9162000,
+      "page_number": 12,
+      "statement_label": "Profit on disposal of players' registrations",
+      "evidence_text": "Profit and loss account in the scanned annual accounts. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": -22684000,
+      "page_number": 12,
+      "statement_label": "Loss on ordinary activities before taxation",
+      "evidence_text": "Profit and loss account in the scanned annual accounts. Values disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 320923000,
+      "page_number": 29,
+      "statement_label": "Estimated net debt from fellow-subsidiary senior secured notes and secured term loan less cash at bank and in hand",
+      "evidence_text": "Calculated from the debt-of-fellow-subsidiary note showing GBP 177.5m senior secured notes and GBP 208.2m secured term loan, less GBP 64.777m cash at bank and in hand from the balance sheet."
+    }
+  ],
+  "classification_notes": "This season was extracted from the downloaded Manchester United Football Club Limited Companies House filing because that is the raw statement available in the Manchester United folder for the pre-plc gap years. The turnover note discloses Commercial, Broadcasting and Matchday directly, but the commercial line is materially narrower than the broader plc commercial segment used in later seasons.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the source used here.",
+  "non_football_revenue_notes": "The turnover note states turnover excludes transfer fees and VAT. No separate non-football revenue adjustment was identified within the club-limited turnover note used here.",
+  "confidence_level": "medium",
+  "requires_manual_review": true,
+  "source_document": "Manchester United Football Club Limited annual report and financial statements for the year ended 30 June 2013",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00095489/filing-history",
+  "notes": "Scanned PDF extraction. Debt is not disclosed as a single company net-debt line, so net debt has been estimated as fellow-subsidiary senior secured notes plus secured term loan less company cash at bank and in hand."
+}

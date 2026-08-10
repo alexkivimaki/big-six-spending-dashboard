@@ -1,0 +1,14 @@
+{
+  "club_id": "liverpool",
+  "club_name": "Liverpool",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "role_key": "manager",
+  "role_id": 1,
+  "role_name": "Manager",
+  "source_name": "transfermarkt_manager_history_page",
+  "source_url": "https://www.transfermarkt.com/liverpool/mitarbeiterhistorie/verein/31/personalie_id/1/plus/1",
+  "collected_at_utc": "2026-04-27T18:43:00.386012+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

@@ -1,0 +1,24 @@
+{
+  "task_type": "statement_fetcher",
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "season": "2020/21",
+  "target_financial_year_end_range": {
+    "start": "2021-05-01",
+    "end": "2021-07-31",
+    "notes": "COVID-era reporting periods may shift. Verify exact date per club."
+  },
+  "preferred_sources": [
+    "official club annual report page",
+    "investor relations page",
+    "Companies House filing",
+    "SEC filing if applicable",
+    "other official registry or club source"
+  ],
+  "company_or_group_notes": "Use Arsenal Holdings Limited / Arsenal Football Club plc or the most relevant consolidated football group accounts.",
+  "official_financial_reports_url": "https://www.arsenal.com/the-club/corporate-info/arsenal-holdings-financial-results",
+  "companies_house_search_name": "Arsenal Holdings Limited",
+  "currency_common": "GBP",
+  "prompt_path": "agents/statement_fetcher_agent_prompt.md",
+  "save_output_to": "data/raw/ai_agents/statement_fetcher_outputs/arsenal_2020_21_statement_fetcher_output.json"
+}

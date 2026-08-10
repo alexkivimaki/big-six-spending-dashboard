@@ -1,0 +1,19 @@
+{
+  "club_id": "liverpool",
+  "club_name": "Liverpool",
+  "season": "2023/24",
+  "financial_year_end": "2024-05-31",
+  "report_title": "Group of companies' accounts made up to 31 May 2024",
+  "report_type": "accounts_filing",
+  "source_name": "Companies House",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history/MzQ1Njg3MzgzNGFkaXF6a2N4/document?download=0&format=pdf",
+  "file_type": "pdf",
+  "date_accessed": "2026-04-28",
+  "is_official_source": true,
+  "company_or_group_name": "The Liverpool Football Club and Athletic Grounds Limited",
+  "company_number_or_registry_id": "00035668",
+  "local_file_suggested_name": "2023_24_group_of_companies_accounts_made_up_to_31_may_2024.pdf",
+  "confidence_level": "high",
+  "notes": "Official Companies House filing for The Liverpool Football Club and Athletic Grounds Limited."
+}

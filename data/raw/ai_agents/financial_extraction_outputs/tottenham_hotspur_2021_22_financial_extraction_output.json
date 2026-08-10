@@ -1,0 +1,104 @@
+{
+  "club_id": "tottenham_hotspur",
+  "club_name": "Tottenham Hotspur",
+  "season": "2021/22",
+  "financial_year_end": "2022-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": null,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "requires_manual_review": true,
+  "source_document": "2021 22 annual report 2022",
+  "source_url": "https://resources.thfc.pulselive.com/thfc/document/2026/04/02/7347ba67-221e-4361-9c7d-df768809a901/AR-2022.pdf",
+  "matchday_revenue_original": 106142000,
+  "broadcast_revenue_original": 154391000,
+  "commercial_revenue_original": 183495000,
+  "total_revenue_original": 443415000,
+  "staff_costs_original": 209180000,
+  "player_amortisation_original": 79893000,
+  "profit_on_player_sales_original": 19150000,
+  "profit_loss_before_tax_original": -61328000,
+  "net_debt_original": 626100000,
+  "revenue_sum_check_original": 444028000,
+  "revenue_sum_difference_original": 613000,
+  "pages_used": [
+    23,
+    25,
+    15,
+    3,
+    24
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 106142000,
+      "page_number": 23,
+      "statement_label": "Match receipts",
+      "evidence_text": "Direct revenue note current-year amount."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 154391000,
+      "page_number": 23,
+      "statement_label": "UEFA prize money plus TV and media",
+      "evidence_text": "Direct revenue note with UEFA prize money grouped into broadcasting."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 183495000,
+      "page_number": 23,
+      "statement_label": "Commercial",
+      "evidence_text": "Direct revenue note current-year amount."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 209180000,
+      "page_number": 25,
+      "statement_label": "Aggregate payroll costs / Staff costs (see note 5)",
+      "evidence_text": "Staff note or operating-expenses note current-year amount."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 19150000,
+      "page_number": 15,
+      "statement_label": "Profit on disposal of intangible fixed assets",
+      "evidence_text": "Consolidated income statement football-trading split."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": -61328000,
+      "page_number": 15,
+      "statement_label": "Profit or loss before taxation",
+      "evidence_text": "Consolidated income statement current-year amount."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 79893000,
+      "page_number": 24,
+      "statement_label": "Amortisation of intangible fixed assets / football trading",
+      "evidence_text": "Operating-expenses or operations note current-year amount."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 626100000,
+      "page_number": 3,
+      "statement_label": "Net debt / net cash disclosure",
+      "evidence_text": "Strategic report or net debt note current-year amount."
+    }
+  ],
+  "classification_notes": "Tottenham's later accounts disclose direct revenue lines for match receipts, UEFA prize money, TV and media, and commercial. UEFA prize money is grouped into broadcasting for comparability. Exceptional rebates/deductions mean the category sum exceeds reported revenue; the difference is recorded explicitly.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the report.",
+  "non_football_revenue_notes": "Commercial revenue may include stadium and other non-football event activity where disclosed within the club's commercial line.",
+  "confidence_level": "high",
+  "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000."
+}

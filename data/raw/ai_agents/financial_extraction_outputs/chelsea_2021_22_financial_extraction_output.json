@@ -1,0 +1,91 @@
+{
+  "club_id": "chelsea",
+  "club_name": "Chelsea",
+  "season": "2021/22",
+  "financial_year_end": "2022-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "total_revenue_original": 481278000,
+  "matchday_revenue_original": 69163000,
+  "broadcast_revenue_original": 235016000,
+  "commercial_revenue_original": 177099000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": 123213000,
+  "staff_costs_original": 340249000,
+  "player_amortisation_original": 162457000,
+  "profit_on_player_sales_original": 123213000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 481278000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    29,
+    30,
+    31
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 69163000,
+      "page_number": 29,
+      "statement_label": "Matchday",
+      "evidence_text": "Official Chelsea turnover analysis note."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 235016000,
+      "page_number": 29,
+      "statement_label": "Broadcasting",
+      "evidence_text": "Official Chelsea turnover analysis note."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 177099000,
+      "page_number": 29,
+      "statement_label": "Commercial",
+      "evidence_text": "Official Chelsea turnover analysis note."
+    },
+    {
+      "field": "excluded_player_trading_revenue_original",
+      "value_original": 123213000,
+      "page_number": 30,
+      "statement_label": "Profit on disposal of player registrations",
+      "evidence_text": "Official Chelsea profit/loss note. Excluded from football revenue total."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 340249000,
+      "page_number": 31,
+      "statement_label": "Wages and salaries / employee costs",
+      "evidence_text": "Official Chelsea staff numbers and costs note."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 162457000,
+      "page_number": 30,
+      "statement_label": "Amortisation of intangible assets / player registrations",
+      "evidence_text": "Official Chelsea profit/loss note."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 123213000,
+      "page_number": 30,
+      "statement_label": "Profit on disposal of player registrations",
+      "evidence_text": "Official Chelsea profit/loss note."
+    }
+  ],
+  "classification_notes": "Chelsea discloses matchday, broadcasting, and commercial revenue directly in the financial statements from the seasons extracted here. Total revenue has been set to football operating turnover only and excludes player trading.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the relevant Chelsea financial statement notes used here. The extracted revenue figures should therefore be treated as potentially including inseparable women's activity.",
+  "non_football_revenue_notes": "Chelsea's disclosed commercial category may include hotel, stadium, retail, or other non-matchday commercial operations where the group classifies them within ordinary football-related activities.",
+  "confidence_level": "high",
+  "requires_manual_review": true,
+  "source_document": "Group of companies' accounts made up to 30 June 2022",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/02536231/filing-history/MzM3NDg3MzQ5MGFkaXF6a2N4/document?download=0&format=pdf",
+  "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000."
+}

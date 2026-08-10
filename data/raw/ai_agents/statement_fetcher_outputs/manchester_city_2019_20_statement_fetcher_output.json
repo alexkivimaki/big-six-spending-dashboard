@@ -1,0 +1,19 @@
+{
+  "club_id": "manchester_city",
+  "club_name": "Manchester City",
+  "season": "2019/20",
+  "financial_year_end": "2020-06-30",
+  "report_title": "Full accounts made up to 30 June 2020",
+  "report_type": "accounts_filing",
+  "source_name": "Companies House",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history/MzMwNTY0NzkwNmFkaXF6a2N4/document?format=pdf&download=0",
+  "file_type": "pdf",
+  "date_accessed": "2026-04-28",
+  "is_official_source": true,
+  "company_or_group_name": "Manchester City Football Club Limited",
+  "company_number_or_registry_id": "00040946",
+  "local_file_suggested_name": "2019_20_full_accounts_made_up_to_30_june_2020.pdf",
+  "confidence_level": "high",
+  "notes": "Official Companies House filing for Manchester City Football Club Limited. Backfilled automatically from filing history based on the financial year-end date."
+}

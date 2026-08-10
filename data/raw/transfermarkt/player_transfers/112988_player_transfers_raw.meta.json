@@ -1,0 +1,9 @@
+{
+  "player_id": "112988",
+  "player_name": "Cédric Soares",
+  "endpoint_url": "http://localhost:8000/players/112988/transfers",
+  "collected_at_utc": "2026-04-27T17:12:04.562222+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api"
+}

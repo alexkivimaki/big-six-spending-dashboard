@@ -1,0 +1,12 @@
+{
+  "club_id": "manchester_united",
+  "season": "2022/23",
+  "source_url": "https://ir.manutd.com/financial-information/annual-reports/2023.aspx",
+  "download_url": "https://ir.manutd.com/~/media/Files/M/Manutd-IR/documents/manu-20230630-20f-taxonomyifrs-2022-tmbsf-v1.pdf",
+  "date_downloaded_utc": "2026-04-28T08:58:05.527243+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/manchester_united/2022_23_manchester_united_plc_2023_annual_report_on_form_20_f.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/manchester_united_2022_23_statement_fetcher_output.json",
+  "report_title": "Manchester United Plc 2023 Annual Report on Form 20-F",
+  "report_type": "sec_filing"
+}

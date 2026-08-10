@@ -1,0 +1,12 @@
+{
+  "club_id": "manchester_united",
+  "season": "2016/17",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00095489/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/00095489/filing-history/MzE5MzExMzkwMmFkaXF6a2N4/document?format=pdf&download=0",
+  "date_downloaded_utc": "2026-04-28T09:09:43.830444+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/manchester_united/2016_17_full_accounts_made_up_to_30_june_2017.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/manchester_united_2016_17_statement_fetcher_output.json",
+  "report_title": "Full accounts made up to 30 June 2017",
+  "report_type": "accounts_filing"
+}

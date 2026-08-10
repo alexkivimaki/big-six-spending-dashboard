@@ -1,0 +1,60 @@
+{
+  "description": "Premier League final tables from 2008/09 to 2024/25 with qualification/relegation column added from Wikipedia league tables.",
+  "row_count": 340,
+  "season_count": 17,
+  "validation_errors": [],
+  "columns": [
+    "season",
+    "Pos",
+    "Team",
+    "Pld",
+    "W",
+    "D",
+    "L",
+    "GF",
+    "GA",
+    "GD",
+    "Pts",
+    "Qualification or relegation",
+    "points_deduction",
+    "source_url"
+  ],
+  "files": [
+    "premier_league_08-09.csv",
+    "premier_league_09-10.csv",
+    "premier_league_10-11.csv",
+    "premier_league_11-12.csv",
+    "premier_league_12-13.csv",
+    "premier_league_13-14.csv",
+    "premier_league_14-15.csv",
+    "premier_league_15-16.csv",
+    "premier_league_16-17.csv",
+    "premier_league_17-18.csv",
+    "premier_league_18-19.csv",
+    "premier_league_19-20.csv",
+    "premier_league_20-21.csv",
+    "premier_league_2008-09_to_2024-25_combined.csv",
+    "premier_league_21-22.csv",
+    "premier_league_22-23.csv",
+    "premier_league_23-24.csv",
+    "premier_league_24-25.csv"
+  ],
+  "sources": "Wikipedia season pages for each Premier League season; source_url included row-wise.",
+  "points_deduction_overrides": [
+    {
+      "season": "2009/10",
+      "team": "Portsmouth",
+      "points_deduction": 9
+    },
+    {
+      "season": "2023/24",
+      "team": "Everton",
+      "points_deduction": 8
+    },
+    {
+      "season": "2023/24",
+      "team": "Nottingham Forest",
+      "points_deduction": 4
+    }
+  ]
+}

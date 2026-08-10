@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,manchester_united,Manchester United,1999/00,1999,all,13250000.0,350000.0,12900000.0,21,13,transfermarkt_club_page,https://www.transfermarkt.com/manchester-united/transfers/verein/985/saison_id/1999,2026-04-27T18:16:20.310506+00:00,high,

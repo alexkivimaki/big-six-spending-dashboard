@@ -1,0 +1,187 @@
+{
+  "updatedAt": "2026-04-27T20:11:48.534434",
+  "id": "495666",
+  "transfers": [
+    {
+      "id": "3442745",
+      "clubFrom": {
+        "id": "244",
+        "name": "Marseille"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2022-06-30",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 30000000
+    },
+    {
+      "id": "3442744",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "244",
+        "name": "Marseille"
+      },
+      "date": "2021-07-15",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 18000000
+    },
+    {
+      "id": "3190561",
+      "clubFrom": {
+        "id": "417",
+        "name": "Nice"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2021-06-30",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 18000000
+    },
+    {
+      "id": "3190560",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "417",
+        "name": "Nice"
+      },
+      "date": "2021-04-01",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 17000000
+    },
+    {
+      "id": "2574515",
+      "clubFrom": {
+        "id": "618",
+        "name": "Saint-Étienne"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-06-30",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 22500000
+    },
+    {
+      "id": "2574514",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "618",
+        "name": "Saint-Étienne"
+      },
+      "date": "2019-07-26",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 12000000
+    },
+    {
+      "id": "2574513",
+      "clubFrom": {
+        "id": "618",
+        "name": "Saint-Étienne"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-07-25",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 12000000,
+      "fee": 30000000
+    },
+    {
+      "id": "2222746",
+      "clubFrom": {
+        "id": "8515",
+        "name": "Saint-Étienne B"
+      },
+      "clubTo": {
+        "id": "618",
+        "name": "Saint-Étienne"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "5025957",
+      "clubFrom": {
+        "id": "12745",
+        "name": "St-Étienne U19"
+      },
+      "clubTo": {
+        "id": "8515",
+        "name": "Saint-Étienne B"
+      },
+      "date": "2018-11-05",
+      "upcoming": false,
+      "season": "17/18"
+    },
+    {
+      "id": "2574939",
+      "clubFrom": {
+        "id": "60860",
+        "name": "St-Étienne U17"
+      },
+      "clubTo": {
+        "id": "12745",
+        "name": "St-Étienne U19"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    },
+    {
+      "id": "2574938",
+      "clubFrom": {
+        "id": "110097",
+        "name": "Montfermeil Jgd"
+      },
+      "clubTo": {
+        "id": "60860",
+        "name": "St-Étienne U17"
+      },
+      "date": "2016-01-07",
+      "upcoming": false,
+      "season": "16/17"
+    },
+    {
+      "id": "2574937",
+      "clubFrom": {
+        "id": "83011",
+        "name": "AS Bondy Yth."
+      },
+      "clubTo": {
+        "id": "110097",
+        "name": "Montfermeil Jgd"
+      },
+      "date": "2014-01-07",
+      "upcoming": false,
+      "season": "14/15"
+    }
+  ],
+  "youthClubs": [
+    "AS Bondy (2008-2014)",
+    "FC Montfermeil (2014-2016)",
+    "AS Saint-Étienne (2016-2018)"
+  ]
+}

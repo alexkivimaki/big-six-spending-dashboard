@@ -1,0 +1,173 @@
+{
+  "updatedAt": "2026-04-27T20:12:26.200081",
+  "id": "340325",
+  "transfers": [
+    {
+      "id": "5912104",
+      "clubFrom": {
+        "id": "1148",
+        "name": "Brentford"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2026-06-30",
+      "upcoming": true,
+      "season": "25/26",
+      "marketValue": 12000000
+    },
+    {
+      "id": "5912103",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1148",
+        "name": "Brentford"
+      },
+      "date": "2025-01-09",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 16000000
+    },
+    {
+      "id": "5239157",
+      "clubFrom": {
+        "id": "931",
+        "name": "Fulham"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2025-06-30",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 16000000
+    },
+    {
+      "id": "5239156",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "931",
+        "name": "Fulham"
+      },
+      "date": "2024-08-30",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 15000000
+    },
+    {
+      "id": "3529445",
+      "clubFrom": {
+        "id": "234",
+        "name": "Feyenoord"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2022-06-30",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 6500000
+    },
+    {
+      "id": "3529443",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "234",
+        "name": "Feyenoord"
+      },
+      "date": "2021-08-31",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 9000000
+    },
+    {
+      "id": "2611520",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-01-07",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 17000000
+    },
+    {
+      "id": "2247186",
+      "clubFrom": {
+        "id": "533",
+        "name": "Hoffenheim"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2019-06-30",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 17000000
+    },
+    {
+      "id": "2247185",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "533",
+        "name": "Hoffenheim"
+      },
+      "date": "2018-08-31",
+      "upcoming": false,
+      "season": "18/19",
+      "fee": 500000
+    },
+    {
+      "id": "1886440",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    },
+    {
+      "id": "1346211",
+      "clubFrom": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2015-01-07",
+      "upcoming": false,
+      "season": "15/16"
+    }
+  ],
+  "youthClubs": [
+    "Lewisham Borough (2005-2007)",
+    "Arsenal FC (2007-2017)"
+  ]
+}

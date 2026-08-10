@@ -1,0 +1,260 @@
+import {
+  BriefcaseBusiness,
+  Crown,
+  Gauge,
+  Goal,
+  LineChart as LineChartIcon,
+  Lock,
+  Medal,
+  ShieldAlert,
+  Trophy,
+  Users,
+  Wallet,
+} from "lucide-react";
+
+import {
+  formatDecimal,
+  formatInteger,
+  formatMoneyMillions,
+  formatPercent,
+} from "../../shared/formatters";
+
+export const projectScope = {
+  league: "Premier League Big Six",
+  seasonFrom: "2008/09",
+  seasonTo: "2025/26",
+  expectedClubSeasons: 108,
+};
+
+export const clubs = [
+  { id: "arsenal", name: "Arsenal", color: "#E1261C", accent: "#F7D8CF" },
+  { id: "chelsea", name: "Chelsea", color: "#034694", accent: "#DCE8FA" },
+  { id: "liverpool", name: "Liverpool", color: "#C8102E", accent: "#F7D6DE" },
+  { id: "manchester_city", name: "Manchester City", color: "#6CABDD", accent: "#DDECF8" },
+  { id: "manchester_united", name: "Manchester United", color: "#DA291C", accent: "#F8DAD6" },
+  { id: "tottenham_hotspur", name: "Tottenham Hotspur", color: "#132257", accent: "#DDE3F6" },
+];
+
+export const clubById = Object.fromEntries(clubs.map((club) => [club.id, club]));
+
+export const chartTypes = [
+  { key: "line", label: "Line", icon: LineChartIcon },
+  { key: "bar", label: "Bar", icon: Gauge },
+];
+
+export const metricDefinitions = [
+  {
+    key: "grossTransferSpendEur",
+    label: "Gross transfer spend",
+    shortLabel: "Gross spend",
+    domain: "Transfers",
+    status: "ready",
+    formatter: (value) => formatMoneyMillions(value, "EUR"),
+    axisTick: (value) => `${Math.round(value / 1_000_000)}m`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "Full transfer coverage across the project window.",
+  },
+  {
+    key: "transferIncomeEur",
+    label: "Transfer income",
+    shortLabel: "Income",
+    domain: "Transfers",
+    status: "ready",
+    formatter: (value) => formatMoneyMillions(value, "EUR"),
+    axisTick: (value) => `${Math.round(value / 1_000_000)}m`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "Transfer exits and fee receipts from Transfermarkt.",
+  },
+  {
+    key: "netTransferSpendEur",
+    label: "Net transfer spend",
+    shortLabel: "Net spend",
+    domain: "Transfers",
+    status: "ready",
+    formatter: (value) => formatMoneyMillions(value, "EUR"),
+    axisTick: (value) => `${Math.round(value / 1_000_000)}m`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "Gross spend minus transfer income.",
+  },
+  {
+    key: "points",
+    label: "League points",
+    shortLabel: "Points",
+    domain: "Results",
+    status: "partial",
+    formatter: formatInteger,
+    axisTick: (value) => `${Math.round(value)}`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "Available for seasons with league-table data in the master export.",
+  },
+  {
+    key: "leaguePosition",
+    label: "League finish",
+    shortLabel: "Finish",
+    domain: "Results",
+    status: "partial",
+    formatter: (value) => {
+      if (value === null || value === undefined || Number.isNaN(value)) return "Data pending";
+      return `${Math.round(value)} place`;
+    },
+    axisTick: (value) => `${Math.round(value)}`,
+    aggregate: "average",
+    sortDirection: "asc",
+    reverseAxis: true,
+    description: "League positions are available, but not yet for 2025/26.",
+  },
+  {
+    key: "achievementCountTotal",
+    label: "Achievement count",
+    shortLabel: "Achievements",
+    domain: "Context",
+    status: "partial",
+    formatter: formatInteger,
+    axisTick: (value) => `${Math.round(value)}`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "Useful context, but some seasons still need achievement cleanup.",
+  },
+  {
+    key: "majorTrophyCount",
+    label: "Major trophies",
+    shortLabel: "Major trophies",
+    domain: "Context",
+    status: "partial",
+    formatter: formatInteger,
+    axisTick: (value) => `${Math.round(value)}`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "Partial trophy layer from the achievement pipeline.",
+  },
+  {
+    key: "turnoverOriginal",
+    label: "Revenue in reported currency",
+    shortLabel: "Revenue",
+    domain: "Finance",
+    status: "blocked",
+    formatter: (value) => formatMoneyMillions(value, "GBP"),
+    axisTick: (value) => `${Math.round(value / 1_000_000)}m`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "We have finance extracts, but not a clean normalized compare layer yet.",
+  },
+  {
+    key: "estimatedPlayerWagesEur",
+    label: "Estimated player wages",
+    shortLabel: "Wages",
+    domain: "Costs",
+    status: "blocked",
+    formatter: (value) => formatMoneyMillions(value, "EUR"),
+    axisTick: (value) => `${Math.round(value / 1_000_000)}m`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "The wage pipeline exists structurally, but has no usable EUR output yet.",
+  },
+  {
+    key: "rawPlayerCostEur",
+    label: "Raw player-cost estimate",
+    shortLabel: "Player cost",
+    domain: "Costs",
+    status: "blocked",
+    formatter: (value) => formatMoneyMillions(value, "EUR"),
+    axisTick: (value) => `${Math.round(value / 1_000_000)}m`,
+    aggregate: "sum",
+    sortDirection: "desc",
+    description: "Depends on the wage layer, so it stays disabled for now.",
+  },
+  {
+    key: "wageToRevenueRatio",
+    label: "Wage-to-revenue ratio",
+    shortLabel: "Wage ratio",
+    domain: "Efficiency",
+    status: "blocked",
+    formatter: formatPercent,
+    axisTick: (value) => `${Math.round(value * 100)}%`,
+    aggregate: "average",
+    sortDirection: "desc",
+    description: "Needs both normalized revenue and wage coverage.",
+  },
+];
+
+export const featureCards = [
+  {
+    key: "transfers",
+    title: "Transfer explorer",
+    icon: Wallet,
+    status: "ready",
+    description: "Complete Big Six transfer spend, income, and net spend for the target window.",
+  },
+  {
+    key: "managers",
+    title: "Manager context",
+    icon: Users,
+    status: "ready",
+    description: "Manager history is ready, including season-share and spend assignment exports.",
+  },
+  {
+    key: "performance",
+    title: "Results layer",
+    icon: Goal,
+    status: "partial",
+    description: "League-table data works for most current-era seasons, but not all seasons yet.",
+  },
+  {
+    key: "achievements",
+    title: "Achievements and trophies",
+    icon: Trophy,
+    status: "partial",
+    description: "Good contextual coverage, with a few club-season gaps still to fill.",
+  },
+  {
+    key: "finance",
+    title: "Finance comparisons",
+    icon: BriefcaseBusiness,
+    status: "blocked",
+    description: "Revenue and accounts extracts exist, but are not fully normalized for shared charts.",
+  },
+  {
+    key: "wages",
+    title: "Cost efficiency",
+    icon: ShieldAlert,
+    status: "blocked",
+    description: "Wage and efficiency features stay off until the wage series is actually populated.",
+  },
+];
+
+export const outlineCards = [
+  {
+    title: "1. Overview",
+    icon: Crown,
+    body: "Top-level club comparison with KPI cards, trend chart, and a season range switch that defines the rest of the page.",
+  },
+  {
+    title: "2. Transfers",
+    icon: Wallet,
+    body: "Gross, income, and net spend trends, period totals, manager-attributed spend, and notable transfer windows.",
+  },
+  {
+    title: "3. Results and trophies",
+    icon: Medal,
+    body: "Points, league finish, qualification context, and trophy markers so spending can be read against outcomes.",
+  },
+  {
+    title: "4. Managers",
+    icon: Users,
+    body: "Manager tenures, handover points, and how transfer activity aligns with each spell in charge.",
+  },
+  {
+    title: "5. Finance",
+    icon: BriefcaseBusiness,
+    body: "Revenue mix, wage bill, debt, and profitability once the currency-normalized layer is complete.",
+  },
+  {
+    title: "6. Data quality",
+    icon: Lock,
+    body: "Coverage, source links, confidence notes, and feature gating so the dashboard stays honest as the dataset grows.",
+  },
+];

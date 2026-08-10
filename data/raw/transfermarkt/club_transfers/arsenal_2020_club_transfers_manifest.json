@@ -1,0 +1,268 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "transfermarkt_club_id": 11,
+  "season": "2020/21",
+  "season_start_year": 2020,
+  "collection_mode": "club_players_plus_player_transfers",
+  "club_players_raw_file": "arsenal_2020_club_players_raw.json",
+  "club_players_meta_file": "arsenal_2020_club_players_raw.meta.json",
+  "player_ids_requested": [
+    "111873",
+    "72476",
+    "128969",
+    "205657",
+    "493513",
+    "220491",
+    "205757",
+    "503765",
+    "503769",
+    "435338",
+    "495666",
+    "253341",
+    "215118",
+    "210178",
+    "94005",
+    "46741",
+    "88590",
+    "300716",
+    "586736",
+    "191217",
+    "285845",
+    "112988",
+    "230784",
+    "111455",
+    "160438",
+    "319745",
+    "340329",
+    "547533",
+    "470597",
+    "506965",
+    "316264",
+    "392765",
+    "655488",
+    "52769",
+    "340325",
+    "433177",
+    "343052",
+    "93720",
+    "58864",
+    "340324",
+    "503770",
+    "503768"
+  ],
+  "player_transfer_files": [
+    {
+      "player_id": "111873",
+      "player_name": "Emiliano Martínez",
+      "file": "111873_player_transfers_raw.json"
+    },
+    {
+      "player_id": "72476",
+      "player_name": "Bernd Leno",
+      "file": "72476_player_transfers_raw.json"
+    },
+    {
+      "player_id": "128969",
+      "player_name": "Mathew Ryan",
+      "file": "128969_player_transfers_raw.json"
+    },
+    {
+      "player_id": "205657",
+      "player_name": "Rúnar Alex Rúnarsson",
+      "file": "205657_player_transfers_raw.json"
+    },
+    {
+      "player_id": "493513",
+      "player_name": "Karl Hein",
+      "file": "493513_player_transfers_raw.json"
+    },
+    {
+      "player_id": "220491",
+      "player_name": "Matt Macey",
+      "file": "220491_player_transfers_raw.json"
+    },
+    {
+      "player_id": "205757",
+      "player_name": "Dejan Iliev",
+      "file": "205757_player_transfers_raw.json"
+    },
+    {
+      "player_id": "503765",
+      "player_name": "James Hillson",
+      "file": "503765_player_transfers_raw.json"
+    },
+    {
+      "player_id": "503769",
+      "player_name": "Arthur Okonkwo",
+      "file": "503769_player_transfers_raw.json"
+    },
+    {
+      "player_id": "435338",
+      "player_name": "Gabriel",
+      "file": "435338_player_transfers_raw.json"
+    },
+    {
+      "player_id": "495666",
+      "player_name": "William Saliba",
+      "file": "495666_player_transfers_raw.json"
+    },
+    {
+      "player_id": "253341",
+      "player_name": "Rob Holding",
+      "file": "253341_player_transfers_raw.json"
+    },
+    {
+      "player_id": "215118",
+      "player_name": "Calum Chambers",
+      "file": "215118_player_transfers_raw.json"
+    },
+    {
+      "player_id": "210178",
+      "player_name": "Pablo Marí",
+      "file": "210178_player_transfers_raw.json"
+    },
+    {
+      "player_id": "94005",
+      "player_name": "Sead Kolasinac",
+      "file": "94005_player_transfers_raw.json"
+    },
+    {
+      "player_id": "46741",
+      "player_name": "David Luiz",
+      "file": "46741_player_transfers_raw.json"
+    },
+    {
+      "player_id": "88590",
+      "player_name": "Shkodran Mustafi",
+      "file": "88590_player_transfers_raw.json"
+    },
+    {
+      "player_id": "300716",
+      "player_name": "Kieran Tierney",
+      "file": "300716_player_transfers_raw.json"
+    },
+    {
+      "player_id": "586736",
+      "player_name": "Joel López",
+      "file": "586736_player_transfers_raw.json"
+    },
+    {
+      "player_id": "191217",
+      "player_name": "Héctor Bellerín",
+      "file": "191217_player_transfers_raw.json"
+    },
+    {
+      "player_id": "285845",
+      "player_name": "Ainsley Maitland-Niles",
+      "file": "285845_player_transfers_raw.json"
+    },
+    {
+      "player_id": "112988",
+      "player_name": "Cédric Soares",
+      "file": "112988_player_transfers_raw.json"
+    },
+    {
+      "player_id": "230784",
+      "player_name": "Thomas Partey",
+      "file": "230784_player_transfers_raw.json"
+    },
+    {
+      "player_id": "111455",
+      "player_name": "Granit Xhaka",
+      "file": "111455_player_transfers_raw.json"
+    },
+    {
+      "player_id": "160438",
+      "player_name": "Mohamed Elneny",
+      "file": "160438_player_transfers_raw.json"
+    },
+    {
+      "player_id": "319745",
+      "player_name": "Dani Ceballos",
+      "file": "319745_player_transfers_raw.json"
+    },
+    {
+      "player_id": "340329",
+      "player_name": "Joe Willock",
+      "file": "340329_player_transfers_raw.json"
+    },
+    {
+      "player_id": "547533",
+      "player_name": "Miguel Azeez",
+      "file": "547533_player_transfers_raw.json"
+    },
+    {
+      "player_id": "470597",
+      "player_name": "Ben Cottrell",
+      "file": "470597_player_transfers_raw.json"
+    },
+    {
+      "player_id": "506965",
+      "player_name": "James Olayinka",
+      "file": "506965_player_transfers_raw.json"
+    },
+    {
+      "player_id": "316264",
+      "player_name": "Martin Ødegaard",
+      "file": "316264_player_transfers_raw.json"
+    },
+    {
+      "player_id": "392765",
+      "player_name": "Emile Smith Rowe",
+      "file": "392765_player_transfers_raw.json"
+    },
+    {
+      "player_id": "655488",
+      "player_name": "Gabriel Martinelli",
+      "file": "655488_player_transfers_raw.json"
+    },
+    {
+      "player_id": "52769",
+      "player_name": "Willian",
+      "file": "52769_player_transfers_raw.json"
+    },
+    {
+      "player_id": "340325",
+      "player_name": "Reiss Nelson",
+      "file": "340325_player_transfers_raw.json"
+    },
+    {
+      "player_id": "433177",
+      "player_name": "Bukayo Saka",
+      "file": "433177_player_transfers_raw.json"
+    },
+    {
+      "player_id": "343052",
+      "player_name": "Nicolas Pépé",
+      "file": "343052_player_transfers_raw.json"
+    },
+    {
+      "player_id": "93720",
+      "player_name": "Alexandre Lacazette",
+      "file": "93720_player_transfers_raw.json"
+    },
+    {
+      "player_id": "58864",
+      "player_name": "Pierre-Emerick Aubameyang",
+      "file": "58864_player_transfers_raw.json"
+    },
+    {
+      "player_id": "340324",
+      "player_name": "Eddie Nketiah",
+      "file": "340324_player_transfers_raw.json"
+    },
+    {
+      "player_id": "503770",
+      "player_name": "Folarin Balogun",
+      "file": "503770_player_transfers_raw.json"
+    },
+    {
+      "player_id": "503768",
+      "player_name": "Tyreece John-Jules",
+      "file": "503768_player_transfers_raw.json"
+    }
+  ],
+  "failed_player_transfer_files": [],
+  "notes": "This local API version does not expose a direct /clubs/{id}/transfers endpoint. Club transfer totals should be derived from the saved player transfer-history responses."
+}

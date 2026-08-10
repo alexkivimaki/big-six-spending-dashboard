@@ -1,0 +1,11 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "source_name": "transfermarkt_achievements_page",
+  "source_url": "https://www.transfermarkt.com/manchester-united/erfolge/verein/985",
+  "collected_at_utc": "2026-04-28T07:46:04.827964+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

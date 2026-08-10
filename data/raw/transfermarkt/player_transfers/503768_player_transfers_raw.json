@@ -1,0 +1,273 @@
+{
+  "updatedAt": "2026-04-27T20:12:36.705797",
+  "id": "503768",
+  "transfers": [
+    {
+      "id": "5998108",
+      "clubFrom": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "clubTo": {
+        "id": "2553",
+        "name": "Kilmarnock FC"
+      },
+      "date": "2025-10-24",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 250000
+    },
+    {
+      "id": "5653615",
+      "clubFrom": {
+        "id": "3537",
+        "name": "Crawley Town"
+      },
+      "clubTo": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "date": "2025-01-07",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 275000
+    },
+    {
+      "id": "5327009",
+      "clubFrom": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "clubTo": {
+        "id": "3537",
+        "name": "Crawley Town"
+      },
+      "date": "2024-10-18",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 450000
+    },
+    {
+      "id": "5038070",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "date": "2024-01-07",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 500000
+    },
+    {
+      "id": "4606745",
+      "clubFrom": {
+        "id": "22",
+        "name": "Derby"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "date": "2024-05-31",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 500000
+    },
+    {
+      "id": "4606744",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "22",
+        "name": "Derby"
+      },
+      "date": "2023-08-25",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 800000
+    },
+    {
+      "id": "3898967",
+      "clubFrom": {
+        "id": "677",
+        "name": "Ipswich"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "date": "2023-05-31",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 800000
+    },
+    {
+      "id": "3898966",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "677",
+        "name": "Ipswich"
+      },
+      "date": "2022-01-07",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 800000
+    },
+    {
+      "id": "3712617",
+      "clubFrom": {
+        "id": "1035",
+        "name": "Sheff Wed"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2022-05-31",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 700000
+    },
+    {
+      "id": "3712417",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "1035",
+        "name": "Sheff Wed"
+      },
+      "date": "2022-01-25",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 700000
+    },
+    {
+      "id": "3467649",
+      "clubFrom": {
+        "id": "1181",
+        "name": "Blackpool"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2022-01-17",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 700000
+    },
+    {
+      "id": "3468481",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "1181",
+        "name": "Blackpool"
+      },
+      "date": "2021-07-29",
+      "upcoming": false,
+      "season": "21/22"
+    },
+    {
+      "id": "3053791",
+      "clubFrom": {
+        "id": "2454",
+        "name": "Doncaster"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2021-05-31",
+      "upcoming": false,
+      "season": "20/21"
+    },
+    {
+      "id": "3053790",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "2454",
+        "name": "Doncaster"
+      },
+      "date": "2020-08-09",
+      "upcoming": false,
+      "season": "20/21"
+    },
+    {
+      "id": "2753423",
+      "clubFrom": {
+        "id": "1198",
+        "name": "Lincoln City"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2020-05-31",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "2753422",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "1198",
+        "name": "Lincoln City"
+      },
+      "date": "2020-10-01",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "2465502",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "1817409",
+      "clubFrom": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    }
+  ],
+  "youthClubs": [
+    "Charlton Athletic (-2009)",
+    "Arsenal FC (2009-2019)"
+  ]
+}

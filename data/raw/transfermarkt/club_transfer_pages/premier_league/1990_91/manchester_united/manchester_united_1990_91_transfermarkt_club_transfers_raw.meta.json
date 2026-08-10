@@ -1,0 +1,14 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "1990/91",
+  "season_start_year": 1990,
+  "season_dir": "1990_91",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/manchester-united/transfers/verein/985/saison_id/1990",
+  "collected_at_utc": "2026-04-27T18:16:00.240526+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

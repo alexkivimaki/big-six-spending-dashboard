@@ -3,3 +3,20 @@ dist
 .DS_Store
 .env
 .env.local
+__pycache__
+.pytest_cache
+
+# Optional large raw source files and extract bundles.
+# Keep PDFs, CSVs, JSON reference files, and sample exports tracked by default.
+# If raw statement files or other raw source bundles become too large later,
+# expand these rules carefully without excluding documented reference tables,
+# sample outputs, or curated raw files that should stay in version control.
+data/raw/**/*.zip
+data/raw/**/*.gz
+data/raw/**/*.bz2
+data/raw/**/*.xz
+data/raw/**/*.7z
+data/raw/**/*.parquet
+data/raw/**/*.feather
+data/raw/**/*.sqlite
+data/raw/**/*.db

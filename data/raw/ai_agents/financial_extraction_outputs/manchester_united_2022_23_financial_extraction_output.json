@@ -1,0 +1,105 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "season": "2022/23",
+  "financial_year_end": "2023-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "total_revenue_original": 648401000,
+  "matchday_revenue_original": 136420000,
+  "broadcast_revenue_original": 209095000,
+  "commercial_revenue_original": 302886000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": null,
+  "staff_costs_original": 331374000,
+  "net_debt_original": 537277000,
+  "player_amortisation_original": 172684000,
+  "profit_on_player_sales_original": 20424000,
+  "profit_loss_before_tax_original": -32574000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 648401000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [63, 148],
+  "evidence": [
+    {
+      "field": "total_revenue_original",
+      "value_original": 648401000,
+      "page_number": 63,
+      "statement_label": "Revenue",
+      "evidence_text": "Selected audited consolidated statement of profit or loss data for the year ended 30 June 2023, disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 302886000,
+      "page_number": 63,
+      "statement_label": "Commercial revenue",
+      "evidence_text": "Selected audited consolidated statement of profit or loss data for the year ended 30 June 2023, disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 209095000,
+      "page_number": 63,
+      "statement_label": "Broadcasting revenue",
+      "evidence_text": "Selected audited consolidated statement of profit or loss data for the year ended 30 June 2023, disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 136420000,
+      "page_number": 63,
+      "statement_label": "Matchday revenue",
+      "evidence_text": "Selected audited consolidated statement of profit or loss data for the year ended 30 June 2023, disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 331374000,
+      "page_number": 63,
+      "statement_label": "Employee benefit expenses",
+      "evidence_text": "Selected audited consolidated statement of profit or loss data for the year ended 30 June 2023, disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 172684000,
+      "page_number": 63,
+      "statement_label": "Amortization",
+      "evidence_text": "Selected audited consolidated statement of profit or loss data for the year ended 30 June 2023, disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 20424000,
+      "page_number": 63,
+      "statement_label": "Profit on disposal of intangible assets",
+      "evidence_text": "Selected audited consolidated statement of profit or loss data for the year ended 30 June 2023, disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": -32574000,
+      "page_number": 63,
+      "statement_label": "Loss before income tax",
+      "evidence_text": "Selected audited consolidated statement of profit or loss data for the year ended 30 June 2023, disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 537277000,
+      "page_number": 148,
+      "statement_label": "Net debt at 30 June 2023",
+      "evidence_text": "Net debt reconciliation note, disclosed in GBP thousands and converted to full GBP."
+    }
+  ],
+  "classification_notes": "Manchester United plc annual report on Form 20-F provides a comparable consolidated revenue split and financing disclosures aligned to the project methodology.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the source used here.",
+  "non_football_revenue_notes": "Commercial revenue in the plc report includes sponsorship, retail, merchandising, product licensing and related commercial activities.",
+  "confidence_level": "high",
+  "requires_manual_review": true,
+  "source_document": "Manchester United plc 2023 Annual Report on Form 20-F",
+  "source_url": "https://ir.manutd.com/financial-information/annual-reports/2023.aspx",
+  "notes": "Values disclosed in GBP thousands have been converted to full GBP amounts."
+}

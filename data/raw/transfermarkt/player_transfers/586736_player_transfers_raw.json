@@ -1,0 +1,77 @@
+{
+  "updatedAt": "2026-04-27T20:12:00.582002",
+  "id": "586736",
+  "transfers": [
+    {
+      "id": "4519955",
+      "clubFrom": {
+        "id": "4542",
+        "name": "CyD Leonesa"
+      },
+      "clubTo": {
+        "id": "8733",
+        "name": "Celta Fortuna"
+      },
+      "date": "2023-07-20",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 200000
+    },
+    {
+      "id": "3994171",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "4542",
+        "name": "CyD Leonesa"
+      },
+      "date": "2022-05-08",
+      "upcoming": false,
+      "season": "22/23"
+    },
+    {
+      "id": "2998773",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2020-01-07",
+      "upcoming": false,
+      "season": "20/21"
+    },
+    {
+      "id": "2195590",
+      "clubFrom": {
+        "id": "14321",
+        "name": "Barça U16"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2018-07-25",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "3838960",
+      "clubFrom": {
+        "id": "70295",
+        "name": "Barça Youth"
+      },
+      "clubTo": {
+        "id": "14321",
+        "name": "Barça U16"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    }
+  ]
+}

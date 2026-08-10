@@ -1,0 +1,14 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "2025/26",
+  "season_start_year": 2025,
+  "season_dir": "2025_26",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/manchester-united/transfers/verein/985/saison_id/2025",
+  "collected_at_utc": "2026-04-27T18:17:16.958540+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

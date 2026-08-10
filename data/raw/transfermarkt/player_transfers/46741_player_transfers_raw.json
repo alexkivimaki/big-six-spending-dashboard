@@ -1,0 +1,174 @@
+{
+  "updatedAt": "2026-04-27T20:11:56.201907",
+  "id": "46741",
+  "transfers": [
+    {
+      "id": "5832590",
+      "clubFrom": {
+        "id": "10870",
+        "name": "Fortaleza"
+      },
+      "clubTo": {
+        "id": "45457",
+        "name": "Pafos"
+      },
+      "date": "2025-03-08",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 300000
+    },
+    {
+      "id": "5410218",
+      "clubFrom": {
+        "id": "614",
+        "name": "Flamengo"
+      },
+      "clubTo": {
+        "id": "10870",
+        "name": "Fortaleza"
+      },
+      "date": "2025-01-20",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 300000
+    },
+    {
+      "id": "3548928",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "614",
+        "name": "Flamengo"
+      },
+      "date": "2021-01-09",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 4000000
+    },
+    {
+      "id": "2597256",
+      "clubFrom": {
+        "id": "631",
+        "name": "Chelsea"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-09-08",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 20000000,
+      "fee": 8700000
+    },
+    {
+      "id": "1588806",
+      "clubFrom": {
+        "id": "583",
+        "name": "PSG"
+      },
+      "clubTo": {
+        "id": "631",
+        "name": "Chelsea"
+      },
+      "date": "2016-08-31",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 28000000,
+      "fee": 35000000
+    },
+    {
+      "id": "1064205",
+      "clubFrom": {
+        "id": "631",
+        "name": "Chelsea"
+      },
+      "clubTo": {
+        "id": "583",
+        "name": "PSG"
+      },
+      "date": "2014-01-07",
+      "upcoming": false,
+      "season": "14/15",
+      "marketValue": 26000000,
+      "fee": 49500000
+    },
+    {
+      "id": "535022",
+      "clubFrom": {
+        "id": "294",
+        "name": "Benfica"
+      },
+      "clubTo": {
+        "id": "631",
+        "name": "Chelsea"
+      },
+      "date": "2011-01-31",
+      "upcoming": false,
+      "season": "10/11",
+      "marketValue": 14000000,
+      "fee": 25000000
+    },
+    {
+      "id": "128465",
+      "clubFrom": {
+        "id": "2125",
+        "name": "EC Vitória"
+      },
+      "clubTo": {
+        "id": "294",
+        "name": "Benfica"
+      },
+      "date": "2007-01-07",
+      "upcoming": false,
+      "season": "07/08",
+      "marketValue": 1500000,
+      "fee": 500000
+    },
+    {
+      "id": "125105",
+      "clubFrom": {
+        "id": "294",
+        "name": "Benfica"
+      },
+      "clubTo": {
+        "id": "2125",
+        "name": "EC Vitória"
+      },
+      "date": "2007-06-30",
+      "upcoming": false,
+      "season": "06/07",
+      "marketValue": 1500000
+    },
+    {
+      "id": "114047",
+      "clubFrom": {
+        "id": "2125",
+        "name": "EC Vitória"
+      },
+      "clubTo": {
+        "id": "294",
+        "name": "Benfica"
+      },
+      "date": "2007-01-31",
+      "upcoming": false,
+      "season": "06/07"
+    },
+    {
+      "id": "4782999",
+      "clubFrom": {
+        "id": "15555",
+        "name": "Vitória U20"
+      },
+      "clubTo": {
+        "id": "2125",
+        "name": "EC Vitória"
+      },
+      "date": "2005-01-01",
+      "upcoming": false,
+      "season": "04/05"
+    }
+  ]
+}

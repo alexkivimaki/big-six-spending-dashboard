@@ -1,0 +1,9 @@
+{
+  "player_id": "503770",
+  "player_name": "Folarin Balogun",
+  "endpoint_url": "http://localhost:8000/players/503770/transfers",
+  "collected_at_utc": "2026-04-27T17:12:34.877028+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api"
+}

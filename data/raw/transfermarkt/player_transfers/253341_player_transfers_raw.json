@@ -1,0 +1,143 @@
+{
+  "updatedAt": "2026-04-27T20:11:50.063643",
+  "id": "253341",
+  "transfers": [
+    {
+      "id": "5832319",
+      "clubFrom": {
+        "id": "873",
+        "name": "Crystal Palace"
+      },
+      "clubTo": {
+        "id": "1247",
+        "name": "Colorado"
+      },
+      "date": "2025-03-08",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 3500000
+    },
+    {
+      "id": "5501434",
+      "clubFrom": {
+        "id": "350",
+        "name": "Sheff Utd"
+      },
+      "clubTo": {
+        "id": "873",
+        "name": "Crystal Palace"
+      },
+      "date": "2025-06-30",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 3500000
+    },
+    {
+      "id": "5501433",
+      "clubFrom": {
+        "id": "873",
+        "name": "Crystal Palace"
+      },
+      "clubTo": {
+        "id": "350",
+        "name": "Sheff Utd"
+      },
+      "date": "2025-03-02",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 4000000
+    },
+    {
+      "id": "4625014",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "873",
+        "name": "Crystal Palace"
+      },
+      "date": "2023-01-09",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 8000000,
+      "fee": 1200000
+    },
+    {
+      "id": "1546609",
+      "clubFrom": {
+        "id": "355",
+        "name": "Bolton"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2016-07-22",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 250000,
+      "fee": 3000000
+    },
+    {
+      "id": "1477532",
+      "clubFrom": {
+        "id": "9259",
+        "name": "Bolton U21"
+      },
+      "clubTo": {
+        "id": "355",
+        "name": "Bolton"
+      },
+      "date": "2015-01-07",
+      "upcoming": false,
+      "season": "15/16"
+    },
+    {
+      "id": "1219551",
+      "clubFrom": {
+        "id": "2413",
+        "name": "Bury"
+      },
+      "clubTo": {
+        "id": "9259",
+        "name": "Bolton U21"
+      },
+      "date": "2015-05-31",
+      "upcoming": false,
+      "season": "14/15"
+    },
+    {
+      "id": "1219550",
+      "clubFrom": {
+        "id": "9259",
+        "name": "Bolton U21"
+      },
+      "clubTo": {
+        "id": "2413",
+        "name": "Bury"
+      },
+      "date": "2015-03-26",
+      "upcoming": false,
+      "season": "14/15"
+    },
+    {
+      "id": "1038763",
+      "clubFrom": {
+        "id": "6915",
+        "name": "Bolton U18"
+      },
+      "clubTo": {
+        "id": "9259",
+        "name": "Bolton U21"
+      },
+      "date": "2013-01-07",
+      "upcoming": false,
+      "season": "13/14"
+    }
+  ],
+  "youthClubs": [
+    "Stalybridge Celtic Juniors",
+    "Bolton Wanderers (2003-2014)"
+  ]
+}

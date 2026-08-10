@@ -1,0 +1,174 @@
+{
+  "updatedAt": "2026-04-27T20:11:36.727792",
+  "id": "205657",
+  "transfers": [
+    {
+      "id": "4864352",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "190",
+        "name": "Copenhagen"
+      },
+      "date": "2024-01-02",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 800000
+    },
+    {
+      "id": "4592256",
+      "clubFrom": {
+        "id": "603",
+        "name": "Cardiff"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2024-01-31",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 800000
+    },
+    {
+      "id": "4592255",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "603",
+        "name": "Cardiff"
+      },
+      "date": "2023-08-18",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 1500000
+    },
+    {
+      "id": "4016720",
+      "clubFrom": {
+        "id": "11282",
+        "name": "Alanyaspor"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2023-06-30",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 1500000
+    },
+    {
+      "id": "4016719",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "11282",
+        "name": "Alanyaspor"
+      },
+      "date": "2022-08-15",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 1200000
+    },
+    {
+      "id": "3530678",
+      "clubFrom": {
+        "id": "2727",
+        "name": "OH Leuven"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2022-06-30",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 1200000
+    },
+    {
+      "id": "3530677",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "2727",
+        "name": "OH Leuven"
+      },
+      "date": "2021-08-31",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 1500000
+    },
+    {
+      "id": "3071550",
+      "clubFrom": {
+        "id": "2969",
+        "name": "Dijon"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-09-21",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 1200000,
+      "fee": 2000000
+    },
+    {
+      "id": "2137286",
+      "clubFrom": {
+        "id": "2778",
+        "name": "Nordsjaelland"
+      },
+      "clubTo": {
+        "id": "2969",
+        "name": "Dijon"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 500000,
+      "fee": 1600000
+    },
+    {
+      "id": "1008209",
+      "clubFrom": {
+        "id": "3237",
+        "name": "KR Reykjavík"
+      },
+      "clubTo": {
+        "id": "2778",
+        "name": "Nordsjaelland"
+      },
+      "date": "2014-01-30",
+      "upcoming": false,
+      "season": "13/14"
+    },
+    {
+      "id": "693481",
+      "clubFrom": {
+        "id": "23651",
+        "name": "KR U19"
+      },
+      "clubTo": {
+        "id": "3237",
+        "name": "KR Reykjavík"
+      },
+      "date": "2013-12-14",
+      "upcoming": false,
+      "season": "13/14"
+    }
+  ],
+  "youthClubs": [
+    "KR Reykjavik (2012–2013)"
+  ]
+}

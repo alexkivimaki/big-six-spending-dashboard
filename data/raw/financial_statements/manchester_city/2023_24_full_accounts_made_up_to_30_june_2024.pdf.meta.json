@@ -1,0 +1,12 @@
+{
+  "club_id": "manchester_city",
+  "season": "2023/24",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history/MzQ1NzU3NzIwNWFkaXF6a2N4/document?download=0&format=pdf",
+  "date_downloaded_utc": "2026-04-28T08:58:01.604075+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/manchester_city/2023_24_full_accounts_made_up_to_30_june_2024.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/manchester_city_2023_24_statement_fetcher_output.json",
+  "report_title": "Full accounts made up to 30 June 2024",
+  "report_type": "accounts_filing"
+}

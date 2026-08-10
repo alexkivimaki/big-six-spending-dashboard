@@ -1,0 +1,108 @@
+{
+  "club_id": "chelsea",
+  "club_name": "Chelsea",
+  "season": "2011/12",
+  "financial_year_end": "2012-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "total_revenue_original": 255738000,
+  "matchday_revenue_original": 77742000,
+  "broadcast_revenue_original": 112815000,
+  "commercial_revenue_original": 66977000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": 28794000,
+  "staff_costs_original": 171036000,
+  "player_amortisation_original": 49506000,
+  "profit_on_player_sales_original": 28794000,
+  "net_debt_original": 18146000,
+  "profit_loss_before_tax_original": 1378000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 257534000,
+  "revenue_sum_difference_original": 1796000,
+  "pages_used": [
+    15,
+    16
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 77742000,
+      "page_number": 15,
+      "statement_label": "Matchday",
+      "evidence_text": "Official Chelsea turnover analysis note."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 112815000,
+      "page_number": 15,
+      "statement_label": "Broadcasting",
+      "evidence_text": "Official Chelsea turnover analysis note."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 66977000,
+      "page_number": 15,
+      "statement_label": "Commercial",
+      "evidence_text": "Official Chelsea turnover analysis note."
+    },
+    {
+      "field": "excluded_player_trading_revenue_original",
+      "value_original": 28794000,
+      "page_number": 16,
+      "statement_label": "Profit on disposal of player registrations",
+      "evidence_text": "Official Chelsea profit/loss note. Excluded from football revenue total."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 171036000,
+      "page_number": 16,
+      "statement_label": "Wages and salaries / employee costs",
+      "evidence_text": "Official Chelsea staff numbers and costs note."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 49506000,
+      "page_number": 16,
+      "statement_label": "Amortisation of intangible assets / player registrations",
+      "evidence_text": "Official Chelsea profit/loss note."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 28794000,
+      "page_number": 16,
+      "statement_label": "Profit on disposal of player registrations",
+      "evidence_text": "Official Chelsea profit/loss note."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": 1378000,
+      "page_number": 17,
+      "statement_label": "Profit/(loss) on ordinary activities before taxation",
+      "evidence_text": "Official annual report taxation note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 18146000,
+      "page_number": 25,
+      "statement_label": "Net debt",
+      "evidence_text": "Official annual report analysis of net debt note. Values were disclosed in GBP thousands and converted to full GBP."
+    }
+  ],
+  "classification_notes": "Chelsea discloses matchday, broadcasting, and commercial revenue directly in the financial statements from the seasons extracted here. Total revenue has been set to football operating turnover only and excludes player trading.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the relevant Chelsea financial statement notes used here. The extracted revenue figures should therefore be treated as potentially including inseparable women's activity.",
+  "non_football_revenue_notes": "Chelsea's disclosed commercial category may include hotel, stadium, retail, or other non-matchday commercial operations where the group classifies them within ordinary football-related activities.",
+  "confidence_level": "medium",
+  "requires_manual_review": true,
+  "source_document": "Group of companies' accounts made up to 30 June 2012",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/02536231/filing-history/MzA3MDcyNjIxOGFkaXF6a2N4/document?format=pdf&download=0",
+  "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000. Broadcasting, matchday, and commercial are disclosed before deducting Chelsea Digital Media joint-venture turnover of GBP 1,796,000, so the category sum exceeds reported group turnover."
+}

@@ -1,0 +1,14 @@
+{
+  "club_id": "chelsea",
+  "club_name": "Chelsea",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "1995/96",
+  "season_start_year": 1995,
+  "season_dir": "1995_96",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/chelsea/transfers/verein/631/saison_id/1995",
+  "collected_at_utc": "2026-04-27T18:17:30.088705+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

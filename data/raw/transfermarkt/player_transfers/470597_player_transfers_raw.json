@@ -1,0 +1,97 @@
+{
+  "updatedAt": "2026-04-27T20:12:15.956225",
+  "id": "470597",
+  "transfers": [
+    {
+      "id": "5385640",
+      "clubFrom": {
+        "id": "17980",
+        "name": "Hemel"
+      },
+      "clubTo": {
+        "id": "13744",
+        "name": "Michalovce"
+      },
+      "date": "2025-01-01",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 150000
+    },
+    {
+      "id": "5343503",
+      "clubFrom": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "clubTo": {
+        "id": "17980",
+        "name": "Hemel"
+      },
+      "date": "2024-10-30",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 150000
+    },
+    {
+      "id": "5024766",
+      "clubFrom": {
+        "id": "4059",
+        "name": "NS Mura"
+      },
+      "clubTo": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "date": "2024-01-07",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 150000
+    },
+    {
+      "id": "4550314",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "4059",
+        "name": "NS Mura"
+      },
+      "date": "2023-01-08",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 200000
+    },
+    {
+      "id": "2998777",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2020-01-07",
+      "upcoming": false,
+      "season": "20/21"
+    },
+    {
+      "id": "2153363",
+      "clubFrom": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19"
+    }
+  ],
+  "youthClubs": [
+    "Arsenal FC (2009-2020)"
+  ]
+}

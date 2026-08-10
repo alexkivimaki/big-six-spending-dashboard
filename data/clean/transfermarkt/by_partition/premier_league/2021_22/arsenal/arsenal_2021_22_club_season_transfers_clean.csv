@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,arsenal,Arsenal,2021/22,2021,all,167400000.0,31400000.0,136000000.0,13,20,transfermarkt_club_page,https://www.transfermarkt.com/arsenal/transfers/verein/11/saison_id/2021,2026-04-27T17:43:02.678532+00:00,high,

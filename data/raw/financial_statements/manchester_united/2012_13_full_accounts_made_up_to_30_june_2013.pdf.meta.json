@@ -1,0 +1,12 @@
+{
+  "club_id": "manchester_united",
+  "season": "2012/13",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00095489/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/00095489/filing-history/MzA4OTI1MTA0NGFkaXF6a2N4/document?format=pdf&download=0",
+  "date_downloaded_utc": "2026-04-28T09:10:30.855992+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/manchester_united/2012_13_full_accounts_made_up_to_30_june_2013.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs_retry/manchester_united_2012_13_statement_fetcher_output.json",
+  "report_title": "Full accounts made up to 30 June 2013",
+  "report_type": "accounts_filing"
+}

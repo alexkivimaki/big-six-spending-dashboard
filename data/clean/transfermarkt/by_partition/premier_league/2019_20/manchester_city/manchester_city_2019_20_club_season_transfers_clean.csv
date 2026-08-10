@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,manchester_city,Manchester City,2019/20,2019,all,169820000.0,71000000.0,98820000.0,25,26,transfermarkt_club_page,https://www.transfermarkt.com/manchester-city/transfers/verein/281/saison_id/2019,2026-04-27T18:15:41.562015+00:00,high,

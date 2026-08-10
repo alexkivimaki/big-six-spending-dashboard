@@ -1,0 +1,21 @@
+{
+  "club_id": "tottenham_hotspur",
+  "club_name": "Tottenham Hotspur",
+  "season": "2014/15",
+  "estimated_player_wages_eur": null,
+  "estimated_player_wages_original": null,
+  "estimated_player_wages_original_currency": "",
+  "estimated_player_wages_original_unit": "",
+  "weekly_wages_original": null,
+  "source_name": "Capology",
+  "source_url": "https://www.capology.com/club/tottenham/salaries/2014-2015/",
+  "date_accessed": "2026-05-05",
+  "currency_original": "",
+  "units_original": "",
+  "conversion_rate_to_eur": null,
+  "exchange_rate_source": "",
+  "evidence": [],
+  "confidence_level": "low",
+  "requires_manual_review": true,
+  "notes": "No structured Capology season salary value was available for 2014/15 at https://www.capology.com/club/tottenham/salaries/2014-2015/. This likely reflects missing historical coverage for that season. EUR conversion is pending a project-level FX methodology."
+}

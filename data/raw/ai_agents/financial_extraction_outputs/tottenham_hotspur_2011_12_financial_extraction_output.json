@@ -1,0 +1,96 @@
+{
+  "club_id": "tottenham_hotspur",
+  "club_name": "Tottenham Hotspur",
+  "season": "2011/12",
+  "financial_year_end": "2012-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "total_revenue_original": 144156000,
+  "matchday_revenue_original": 27659000,
+  "broadcast_revenue_original": 63561000,
+  "commercial_revenue_original": 52936000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": null,
+  "staff_costs_original": 90206000,
+  "player_amortisation_original": null,
+  "profit_on_player_sales_original": 9200000,
+  "net_debt_original": 70096000,
+  "profit_loss_before_tax_original": -7304000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 144156000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    17,
+    19,
+    21,
+    33
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 27659000,
+      "page_number": 17,
+      "statement_label": "Gate receipts - Premier League plus Cup competitions - Gate receipts and domestic prize money",
+      "evidence_text": "Tottenham revenue note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 63561000,
+      "page_number": 17,
+      "statement_label": "Media and broadcasting plus UEFA solidarity and prize money",
+      "evidence_text": "Tottenham revenue note. UEFA solidarity and prize money has been grouped with broadcasting for comparability."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 52936000,
+      "page_number": 17,
+      "statement_label": "Sponsorship and corporate hospitality, Merchandising, and Other",
+      "evidence_text": "Tottenham revenue note. Commercial category has been formed by combining the disclosed non-broadcasting commercial lines."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 90206000,
+      "page_number": 19,
+      "statement_label": "Aggregate payroll costs",
+      "evidence_text": "Staff numbers and costs note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 9200000,
+      "page_number": 19,
+      "statement_label": "Profit on disposal of intangible fixed assets",
+      "evidence_text": "This line is used as the closest disclosed proxy for profit on disposal of player registrations in the club's accounts."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": -7304000,
+      "page_number": 21,
+      "statement_label": "(Loss)/profit on ordinary activities before taxation",
+      "evidence_text": "Tax note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 70096000,
+      "page_number": 33,
+      "statement_label": "Net debt",
+      "evidence_text": "Net debt note. Values were disclosed in GBP thousands and converted to full GBP."
+    }
+  ],
+  "classification_notes": "Tottenham's revenue note mixes gate receipts with domestic prize money and separates UEFA solidarity and prize money from media and broadcasting. For comparability, UEFA solidarity and prize money has been grouped with broadcasting, while the domestic cup gate receipts and prize money line has been kept within the matchday-style bucket and should be treated as a medium-confidence mapping.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the report.",
+  "non_football_revenue_notes": "The 'Other' revenue line is included within commercial revenue because the club does not separately disclose a clearer commercial subcategory breakdown for that amount.",
+  "confidence_level": "medium",
+  "requires_manual_review": true,
+  "source_document": "Group of companies' accounts made up to 30 June 2012",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history/MzA3NTgyOTE2NmFkaXF6a2N4/document?format=pdf&download=0",
+  "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000. Revenue category mapping requires some reclassification because Tottenham's note does not align perfectly with the standard matchday/broadcast/commercial split."
+}

@@ -1,0 +1,14 @@
+{
+  "club_id": "manchester_city",
+  "club_name": "Manchester City",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "2000/01",
+  "season_start_year": 2000,
+  "season_dir": "2000_01",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/manchester-city/transfers/verein/281/saison_id/2000",
+  "collected_at_utc": "2026-04-27T18:14:54.192873+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

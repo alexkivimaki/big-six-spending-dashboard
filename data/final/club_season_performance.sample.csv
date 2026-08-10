@@ -1,0 +1,4 @@
+club_id,club_name,season,league_position,points,wins,draws,losses,goals_for,goals_against,goal_difference,trophies,champions_league_qualified,source_id,notes
+arsenal,Arsenal,2023/24,2,89,28,5,5,91,29,62,"Example placeholder",true,sample_placeholder,"Placeholder example values only; every performance row must be verified against a trusted season source before production use."
+manchester_city,Manchester City,2023/24,1,91,28,7,3,96,34,62,"Example placeholder",true,sample_placeholder,"Placeholder example values only; every performance row must be verified against a trusted season source before production use."
+chelsea,Chelsea,2022/23,12,44,11,11,16,38,47,-9,"Example placeholder",false,sample_placeholder,"Placeholder example values only; every performance row must be verified against a trusted season source before production use."

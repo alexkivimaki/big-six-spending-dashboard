@@ -1,0 +1,208 @@
+{
+  "updatedAt": "2026-04-27T20:12:18.915288",
+  "id": "316264",
+  "transfers": [
+    {
+      "id": "3509558",
+      "clubFrom": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2021-08-20",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 40000000,
+      "fee": 35000000
+    },
+    {
+      "id": "3223233",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "date": "2021-06-30",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 40000000
+    },
+    {
+      "id": "3223232",
+      "clubFrom": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2021-01-27",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 40000000,
+      "fee": 2000000
+    },
+    {
+      "id": "2539951",
+      "clubFrom": {
+        "id": "681",
+        "name": "Real Sociedad"
+      },
+      "clubTo": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "date": "2020-07-20",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 45000000
+    },
+    {
+      "id": "2539950",
+      "clubFrom": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "clubTo": {
+        "id": "681",
+        "name": "Real Sociedad"
+      },
+      "date": "2019-05-07",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 15000000,
+      "fee": 2000000
+    },
+    {
+      "id": "2233834",
+      "clubFrom": {
+        "id": "499",
+        "name": "Vitesse"
+      },
+      "clubTo": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "date": "2019-06-30",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 15000000
+    },
+    {
+      "id": "2233833",
+      "clubFrom": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "clubTo": {
+        "id": "499",
+        "name": "Vitesse"
+      },
+      "date": "2018-08-21",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 4000000
+    },
+    {
+      "id": "1668832",
+      "clubFrom": {
+        "id": "306",
+        "name": "Heerenveen"
+      },
+      "clubTo": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "date": "2018-06-30",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 4000000
+    },
+    {
+      "id": "1668831",
+      "clubFrom": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "clubTo": {
+        "id": "306",
+        "name": "Heerenveen"
+      },
+      "date": "2017-09-01",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 2000000
+    },
+    {
+      "id": "2177140",
+      "clubFrom": {
+        "id": "6767",
+        "name": "RM Castilla"
+      },
+      "clubTo": {
+        "id": "418",
+        "name": "Real Madrid"
+      },
+      "date": "2017-08-01",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 2000000
+    },
+    {
+      "id": "1178669",
+      "clubFrom": {
+        "id": "2817",
+        "name": "Strømsgodset"
+      },
+      "clubTo": {
+        "id": "6767",
+        "name": "RM Castilla"
+      },
+      "date": "2015-01-22",
+      "upcoming": false,
+      "season": "14/15",
+      "marketValue": 4000000,
+      "fee": 2800000
+    },
+    {
+      "id": "1063723",
+      "clubFrom": {
+        "id": "35027",
+        "name": "Strømsgodset II"
+      },
+      "clubTo": {
+        "id": "2817",
+        "name": "Strømsgodset"
+      },
+      "date": "2014-05-05",
+      "upcoming": false,
+      "season": "13/14",
+      "marketValue": 1000000
+    },
+    {
+      "id": "1945971",
+      "clubFrom": {
+        "id": "15693",
+        "name": "Godset Yth. "
+      },
+      "clubTo": {
+        "id": "35027",
+        "name": "Strømsgodset II"
+      },
+      "date": "2014-01-01",
+      "upcoming": false,
+      "season": "13/14"
+    }
+  ],
+  "youthClubs": [
+    "Drammen Strong (2005-2009)",
+    "Strømsgodset IF (2009–2013)"
+  ]
+}

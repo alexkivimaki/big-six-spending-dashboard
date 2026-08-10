@@ -1,0 +1,103 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "season": "2011/12",
+  "financial_year_end": "2012-06-30",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP millions and thousands disclosed in report)",
+  "total_revenue_original": 320300000,
+  "matchday_revenue_original": 98700000,
+  "broadcast_revenue_original": 104000000,
+  "commercial_revenue_original": 117600000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": null,
+  "staff_costs_original": 161700000,
+  "player_amortisation_original": 38300000,
+  "profit_on_player_sales_original": 9691000,
+  "net_debt_original": 366272000,
+  "profit_loss_before_tax_original": -4664000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 320300000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    70,
+    67,
+    156,
+    157
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 98700000,
+      "page_number": 70,
+      "statement_label": "Matchday revenue",
+      "evidence_text": "Official Manchester United plc 2012 annual report on Form 20-F. Value disclosed in GBP millions and converted to full GBP."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 104000000,
+      "page_number": 70,
+      "statement_label": "Broadcasting revenue",
+      "evidence_text": "Official Manchester United plc 2012 annual report on Form 20-F. Value disclosed in GBP millions and converted to full GBP."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 117600000,
+      "page_number": 70,
+      "statement_label": "Commercial revenue",
+      "evidence_text": "Official Manchester United plc 2012 annual report on Form 20-F. Value disclosed in GBP millions and converted to full GBP."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 161700000,
+      "page_number": 67,
+      "statement_label": "Employee benefit expenses",
+      "evidence_text": "Official Manchester United plc 2012 annual report on Form 20-F. Value disclosed in GBP millions and converted to full GBP."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 38300000,
+      "page_number": 67,
+      "statement_label": "Amortization of players' registrations",
+      "evidence_text": "Official Manchester United plc 2012 annual report on Form 20-F. Value disclosed in GBP millions and converted to full GBP."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 9691000,
+      "page_number": 66,
+      "statement_label": "Profit on disposal of players' registrations",
+      "evidence_text": "Official Manchester United plc 2012 annual report on Form 20-F. Value disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": -4664000,
+      "page_number": 66,
+      "statement_label": "(Loss)/profit on ordinary activities before tax",
+      "evidence_text": "Official Manchester United plc 2012 annual report on Form 20-F. Value disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 366272000,
+      "page_number": 157,
+      "statement_label": "Net debt at 30 June 2012",
+      "evidence_text": "Official Manchester United plc 2012 annual report on Form 20-F analysis of changes in net debt note. Value disclosed in GBP thousands and converted to full GBP."
+    }
+  ],
+  "classification_notes": "For comparability, Manchester United's 2011/12 figures were taken from the official Manchester United plc annual report on Form 20-F rather than the narrower club-limited Companies House filing. The plc report provides the consolidated Commercial, Broadcasting, Matchday, employee benefit, and net debt disclosures that align with the project methodology.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the source used here.",
+  "non_football_revenue_notes": "Commercial revenue in the plc report includes sponsorship, retail, merchandising, apparel and product licensing, and new media/mobile activities within the club's commercial segment.",
+  "confidence_level": "high",
+  "requires_manual_review": true,
+  "source_document": "Manchester United plc 2012 Annual Report on Form 20-F",
+  "source_url": "https://ir.manutd.com/~/media/Files/M/Manutd-IR/Annual%20Reports/manchester-united-plc-20f-20131024.pdf",
+  "notes": "Values in the annual report were disclosed in GBP millions or GBP thousands and have been converted here into full GBP amounts. This source was chosen because it provides the comparable consolidated sector revenue and debt view required for the project."
+}

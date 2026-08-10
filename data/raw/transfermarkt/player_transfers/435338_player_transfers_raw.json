@@ -1,0 +1,115 @@
+{
+  "updatedAt": "2026-04-27T20:11:47.108044",
+  "id": "435338",
+  "transfers": [
+    {
+      "id": "3040482",
+      "clubFrom": {
+        "id": "1082",
+        "name": "Lille"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-01-09",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 20000000,
+      "fee": 26000000
+    },
+    {
+      "id": "2037482",
+      "clubFrom": {
+        "id": "44796",
+        "name": "Din. Zagreb II"
+      },
+      "clubTo": {
+        "id": "1082",
+        "name": "Lille"
+      },
+      "date": "2018-06-30",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 600000
+    },
+    {
+      "id": "2037483",
+      "clubFrom": {
+        "id": "1082",
+        "name": "Lille"
+      },
+      "clubTo": {
+        "id": "44796",
+        "name": "Din. Zagreb II"
+      },
+      "date": "2018-02-15",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 600000
+    },
+    {
+      "id": "1812665",
+      "clubFrom": {
+        "id": "1095",
+        "name": "Troyes"
+      },
+      "clubTo": {
+        "id": "1082",
+        "name": "Lille"
+      },
+      "date": "2018-02-14",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 600000
+    },
+    {
+      "id": "1812664",
+      "clubFrom": {
+        "id": "1082",
+        "name": "Lille"
+      },
+      "clubTo": {
+        "id": "1095",
+        "name": "Troyes"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 600000
+    },
+    {
+      "id": "1691219",
+      "clubFrom": {
+        "id": "2035",
+        "name": "Avaí FC"
+      },
+      "clubTo": {
+        "id": "1082",
+        "name": "Lille"
+      },
+      "date": "2017-01-31",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 350000,
+      "fee": 3000000
+    },
+    {
+      "id": "1596134",
+      "clubFrom": {
+        "id": "17661",
+        "name": "Avaí U20"
+      },
+      "clubTo": {
+        "id": "2035",
+        "name": "Avaí FC"
+      },
+      "date": "2016-01-01",
+      "upcoming": false,
+      "season": "15/16"
+    }
+  ],
+  "youthClubs": [
+    "Avaí Futebol Clube (2012-2016)"
+  ]
+}

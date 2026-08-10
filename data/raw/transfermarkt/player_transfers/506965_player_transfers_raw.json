@@ -1,0 +1,149 @@
+{
+  "updatedAt": "2026-04-27T20:12:17.382887",
+  "id": "506965",
+  "transfers": [
+    {
+      "id": "6028728",
+      "clubFrom": {
+        "id": "7609",
+        "name": "Waterford FC"
+      },
+      "clubTo": {
+        "id": "920",
+        "name": "Derry City"
+      },
+      "date": "2026-01-01",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 150000
+    },
+    {
+      "id": "5354712",
+      "clubFrom": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "clubTo": {
+        "id": "7609",
+        "name": "Waterford FC"
+      },
+      "date": "2025-01-01",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 150000
+    },
+    {
+      "id": "4999062",
+      "clubFrom": {
+        "id": "3371",
+        "name": "Cheltenham"
+      },
+      "clubTo": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "date": "2024-01-07",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 150000
+    },
+    {
+      "id": "4051519",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "3371",
+        "name": "Cheltenham"
+      },
+      "date": "2022-01-09",
+      "upcoming": false,
+      "season": "22/23"
+    },
+    {
+      "id": "3106861",
+      "clubFrom": {
+        "id": "2793",
+        "name": "Southend United"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2021-05-31",
+      "upcoming": false,
+      "season": "20/21"
+    },
+    {
+      "id": "3106860",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "2793",
+        "name": "Southend United"
+      },
+      "date": "2020-10-16",
+      "upcoming": false,
+      "season": "20/21"
+    },
+    {
+      "id": "2776548",
+      "clubFrom": {
+        "id": "1302",
+        "name": "Northampton"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2020-06-30",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "2776547",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "1302",
+        "name": "Northampton"
+      },
+      "date": "2020-01-27",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "2501878",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "1881873",
+      "clubFrom": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "critical_errors": [],
+  "warnings": [],
+  "row_findings": [
+    {
+      "club_id": "arsenal",
+      "season": "2008/09",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2009/10",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2010/11",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2011/12",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2012/13",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2013/14",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2014/15",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2015/16",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2016/17",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2017/18",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2018/19",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2019/20",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2020/21",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2021/22",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2022/23",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2023/24",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "arsenal",
+      "season": "2024/25",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2011/12",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2012/13",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2013/14",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2014/15",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2015/16",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2016/17",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2017/18",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2018/19",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2019/20",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2020/21",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2021/22",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2022/23",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2023/24",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    },
+    {
+      "club_id": "chelsea",
+      "season": "2024/25",
+      "warnings": [
+        "requires_manual_review is true."
+      ],
+      "critical_errors": []
+    }
+  ]
+}

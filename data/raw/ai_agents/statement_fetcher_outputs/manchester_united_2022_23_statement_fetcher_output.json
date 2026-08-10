@@ -1,0 +1,19 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "season": "2022/23",
+  "financial_year_end": "2023-06-30",
+  "report_title": "Manchester United Plc 2023 Annual Report on Form 20-F",
+  "report_type": "sec_filing",
+  "source_name": "Manchester United Investor Relations",
+  "source_url": "https://ir.manutd.com/financial-information/annual-reports/2023.aspx",
+  "download_url": "https://ir.manutd.com/~/media/Files/M/Manutd-IR/documents/manu-20230630-20f-taxonomyifrs-2022-tmbsf-v1.pdf",
+  "file_type": "pdf",
+  "date_accessed": "2026-04-28",
+  "is_official_source": true,
+  "company_or_group_name": "Manchester United plc",
+  "company_number_or_registry_id": "SEC 20-F / NYSE: MANU",
+  "local_file_suggested_name": "2022_23_manchester_united_plc_2023_annual_report_on_form_20f.pdf",
+  "confidence_level": "high",
+  "notes": "Official investor-relations annual report page and Form 20-F filing for Manchester United plc."
+}

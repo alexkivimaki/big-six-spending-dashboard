@@ -1,0 +1,42 @@
+{
+  "description": "Bundesliga final tables from 2008/09 to 2024/25 with qualification/relegation column from Wikipedia season pages.",
+  "season_count": 17,
+  "row_count": 306,
+  "columns": [
+    "season",
+    "Pos",
+    "Team",
+    "Pld",
+    "W",
+    "D",
+    "L",
+    "GF",
+    "GA",
+    "GD",
+    "Pts",
+    "Qualification or relegation",
+    "source_url"
+  ],
+  "validation_errors": [],
+  "source": "Wikipedia Bundesliga season pages; row-wise source_url included.",
+  "files": [
+    "bundesliga_08-09.csv",
+    "bundesliga_09-10.csv",
+    "bundesliga_10-11.csv",
+    "bundesliga_11-12.csv",
+    "bundesliga_12-13.csv",
+    "bundesliga_13-14.csv",
+    "bundesliga_14-15.csv",
+    "bundesliga_15-16.csv",
+    "bundesliga_16-17.csv",
+    "bundesliga_17-18.csv",
+    "bundesliga_18-19.csv",
+    "bundesliga_19-20.csv",
+    "bundesliga_20-21.csv",
+    "bundesliga_2008-09_to_2024-25_combined.csv",
+    "bundesliga_21-22.csv",
+    "bundesliga_22-23.csv",
+    "bundesliga_23-24.csv",
+    "bundesliga_24-25.csv"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "season": "2007/08",
+  "season_start_year": 2007,
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/arsenal/transfers/verein/11/saison_id/2007",
+  "collected_at_utc": "2026-04-27T17:54:30.074046+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

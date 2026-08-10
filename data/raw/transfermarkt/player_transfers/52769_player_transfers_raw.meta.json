@@ -1,0 +1,9 @@
+{
+  "player_id": "52769",
+  "player_name": "Willian",
+  "endpoint_url": "http://localhost:8000/players/52769/transfers",
+  "collected_at_utc": "2026-04-27T17:12:24.067734+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api"
+}

@@ -1,0 +1,101 @@
+{
+  "updatedAt": "2026-04-27T20:11:59.134975",
+  "id": "300716",
+  "transfers": [
+    {
+      "id": "5523642",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "371",
+        "name": "Celtic"
+      },
+      "date": "2025-01-07",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 9000000
+    },
+    {
+      "id": "4611109",
+      "clubFrom": {
+        "id": "681",
+        "name": "Real Sociedad"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2024-06-30",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 12000000
+    },
+    {
+      "id": "4611108",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "681",
+        "name": "Real Sociedad"
+      },
+      "date": "2023-08-27",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 25000000,
+      "fee": 1400000
+    },
+    {
+      "id": "2596989",
+      "clubFrom": {
+        "id": "371",
+        "name": "Celtic"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-08-08",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 12500000,
+      "fee": 27000000
+    },
+    {
+      "id": "1394781",
+      "clubFrom": {
+        "id": "8924",
+        "name": "Celtic U20"
+      },
+      "clubTo": {
+        "id": "371",
+        "name": "Celtic"
+      },
+      "date": "2016-01-01",
+      "upcoming": false,
+      "season": "15/16",
+      "marketValue": 500000
+    },
+    {
+      "id": "1249168",
+      "clubFrom": {
+        "id": "31025",
+        "name": "Celtic U17"
+      },
+      "clubTo": {
+        "id": "8924",
+        "name": "Celtic U20"
+      },
+      "date": "2014-01-07",
+      "upcoming": false,
+      "season": "14/15"
+    }
+  ],
+  "youthClubs": [
+    "Netherton",
+    "Celtic FC (2005-2015)"
+  ]
+}

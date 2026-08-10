@@ -1,0 +1,17 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "season": "2023/24",
+  "estimated_player_wages_eur": null,
+  "source_name": "Example only",
+  "source_url": "",
+  "date_accessed": "2026-05-05",
+  "currency_original": "GBP",
+  "units_original": "full pounds",
+  "conversion_rate_to_eur": null,
+  "exchange_rate_source": "",
+  "evidence": [],
+  "confidence_level": "example",
+  "requires_manual_review": true,
+  "notes": "Example structure only; values must be verified from a trusted wage source before use."
+}

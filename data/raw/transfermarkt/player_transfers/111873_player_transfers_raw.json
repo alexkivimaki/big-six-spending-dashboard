@@ -1,0 +1,232 @@
+{
+  "updatedAt": "2026-04-27T20:11:32.237282",
+  "id": "111873",
+  "transfers": [
+    {
+      "id": "3063096",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "405",
+        "name": "Aston Villa"
+      },
+      "date": "2020-09-16",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 8000000,
+      "fee": 17400000
+    },
+    {
+      "id": "2379298",
+      "clubFrom": {
+        "id": "1032",
+        "name": "Reading"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-05-31",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 1000000
+    },
+    {
+      "id": "2379297",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1032",
+        "name": "Reading"
+      },
+      "date": "2019-01-23",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 1000000
+    },
+    {
+      "id": "1864776",
+      "clubFrom": {
+        "id": "3709",
+        "name": "Getafe"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2018-06-30",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 1000000
+    },
+    {
+      "id": "1864775",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "3709",
+        "name": "Getafe"
+      },
+      "date": "2017-02-08",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 1000000
+    },
+    {
+      "id": "1316294",
+      "clubFrom": {
+        "id": "543",
+        "name": "Wolves"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2016-05-31",
+      "upcoming": false,
+      "season": "15/16",
+      "marketValue": 1500000
+    },
+    {
+      "id": "1316293",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "543",
+        "name": "Wolves"
+      },
+      "date": "2015-11-08",
+      "upcoming": false,
+      "season": "15/16",
+      "marketValue": 1500000
+    },
+    {
+      "id": "1216232",
+      "clubFrom": {
+        "id": "1194",
+        "name": "Rotherham"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2015-04-05",
+      "upcoming": false,
+      "season": "14/15",
+      "marketValue": 1000000
+    },
+    {
+      "id": "1216231",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1194",
+        "name": "Rotherham"
+      },
+      "date": "2015-03-20",
+      "upcoming": false,
+      "season": "14/15",
+      "marketValue": 1000000
+    },
+    {
+      "id": "964570",
+      "clubFrom": {
+        "id": "1035",
+        "name": "Sheff Wed"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2014-05-31",
+      "upcoming": false,
+      "season": "13/14",
+      "marketValue": 300000
+    },
+    {
+      "id": "964569",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1035",
+        "name": "Sheff Wed"
+      },
+      "date": "2013-10-15",
+      "upcoming": false,
+      "season": "13/14"
+    },
+    {
+      "id": "611487",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2012-01-07",
+      "upcoming": false,
+      "season": "12/13"
+    },
+    {
+      "id": "714600",
+      "clubFrom": {
+        "id": "988",
+        "name": "Oxford United"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal Res."
+      },
+      "date": "2012-07-05",
+      "upcoming": false,
+      "season": "11/12"
+    },
+    {
+      "id": "714599",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal Res."
+      },
+      "clubTo": {
+        "id": "988",
+        "name": "Oxford United"
+      },
+      "date": "2012-04-05",
+      "upcoming": false,
+      "season": "11/12"
+    },
+    {
+      "id": "484686",
+      "clubFrom": {
+        "id": "15102",
+        "name": "Indep'te U20"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal Res."
+      },
+      "date": "2010-01-07",
+      "upcoming": false,
+      "season": "10/11",
+      "fee": 1500000
+    }
+  ],
+  "youthClubs": [
+    "CA Independiente (2008-2010)",
+    "Arsenal FC (2010-2012)"
+  ]
+}

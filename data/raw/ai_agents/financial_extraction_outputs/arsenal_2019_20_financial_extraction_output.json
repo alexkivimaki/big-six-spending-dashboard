@@ -1,0 +1,91 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "season": "2019/20",
+  "financial_year_end": "2020-05-31",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "total_revenue_original": 339968000,
+  "matchday_revenue_original": 78743000,
+  "broadcast_revenue_original": 118948000,
+  "commercial_revenue_original": 142277000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": 3485000,
+  "staff_costs_original": 234478000,
+  "player_amortisation_original": 109114000,
+  "profit_on_player_sales_original": 60050000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 339968000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    25,
+    26,
+    27
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 78743000,
+      "page_number": 25,
+      "statement_label": "Gate and other match day revenues",
+      "evidence_text": "Official annual report turnover note."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 118948000,
+      "page_number": 25,
+      "statement_label": "Broadcasting",
+      "evidence_text": "Official annual report turnover note."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 142277000,
+      "page_number": 25,
+      "statement_label": "Commercial / retail / licensing mapping",
+      "evidence_text": "Official annual report turnover note, with any disclosed retail or licensing line merged into commercial revenue for standardisation."
+    },
+    {
+      "field": "excluded_player_trading_revenue_original",
+      "value_original": 3485000,
+      "page_number": 25,
+      "statement_label": "Player trading",
+      "evidence_text": "Official annual report turnover note. Excluded from football revenue total."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 234478000,
+      "page_number": 27,
+      "statement_label": "Staff costs",
+      "evidence_text": "Official annual report operating expenses or employees note."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 109114000,
+      "page_number": 26,
+      "statement_label": "Amortisation of player registrations",
+      "evidence_text": "Official annual report operating expenses or intangible assets note."
+    },
+    {
+      "field": "profit_on_player_sales_original",
+      "value_original": 60050000,
+      "page_number": 25,
+      "statement_label": "Profit on disposal of player registrations",
+      "evidence_text": "Official annual report segmental analysis or profit and loss disclosure."
+    }
+  ],
+  "classification_notes": "Total revenue has been set to football operating revenue only and excludes disclosed player trading and property development turnover.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the relevant report note. The extracted football revenue figure should be treated as potentially including any inseparable women's activity.",
+  "non_football_revenue_notes": "Disclosed property development turnover is excluded from the football revenue total used here.",
+  "confidence_level": "high",
+  "requires_manual_review": true,
+  "source_document": "Group of companies' accounts made up to 31 May 2020",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/04250459/filing-history/MzI5NDA2NjY3MWFkaXF6a2N4/document?format=pdf&download=0",
+  "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000."
+}

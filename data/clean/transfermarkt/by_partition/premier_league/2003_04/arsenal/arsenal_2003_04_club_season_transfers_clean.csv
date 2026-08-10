@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,arsenal,Arsenal,2003/04,2003,all,27420000.0,1050000.0,26370000.0,20,22,transfermarkt_club_page,https://www.transfermarkt.com/arsenal/transfers/verein/11/saison_id/2003,2026-04-27T17:54:21.971549+00:00,high,Displayed arrivals sum (27420000) differs from parsed arrivals fee sum (27425000).

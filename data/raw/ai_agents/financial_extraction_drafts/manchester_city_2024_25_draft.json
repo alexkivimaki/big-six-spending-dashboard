@@ -1,0 +1,215 @@
+{
+  "task_type": "financial_extraction_review",
+  "club_id": "manchester_city",
+  "season": "2024/25",
+  "local_statement_path": "data/raw/financial_statements/manchester_city/2024_25_full_accounts_made_up_to_30_june_2025.pdf",
+  "ocr_cache_path": "data/raw/financial_statement_ocr/manchester_city/2024_25_ocr.json",
+  "candidate_extraction": {},
+  "candidate_pages_summary": [
+    {
+      "page": 1,
+      "char_count": 247,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Annual Report and Financial Statements For the year ended 30 June 2025 Registered number 00040946 MONDAY A04 *AEWYSDPK* 02/03/2026 COMPANIES HO"
+    },
+    {
+      "page": 2,
+      "char_count": 337,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Contents Directors and Company Information Strategic Report Directors' Report Statement of Directors' Responsibilities Independent Auditor's Report Statement of Profit or Loss Balan"
+    },
+    {
+      "page": 3,
+      "char_count": 448,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Directors and Company Information Directors K Al Mubarak (Chairman) M Edelman S Pearce J MacBeath A Galassi A Khouri Company Secretary S Cliff "
+    },
+    {
+      "page": 4,
+      "char_count": 2878,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Directors and Company Information (continued) The Board of Directors comprises the following who are all non-Executive Directors: Khaldoon Al M"
+    },
+    {
+      "page": 5,
+      "char_count": 2908,
+      "preview": "Docusign Envelope ID: DB3ADAE-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Strategic Report The Diretors present their aqual repon on the fies Wincheste i Fole l Cre limit in anchester City or the Club,. Principal activ"
+    },
+    {
+      "page": 6,
+      "char_count": 3298,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Strategic Report (continued) Business review and key performance indicators (continued) Key performance indicators The Club also measures key p"
+    },
+    {
+      "page": 7,
+      "char_count": 1097,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Strategic Report (continued) Section 172 (1) Statement From the perspective of the Club's Board, as a result of the City Football Group ('the G"
+    },
+    {
+      "page": 8,
+      "char_count": 2479,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249 4967-A6A5-32012040F953 Manchester City Football Club Limited Directors' Report The Directors who held office during the year were as follows: K AI Mubarak (Chairman) M Edelman $ Pearce J MacBeath A Galass"
+    },
+    {
+      "page": 9,
+      "char_count": 3095,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953, Manchester City Football Club Limited Directors' Report (continued) Financial risk management (continued) Market risk (continued) An assessment is made at the beginning of each fin"
+    },
+    {
+      "page": 10,
+      "char_count": 2482,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Statement of Directors' Responsibilities Directors' responsibilities The Directors are responsible for preparing the Directors' report and the "
+    },
+    {
+      "page": 11,
+      "char_count": 3436,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited Opinion on the financial statements In our opinion the fin"
+    },
+    {
+      "page": 12,
+      "char_count": 3612,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited (continued) Other Companies Act 2006 reporting In our opin"
+    },
+    {
+      "page": 13,
+      "char_count": 2266,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited (continued) Non-compliance with laws and regulations (cont"
+    },
+    {
+      "page": 14,
+      "char_count": 2131,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Independent Auditors' Report to the Members of Manchester City Football Club Limited (continued) Fraud (continued) We also communicated relevan"
+    },
+    {
+      "page": 15,
+      "char_count": 1024,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Statement of Profit or Loss for the year ended 30 June 2025 Revenue Other operating income Operating expenses Operating loss Profit on disposal"
+    },
+    {
+      "page": 16,
+      "char_count": 1337,
+      "preview": "Docusign Envelope ID: D83ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Balance Sheet Registered number 00040946 as at 30 June 2025 Non-current assets Intangible assets Property, plant and equipment Right-of-use-ass"
+    },
+    {
+      "page": 17,
+      "char_count": 614,
+      "preview": "Docusign Envelope ID: DBJADA2E-32494967-A6A5-32012040F953 Manchester City Football Club Limited Statement of Changes in Equity Share Capital 1,339,575 As at 30 June 2023 Profit for the year Capital contribution (share-based payments) As at "
+    },
+    {
+      "page": 18,
+      "char_count": 3089,
+      "preview": "Docusign Envelope ID: D83ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements 1. General information The financial statements of Manchester City Football Club Limited ('the Company' or 't"
+    },
+    {
+      "page": 19,
+      "char_count": 3525,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) New standards, amendments and interpretations There a"
+    },
+    {
+      "page": 20,
+      "char_count": 3686,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) New standards, amendments and interpretations (contin"
+    },
+    {
+      "page": 21,
+      "char_count": 3842,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) Going Concern (continued) The Group has considered mu"
+    },
+    {
+      "page": 22,
+      "char_count": 3989,
+      "preview": "Docusign Enveiope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) Matchday Maghday ponya is each atheis page all ghes p"
+    },
+    {
+      "page": 23,
+      "char_count": 3905,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) Taxes Current income tax Current income tax assets an"
+    },
+    {
+      "page": 24,
+      "char_count": 4453,
+      "preview": "Docusign Envelope ID: D83ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) Property, plant and equipment Property, plant and equ"
+    },
+    {
+      "page": 25,
+      "char_count": 4220,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) Intangible assets (continued) Changes in the expected"
+    },
+    {
+      "page": 26,
+      "char_count": 3820,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) Investments The Company reviews each of its investmen"
+    },
+    {
+      "page": 27,
+      "char_count": 3767,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 2. Material accounting policies (continued) Trade and other receivables (continued) For trade rec"
+    },
+    {
+      "page": 28,
+      "char_count": 1900,
+      "preview": "Docusign Envelope ID: D83ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 3. Significant accounting judgments, estimates and assumptions (continued) Players' registrations"
+    },
+    {
+      "page": 29,
+      "char_count": 1199,
+      "preview": "Docusign Envelope ID: D83ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 5. Operating loss Other operating income Other operating income Operating expenses Direct cost of"
+    },
+    {
+      "page": 30,
+      "char_count": 1430,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 8. Share-based payments The Company participates in the City Football Group long-term incentive p"
+    },
+    {
+      "page": 31,
+      "char_count": 1571,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 9. Interest receivable and similar income Interest receivable Gain on derivatives not designated "
+    },
+    {
+      "page": 32,
+      "char_count": 1546,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 11. Taxation (continued) The Company has corporation tax losses available for carry forward of ap"
+    },
+    {
+      "page": 33,
+      "char_count": 1672,
+      "preview": "Docusign Envelope ID: D83ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 13. Property, plant and equipment (continued) The balance in assets under the course of construct"
+    },
+    {
+      "page": 34,
+      "char_count": 2582,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 16. Trade and other receivables 2025 \u00a3000 Current trade and other receivables Trade receivables 7"
+    },
+    {
+      "page": 35,
+      "char_count": 1618,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 19. Leases Lease liabilities include future obligations under the lease of the Etihad Stadium. De"
+    },
+    {
+      "page": 36,
+      "char_count": 4045,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 22. Share capital The authorised and issued share capital at the beginning and end of the period "
+    },
+    {
+      "page": 37,
+      "char_count": 2938,
+      "preview": "Docusign Envelope ID: DB3ADAE-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 24. Commitments Capital commitments The capital commitments contracted but not provided for consis"
+    },
+    {
+      "page": 38,
+      "char_count": 2352,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040-953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 25. Related party transactions (continued) Transactions with non-wholly owned subsidiaries of Cit"
+    },
+    {
+      "page": 39,
+      "char_count": 1986,
+      "preview": "Docusign Envelope ID: DB3ADA2E-3249-4967-A6A5-32012040F953 Manchester City Football Club Limited Notes to the Financial Statements (continued) 25. Related party transactions (continued) \u2022 Key management compensation No key management person"
+    }
+  ],
+  "review_reasons": [
+    "draft extraction failed: Matching page not found"
+  ],
+  "needs_ai_review": true,
+  "suggested_save_output_to": "data/raw/ai_agents/financial_extraction_outputs/manchester_city_2024_25_financial_extraction_output.json",
+  "bank_references": [
+    "data/reference/financial_statement_extraction_bank/master_financial_statement_extraction_bank.md",
+    "data/reference/financial_statement_extraction_bank/manchester_city/README.md",
+    "data/reference/financial_statement_extraction_bank/manchester_city/manchester_city_extraction_bank.csv"
+  ]
+}

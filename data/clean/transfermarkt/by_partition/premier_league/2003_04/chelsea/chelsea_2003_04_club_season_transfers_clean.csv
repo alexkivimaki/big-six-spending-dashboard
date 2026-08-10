@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,chelsea,Chelsea,2003/04,2003,all,173700000.0,1530000.0,172170000.0,22,23,transfermarkt_club_page,https://www.transfermarkt.com/chelsea/transfers/verein/631/saison_id/2003,2026-04-27T18:17:49.342349+00:00,high,Displayed departures sum (1530000) differs from parsed departures fee sum (1525000).

@@ -1,0 +1,14 @@
+{
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "2013/14",
+  "season_start_year": 2013,
+  "season_dir": "2013_14",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/manchester-united/transfers/verein/985/saison_id/2013",
+  "collected_at_utc": "2026-04-27T18:16:51.263689+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

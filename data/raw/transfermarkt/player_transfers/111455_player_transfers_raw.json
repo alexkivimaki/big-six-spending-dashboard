@@ -1,0 +1,158 @@
+{
+  "updatedAt": "2026-04-27T20:12:08.050359",
+  "id": "111455",
+  "transfers": [
+    {
+      "id": "5822476",
+      "clubFrom": {
+        "id": "15",
+        "name": "Leverkusen"
+      },
+      "clubTo": {
+        "id": "289",
+        "name": "Sunderland"
+      },
+      "date": "2025-07-30",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 12000000,
+      "fee": 15000000
+    },
+    {
+      "id": "4483523",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "15",
+        "name": "Leverkusen"
+      },
+      "date": "2023-06-07",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 20000000,
+      "fee": 15000000
+    },
+    {
+      "id": "1489516",
+      "clubFrom": {
+        "id": "18",
+        "name": "Mönchengladbach"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2016-01-07",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 35000000,
+      "fee": 45000000
+    },
+    {
+      "id": "718530",
+      "clubFrom": {
+        "id": "26",
+        "name": "Basel"
+      },
+      "clubTo": {
+        "id": "18",
+        "name": "Mönchengladbach"
+      },
+      "date": "2012-01-07",
+      "upcoming": false,
+      "season": "12/13",
+      "marketValue": 8500000,
+      "fee": 8500000
+    },
+    {
+      "id": "432932",
+      "clubFrom": {
+        "id": "5299",
+        "name": "FC Basel U21"
+      },
+      "clubTo": {
+        "id": "26",
+        "name": "Basel"
+      },
+      "date": "2010-01-07",
+      "upcoming": false,
+      "season": "10/11"
+    },
+    {
+      "id": "354026",
+      "clubFrom": {
+        "id": "14322",
+        "name": "FC Basel U18"
+      },
+      "clubTo": {
+        "id": "5299",
+        "name": "FC Basel U21"
+      },
+      "date": "2008-01-07",
+      "upcoming": false,
+      "season": "08/09"
+    },
+    {
+      "id": "773441",
+      "clubFrom": {
+        "id": "32336",
+        "name": "FC Basel U16"
+      },
+      "clubTo": {
+        "id": "14322",
+        "name": "FC Basel U18"
+      },
+      "date": "2007-01-07",
+      "upcoming": false,
+      "season": "07/08"
+    },
+    {
+      "id": "2144580",
+      "clubFrom": {
+        "id": "42366",
+        "name": "FC Basel Yth."
+      },
+      "clubTo": {
+        "id": "32336",
+        "name": "FC Basel U16"
+      },
+      "date": "2006-01-07",
+      "upcoming": false,
+      "season": "06/07"
+    },
+    {
+      "id": "2144579",
+      "clubFrom": {
+        "id": "42366",
+        "name": "FC Basel Yth."
+      },
+      "clubTo": {
+        "id": "42366",
+        "name": "FC Basel Yth."
+      },
+      "date": "2005-01-07",
+      "upcoming": false,
+      "season": "05/06"
+    },
+    {
+      "id": "2144578",
+      "clubFrom": {
+        "id": "43575",
+        "name": "Concordia Yth."
+      },
+      "clubTo": {
+        "id": "42366",
+        "name": "FC Basel Yth."
+      },
+      "date": "2003-01-01",
+      "upcoming": false,
+      "season": "02/03"
+    }
+  ],
+  "youthClubs": [
+    "FC Concordia Basel (1997–12/2002)",
+    "FC Basel (01/2003–2010)"
+  ]
+}

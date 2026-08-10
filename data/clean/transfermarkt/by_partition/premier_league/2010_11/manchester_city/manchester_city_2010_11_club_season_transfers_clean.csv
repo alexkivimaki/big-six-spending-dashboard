@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,manchester_city,Manchester City,2010/11,2010,all,183610000.0,40150000.0,143460000.0,34,27,transfermarkt_club_page,https://www.transfermarkt.com/manchester-city/transfers/verein/281/saison_id/2010,2026-04-27T18:15:16.822645+00:00,high,

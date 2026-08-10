@@ -1,0 +1,21 @@
+season,Pos,Team,Pld,W,D,L,GF,GA,GD,Pts,Qualification or relegation,points_deduction,source_url
+,1,Barcelona (C),38,28,9,1,99,29,+70,93,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,2,Atlético Madrid,38,23,10,5,58,22,+36,79,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,3,Real Madrid,38,22,10,6,94,44,+50,76,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,4,Valencia,38,22,7,9,65,38,+27,73,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,5,Villarreal,38,18,7,13,57,50,+7,61,Qualification for the Europa League group stage,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,6,Real Betis,38,18,6,14,60,61,-1,60,Qualification for the Europa League group stage,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,7,Sevilla,38,17,7,14,49,58,-9,58,Qualification for the Europa League second qualifying round,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,8,Getafe,38,15,10,13,42,33,+9,55,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,9,Eibar,38,14,9,15,44,50,-6,51,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,10,Girona,38,14,9,15,50,59,-9,51,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,11,Espanyol,38,12,13,13,36,42,-6,49,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,12,Real Sociedad,38,14,7,17,66,59,+7,49,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,13,Celta Vigo,38,13,10,15,59,60,-1,49,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,14,Alavés,38,15,2,21,40,50,-10,47,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,15,Levante,38,11,13,14,44,58,-14,46,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,16,Athletic Bilbao,38,10,13,15,41,49,-8,43,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,17,Leganés,38,12,7,19,34,51,-17,43,,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,18,Deportivo La Coruña (R),38,6,11,21,38,76,-38,29,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,19,Las Palmas (R),38,5,7,26,24,74,-50,22,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga
+,20,Málaga (R),38,5,5,28,24,61,-37,20,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga

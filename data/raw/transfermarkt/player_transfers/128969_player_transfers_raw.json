@@ -1,0 +1,255 @@
+{
+  "updatedAt": "2026-04-27T20:11:35.245230",
+  "id": "128969",
+  "transfers": [
+    {
+      "id": "5896751",
+      "clubFrom": {
+        "id": "826",
+        "name": "Lens"
+      },
+      "clubTo": {
+        "id": "3368",
+        "name": "Levante"
+      },
+      "date": "2025-08-26",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 2500000
+    },
+    {
+      "id": "5470451",
+      "clubFrom": {
+        "id": "12",
+        "name": "Roma"
+      },
+      "clubTo": {
+        "id": "826",
+        "name": "Lens"
+      },
+      "date": "2025-01-21",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 2500000,
+      "fee": 750000
+    },
+    {
+      "id": "5127435",
+      "clubFrom": {
+        "id": "1090",
+        "name": "AZ Alkmaar"
+      },
+      "clubTo": {
+        "id": "12",
+        "name": "Roma"
+      },
+      "date": "2024-07-17",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 3500000
+    },
+    {
+      "id": "4213611",
+      "clubFrom": {
+        "id": "190",
+        "name": "Copenhagen"
+      },
+      "clubTo": {
+        "id": "1090",
+        "name": "AZ Alkmaar"
+      },
+      "date": "2023-09-01",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 5000000,
+      "fee": 500000
+    },
+    {
+      "id": "4001730",
+      "clubFrom": {
+        "id": "681",
+        "name": "Real Sociedad"
+      },
+      "clubTo": {
+        "id": "190",
+        "name": "Copenhagen"
+      },
+      "date": "2022-09-08",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 5000000,
+      "fee": 500000
+    },
+    {
+      "id": "3640975",
+      "clubFrom": {
+        "id": "1237",
+        "name": "Brighton"
+      },
+      "clubTo": {
+        "id": "681",
+        "name": "Real Sociedad"
+      },
+      "date": "2021-12-07",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 6000000
+    },
+    {
+      "id": "3215857",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1237",
+        "name": "Brighton"
+      },
+      "date": "2021-06-30",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 6000000
+    },
+    {
+      "id": "3215856",
+      "clubFrom": {
+        "id": "1237",
+        "name": "Brighton"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2021-01-22",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 8000000
+    },
+    {
+      "id": "1795204",
+      "clubFrom": {
+        "id": "1049",
+        "name": "Valencia"
+      },
+      "clubTo": {
+        "id": "1237",
+        "name": "Brighton"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 3500000,
+      "fee": 6000000
+    },
+    {
+      "id": "1689588",
+      "clubFrom": {
+        "id": "1184",
+        "name": "Genk"
+      },
+      "clubTo": {
+        "id": "1049",
+        "name": "Valencia"
+      },
+      "date": "2017-06-30",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 3500000
+    },
+    {
+      "id": "1689587",
+      "clubFrom": {
+        "id": "1049",
+        "name": "Valencia"
+      },
+      "clubTo": {
+        "id": "1184",
+        "name": "Genk"
+      },
+      "date": "2017-01-30",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 3000000
+    },
+    {
+      "id": "1293836",
+      "clubFrom": {
+        "id": "2282",
+        "name": "Club Brugge"
+      },
+      "clubTo": {
+        "id": "1049",
+        "name": "Valencia"
+      },
+      "date": "2015-07-21",
+      "upcoming": false,
+      "season": "15/16",
+      "marketValue": 7000000,
+      "fee": 7000000
+    },
+    {
+      "id": "878054",
+      "clubFrom": {
+        "id": "6954",
+        "name": "Central Coast"
+      },
+      "clubTo": {
+        "id": "2282",
+        "name": "Club Brugge"
+      },
+      "date": "2013-01-07",
+      "upcoming": false,
+      "season": "13/14",
+      "marketValue": 1000000,
+      "fee": 125000
+    },
+    {
+      "id": "439510",
+      "clubFrom": {
+        "id": "11375",
+        "name": "Blacktown City"
+      },
+      "clubTo": {
+        "id": "6954",
+        "name": "Central Coast"
+      },
+      "date": "2010-06-30",
+      "upcoming": false,
+      "season": "09/10",
+      "marketValue": 75000
+    },
+    {
+      "id": "434269",
+      "clubFrom": {
+        "id": "6954",
+        "name": "Central Coast"
+      },
+      "clubTo": {
+        "id": "11375",
+        "name": "Blacktown City"
+      },
+      "date": "2010-01-03",
+      "upcoming": false,
+      "season": "09/10",
+      "marketValue": 75000
+    },
+    {
+      "id": "3640976",
+      "clubFrom": {
+        "id": "11375",
+        "name": "Blacktown City"
+      },
+      "clubTo": {
+        "id": "6954",
+        "name": "Central Coast"
+      },
+      "date": "2009-01-04",
+      "upcoming": false,
+      "season": "08/09"
+    }
+  ],
+  "youthClubs": [
+    "Marconi Stallions (2002–07)",
+    "Plumpton/Oakhurst SC (10/2007-04/2008)"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "updatedAt": "2026-04-27T20:11:42.914001",
+  "id": "503765",
+  "transfers": [
+    {
+      "id": "6262460",
+      "clubFrom": {
+        "id": "4117",
+        "name": "Wealdstone"
+      },
+      "clubTo": {
+        "id": "631",
+        "name": "Chelsea"
+      },
+      "date": "2026-02-26",
+      "upcoming": false,
+      "season": "25/26"
+    },
+    {
+      "id": "5804666",
+      "clubFrom": {
+        "id": "8665",
+        "name": "Enfield Town"
+      },
+      "clubTo": {
+        "id": "4117",
+        "name": "Wealdstone"
+      },
+      "date": "2024-11-29",
+      "upcoming": false,
+      "season": "24/25"
+    },
+    {
+      "id": "5355106",
+      "clubFrom": {
+        "id": "56852",
+        "name": "Salisbury"
+      },
+      "clubTo": {
+        "id": "8665",
+        "name": "Enfield Town"
+      },
+      "date": "2024-12-11",
+      "upcoming": false,
+      "season": "24/25"
+    },
+    {
+      "id": "5313691",
+      "clubFrom": {
+        "id": "2793",
+        "name": "Southend United"
+      },
+      "clubTo": {
+        "id": "56852",
+        "name": "Salisbury"
+      },
+      "date": "2024-12-10",
+      "upcoming": false,
+      "season": "24/25"
+    },
+    {
+      "id": "5038041",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "2793",
+        "name": "Southend United"
+      },
+      "date": "2024-10-08",
+      "upcoming": false,
+      "season": "24/25"
+    },
+    {
+      "id": "2471338",
+      "clubFrom": {
+        "id": "11994",
+        "name": "Reading U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2019-02-07",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "2471337",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "11994",
+        "name": "Reading U18"
+      },
+      "date": "2019-05-31",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "2398176",
+      "clubFrom": {
+        "id": "11994",
+        "name": "Reading U18"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2019-07-02",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "2398178",
+      "clubFrom": {
+        "id": "56852",
+        "name": "Salisbury"
+      },
+      "clubTo": {
+        "id": "11994",
+        "name": "Reading U18"
+      },
+      "date": "2019-06-02",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "2398177",
+      "clubFrom": {
+        "id": "11994",
+        "name": "Reading U18"
+      },
+      "clubTo": {
+        "id": "56852",
+        "name": "Salisbury"
+      },
+      "date": "2018-10-19",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "1881895",
+      "clubFrom": {
+        "id": "53035",
+        "name": "Reading Yth."
+      },
+      "clubTo": {
+        "id": "11994",
+        "name": "Reading U18"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    }
+  ]
+}

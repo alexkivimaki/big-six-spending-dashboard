@@ -1,0 +1,14 @@
+{
+  "club_id": "manchester_city",
+  "club_name": "Manchester City",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "2011/12",
+  "season_start_year": 2011,
+  "season_dir": "2011_12",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/manchester-city/transfers/verein/281/saison_id/2011",
+  "collected_at_utc": "2026-04-27T18:15:19.584734+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

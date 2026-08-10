@@ -1,0 +1,285 @@
+{
+  "task_type": "financial_extraction_review",
+  "club_id": "tottenham_hotspur",
+  "season": "2020/21",
+  "local_statement_path": "data/raw/financial_statements/tottenham_hotspur/2020_21_group_of_companies_accounts_made_up_to_30_june_2021.pdf",
+  "ocr_cache_path": "data/raw/financial_statement_ocr/tottenham_hotspur/2020_21_ocr.json",
+  "candidate_extraction": {},
+  "candidate_pages_summary": [
+    {
+      "page": 1,
+      "char_count": 234,
+      "preview": "Company Registration No. 1706358 Tottenham Hotspur Limited (\"Tottenham Hotspur\" or \"the Group\" or \"the Company\") Annual Report and Consolidated Financial Statements 30 June 2021 WEDNESDAY A22 *AAHXTOSL* 24/11/2021 COMPANIES HOUSE #26"
+    },
+    {
+      "page": 2,
+      "char_count": 5035,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited The Directors present their Strategic Report on the affairs of Tottenham Hotspur Limited and its subsidiary companies ('Group') together with the Directors' Report, Financial Stat"
+    },
+    {
+      "page": 3,
+      "char_count": 3013,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Amortisation and impairment of intangible assets Amortisation and impairment of intangible assets and other football trading-related expenditure (net of income) has increased to \u00a3"
+    },
+    {
+      "page": 4,
+      "char_count": 4241,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Results and dividends The audited consolidated income statement for the year ended 30 June 2021 is set out on page 14. The Directors have not recommended the payment of a dividend"
+    },
+    {
+      "page": 5,
+      "char_count": 4187,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Interest of other stakeholders (suppliers, customers, others) \u2022 Fans Fans are the lifeblood of our Club and are always foremost in our decision-making We are proud to have an ever"
+    },
+    {
+      "page": 6,
+      "char_count": 4421,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited The Club is also a member of the British Association for Sustainable Sport (BASIS), the sustainability hub for sport in the UK. For more than a decade, BASIS has driven the growth"
+    },
+    {
+      "page": 7,
+      "char_count": 2775,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited \u2022 locally and sustainably sourced food served inside the stadium, with plant-based options available across all outlets and in Premium areas \u2022 a 'zero to landfill' waste managemen"
+    },
+    {
+      "page": 8,
+      "char_count": 4114,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Directors . None of the Directors who served during the year held a beneficial interest in the ordinary share capital of the Company at 30 June 2021. For a full list of Directors"
+    },
+    {
+      "page": 9,
+      "char_count": 4169,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Directors indemnities The Group has not made any qualifying third-party indemnity provisions for the benefit of its Directors during the year. Going concern The Board of Director"
+    },
+    {
+      "page": 10,
+      "char_count": 2766,
+      "preview": "Directors' responsibilities statement The Directors are responsible for preparing the Annual Report and the financial statements in accordance with applicable law and regulations. Company law requires the Directors to prepare financial stat"
+    },
+    {
+      "page": 11,
+      "char_count": 4389,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited Independent auditor's report to the members of Tottenham Hotspur Limited Report on the audit of the financial statements Opinion. In our opinion the financial statemen"
+    },
+    {
+      "page": 12,
+      "char_count": 5308,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited to a material misstatement in the financial statements themselves. If, based on the work we have performed, we conclude that there is a material misstatement of this o"
+    },
+    {
+      "page": 13,
+      "char_count": 1907,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited \u2022 performing analytical procedures to identify any unusual or unexpected relationships that may indicate risks of material misstatement due to fraud; \u2022 enquiring of ma"
+    },
+    {
+      "page": 14,
+      "char_count": 777,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited Use of our report This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006. Our audit work has"
+    },
+    {
+      "page": 15,
+      "char_count": 1157,
+      "preview": "Consolidated income statement for the year ended 30 June 2021 Revenue Operating expenses Operating loss Profit on disposal of intangible fixed assets Loss from operations Finance income Finance costs Loss on ordinary activities before taxat"
+    },
+    {
+      "page": 16,
+      "char_count": 1377,
+      "preview": "Consolidated balance sheet as at 30 June 2021 Non-current assets Property, plant and equipment Intangible assets Investments in financial assets Trade receivables due after one year Current assets Inventories Tax and Social Security Trade a"
+    },
+    {
+      "page": 17,
+      "char_count": 681,
+      "preview": "Consolidated statement of changes in equity for the year ended 30 June 2021 For the year ended 30 June 2021 Balance as at 1 July 2020 Loss for the year At 30 June 2021 For the year ended 30 June 2020 Share capital \u20ac'000 10,644 10,644 Balanc"
+    },
+    {
+      "page": 18,
+      "char_count": 1660,
+      "preview": "Consolidated statement of cash flows for the year ended 30 June 2021 Cash flow from operating activities Loss from operations Adjustments for: Amortisation of intangible assets Impairment of intangible assets Profit on disposal of intangibl"
+    },
+    {
+      "page": 19,
+      "char_count": 4388,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 1. Accounting policies and critical accounting judgements The following accounting policies have been applied consistently by the Directors in both the current and preceding periods in d"
+    },
+    {
+      "page": 20,
+      "char_count": 5397,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 Accounting policies and critical accounting judgements (continued) Player costs and transactions (a) Initial capitalisation The costs associated with the acquisition of players and key f"
+    },
+    {
+      "page": 21,
+      "char_count": 4945,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 1. Accounting policies and critical accounting judgements (continued) Finance costs Finance costs of borrowings are recognised in the income statement using the effective interest method"
+    },
+    {
+      "page": 22,
+      "char_count": 4536,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 1. Accounting policies and critical accounting judgements (continued) Borrowing costs Borrowing costs that are directly attributable to the acquisition, construction or production of a q"
+    },
+    {
+      "page": 23,
+      "char_count": 2786,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 Accounting policies and critical accounting judgements (continued) Critical accounting judgements and sources of estimation uncertainty (continued) Property, plant and equipment and inta"
+    },
+    {
+      "page": 24,
+      "char_count": 1160,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 3. Operating expenses Staff costs (see note 5) Depreciation of property, plant and equipment Profit on disposal of property, plant and equipment Exceptional items - Onerous employment co"
+    },
+    {
+      "page": 25,
+      "char_count": 2467,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 4. Loss from operations (continued) The analysis of auditor's remuneration is as follows: 2021 \u20ac'000 2020 \u00a3'000 Fees payable to the Company's auditor for the audit of the Company's annua"
+    },
+    {
+      "page": 26,
+      "char_count": 971,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 6. Profit on disposal of intangible fixed assets Consideration Net book value of disposals 2021 \u20ac'000 20,039 (1,100) 18,939 2020 \u20ac'000 20,122 (4,725) 15,397 7. Finance income and costs I"
+    },
+    {
+      "page": 27,
+      "char_count": 715,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 8. Tax charge on ordinary activities Current tax UK corporation tax credit on profits for the year at 19% (2020: 19%) Other prior year adjustments Foreign tax suffered Current tax credit"
+    },
+    {
+      "page": 28,
+      "char_count": 2223,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 8. Tax charge on ordinary activities (continued) 2021 \u00a3'000 2020 \u00a3'000 Loss on ordinary activities before taxation Tax credit on loss on ordinary activities before taxation at the UK sta"
+    },
+    {
+      "page": 29,
+      "char_count": 1244,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 9. Property, plant and equipment (continued) For the year ended 30 June 2020 Group Cost At 1 July 2019 Additions Transition Adjustment Transfer from AUC At 30 June 2020 Depreciation and "
+    },
+    {
+      "page": 30,
+      "char_count": 1689,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 10. Intangible fixed assets (continued) Intangible assets relate entirely to the carrying value of the playing squad and are being amortised over the remaining length of the Players' con"
+    },
+    {
+      "page": 31,
+      "char_count": 1251,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 12. Inventories 2021 \u00a3'000 8,106 2020 \u00a3'000 6,190 Inventories Inventories comprise merchandising goods held for resale. 13. Trade and other receivables 2021 \u00a3'000 Trade receivables due i"
+    },
+    {
+      "page": 32,
+      "char_count": 1463,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 15. Current liabilities Bank loans (secured) Interest-bearing loans and borrowings Trade payables due in less than one year Other tax and social security Lease Liabilities Other payables"
+    },
+    {
+      "page": 33,
+      "char_count": 2183,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 16. Non-current liabilities (continued) Bank loans (in notes 15 and 16) The Investec Bank facility used to fund the construction of the new Training Ground and secured against the new Tr"
+    },
+    {
+      "page": 34,
+      "char_count": 972,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 16. Non-current liabilities (continued) The maturity profile of the Group's total borrowings at the balance sheet date which do not include interest payments are as follows: 2021 Interes"
+    },
+    {
+      "page": 35,
+      "char_count": 1855,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 16. Non-current liabilities (continued) Interest rate profile The Group has no financial assets excluding short-term receivables, other than the Sterling cash deposits of \u20ac147,569,000 (2"
+    },
+    {
+      "page": 36,
+      "char_count": 1507,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 17. Provisions for liabilities For the year ended 30 June 2021 \u00a3'000 Provisions on employment contracts - due in less than one year At 1 July 2020 Provided during the year Utilised durin"
+    },
+    {
+      "page": 37,
+      "char_count": 3285,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 18. Financial instruments Capital risk management The Group manages its capital to ensure that entities in the Group will be able to continue as a going concern. Strong financial managem"
+    },
+    {
+      "page": 38,
+      "char_count": 3623,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 18. Financial instruments (continued) (i) Market risk The Group's activities expose it primarily to the financial risks of changes in foreign currency exchange and interest rates. Intere"
+    },
+    {
+      "page": 39,
+      "char_count": 2212,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 18. Financial instruments (continued) (ii) Credit risk (continued) There are no other significant concentrations of credit risk within the Group. Cash is deposited with one financial ins"
+    },
+    {
+      "page": 40,
+      "char_count": 1259,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 19. Called up share capital Allotted, called up and fully paid: 2021: 212,886,618 (2020: 212,886,618) ordinary shares of 5p each During the year no (2020: none) ordinary shares were boug"
+    },
+    {
+      "page": 41,
+      "char_count": 4226,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 22. Net debt Cash and cash equivalents Bank loans Net debt 2021 \u00a3'000 147,569 (853,850) (706,281) 2020 \u00a3'000 226,176 (830,780) (604,604) 23. Related party transactions The following para"
+    },
+    {
+      "page": 42,
+      "char_count": 2238,
+      "preview": "Notes to the accounts for the year ended 30 June 2021 charged during the year relating to this deficit was \u20ac108,000 (2020: \u20ac103,000). At the balance sheet date the Group's share of this deficit was \u00a3164,000 (2020: \u00a3272,000). 25. Contingent "
+    },
+    {
+      "page": 43,
+      "char_count": 1018,
+      "preview": "Company balance sheet as at 30 June 2021 Notes 2021 \u00a3'000 2020 \u00a3'000 Non-current assets Property, plant and equipment Investments Current assets Inventory Trade and other receivables Cash and cash equivalents Current liabilities Net current"
+    },
+    {
+      "page": 44,
+      "char_count": 673,
+      "preview": "Statement of Changes in Equity as at 30 June 2021 For the year ended 30 June 2021 Balance as at 1 July 2020 Profit for the year At 30 June 2021 For the year ended 30 June 2020 Share capital E'000 10,644 - 10,644 Share premium \u00a3'000 34,788 3"
+    },
+    {
+      "page": 45,
+      "char_count": 3931,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2021 1. Accounting policies and critical judgements Authorisation of financial statements and statement of compliance with FRS 101 The financial statements of the Company for the year"
+    },
+    {
+      "page": 46,
+      "char_count": 4125,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2021 1. Accounting policies and critical judgements (continued) Inventory Inventories, which comprise goods held for resale, are valued at the lower of cost and net realisable value u"
+    },
+    {
+      "page": 47,
+      "char_count": 812,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2021 2. Property, plant and equipment For the year ended 30 June 2021 Land and buildings short leasehold \u00a3'000 Right Of Use Assets \u00a3'000 Motor vehicles \u00a3'000 General plant and equipme"
+    },
+    {
+      "page": 48,
+      "char_count": 780,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2021 For the year ended 30 June 2020 land and buildings short leasehold \u20ac'000 Right Of Use Assets \u20ac'000 Motor vehicles \u20ac'000 General plant and equipment \u00a3'000 Assets under the course "
+    },
+    {
+      "page": 49,
+      "char_count": 2491,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2021 3. Investments held as fixed assets Investments held as fixed assets by the Company represent the investments in subsidiary undertakings which are analysed as follows: Investment"
+    },
+    {
+      "page": 50,
+      "char_count": 1209,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2021 5. Current assets Trade receivables Amounts owed by Group undertakings Other receivables Prepayments and accrued income Taxation Other taxation Deferred tax asset (see note 8) 20"
+    },
+    {
+      "page": 51,
+      "char_count": 1999,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2021 7. Non-current liabilities (continued) Borrowing facilities As at the balance sheet date the Company had the following undrawn committed bank borrowing and facilities: Expiring i"
+    },
+    {
+      "page": 52,
+      "char_count": 762,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2021 10. Lease Liabilities I July 2020 Additions Interest expense related to lease liabilities Repayment of lease liabilities At 30 June 2021 Current lease liabilities Non-current lea"
+    },
+    {
+      "page": 53,
+      "char_count": 604,
+      "preview": "Directors, officers and advisers Executive Chairman D P Levy Executive Directors MJ Collecott D Cullen R Caplehorn - resigned 11 November 2020 Non-Executive Directors Mr R Robson (Chairman of the Audit Committee) - resigned 29 April 2021 Mr"
+    }
+  ],
+  "review_reasons": [
+    "draft extraction failed: Matching page not found"
+  ],
+  "needs_ai_review": true,
+  "suggested_save_output_to": "data/raw/ai_agents/financial_extraction_outputs/tottenham_hotspur_2020_21_financial_extraction_output.json",
+  "bank_references": [
+    "data/reference/financial_statement_extraction_bank/master_financial_statement_extraction_bank.md",
+    "data/reference/financial_statement_extraction_bank/tottenham_hotspur/README.md",
+    "data/reference/financial_statement_extraction_bank/tottenham_hotspur/tottenham_hotspur_extraction_bank.csv"
+  ]
+}

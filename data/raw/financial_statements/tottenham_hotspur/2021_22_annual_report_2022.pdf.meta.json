@@ -1,0 +1,12 @@
+{
+  "club_id": "tottenham_hotspur",
+  "season": "2021/22",
+  "source_url": "https://www.tottenhamhotspur.com/the-club/investor-relations/annual-reports/",
+  "download_url": "https://resources.thfc.pulselive.com/thfc/document/2026/04/02/7347ba67-221e-4361-9c7d-df768809a901/AR-2022.pdf",
+  "date_downloaded_utc": "2026-04-28T08:58:10.822377+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/tottenham_hotspur/2021_22_annual_report_2022.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/tottenham_hotspur_2021_22_statement_fetcher_output.json",
+  "report_title": "Annual Report 2022",
+  "report_type": "annual_report"
+}

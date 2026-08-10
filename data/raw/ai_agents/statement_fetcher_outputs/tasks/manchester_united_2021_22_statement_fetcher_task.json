@@ -1,0 +1,24 @@
+{
+  "task_type": "statement_fetcher",
+  "club_id": "manchester_united",
+  "club_name": "Manchester United",
+  "season": "2021/22",
+  "target_financial_year_end_range": {
+    "start": "2022-05-01",
+    "end": "2022-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  "preferred_sources": [
+    "official club annual report page",
+    "investor relations page",
+    "Companies House filing",
+    "SEC filing if applicable",
+    "other official registry or club source"
+  ],
+  "company_or_group_notes": "Use Manchester United plc annual reports / SEC 20-F filings where available.",
+  "official_financial_reports_url": "https://ir.manutd.com/financial-information/annual-reports/default.aspx",
+  "companies_house_search_name": "Manchester United Football Club Limited",
+  "currency_common": "GBP",
+  "prompt_path": "agents/statement_fetcher_agent_prompt.md",
+  "save_output_to": "data/raw/ai_agents/statement_fetcher_outputs/manchester_united_2021_22_statement_fetcher_output.json"
+}

@@ -1,0 +1,8 @@
+source_id,source_name,source_type,source_url,date_accessed,license_or_terms_notes,reliability_notes
+transfermarkt_club_page,Transfermarkt club transfers page,club_transfer_page,https://www.transfermarkt.com/,,Review site terms before scaling or commercialization,Preferred source for club-season transfer totals when captured directly from the club page
+transfermarkt_api,Transfermarkt API,transfer_api,https://github.com/felipeall/transfermarkt-api,,Local API wrapper for Transfermarkt data,Hobby-use data source; verify outputs
+capology,Capology,wage_estimate,https://www.capology.com/,,Estimated wage data,Use with caveats
+football_data,Football-Data.co.uk,performance_data,https://www.football-data.co.uk/,,Open football results data,Good for league results
+official_annual_reports,Official club annual reports,official_finance,,,,Highest priority for audited finance data
+companies_house,Companies House,official_finance,https://find-and-update.company-information.service.gov.uk/,,Official UK company filings,High reliability
+ons_inflation,ONS inflation data,inflation,https://www.ons.gov.uk/,,UK inflation data,Use for inflation adjustment

@@ -1,0 +1,250 @@
+{
+  "task_type": "financial_extraction_review",
+  "club_id": "tottenham_hotspur",
+  "season": "2018/19",
+  "local_statement_path": "data/raw/financial_statements/tottenham_hotspur/2018_19_group_of_companies_accounts_made_up_to_30_june_2019.pdf",
+  "ocr_cache_path": "data/raw/financial_statement_ocr/tottenham_hotspur/2018_19_ocr.json",
+  "candidate_extraction": {},
+  "candidate_pages_summary": [
+    {
+      "page": 1,
+      "char_count": 53,
+      "preview": "MONDAY A03 *A91GIVS@* 23/03/2020 COMPANIES HOUSE #53"
+    },
+    {
+      "page": 2,
+      "char_count": 3872,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited The Directors present their Strategic Report on the affairs of Tottenham Hotspur Limited and its subsidiary companies ('Group') together with the Directors' Report, Financial Stat"
+    },
+    {
+      "page": 3,
+      "char_count": 2175,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Balance sheet The opening of THS in the year has seen a significant investment in stadium construction. Total assets were \u00a31,694.5m (2018: \u00a31,299.4m) whilst the Group has net debt"
+    },
+    {
+      "page": 4,
+      "char_count": 1244,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Financial risk management objectives and policies The Group is exposed to financial risk through its financial assets and liabilities. The key financial risk is that the proceeds "
+    },
+    {
+      "page": 5,
+      "char_count": 3913,
+      "preview": "Directors' report lo the members of Tottenham Hotspur Limited Directors None of the Directors who served during the year held a beneficial interest in the ordinary share capital of the Company at 30 June 2019. For a full list of Direclors p"
+    },
+    {
+      "page": 6,
+      "char_count": 2574,
+      "preview": "Direclors' report to the members of Tottenham Hotspur Limited Directors' indemnitles The Group has not made any qualifying third-party indemnity provisions for the benefit of its Direclors during the year. Going concern The Board of Direclo"
+    },
+    {
+      "page": 7,
+      "char_count": 2769,
+      "preview": "Directors' responsibilities statement The directors are responsible for preparing the Annual Report and the financial statements in accordance with applicable law and regulations. Company law requires the directors to prepare financial stat"
+    },
+    {
+      "page": 8,
+      "char_count": 3929,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited Opinion In our opinion: \u2022 the financial statements give a true and fair view of the state of the group's and of the parent company's affairs as at 30 June 2019 and of "
+    },
+    {
+      "page": 9,
+      "char_count": 3986,
+      "preview": "Independent auditor's report lo the members of Tottenham Hotspur Limited Responsibilities of directors As explained more fully in the direclors' responsibilities statement, the directors are responsible for the preparation of the financial "
+    },
+    {
+      "page": 10,
+      "char_count": 1155,
+      "preview": "Consolidated Income statement for the year ended 30 June 2019 Revenue Operating expenses Operating profit/(loss) Profit on disposal of intangible fixed assels Profit from operations Finance income Finance costs Profit on ordinary activities"
+    },
+    {
+      "page": 11,
+      "char_count": 1351,
+      "preview": "Consolidated balance sheet as at 30 June 2019 Non-c\u00farrent assets Property, plant and equipment Intangible assets Trade receivables due after one year Current assets Inventories Tax and Social Security Trade and other recelvables Cash and ca"
+    },
+    {
+      "page": 12,
+      "char_count": 640,
+      "preview": "Consolidated statement of changes in equity for the year ended 30 June 2019 Balance as at 1 July 2018 Profit for the year At: 30 June 2019 For the year ended 30 June 2018 Share capital \u00a3'000 10,644 10,644 Balance as at 1 July 2017 Profit fo"
+    },
+    {
+      "page": 13,
+      "char_count": 1610,
+      "preview": "Consolidated statement of cash flows for the year ended 30 June 2019 13 112,541 47,506 (10,885) (5,713) 24,859 22 306 6,360 (893) 103.628 277,731 (26,022) 73 (8,093) 243,689. (420,336) 7,113 (49,166) 46,437 (415,952) 195,111 195,111 22,848 "
+    },
+    {
+      "page": 14,
+      "char_count": 4886,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 1. Accounting policies and critical accounting judgements The following accounting policies have been applied consistently by the Directors in both the current and preceding periods in d"
+    },
+    {
+      "page": 15,
+      "char_count": 4585,
+      "preview": "Notes lo the accounts for the year ended 30 June 2019. 1. Accounting policles and critical accounting judgements (continued) (c) Contingent consideration Under the conditions of certain transfer agreements, further fees will be payable to t"
+    },
+    {
+      "page": 16,
+      "char_count": 4564,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 1. Accounting policies and critical accounting judgements (continued) Finance costs Finance costs of borrowings are recognised in the income statement using the effective interest method"
+    },
+    {
+      "page": 17,
+      "char_count": 4572,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 1. Accounting policies and critical accounting judgements (continued) Borrowing costs Borrowing costs that are directly attributable to the acquisition, construction or production of a q"
+    },
+    {
+      "page": 18,
+      "char_count": 1847,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 1. Accounting policies and critical accounting judgements (continued) Critical accounting judgements and sources of estimation uncertainty (continued) Assets under construction The asset"
+    },
+    {
+      "page": 19,
+      "char_count": 1122,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 3. Operating expenses Staff costs (see note 5) Depreciation of property, plant and equipment Profit on disposal of property, plant and equipment Other operating costs Operating expenses "
+    },
+    {
+      "page": 20,
+      "char_count": 2687,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 4. Profit from operations (continued) The analysis of auditor's remuneration is as follows: 2019 \u00a3'000 2018. \u20ac'000 Fees payable to the Company's auditor for the audit of the Company's an"
+    },
+    {
+      "page": 21,
+      "char_count": 1375,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 6. Profit on disposal of intangible fixed assets Consideration Net book value of disposals 7. Finance income and costs Interest income Notional interest income on deferred receipts for s"
+    },
+    {
+      "page": 22,
+      "char_count": 1882,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 8. Tax charge on ordinary activitles (continued) Profit on ordinary activities before taxation Tax on profit on ordinary activities before taxation al the UK statutory rate of 19.00% (20"
+    },
+    {
+      "page": 23,
+      "char_count": 1222,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 9. Property, plant and equipment (continued) For the year ended 30 June 2018 Group Cost At 1. July 2017 Additions Disposals Transfer from AUC At 30 June 2018 Depreciation and impairment "
+    },
+    {
+      "page": 24,
+      "char_count": 887,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 10. Intangible fixed assets (continued) lengin of the ely es co trels which are bele ene and five ye guad and are being amorised over the remaining 11471000) ampalmen lasses were incured"
+    },
+    {
+      "page": 25,
+      "char_count": 1203,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 11. Inventories 2019 E'000 6,251 2018 \u00a3'000 5,358 Inventories Inventories comprise merch\u00e4ndising goods held for resale. 12. Trade and other receivables 2019 \u00a3'000 2018 \u00a3'000 Trade receiv"
+    },
+    {
+      "page": 26,
+      "char_count": 1314,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 14, Current liabllities Bank loans (secured) Interest-bearing loans and borrowings 2019 \u00a3'000 714 714 2018 \u20ac000 567 567 Trade payables due in less than one year Other tax and social secu"
+    },
+    {
+      "page": 27,
+      "char_count": 2663,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 15. Non-current labilities (continued) Bank loans (in notes 14 and 15) The Investec Bank facility of \u00a316,000,000 used to fund the construction of the new Training Ground and secured agai"
+    },
+    {
+      "page": 28,
+      "char_count": 878,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 15. Non-current liabilities (continued) The maturity profile of the Group's total borrowings al the balance sheet date which do not include interest payments are as follows: Principal 2\u00b0"
+    },
+    {
+      "page": 29,
+      "char_count": 1238,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 15. Non-current liabilities (continued) 72.172,00 0 18:970 . whings parterm rehandig ang the is in gus. de Siting cash deposits comprise deposits placed on the money market at call rates"
+    },
+    {
+      "page": 30,
+      "char_count": 1834,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 15. Non-current liabilitles (continued) The Group's operations are currently funded through operating cash flow, cash balances and loans. The Group is exposed to foreign currency exchang"
+    },
+    {
+      "page": 31,
+      "char_count": 3192,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 17. Financial Instruments Capital risk management The Group manages its capital to ensure that entities in the Group will be able to continue as going concerns. Strong financial manageme"
+    },
+    {
+      "page": 32,
+      "char_count": 3499,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 17. Financlal instruments (continued) (i) Market risk The Group's activities expose it primarily to the financial risks of changes in foreign currency exchange and interest rates. Intere"
+    },
+    {
+      "page": 33,
+      "char_count": 1820,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 17. Financial Instruments (continued) (li) . Credit risk (continued) Towever the Directors are satished this does no ceile sighi ane credit risk. The maximi is exposure relativion footba"
+    },
+    {
+      "page": 34,
+      "char_count": 1070,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 18. Called up share capital Allotted, called up and fully paid: 212,886,618 (2018: 212,886,618) ordinary shares of 5p each During the year no (2018: none) ordinary shares were bought bac"
+    },
+    {
+      "page": 35,
+      "char_count": 4380,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 22. Related party (ransactions The following paragraphs give details of all related party transactions involving the Company and any of its subsidiary undertakings. ENIC Group companies "
+    },
+    {
+      "page": 36,
+      "char_count": 1570,
+      "preview": "Notes to the accounts for the year ended 30 June 2019 25. Post balance sheet events Since the balance sheet date the following events have occurred: : V Jansen was sod to Menice aid; \u2022 G K N'Koudou was sold to Besikas; \u2022 J Onomah was sold t"
+    },
+    {
+      "page": 37,
+      "char_count": 1018,
+      "preview": "Company balance sheet. as at 30 June 2019 Notes 2019 \u20ac000 2018 \u00a3'000 Non-current assets Property, plant and equipment Investments Current assets Inventory Trade and other receivables Cash and cash equivalents 2 3 4 5 98,906 232,989. 331,895"
+    },
+    {
+      "page": 38,
+      "char_count": 646,
+      "preview": "Statement of Changes in Equity as at 30 June 2019 For the year ended 30 June 2019 Balance as al 1 July 2018 Profit for the year At 30 June 2019 For the year ended 30 June 2018 Balance as ali July 2017 Profit for the year At 30 June 2018 Sha"
+    },
+    {
+      "page": 39,
+      "char_count": 4095,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2019 1. Accounting policies and critical judgements Authorisation of financial statements and statement of compliance with FRS 101 The financial statements of the Company for the year"
+    },
+    {
+      "page": 40,
+      "char_count": 3515,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2019 1. Accounting policles and critical judgements (continued) Inventory Inventories, which comprise goods held for resale, are valued at the lower of cost and net realisable value u"
+    },
+    {
+      "page": 41,
+      "char_count": 1423,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2019 2. Property, plant and equipment For the year ended 30 June 2019 Cost At 1 July 2018 Additions Disposals Transfer from assets under construction At 30 June 2019 Depreciation and "
+    },
+    {
+      "page": 42,
+      "char_count": 2335,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2019 3. Investments held as fixed assets Investments held as fixed assets by the Company represent the investments in subsidiary undertakings which are analysed as follows: Investment"
+    },
+    {
+      "page": 43,
+      "char_count": 1471,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2019 5. Current assets Trade receivables Amounts owed by Group undertakings Other receivables Prepayments and accrued income Debt issue costs Taxalion Other taxation Deferred tax asse"
+    },
+    {
+      "page": 44,
+      "char_count": 1826,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2019 7. Non-current liabilities (continued) The maturity profile of the company's financial liabilities at the balance sheet date: 2019 \u00a3'000 2018 E'000 Expiring in more than two year"
+    },
+    {
+      "page": 45,
+      "char_count": 332,
+      "preview": "Notes to the Company accounts for the year ended 30 June 2019 10. Commitments The total commitments under non-cancellable operating leases are: Land and buildings: Leases expiring within one year Leases expiring within two to five years Lea"
+    },
+    {
+      "page": 46,
+      "char_count": 574,
+      "preview": "Directors, officers and advisers Executive Chairman D P Levy Executive Directors M J Collecott D Cullen R Caplehorn Non-Executive Directors Mr K V Walts (Ch\u00e4irman of the Remuneration Committee) - (Resigned 10 November 2018) Mr R Robson (Cha"
+    }
+  ],
+  "review_reasons": [
+    "draft extraction failed: Matching page not found"
+  ],
+  "needs_ai_review": true,
+  "suggested_save_output_to": "data/raw/ai_agents/financial_extraction_outputs/tottenham_hotspur_2018_19_financial_extraction_output.json",
+  "bank_references": [
+    "data/reference/financial_statement_extraction_bank/master_financial_statement_extraction_bank.md",
+    "data/reference/financial_statement_extraction_bank/tottenham_hotspur/README.md",
+    "data/reference/financial_statement_extraction_bank/tottenham_hotspur/tottenham_hotspur_extraction_bank.csv"
+  ]
+}

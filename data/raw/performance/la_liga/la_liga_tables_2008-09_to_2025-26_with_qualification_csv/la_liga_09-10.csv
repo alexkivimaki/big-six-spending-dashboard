@@ -1,0 +1,21 @@
+season,Pos,Team,Pld,W,D,L,GF,GA,GD,Pts,Qualification or relegation,points_deduction,source_url
+,1,Barcelona (C),38,31,6,1,98,24,+74,99,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,2,Real Madrid,38,31,3,4,102,35,+67,96,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,3,Valencia,38,21,8,9,59,40,+19,71,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,4,Sevilla,38,19,6,13,65,49,+16,63,Qualification for the Champions League play-off round,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,5,Mallorca,38,18,8,12,59,44,+15,62,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,6,Getafe,38,17,7,14,58,48,+10,58,Qualification for the Europa League play-off round,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,7,Villarreal,38,16,8,14,58,57,+1,56,Qualification for the Europa League play-off round,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,8,Athletic Bilbao,38,15,9,14,50,53,-3,54,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,9,Atlético Madrid,38,13,8,17,57,61,-4,47,Qualification for the Europa League group stage,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,10,Deportivo La Coruña,38,13,8,17,35,49,-14,47,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,11,Espanyol,38,11,11,16,29,46,-17,44,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,12,Osasuna,38,11,10,17,37,46,-9,43,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,13,Almería,38,10,12,16,43,55,-12,42,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,14,Zaragoza,38,10,11,17,46,64,-18,41,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,15,Sporting Gijón,38,9,13,16,36,51,-15,40,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,16,Racing Santander,38,9,12,17,42,59,-17,39,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,17,Málaga,38,7,16,15,42,48,-6,37,,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,18,Valladolid (R),38,7,15,16,37,62,-25,36,Relegation to the Segunda División,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,19,Tenerife (R),38,9,9,20,40,74,-34,36,Relegation to the Segunda División,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga
+,20,Xerez (R),38,8,10,20,38,66,-28,34,Relegation to the Segunda División,0,https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga

@@ -1,0 +1,11 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "season": "2020/21",
+  "season_start_year": 2020,
+  "endpoint_url": "http://localhost:8000/clubs/11/players?season_id=2020",
+  "collected_at_utc": "2026-04-27T17:11:31.424249+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api_club_players_fallback"
+}

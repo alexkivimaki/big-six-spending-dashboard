@@ -1,0 +1,9 @@
+{
+  "player_id": "220491",
+  "player_name": "Matt Macey",
+  "endpoint_url": "http://localhost:8000/players/220491/transfers",
+  "collected_at_utc": "2026-04-27T17:11:39.239034+00:00",
+  "status_code": 200,
+  "source_name": "transfermarkt_api",
+  "collection_method": "local_transfermarkt_api"
+}

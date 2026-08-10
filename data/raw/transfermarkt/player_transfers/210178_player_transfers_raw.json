@@ -1,0 +1,314 @@
+{
+  "updatedAt": "2026-04-27T20:11:53.163757",
+  "id": "210178",
+  "transfers": [
+    {
+      "id": "6112562",
+      "clubFrom": {
+        "id": "430",
+        "name": "Fiorentina"
+      },
+      "clubTo": {
+        "id": "1114",
+        "name": "Al-Hilal"
+      },
+      "date": "2026-11-01",
+      "upcoming": false,
+      "season": "25/26",
+      "marketValue": 2500000,
+      "fee": 2000000
+    },
+    {
+      "id": "5486288",
+      "clubFrom": {
+        "id": "2919",
+        "name": "Monza"
+      },
+      "clubTo": {
+        "id": "430",
+        "name": "Fiorentina"
+      },
+      "date": "2025-01-28",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 3500000,
+      "fee": 2700000
+    },
+    {
+      "id": "4383864",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "2919",
+        "name": "Monza"
+      },
+      "date": "2023-01-07",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 5000000,
+      "fee": 6200000
+    },
+    {
+      "id": "4006662",
+      "clubFrom": {
+        "id": "2919",
+        "name": "Monza"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2023-06-30",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 5000000
+    },
+    {
+      "id": "4006661",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "2919",
+        "name": "Monza"
+      },
+      "date": "2022-11-08",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 5000000
+    },
+    {
+      "id": "3704056",
+      "clubFrom": {
+        "id": "410",
+        "name": "Udinese"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2022-06-30",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 5000000
+    },
+    {
+      "id": "3704055",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "410",
+        "name": "Udinese"
+      },
+      "date": "2022-01-20",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 5000000
+    },
+    {
+      "id": "2942227",
+      "clubFrom": {
+        "id": "614",
+        "name": "Flamengo"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-01-07",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 4800000,
+      "fee": 6000000
+    },
+    {
+      "id": "2777580",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "614",
+        "name": "Flamengo"
+      },
+      "date": "2020-06-30",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 4800000
+    },
+    {
+      "id": "2777579",
+      "clubFrom": {
+        "id": "614",
+        "name": "Flamengo"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-01-29",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 1800000,
+      "fee": 8000000
+    },
+    {
+      "id": "2550242",
+      "clubFrom": {
+        "id": "281",
+        "name": "Man City"
+      },
+      "clubTo": {
+        "id": "614",
+        "name": "Flamengo"
+      },
+      "date": "2019-11-07",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 800000,
+      "fee": 1700000
+    },
+    {
+      "id": "2155064",
+      "clubFrom": {
+        "id": "897",
+        "name": "Dep. La Coruña"
+      },
+      "clubTo": {
+        "id": "281",
+        "name": "Man City"
+      },
+      "date": "2019-06-30",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 800000
+    },
+    {
+      "id": "2155063",
+      "clubFrom": {
+        "id": "281",
+        "name": "Man City"
+      },
+      "clubTo": {
+        "id": "897",
+        "name": "Dep. La Coruña"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 750000
+    },
+    {
+      "id": "1806359",
+      "clubFrom": {
+        "id": "132",
+        "name": "NAC Breda"
+      },
+      "clubTo": {
+        "id": "281",
+        "name": "Man City"
+      },
+      "date": "2018-06-30",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 750000
+    },
+    {
+      "id": "1806358",
+      "clubFrom": {
+        "id": "281",
+        "name": "Man City"
+      },
+      "clubTo": {
+        "id": "132",
+        "name": "NAC Breda"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 400000
+    },
+    {
+      "id": "1572071",
+      "clubFrom": {
+        "id": "12321",
+        "name": "Girona"
+      },
+      "clubTo": {
+        "id": "281",
+        "name": "Man City"
+      },
+      "date": "2017-06-30",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 400000
+    },
+    {
+      "id": "1572070",
+      "clubFrom": {
+        "id": "281",
+        "name": "Man City"
+      },
+      "clubTo": {
+        "id": "12321",
+        "name": "Girona"
+      },
+      "date": "2016-08-16",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 500000
+    },
+    {
+      "id": "1571722",
+      "clubFrom": {
+        "id": "5648",
+        "name": "Gimnàstic"
+      },
+      "clubTo": {
+        "id": "281",
+        "name": "Man City"
+      },
+      "date": "2016-08-15",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 500000,
+      "fee": 200000
+    },
+    {
+      "id": "944494",
+      "clubFrom": {
+        "id": "8494",
+        "name": "RCD Mallorca B "
+      },
+      "clubTo": {
+        "id": "5648",
+        "name": "Gimnàstic"
+      },
+      "date": "2013-02-09",
+      "upcoming": false,
+      "season": "13/14"
+    },
+    {
+      "id": "1461464",
+      "clubFrom": {
+        "id": "14742",
+        "name": "Mallorca U19"
+      },
+      "clubTo": {
+        "id": "8494",
+        "name": "RCD Mallorca B "
+      },
+      "date": "2010-01-07",
+      "upcoming": false,
+      "season": "10/11"
+    }
+  ],
+  "youthClubs": [
+    "RCD Mallorca (2006–2010)"
+  ]
+}

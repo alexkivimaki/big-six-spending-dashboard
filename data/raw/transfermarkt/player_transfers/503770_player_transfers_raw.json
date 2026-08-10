@@ -1,0 +1,128 @@
+{
+  "updatedAt": "2026-04-27T20:12:35.262461",
+  "id": "503770",
+  "transfers": [
+    {
+      "id": "4617460",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "162",
+        "name": "Monaco"
+      },
+      "date": "2023-08-30",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 30000000,
+      "fee": 30000000
+    },
+    {
+      "id": "3989527",
+      "clubFrom": {
+        "id": "1421",
+        "name": "Stade Reims"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2023-06-30",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 30000000
+    },
+    {
+      "id": "3989525",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1421",
+        "name": "Stade Reims"
+      },
+      "date": "2022-03-08",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 4000000
+    },
+    {
+      "id": "4239220",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2022-01-07",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 4000000
+    },
+    {
+      "id": "3692053",
+      "clubFrom": {
+        "id": "641",
+        "name": "Middlesbrough"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2022-05-31",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 4000000
+    },
+    {
+      "id": "3692050",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "641",
+        "name": "Middlesbrough"
+      },
+      "date": "2022-12-01",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 4000000
+    },
+    {
+      "id": "2605711",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2019-01-07",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "1817407",
+      "clubFrom": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    }
+  ],
+  "youthClubs": [
+    "Arsenal FC (2011-2019)"
+  ]
+}

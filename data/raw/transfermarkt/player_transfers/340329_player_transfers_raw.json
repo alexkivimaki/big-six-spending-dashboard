@@ -1,0 +1,97 @@
+{
+  "updatedAt": "2026-04-27T20:12:12.735255",
+  "id": "340329",
+  "transfers": [
+    {
+      "id": "3496771",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "762",
+        "name": "Newcastle"
+      },
+      "date": "2021-08-13",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 16000000,
+      "fee": 29400000
+    },
+    {
+      "id": "3233924",
+      "clubFrom": {
+        "id": "762",
+        "name": "Newcastle"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2021-05-31",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 16000000
+    },
+    {
+      "id": "3233925",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "762",
+        "name": "Newcastle"
+      },
+      "date": "2021-01-02",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 16000000
+    },
+    {
+      "id": "2614453",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-01-07",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "1909093",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    },
+    {
+      "id": "1355015",
+      "clubFrom": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2015-01-07",
+      "upcoming": false,
+      "season": "15/16"
+    }
+  ],
+  "youthClubs": [
+    "Arsenal FC (2004-2019)"
+  ]
+}

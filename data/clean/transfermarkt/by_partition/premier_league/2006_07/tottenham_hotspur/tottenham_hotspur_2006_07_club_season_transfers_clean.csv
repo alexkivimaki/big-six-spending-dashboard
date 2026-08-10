@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,tottenham_hotspur,Tottenham Hotspur,2006/07,2006,all,61000000.0,38650000.0,22350000.0,19,22,transfermarkt_club_page,https://www.transfermarkt.com/tottenham-hotspur/transfers/verein/148/saison_id/2006,2026-04-27T18:20:40.535893+00:00,high,

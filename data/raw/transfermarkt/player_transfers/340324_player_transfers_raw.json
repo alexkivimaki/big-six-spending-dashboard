@@ -1,0 +1,99 @@
+{
+  "updatedAt": "2026-04-27T20:12:33.872029",
+  "id": "340324",
+  "transfers": [
+    {
+      "id": "5238806",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "873",
+        "name": "Crystal Palace"
+      },
+      "date": "2024-08-30",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 30000000,
+      "fee": 29700000
+    },
+    {
+      "id": "2596923",
+      "clubFrom": {
+        "id": "399",
+        "name": "Leeds"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2020-02-01",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 8000000
+    },
+    {
+      "id": "2596922",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "399",
+        "name": "Leeds"
+      },
+      "date": "2019-08-08",
+      "upcoming": false,
+      "season": "19/20",
+      "marketValue": 8000000
+    },
+    {
+      "id": "2484054",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-01-01",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "1887710",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    },
+    {
+      "id": "1376543",
+      "clubFrom": {
+        "id": "50677",
+        "name": "Chelsea Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2015-01-07",
+      "upcoming": false,
+      "season": "15/16"
+    }
+  ],
+  "youthClubs": [
+    "Hillyfielders",
+    "Chelsea FC (2008-2015)",
+    "Arsenal FC (2015-2017)"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "updatedAt": "2026-04-27T20:12:27.612467",
+  "id": "433177",
+  "transfers": [
+    {
+      "id": "2685855",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-01-07",
+      "upcoming": false,
+      "season": "19/20"
+    },
+    {
+      "id": "2330190",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19"
+    },
+    {
+      "id": "2330191",
+      "clubFrom": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18"
+    },
+    {
+      "id": "5304590",
+      "clubFrom": {
+        "id": "51466",
+        "name": "Watford Yth."
+      },
+      "clubTo": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "date": "2008-01-07",
+      "upcoming": false,
+      "season": "08/09"
+    }
+  ],
+  "youthClubs": [
+    "Greenford Celtic",
+    "Watford FC (-2008)",
+    "Arsenal FC (2008-2019)"
+  ]
+}

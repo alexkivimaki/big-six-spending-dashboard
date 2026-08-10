@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,arsenal,Arsenal,1994/95,1994,all,11270000.0,750000.0,10520000.0,13,8,transfermarkt_club_page,https://www.transfermarkt.com/arsenal/transfers/verein/11/saison_id/1994,2026-04-27T17:54:04.059362+00:00,high,

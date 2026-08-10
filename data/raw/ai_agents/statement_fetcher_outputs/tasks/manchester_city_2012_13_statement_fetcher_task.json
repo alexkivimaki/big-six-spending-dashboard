@@ -1,0 +1,24 @@
+{
+  "task_type": "statement_fetcher",
+  "club_id": "manchester_city",
+  "club_name": "Manchester City",
+  "season": "2012/13",
+  "target_financial_year_end_range": {
+    "start": "2013-05-01",
+    "end": "2013-07-31",
+    "notes": "Most English clubs report financial years ending May or June. Verify exact date per club."
+  },
+  "preferred_sources": [
+    "official club annual report page",
+    "investor relations page",
+    "Companies House filing",
+    "SEC filing if applicable",
+    "other official registry or club source"
+  ],
+  "company_or_group_notes": "Use Manchester City Football Club Limited or the most relevant club-level accounts, not City Football Group consolidated accounts unless club-level data is unavailable.",
+  "official_financial_reports_url": "",
+  "companies_house_search_name": "Manchester City Football Club Limited",
+  "currency_common": "GBP",
+  "prompt_path": "agents/statement_fetcher_agent_prompt.md",
+  "save_output_to": "data/raw/ai_agents/statement_fetcher_outputs/manchester_city_2012_13_statement_fetcher_output.json"
+}

@@ -1,0 +1,162 @@
+{
+  "updatedAt": "2026-04-27T20:11:57.629400",
+  "id": "88590",
+  "transfers": [
+    {
+      "id": "5073999",
+      "clubFrom": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "clubTo": {
+        "id": "123",
+        "name": "Retired"
+      },
+      "date": "2024-06-25",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 600000
+    },
+    {
+      "id": "4469155",
+      "clubFrom": {
+        "id": "3368",
+        "name": "Levante"
+      },
+      "clubTo": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "date": "2023-01-07",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 1000000
+    },
+    {
+      "id": "3371690",
+      "clubFrom": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "clubTo": {
+        "id": "3368",
+        "name": "Levante"
+      },
+      "date": "2021-02-09",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 2500000
+    },
+    {
+      "id": "3556033",
+      "clubFrom": {
+        "id": "33",
+        "name": "FC Schalke 04"
+      },
+      "clubTo": {
+        "id": "515",
+        "name": "Without Club"
+      },
+      "date": "2021-01-07",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 2500000
+    },
+    {
+      "id": "3233701",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "33",
+        "name": "FC Schalke 04"
+      },
+      "date": "2021-01-02",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 12000000
+    },
+    {
+      "id": "1583255",
+      "clubFrom": {
+        "id": "1049",
+        "name": "Valencia"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2016-08-30",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 20000000,
+      "fee": 41000000
+    },
+    {
+      "id": "1104908",
+      "clubFrom": {
+        "id": "1038",
+        "name": "Sampdoria"
+      },
+      "clubTo": {
+        "id": "1049",
+        "name": "Valencia"
+      },
+      "date": "2014-06-08",
+      "upcoming": false,
+      "season": "14/15",
+      "marketValue": 7000000,
+      "fee": 8000000
+    },
+    {
+      "id": "665330",
+      "clubFrom": {
+        "id": "9261",
+        "name": "Everton Res."
+      },
+      "clubTo": {
+        "id": "1038",
+        "name": "Sampdoria"
+      },
+      "date": "2012-03-01",
+      "upcoming": false,
+      "season": "11/12",
+      "marketValue": 75000,
+      "fee": 75000
+    },
+    {
+      "id": "288054",
+      "clubFrom": {
+        "id": "21063",
+        "name": "Hamburg U17"
+      },
+      "clubTo": {
+        "id": "9261",
+        "name": "Everton Res."
+      },
+      "date": "2009-01-07",
+      "upcoming": false,
+      "season": "09/10"
+    },
+    {
+      "id": "765362",
+      "clubFrom": {
+        "id": "12786",
+        "name": "HSV Yth."
+      },
+      "clubTo": {
+        "id": "21063",
+        "name": "Hamburg U17"
+      },
+      "date": "2007-01-07",
+      "upcoming": false,
+      "season": "07/08"
+    }
+  ],
+  "youthClubs": [
+    "1.FV Bebra (1999-2004)",
+    "SV Rotenburg (2004-2006)",
+    "Hamburger SV (2006-2009)"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "updatedAt": "2026-04-27T20:11:51.693572",
+  "id": "215118",
+  "transfers": [
+    {
+      "id": "5118003",
+      "clubFrom": {
+        "id": "405",
+        "name": "Aston Villa"
+      },
+      "clubTo": {
+        "id": "603",
+        "name": "Cardiff"
+      },
+      "date": "2024-07-14",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 4000000
+    },
+    {
+      "id": "3716041",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "405",
+        "name": "Aston Villa"
+      },
+      "date": "2022-01-27",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 12000000
+    },
+    {
+      "id": "2214798",
+      "clubFrom": {
+        "id": "931",
+        "name": "Fulham"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2019-05-31",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 14000000
+    },
+    {
+      "id": "2214783",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "931",
+        "name": "Fulham"
+      },
+      "date": "2018-07-08",
+      "upcoming": false,
+      "season": "18/19",
+      "marketValue": 14000000
+    },
+    {
+      "id": "1586870",
+      "clubFrom": {
+        "id": "641",
+        "name": "Middlesbrough"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2017-05-31",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 12000000
+    },
+    {
+      "id": "1586869",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "641",
+        "name": "Middlesbrough"
+      },
+      "date": "2016-08-30",
+      "upcoming": false,
+      "season": "16/17",
+      "marketValue": 12000000
+    },
+    {
+      "id": "1097332",
+      "clubFrom": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2014-07-28",
+      "upcoming": false,
+      "season": "14/15",
+      "marketValue": 2000000,
+      "fee": 20230000
+    },
+    {
+      "id": "965544",
+      "clubFrom": {
+        "id": "36546",
+        "name": "Southampton U21"
+      },
+      "clubTo": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "date": "2013-01-07",
+      "upcoming": false,
+      "season": "13/14"
+    },
+    {
+      "id": "782698",
+      "clubFrom": {
+        "id": "6893",
+        "name": "Southampton U18"
+      },
+      "clubTo": {
+        "id": "36546",
+        "name": "Southampton U21"
+      },
+      "date": "2012-01-07",
+      "upcoming": false,
+      "season": "12/13"
+    }
+  ],
+  "youthClubs": [
+    "Southampton FC (2002-2012)"
+  ]
+}

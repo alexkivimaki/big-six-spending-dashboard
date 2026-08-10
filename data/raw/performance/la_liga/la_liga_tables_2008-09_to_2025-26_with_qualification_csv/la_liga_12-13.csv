@@ -1,0 +1,21 @@
+season,Pos,Team,Pld,W,D,L,GF,GA,GD,Pts,Qualification or relegation,points_deduction,source_url
+,1,Barcelona (C),38,32,4,2,115,40,+75,100,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,2,Real Madrid,38,26,7,5,103,42,+61,85,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,3,Atlético Madrid,38,23,7,8,65,31,+34,76,Qualification for the Champions League group stage,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,4,Real Sociedad,38,18,12,8,70,49,+21,66,Qualification for the Champions League play-off round,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,5,Valencia,38,19,8,11,67,54,+13,65,Qualification for the Europa League group stage,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,6,Málaga,38,16,9,13,53,50,+3,57,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,7,Real Betis,38,16,8,14,57,56,+1,56,Qualification for the Europa League play-off round,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,8,Rayo Vallecano,38,16,5,17,50,66,-16,53,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,9,Sevilla,38,14,8,16,58,54,+4,50,Qualification for the Europa League third qualifying round,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,10,Getafe,38,13,8,17,43,57,-14,47,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,11,Levante,38,12,10,16,40,57,-17,46,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,12,Athletic Bilbao,38,12,9,17,44,65,-21,45,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,13,Espanyol,38,11,11,16,43,52,-9,44,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,14,Valladolid,38,11,10,17,49,58,-9,43,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,15,Granada,38,11,9,18,37,54,-17,42,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,16,Osasuna,38,10,9,19,33,50,-17,39,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,17,Celta Vigo,38,10,7,21,37,52,-15,37,,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,18,Mallorca (R),38,9,9,20,43,72,-29,36,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,19,Deportivo La Coruña (R),38,8,11,19,47,70,-23,35,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga
+,20,Zaragoza (R),38,9,7,22,37,62,-25,34,Relegation to Segunda División,0,https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga

@@ -1,0 +1,4 @@
+club_id,club_name,season,gross_transfer_spend_eur,transfer_income_eur,net_transfer_spend_eur,estimated_player_wages_eur,raw_player_cost_eur,league_position,points,cost_per_point,source_name,confidence_level,notes
+arsenal,Arsenal,2023/24,235000000,69100000,165900000,197000000,362900000,2,89,4077528.09,sample_existing_dashboard,medium,"Sample dashboard row only. Finance and performance values must be verified before production use."
+manchester_city,Manchester City,2023/24,259600000,138800000,120800000,226000000,346800000,1,91,3810989.01,sample_existing_dashboard,medium,"Sample dashboard row only. Finance and performance values must be verified before production use."
+chelsea,Chelsea,2022/23,611000000,67000000,544000000,260000000,804000000,12,44,18272727.27,sample_existing_dashboard,medium,"Sample dashboard row only. Finance and performance values must be verified before production use."

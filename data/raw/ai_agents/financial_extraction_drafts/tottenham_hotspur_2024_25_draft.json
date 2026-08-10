@@ -1,0 +1,345 @@
+{
+  "task_type": "financial_extraction_review",
+  "club_id": "tottenham_hotspur",
+  "season": "2024/25",
+  "local_statement_path": "data/raw/financial_statements/tottenham_hotspur/2024_25_annual_report_2025.pdf",
+  "ocr_cache_path": "data/raw/financial_statement_ocr/tottenham_hotspur/2024_25_ocr.json",
+  "candidate_extraction": {},
+  "candidate_pages_summary": [
+    {
+      "page": 1,
+      "char_count": 178,
+      "preview": "Company Registration No. 1706358 Tottenham Hotspur Limited (\"Tottenham Hotspur\" or \"the Group\" or \"the Company\") Annual Report and Consolidated Financial Statements 30 June 2025"
+    },
+    {
+      "page": 2,
+      "char_count": 5608,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited The Directors present their Strategic Report on the affairs of Tottenham Hotspur Limited and its subsidiary companies ('Group') together with the Directors' report, Financial Stat"
+    },
+    {
+      "page": 3,
+      "char_count": 2313,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Other revenue contributed \u00a377.3m (2024: \u00a364.0m) and other income contributed \u00a30.4m (2024: \u00a310.4m). The increase was driven by hosting non-football events, an increase in membershi"
+    },
+    {
+      "page": 4,
+      "char_count": 3455,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Five-year review Revenue and other income Profit from operations excluding football trading and before Exceptional Items and depreciation Depreciation and exceptional items (note "
+    },
+    {
+      "page": 5,
+      "char_count": 3793,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Section 172(1) Statement Section 172(1) of the Companies Act 2006 requires each Director of the Company to act in a way in which they consider, in good faith, would be most likely"
+    },
+    {
+      "page": 6,
+      "char_count": 3669,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited 4. Impact of community and environment The Group places huge importance on being a pillar of our community, which we deliver through a variety of projects: \u2022 The Club's independen"
+    },
+    {
+      "page": 7,
+      "char_count": 2369,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Board of Directors Audit & Risk Committee \u2022 Oversees integration of climate- related risks into corporate risk management \u2022 Reviews risk register and escalates material items to t"
+    },
+    {
+      "page": 8,
+      "char_count": 4888,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited 3. Operational Efficiency - Implementing water conservation, waste reduction and circular economy initiatives to lower environmental impact while reducing operating costs. Tottenh"
+    },
+    {
+      "page": 9,
+      "char_count": 4357,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited The strategy is designed for adaptability, with periodic reassessment to ensure alignment with evolving climate science, regulation, and market conditions. 3. Risk Management Tott"
+    },
+    {
+      "page": 10,
+      "char_count": 3636,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited By explicitly mapping risks and opportunities to defined time horizons, the Club ensures that climate considerations inform both near-term operational planning and long-term strat"
+    },
+    {
+      "page": 11,
+      "char_count": 3122,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Table 2: Tottenham Hotspur Limited Total UK Location-based Consumption (kWh) & Emissions (tCO2e) | 2025 Consumption (kWh) Utility and Scope 2025 Emissions (tCOze) | 2022 (Baseline"
+    },
+    {
+      "page": 12,
+      "char_count": 2377,
+      "preview": "Strategic report to the members of Tottenham Hotspur Limited Government Emissions Factor Database 2025 version 1.0 has been used, utilising the published kWh gross Calorific Value (CV) and kgCO2e emissions factors relevant for the reporting"
+    },
+    {
+      "page": 13,
+      "char_count": 4097,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Directors The Directors who served throughout the year and up to the date of signing were as follows: Executive Directors D P Levy (resigned 4 September 2025) V G Venkatesham (ap"
+    },
+    {
+      "page": 14,
+      "char_count": 5513,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Equality and diversity The Group's vision is to create an environment in which everyone - staff, supporters and the wider community - has equal, dignified ease of access to our C"
+    },
+    {
+      "page": 15,
+      "char_count": 4154,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Directors' responsibilities (continued) The independent non-executive Directors have no material business relationship with the Group which may influence their judgement or their"
+    },
+    {
+      "page": 16,
+      "char_count": 4572,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited How we engage (continued) the cumiscommunil/strately - The Club's equality, diversity and inclusion commitments - The Club's plan for broader supporter engagement Other forms of "
+    },
+    {
+      "page": 17,
+      "char_count": 5261,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Transparency The Club's CEO attends all meetings with the FAB and THST. The CEO will participate in our annual Fan Forum to answer questions raised by supporters on the matters t"
+    },
+    {
+      "page": 18,
+      "char_count": 507,
+      "preview": "Directors' report to the members of Tottenham Hotspur Limited Re-appointment of auditor Deloitte LLP have indicated their willingness to be reappointed for another term and appropriate arrangements have been put in place for them to be deem"
+    },
+    {
+      "page": 19,
+      "char_count": 3013,
+      "preview": "Directors' responsibilities statement The Directors are responsible for preparing the Annual Report and the financial statements in accordance with applicable law and regulations. Company law requires the Directors to prepare financial stat"
+    },
+    {
+      "page": 20,
+      "char_count": 5022,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited Independent auditor's report to the members of Tottenham Hotspur Limited Report on the audit of the financial statements Opinion In our opinion: \u2022 the financial statem"
+    },
+    {
+      "page": 21,
+      "char_count": 4878,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited In preparing the financial statements, the directors are responsible for assessing the group's and parent company s ability to continue as a going concern, disclosing,"
+    },
+    {
+      "page": 22,
+      "char_count": 2071,
+      "preview": "Independent auditor's report to the members of Tottenham Hotspur Limited Report on other legal and regulatory requirements Opinions on other matters prescribed by the Companies Act 2006 In our opinion, based on the work undertaken in the co"
+    },
+    {
+      "page": 23,
+      "char_count": 1455,
+      "preview": "Consolidated income statement and statement of other comprehensive income for the year ended 30 June 2025 2025 2024 Notes Operations, excluding football trading* \u20ac'000 Football trading* \u00a3'000 Operations, excluding Total football trading* E0"
+    },
+    {
+      "page": 24,
+      "char_count": 1409,
+      "preview": "Consolidated balance sheet as at 30 June 2025 Non-current assets Property, plant and equipment Intangible assets Investments in financial assets Trade receivables due after one year Current assets Inventories Trade and other receivables Cor"
+    },
+    {
+      "page": 25,
+      "char_count": 1124,
+      "preview": "Consolidated statement of changes in equity for the year ended 30 June 2025 For the year ended 30 June 2025 Share Share premium capital account \u20ac000 \u00a3'000 11,452 288 133,980 34,712 At 30 June 2024 Share issue Gain on property revaluation (n"
+    },
+    {
+      "page": 26,
+      "char_count": 1703,
+      "preview": "Consolidated statement of cash flows for the year ended 30 June 2025 Cash flow from operating activities (Loss)/profit from operations Adjustments for: Amortisation of intangible assets Impairment of intangible assets Profit on disposal of "
+    },
+    {
+      "page": 27,
+      "char_count": 3846,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 1. Accounting policies and critical accounting judgements The following accounting policies have been applied consistently by the Directors in both the current and preceding periods in d"
+    },
+    {
+      "page": 28,
+      "char_count": 5101,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 1. Accounting policies and critical accounting judgements (continued) Exceptional items Exceptional items relate to significant and unusual revenues or costs experienced by the Group. Th"
+    },
+    {
+      "page": 29,
+      "char_count": 4264,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 1. Accounting policies and critical accounting judgements (continued) Player costs and transactions (continued) | (d) Impairment (continued) ii) if there have not been any bids for the p"
+    },
+    {
+      "page": 30,
+      "char_count": 4650,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 1. Accounting policies and critical accounting judgements (continued) Property, plant and equipment Freehold land is not depreciated. Leasehold property is amortised over the term of the"
+    },
+    {
+      "page": 31,
+      "char_count": 4755,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 1. Accounting policies and critical accounting judgements (continued) Financial instruments Financial assets and liabilities are recognised in the Group's statement of financial position"
+    },
+    {
+      "page": 32,
+      "char_count": 4392,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 1. Accounting policies and critical accounting judgements (continued) New and revised IFRS Accounting Standards in issue but not yet effective (continued) provide disclosures on manageme"
+    },
+    {
+      "page": 33,
+      "char_count": 1192,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 2. Revenue and other income Revenue, which is almost all derived from the Group's principal activity, is analysed as follows: 2025 \u00a3'000 2024 \u00a3'000 Revenue comprises: Match receipts UEFA"
+    },
+    {
+      "page": 34,
+      "char_count": 1938,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 4. Profit/(loss) from operations This is stated after charging/(crediting) the following: Depreciation of property, plant and equipment (Profit)/loss on disposal of property, plant and e"
+    },
+    {
+      "page": 35,
+      "char_count": 2793,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 5. Staff numbers and costs (continued) 2025 \u00a3'000 Salaries and bonuses Social security costs Other pension costs (see note 25) 222,816 31,946 1,049 255,811 2024 E'000 195,311 25,500 1,11"
+    },
+    {
+      "page": 36,
+      "char_count": 1895,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 8. Tax credit Current tax Other prior year adjustments Current year tax charge/(credit) Current tax credit Deferred tax Origination and reversal of timing differences in prior years Orig"
+    },
+    {
+      "page": 37,
+      "char_count": 2563,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 9. Property, plant and equipment For the year ended 30 June 2025 Land and buildings \u00a3'000 Stadium \u20ac'000 F&f for leasehold properties \u00a3'000 Right of use assets \u20ac'000 Motor vehicles \u00a3'000 "
+    },
+    {
+      "page": 38,
+      "char_count": 1543,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 9. Property, plant and equipment (continued) For the year ended 30 June 2024 Group Land and buildings \u00a3'000 Stadium \u00a3'000 Cost At 1 July 2023 Additions Disposal Transfer of assets Revalu"
+    },
+    {
+      "page": 39,
+      "char_count": 1230,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 10. Intangible fixed assets (continued) In the period, capitalised player registrations relating to zero individuals (2024: one) were impaired by nil (2024: \u20ac1,770,000). Impairment losse"
+    },
+    {
+      "page": 40,
+      "char_count": 1252,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 12. Inventories 2025 \u00a3'000 13,809 2024 \u00a3'000 11,423 Inventories Inventories comprise merchandising goods held for resale. 13. Trade and other receivables 2025 \u00a3'000 Trade receivables due"
+    },
+    {
+      "page": 41,
+      "char_count": 3219,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 15. Current liabilities 2025 \u00a3'000 2024 \u00a3'000 Other loans (secured) Interest-bearing loans and borrowings 3,986 3,986 Trade payables due in less than one year Other tax and social securi"
+    },
+    {
+      "page": 42,
+      "char_count": 2627,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 16. Non-current liabilities Bank loans (secured) Other loans (secured) Interest-bearing loans and borrowings 2025 \u00a3'000 80,933 766,733 847,666 2024 \u00a3'000 80,908 770,540 851,448 Trade pay"
+    },
+    {
+      "page": 43,
+      "char_count": 970,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 16. Non-current liabilities (continued) The maturity profile of the Group's total borrowings at the balance sheet date which do not include interest payments are as follows: 2025 Repayme"
+    },
+    {
+      "page": 44,
+      "char_count": 1872,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 16. Non-current liabilities (continued) Interest rate profile The Group has no financial assets excluding short-term receivables, other than the Sterling cash deposits of \u00a320,413,000 (20"
+    },
+    {
+      "page": 45,
+      "char_count": 1474,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 17. Provisions for liabilities For the year ended 30 June 2025 \u00a3'000 Provisions - due in less than one year At 1 July 2024 Provided during the year Utilised during the year At 30 June 20"
+    },
+    {
+      "page": 46,
+      "char_count": 2444,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 17. Provisions for liabilities (continued) Deferred taxation has been provided as follows and is classified as a non-current liability: Accelerated capital allowances Intangible fixed as"
+    },
+    {
+      "page": 47,
+      "char_count": 2818,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 18. Financial instruments (continued) Financial risk management objectives and policies (continued) Financial liabilities \u00a3'000 2025 Non-financial liabilities \u00a3'000 Total \u20ac'000 Financial"
+    },
+    {
+      "page": 48,
+      "char_count": 2806,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 18. Financial instruments (continued) Foreign currency management (continued) The carrying amounts of the Group's foreign currency denominated monetary assets and monetary liabilities at"
+    },
+    {
+      "page": 49,
+      "char_count": 1618,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 (ii) Credit risk (continued) The ageing of trade receivables at the reporting date was: Non-football Not past due Past due 0 - 30 days Past due 31 - 90 days More than 90 days Football No"
+    },
+    {
+      "page": 50,
+      "char_count": 1279,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 Called up share capital & share premium 2025 \u00a3'000 Allotted, authorised, called up and fully paid: Balance as at 30 June 2024 Shares issued in period (5,767,984 at 5p) Balance as at 30 J"
+    },
+    {
+      "page": 51,
+      "char_count": 1069,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 22. Lease liabilities 1 July Additions Interest expense related to lease liabilities Repayment of lease liabilities At 30 June Current lease liabilities Non-current lease liabilities At "
+    },
+    {
+      "page": 52,
+      "char_count": 3635,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 24. Related party transactions The following paragraphs give details of all related party transactions involving the Company and any of its subsidiary undertakings. ENIC Group companies "
+    },
+    {
+      "page": 53,
+      "char_count": 2002,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 26. Changes in liabilities arising from financing activities The table below details changes in the group's liabilities arising from financing activities, including both cash and non-cas"
+    },
+    {
+      "page": 54,
+      "char_count": 1953,
+      "preview": "Notes to the accounts for the year ended 30 June 2025 29. Post balance sheet events Since the balance sheet date the following events have occurred: \u2022 B Spencer was sold to Chelsea F.C. Women; \u2022 M Tel joined from Bayern Munich; \u2022 L Vuskovic"
+    },
+    {
+      "page": 55,
+      "char_count": 1113,
+      "preview": "Company balance sheet as at 30 June 2025 Notes 2025 \u00a3'000 2024 \u00a3'000 Non-current assets Property, plant and equipment Investments Deferred tax Current assets Inventory Trade and other receivables Cash and cash equivalents 3 4 6/9 80,756 232"
+    },
+    {
+      "page": 56,
+      "char_count": 691,
+      "preview": "Statement of Changes in Equity as at 30 June 2025 For the year ended 30 June 2025 At 30 June 2024 Share Issue Total comprehensive expense for the year At 30 June 2025 Share capital Share premium \u00a3'000 \u00a3'000 11,452 288 11,740 133,980 34,712 "
+    },
+    {
+      "page": 57,
+      "char_count": 3707,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 1. Accounting policies and critical judgements Authorisation of financial statements and statement of compliance with FRS 101 The financial statements of the Company for t"
+    },
+    {
+      "page": 58,
+      "char_count": 4523,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 1. Accounting policies and critical judgements (continued) Property, plant and equipment Freehold land is not depreciated. Leasehold property is amortised over the term of"
+    },
+    {
+      "page": 59,
+      "char_count": 2304,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 1. Accounting policies and critical judgements (continued) Critical accounting judgements and estimates (continued) The Group has identified the following areas of estimat"
+    },
+    {
+      "page": 60,
+      "char_count": 1603,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 3. Property, plant and equipment For the year ended 30 June 2025 Cost At 30 June 2024 Additions Disposals Transfers At 30 June 2025 Depreciation and impairment At 30 June "
+    },
+    {
+      "page": 61,
+      "char_count": 2332,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 4. Investments held as fixed assets Investments held as fixed assets by the Company represent the investments in subsidiary undertakings which are analysed as follows: Inv"
+    },
+    {
+      "page": 62,
+      "char_count": 3142,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 6. Trade and other receivables Deferred tax (note 9) Non-current assets Trade receivables Amounts owed by Group undertakings Other receivables Prepayments and accrued inco"
+    },
+    {
+      "page": 63,
+      "char_count": 1054,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 8. Non-current liabilities Deferred income Lease liabilities 2025 \u00a3'000 6,669 1,571 8,240 2024 \u00a3'000 7,782 2,311 10,093 Borrowing facilities As at the balance sheet date t"
+    },
+    {
+      "page": 64,
+      "char_count": 1924,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 10. Reconciliation of movements in equity For the year ended 30 June 2025 At 30 June 2024 Share Issue Total comprehensive income for the year At 30 June 2025 Share capital"
+    },
+    {
+      "page": 65,
+      "char_count": 561,
+      "preview": "Notes to the parent company accounts for the year ended 30 June 2025 Non-Executive Chairman P C Charrington Executive Directors V G Venkatesham M J Collecott Non-Executive Director J Turner (Chairman of the Audit and Remuneration Committees"
+    }
+  ],
+  "review_reasons": [
+    "draft extraction failed: Matching page not found"
+  ],
+  "needs_ai_review": true,
+  "suggested_save_output_to": "data/raw/ai_agents/financial_extraction_outputs/tottenham_hotspur_2024_25_financial_extraction_output.json",
+  "bank_references": [
+    "data/reference/financial_statement_extraction_bank/master_financial_statement_extraction_bank.md",
+    "data/reference/financial_statement_extraction_bank/tottenham_hotspur/README.md",
+    "data/reference/financial_statement_extraction_bank/tottenham_hotspur/tottenham_hotspur_extraction_bank.csv"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "club_id": "tottenham_hotspur",
+  "season": "2008/09",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history/MzAwMzIxOTEyNGFkaXF6a2N4/document?format=pdf&download=0",
+  "date_downloaded_utc": "2026-04-28T09:09:53.207049+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/tottenham_hotspur/2008_09_group_of_companies_accounts_made_up_to_30_june_2009.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/tottenham_hotspur_2008_09_statement_fetcher_output.json",
+  "report_title": "Group of companies' accounts made up to 30 June 2009",
+  "report_type": "accounts_filing"
+}

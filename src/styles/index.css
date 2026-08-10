@@ -1,0 +1,751 @@
+:root {
+  color: #163126;
+  background:
+    radial-gradient(circle at top left, rgba(190, 220, 161, 0.44), transparent 32rem),
+    radial-gradient(circle at top right, rgba(219, 185, 120, 0.28), transparent 26rem),
+    linear-gradient(180deg, #f5f2e8 0%, #f4f7f1 48%, #edf3ee 100%);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+button,
+select {
+  border: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.pageFrame {
+  min-height: 100vh;
+  padding: 28px;
+}
+
+.pageShell {
+  max-width: 1480px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  animation: page-enter 500ms ease;
+}
+
+.panel {
+  background: rgba(255, 251, 240, 0.78);
+  border: 1px solid rgba(31, 61, 48, 0.12);
+  border-radius: 28px;
+  box-shadow: 0 18px 42px rgba(18, 44, 35, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.heroPanel,
+.featureSection,
+.summaryPanel,
+.spotlightPanel,
+.outlinePanel,
+.calloutPanel,
+.controlsPanel,
+.tablePanel,
+.statCard {
+  animation: rise 420ms ease both;
+}
+
+.heroPanel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 24px;
+  padding: 30px;
+}
+
+.heroCopy h1,
+.sectionHeading h2,
+.panelHeader h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  letter-spacing: -0.04em;
+}
+
+.heroCopy h1 {
+  margin: 14px 0 12px;
+  font-size: clamp(2.7rem, 6vw, 5rem);
+  line-height: 0.92;
+}
+
+.heroCopy p,
+.sectionHeading p,
+.panelHeader p,
+.featureCard p,
+.outlineCard p,
+.miniCard small,
+.statCard small {
+  color: #53655d;
+  line-height: 1.65;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(35, 76, 59, 0.08);
+  color: #244c3b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.heroAside {
+  display: grid;
+  gap: 14px;
+  align-content: center;
+}
+
+.heroBadge,
+.heroCallout {
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(27, 59, 45, 0.94);
+  color: #f7f1df;
+  display: grid;
+  gap: 6px;
+}
+
+.heroBadge span,
+.heroCallout span {
+  color: rgba(247, 241, 223, 0.72);
+}
+
+.heroBadge strong,
+.heroCallout strong {
+  font-size: 1.15rem;
+}
+
+.heroCallout {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.statCard {
+  padding: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.statCard span {
+  color: #5c6e66;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
+.statCard strong {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.featureSection,
+.summaryPanel,
+.spotlightPanel,
+.outlinePanel,
+.calloutPanel,
+.tablePanel {
+  padding: 24px;
+}
+
+.sectionHeading,
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.sectionHeading h2,
+.panelHeader h2 {
+  margin: 10px 0 0;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+.sectionHeading p,
+.panelHeader p {
+  max-width: 520px;
+  margin: 0;
+}
+
+.featureGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.featureCard,
+.outlineCard,
+.metricCard,
+.miniCard {
+  border-radius: 22px;
+  border: 1px solid rgba(31, 61, 48, 0.1);
+}
+
+.featureCard {
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.featureHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.featureIcon,
+.outlineIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(33, 83, 62, 0.08);
+}
+
+.featureCard h3,
+.outlineCard h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.featureCard strong {
+  color: #244c3b;
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-ready {
+  background: rgba(58, 145, 102, 0.14);
+  color: #1f6b45;
+}
+
+.status-partial {
+  background: rgba(213, 154, 42, 0.15);
+  color: #92610d;
+}
+
+.status-blocked {
+  background: rgba(177, 72, 72, 0.12);
+  color: #8f3030;
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 390px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.controlsPanel {
+  position: sticky;
+  top: 20px;
+  padding: 22px;
+  display: grid;
+  gap: 22px;
+}
+
+.controlBlock {
+  display: grid;
+  gap: 14px;
+}
+
+.blockHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.blockHeader h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.blockHeader small {
+  color: #64776f;
+}
+
+.clubGrid {
+  display: grid;
+  gap: 10px;
+}
+
+.clubChip,
+.toggleButton,
+.metricCard {
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.clubChip:hover,
+.toggleButton:hover,
+.metricCard:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(24, 57, 42, 0.08);
+}
+
+.clubChip {
+  width: 100%;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid rgba(31, 61, 48, 0.08);
+  color: #18392b;
+  font-weight: 700;
+  text-align: left;
+}
+
+.clubChip.isSelected {
+  background: #173b2d;
+  color: #f8f1df;
+}
+
+.clubSwatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.clubSwatch.large {
+  width: 20px;
+  height: 20px;
+}
+
+.metricGroup {
+  display: grid;
+  gap: 10px;
+}
+
+.metricGroupLabel {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6c7c74;
+  font-weight: 800;
+}
+
+.metricGrid {
+  display: grid;
+  gap: 10px;
+}
+
+.metricCard {
+  width: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.68);
+  color: #173b2d;
+  text-align: left;
+  display: grid;
+  gap: 8px;
+}
+
+.metricCard.isActive {
+  background: #173b2d;
+  color: #f8f1df;
+}
+
+.metricCard.isBlocked {
+  opacity: 0.7;
+  background: rgba(206, 193, 180, 0.45);
+  color: #6a6a6a;
+}
+
+.metricTopline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.metricCoverage {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 0.82rem;
+}
+
+.metricCard small {
+  color: inherit;
+  opacity: 0.82;
+  line-height: 1.45;
+}
+
+.metricLock {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.splitBlock {
+  grid-template-columns: 1fr 1fr;
+}
+
+select {
+  width: 100%;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(31, 61, 48, 0.1);
+  padding: 14px;
+  color: #18392b;
+}
+
+.toggleRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.toggleButton {
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.66);
+  color: #173b2d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.toggleButton.isActive {
+  background: #173b2d;
+  color: #f8f1df;
+}
+
+.contentColumn {
+  display: grid;
+  gap: 24px;
+}
+
+.summaryTiles,
+.calloutGrid,
+.spotlightGrid,
+.outlineGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.summaryTiles {
+  margin-top: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.miniCard {
+  background: rgba(255, 255, 255, 0.62);
+  padding: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.miniCard span {
+  color: #64776f;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
+.miniCard strong {
+  font-size: 1.2rem;
+}
+
+.chartWrap {
+  margin-top: 18px;
+  height: 440px;
+}
+
+.chartTooltip {
+  background: rgba(21, 50, 38, 0.96);
+  color: #f8f1df;
+  padding: 12px;
+  border-radius: 14px;
+  min-width: 180px;
+}
+
+.tooltipList {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tooltipRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chartEmpty {
+  margin-top: 18px;
+  min-height: 280px;
+  border-radius: 22px;
+  border: 1px dashed rgba(31, 61, 48, 0.2);
+  background: rgba(255, 255, 255, 0.45);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.chartEmpty h3 {
+  margin: 0 0 8px;
+}
+
+.tableWrap {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px 10px;
+  border-bottom: 1px solid rgba(31, 61, 48, 0.08);
+  text-align: left;
+}
+
+thead th {
+  color: #667870;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.clubCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spotlightBanner {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 22px;
+  border: 2px solid;
+  background: rgba(255, 255, 255, 0.66);
+  display: grid;
+  gap: 16px;
+}
+
+.spotlightClub {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.spotlightClub strong {
+  display: block;
+}
+
+.spotlightClub small {
+  color: #667870;
+}
+
+.availabilityRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.availabilityPill {
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.availabilityPill.isOn {
+  background: rgba(58, 145, 102, 0.14);
+  color: #1f6b45;
+}
+
+.availabilityPill.isOff {
+  background: rgba(177, 72, 72, 0.12);
+  color: #8f3030;
+}
+
+.sourceLink {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #244c3b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.outlineGrid {
+  margin-top: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.outlineCard {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.56);
+  display: grid;
+  gap: 12px;
+}
+
+.calloutGrid {
+  margin-top: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .featureGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .summaryTiles,
+  .calloutGrid,
+  .outlineGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .pageFrame {
+    padding: 18px;
+  }
+
+  .heroPanel,
+  .layoutGrid,
+  .statsGrid,
+  .summaryTiles,
+  .calloutGrid,
+  .outlineGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .controlsPanel {
+    position: static;
+  }
+
+  .sectionHeading,
+  .panelHeader {
+    display: grid;
+  }
+}
+
+@media (max-width: 640px) {
+  .pageFrame {
+    padding: 12px;
+  }
+
+  .heroPanel,
+  .featureSection,
+  .summaryPanel,
+  .spotlightPanel,
+  .outlinePanel,
+  .calloutPanel,
+  .controlsPanel,
+  .tablePanel {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .featureGrid,
+  .calloutGrid,
+  .outlineGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .splitBlock,
+  .toggleRow {
+    grid-template-columns: 1fr;
+  }
+
+  .chartWrap {
+    height: 320px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "club_id": "tottenham_hotspur",
+  "club_name": "Tottenham Hotspur",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "season": "2012/13",
+  "season_start_year": 2012,
+  "season_dir": "2012_13",
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/tottenham-hotspur/transfers/verein/148/saison_id/2012",
+  "collected_at_utc": "2026-04-27T18:20:54.018875+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

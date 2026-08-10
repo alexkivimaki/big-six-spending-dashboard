@@ -1,0 +1,11 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "season": "2024/25",
+  "season_start_year": 2024,
+  "source_name": "transfermarkt_club_page",
+  "source_url": "https://www.transfermarkt.com/arsenal/transfers/verein/11/saison_id/2024",
+  "collected_at_utc": "2026-04-27T17:55:03.764476+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

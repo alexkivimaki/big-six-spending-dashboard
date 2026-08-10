@@ -1,0 +1,19 @@
+{
+  "club_id": "arsenal",
+  "club_name": "Arsenal",
+  "season": "2023/24",
+  "financial_year_end": "2024-05-31",
+  "report_title": "Arsenal Holdings Limited annual report and financial statements 2024",
+  "report_type": "annual_report",
+  "source_name": "Official club financial results page",
+  "source_url": "https://www.arsenal.com/the-club/corporate-info/arsenal-holdings-financial-results",
+  "download_url": "https://example.com/arsenal-2024-annual-report.pdf",
+  "file_type": "pdf",
+  "date_accessed": "2026-04-28",
+  "is_official_source": true,
+  "company_or_group_name": "Arsenal Holdings Limited",
+  "company_number_or_registry_id": "",
+  "local_file_suggested_name": "2023_24_arsenal_holdings_limited_annual_report_2024.pdf",
+  "confidence_level": "example",
+  "notes": "Example only, verify before use."
+}

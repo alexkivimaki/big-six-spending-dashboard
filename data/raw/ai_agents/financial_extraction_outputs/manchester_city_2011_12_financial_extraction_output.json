@@ -1,0 +1,97 @@
+{
+  "club_id": "manchester_city",
+  "club_name": "Manchester City",
+  "season": "2011/12",
+  "financial_year_end": "2012-05-31",
+  "currency_original": "GBP",
+  "units_original": "full pounds (converted from GBP thousands disclosed in report)",
+  "total_revenue_original": 231140000,
+  "matchday_revenue_original": 21871000,
+  "broadcast_revenue_original": 88153000,
+  "commercial_revenue_original": 121116000,
+  "other_revenue_original": null,
+  "women_team_revenue_original": null,
+  "excluded_player_trading_revenue_original": null,
+  "staff_costs_original": 201789000,
+  "player_amortisation_original": 83031000,
+  "profit_on_player_sales_original": null,
+  "net_debt_original": 26078000,
+  "profit_loss_before_tax_original": -95296000,
+  "total_revenue_eur": null,
+  "matchday_revenue_eur": null,
+  "broadcast_revenue_eur": null,
+  "commercial_revenue_eur": null,
+  "other_revenue_eur": null,
+  "net_debt_eur": null,
+  "profit_loss_before_tax_eur": null,
+  "exchange_rate_used": null,
+  "exchange_rate_source": "",
+  "revenue_sum_check_original": 231140000,
+  "revenue_sum_difference_original": 0,
+  "pages_used": [
+    12,
+    15,
+    16,
+    17,
+    21
+  ],
+  "evidence": [
+    {
+      "field": "matchday_revenue_original",
+      "value_original": 21871000,
+      "page_number": 15,
+      "statement_label": "Gate receipts",
+      "evidence_text": "Turnover note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "broadcast_revenue_original",
+      "value_original": 88153000,
+      "page_number": 15,
+      "statement_label": "Television - UEFA and Television - All Other",
+      "evidence_text": "Turnover note. UEFA and other television lines were combined for the broadcasting category."
+    },
+    {
+      "field": "commercial_revenue_original",
+      "value_original": 121116000,
+      "page_number": 15,
+      "statement_label": "Other commercial activities",
+      "evidence_text": "Turnover note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "staff_costs_original",
+      "value_original": 201789000,
+      "page_number": 16,
+      "statement_label": "Aggregate payroll costs",
+      "evidence_text": "Staff numbers and costs note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "player_amortisation_original",
+      "value_original": 83031000,
+      "page_number": 15,
+      "statement_label": "Amortisation of player's registrations",
+      "evidence_text": "Operating expenses note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "profit_loss_before_tax_original",
+      "value_original": -95296000,
+      "page_number": 17,
+      "statement_label": "Loss on ordinary activities before taxation",
+      "evidence_text": "Taxation note. Values were disclosed in GBP thousands and converted to full GBP."
+    },
+    {
+      "field": "net_debt_original",
+      "value_original": 26078000,
+      "page_number": 12,
+      "statement_label": "Computed net debt from borrowings less cash at bank and in hand",
+      "evidence_text": "Calculated from borrowings of GBP 38.678m disclosed in the borrowings note and cash at bank and in hand of GBP 12.600m disclosed on the balance sheet."
+    }
+  ],
+  "classification_notes": "Manchester City discloses gate receipts, television income, and other commercial activities directly in the annual accounts. Broadcasting has been formed by combining the UEFA and all other television lines.",
+  "women_team_treatment_notes": "Women's team revenue is not separately disclosed in the report.",
+  "non_football_revenue_notes": "Other commercial activities may include hospitality, catering, conference, and event income within the club's commercial operations.",
+  "confidence_level": "high",
+  "requires_manual_review": true,
+  "source_document": "Full accounts made up to 31 May 2012",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history/MzA3MzkyODE1NmFkaXF6a2N4/document?format=pdf&download=0",
+  "notes": "Values in the annual report were disclosed in GBP thousands and have been converted here into full GBP amounts by multiplying by 1,000. Net debt has been computed from statement borrowings and cash because the report did not present a single net debt line."
+}

@@ -1,0 +1,2 @@
+league_key,league_name,club_id,club_name,season,season_start_year,season_end_year,achievement_count_total,major_trophy_count,achievement_names,major_trophies,source_name,source_endpoint,collected_at_utc,confidence_level,notes
+premier_league,Premier League,manchester_united,Manchester United,1978/79,1978,1979,1,0,FA Cup Runner up,,transfermarkt_achievements_page,https://www.transfermarkt.com/manchester-united/erfolge/verein/985,2026-04-28T07:46:04.827964+00:00,medium,Assigned season derived from achievement season label '78/79' using method 'season_label_expanded_fallback'.

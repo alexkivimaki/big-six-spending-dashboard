@@ -1,0 +1,156 @@
+{
+  "updatedAt": "2026-04-27T20:11:44.447116",
+  "id": "503769",
+  "transfers": [
+    {
+      "id": "5069643",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1112",
+        "name": "Wrexham"
+      },
+      "date": "2024-01-07",
+      "upcoming": false,
+      "season": "24/25",
+      "marketValue": 1800000
+    },
+    {
+      "id": "4624027",
+      "clubFrom": {
+        "id": "1112",
+        "name": "Wrexham"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2024-05-31",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 1800000
+    },
+    {
+      "id": "4624026",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1112",
+        "name": "Wrexham"
+      },
+      "date": "2023-01-09",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 2000000
+    },
+    {
+      "id": "4225272",
+      "clubFrom": {
+        "id": "122",
+        "name": "Sturm Graz"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2023-06-30",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 2000000
+    },
+    {
+      "id": "4225271",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "122",
+        "name": "Sturm Graz"
+      },
+      "date": "2023-01-16",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 1500000
+    },
+    {
+      "id": "3978639",
+      "clubFrom": {
+        "id": "1042",
+        "name": "Crewe Alexandra"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2023-01-15",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 1500000
+    },
+    {
+      "id": "3978638",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1042",
+        "name": "Crewe Alexandra"
+      },
+      "date": "2022-07-29",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 1500000
+    },
+    {
+      "id": "4553678",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2021-01-07",
+      "upcoming": false,
+      "season": "21/22"
+    },
+    {
+      "id": "2998772",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "date": "2020-01-07",
+      "upcoming": false,
+      "season": "20/21"
+    },
+    {
+      "id": "2246912",
+      "clubFrom": {
+        "id": "50683",
+        "name": "Arsenal Youth"
+      },
+      "clubTo": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "date": "2018-01-07",
+      "upcoming": false,
+      "season": "18/19"
+    }
+  ],
+  "youthClubs": [
+    "Arsenal FC (2009-2020)"
+  ]
+}

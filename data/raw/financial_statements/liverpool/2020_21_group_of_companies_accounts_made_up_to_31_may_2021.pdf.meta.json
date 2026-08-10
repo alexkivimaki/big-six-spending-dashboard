@@ -1,0 +1,12 @@
+{
+  "club_id": "liverpool",
+  "season": "2020/21",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history/MzMzMTQ3NTI1NGFkaXF6a2N4/document?format=pdf&download=0",
+  "date_downloaded_utc": "2026-04-28T09:08:41.198965+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/liverpool/2020_21_group_of_companies_accounts_made_up_to_31_may_2021.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/liverpool_2020_21_statement_fetcher_output.json",
+  "report_title": "Group of companies' accounts made up to 31 May 2021",
+  "report_type": "accounts_filing"
+}

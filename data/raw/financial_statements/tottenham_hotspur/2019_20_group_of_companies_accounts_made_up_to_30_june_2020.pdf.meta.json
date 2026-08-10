@@ -1,0 +1,12 @@
+{
+  "club_id": "tottenham_hotspur",
+  "season": "2019/20",
+  "source_url": "https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history",
+  "download_url": "https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history/MzI4NTE2NTkzNWFkaXF6a2N4/document?format=pdf&download=0",
+  "date_downloaded_utc": "2026-04-28T09:10:11.144181+00:00",
+  "status_code": 200,
+  "file_path": "data/raw/financial_statements/tottenham_hotspur/2019_20_group_of_companies_accounts_made_up_to_30_june_2020.pdf",
+  "original_agent_output_path": "data/raw/ai_agents/statement_fetcher_outputs/tottenham_hotspur_2019_20_statement_fetcher_output.json",
+  "report_title": "Group of companies' accounts made up to 30 June 2020",
+  "report_type": "accounts_filing"
+}

@@ -1,0 +1,11 @@
+{
+  "club_id": "liverpool",
+  "club_name": "Liverpool",
+  "league_key": "premier_league",
+  "league_name": "Premier League",
+  "source_name": "transfermarkt_achievements_page",
+  "source_url": "https://www.transfermarkt.com/liverpool/erfolge/verein/31",
+  "collected_at_utc": "2026-04-28T07:46:09.255073+00:00",
+  "status_code": 200,
+  "collection_method": "direct_html_scrape"
+}

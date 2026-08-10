@@ -1,0 +1,19 @@
+{
+  "club_id": "tottenham_hotspur",
+  "club_name": "Tottenham Hotspur",
+  "season": "2023/24",
+  "financial_year_end": "2024-06-30",
+  "report_title": "Annual Report 2024",
+  "report_type": "annual_report",
+  "source_name": "Official club investor relations page",
+  "source_url": "https://www.tottenhamhotspur.com/the-club/investor-relations/annual-reports/",
+  "download_url": "https://resources.thfc.pulselive.com/thfc/document/2026/04/02/9a0ff60a-6e59-4bce-844b-6091a6273e9b/AR-2024.pdf",
+  "file_type": "pdf",
+  "date_accessed": "2026-04-28",
+  "is_official_source": true,
+  "company_or_group_name": "Tottenham Hotspur Limited",
+  "company_number_or_registry_id": "01706358",
+  "local_file_suggested_name": "2023_24_annual_report_2024.pdf",
+  "confidence_level": "high",
+  "notes": "Official Tottenham Hotspur investor-relations annual report."
+}

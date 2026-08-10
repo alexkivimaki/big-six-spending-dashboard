@@ -1,0 +1,174 @@
+{
+  "updatedAt": "2026-04-27T20:12:03.552319",
+  "id": "285845",
+  "transfers": [
+    {
+      "id": "4567252",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "1041",
+        "name": "Lyon"
+      },
+      "date": "2023-07-08",
+      "upcoming": false,
+      "season": "23/24",
+      "marketValue": 8000000
+    },
+    {
+      "id": "4051977",
+      "clubFrom": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2023-05-31",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 8000000
+    },
+    {
+      "id": "4051976",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "180",
+        "name": "Southampton"
+      },
+      "date": "2022-01-09",
+      "upcoming": false,
+      "season": "22/23",
+      "marketValue": 10000000
+    },
+    {
+      "id": "3684506",
+      "clubFrom": {
+        "id": "12",
+        "name": "Roma"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2022-06-30",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 10000000
+    },
+    {
+      "id": "3684505",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "12",
+        "name": "Roma"
+      },
+      "date": "2022-07-01",
+      "upcoming": false,
+      "season": "21/22",
+      "marketValue": 12000000,
+      "fee": 500000
+    },
+    {
+      "id": "3233899",
+      "clubFrom": {
+        "id": "984",
+        "name": "West Brom"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2021-05-31",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 18000000
+    },
+    {
+      "id": "3233903",
+      "clubFrom": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "clubTo": {
+        "id": "984",
+        "name": "West Brom"
+      },
+      "date": "2021-01-02",
+      "upcoming": false,
+      "season": "20/21",
+      "marketValue": 18000000
+    },
+    {
+      "id": "1979901",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U23"
+      },
+      "clubTo": {
+        "id": "11",
+        "name": "Arsenal"
+      },
+      "date": "2017-01-07",
+      "upcoming": false,
+      "season": "17/18",
+      "marketValue": 750000
+    },
+    {
+      "id": "1275365",
+      "clubFrom": {
+        "id": "677",
+        "name": "Ipswich"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "date": "2016-05-31",
+      "upcoming": false,
+      "season": "15/16",
+      "marketValue": 750000
+    },
+    {
+      "id": "1275364",
+      "clubFrom": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "clubTo": {
+        "id": "677",
+        "name": "Ipswich"
+      },
+      "date": "2015-02-07",
+      "upcoming": false,
+      "season": "15/16",
+      "marketValue": 250000
+    },
+    {
+      "id": "1026694",
+      "clubFrom": {
+        "id": "5679",
+        "name": "Arsenal U18"
+      },
+      "clubTo": {
+        "id": "9249",
+        "name": "Arsenal U21"
+      },
+      "date": "2014-01-07",
+      "upcoming": false,
+      "season": "14/15"
+    }
+  ],
+  "youthClubs": [
+    "Arsenal FC (2003-2014)"
+  ]
+}

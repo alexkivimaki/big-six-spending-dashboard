@@ -1,0 +1,2 @@
+club_id,club_name,season,season_start_year,window,gross_transfer_spend_eur,transfer_income_eur,incoming_transfer_count,outgoing_transfer_count,source_name,source_url,date_accessed,confidence_level,notes
+arsenal,Arsenal,2020/21,2020,all,86000000,19150000,,,transfermarkt_manual_club_page,https://www.transfermarkt.com/fc-arsenal/transfers/verein/11/saison_id/2020,,high,"Example verified club-page total captured manually from the Transfermarkt Arsenal transfers page."
