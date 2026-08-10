@@ -1,7 +1,7 @@
 :root {
-  color: #16231e;
-  background: #f4f4ef;
-  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -13,9 +13,7 @@
 body {
   margin: 0;
   min-width: 320px;
-  background:
-    linear-gradient(180deg, rgba(10, 43, 30, 0.03), transparent 20rem),
-    #f4f4ef;
+  background: #f8fafc;
 }
 
 button,
@@ -40,9 +38,9 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(18px);
-  background: rgba(244, 244, 239, 0.88);
-  border-bottom: 1px solid rgba(20, 38, 31, 0.08);
+  backdrop-filter: blur(12px);
+  background: rgba(248, 250, 252, 0.92);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .appHeaderInner,
@@ -60,7 +58,7 @@ a {
 }
 
 .appShell {
-  padding: 24px;
+  padding: 28px 24px 40px;
   display: grid;
   gap: 24px;
 }
@@ -77,8 +75,8 @@ a {
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: #16231e;
-  color: #f4f4ef;
+  background: #0f172a;
+  color: #ffffff;
   font-weight: 800;
   letter-spacing: 0.04em;
 }
@@ -93,7 +91,7 @@ a {
 }
 
 .brandText small {
-  color: #5d6c66;
+  color: #64748b;
 }
 
 .topNav {
@@ -102,26 +100,26 @@ a {
   gap: 8px;
   padding: 6px;
   border-radius: 999px;
-  background: rgba(20, 38, 31, 0.05);
+  background: #eef2f7;
 }
 
 .topNavLink {
   padding: 10px 16px;
   border-radius: 999px;
-  color: #41514a;
+  color: #475569;
   font-weight: 700;
 }
 
 .topNavLink.active {
-  background: #16231e;
-  color: #f4f4ef;
+  background: #0f172a;
+  color: #ffffff;
 }
 
 .panel {
-  background: rgba(255, 255, 252, 0.82);
-  border: 1px solid rgba(20, 38, 31, 0.08);
-  border-radius: 26px;
-  box-shadow: 0 18px 42px rgba(18, 29, 24, 0.06);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
 }
 
 .pageHero,
@@ -137,7 +135,7 @@ a {
 .controlsColumn,
 .contentColumn > .panel,
 .clubCard {
-  padding: 24px;
+  padding: 28px;
 }
 
 .pageHero {
@@ -153,9 +151,10 @@ a {
 .panelLead h2,
 .sourceDrawerHeader h2 {
   margin: 10px 0 0;
-  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-family: inherit;
   letter-spacing: -0.04em;
-  line-height: 0.96;
+  line-height: 1.02;
+  font-weight: 800;
 }
 
 .pageHero h1,
@@ -172,7 +171,7 @@ a {
 .summaryCard small,
 .snapshotCard small,
 .heroStat small {
-  color: #5d6c66;
+  color: #64748b;
   line-height: 1.65;
 }
 
@@ -182,8 +181,8 @@ a {
   gap: 8px;
   padding: 7px 10px;
   border-radius: 999px;
-  background: rgba(22, 35, 30, 0.06);
-  color: #294337;
+  background: #f1f5f9;
+  color: #334155;
   text-transform: uppercase;
   font-size: 0.76rem;
   letter-spacing: 0.08em;
@@ -200,8 +199,8 @@ a {
 .summaryCard {
   padding: 18px;
   border-radius: 20px;
-  background: rgba(20, 38, 31, 0.03);
-  border: 1px solid rgba(20, 38, 31, 0.08);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
 }
 
 .heroStat span,
@@ -209,7 +208,7 @@ a {
 .summaryCard span,
 .clubCardMetric span {
   display: block;
-  color: #62716b;
+  color: #64748b;
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -245,7 +244,7 @@ a {
 
 .controlSection {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .controlHeader {
@@ -288,7 +287,7 @@ a {
 
 .clubToggle {
   width: 100%;
-  border: 1px solid rgba(20, 38, 31, 0.08);
+  border: 1px solid #e2e8f0;
   border-radius: 18px;
   padding: 14px 16px;
   background: #fff;
@@ -300,8 +299,8 @@ a {
 }
 
 .clubToggle.isSelected {
-  background: #16231e;
-  color: #f4f4ef;
+  background: #0f172a;
+  color: #ffffff;
 }
 
 .clubToggleSwatch {
@@ -319,9 +318,9 @@ select {
   width: 100%;
   padding: 14px;
   border-radius: 16px;
-  border: 1px solid rgba(20, 38, 31, 0.1);
+  border: 1px solid #cbd5e1;
   background: #fff;
-  color: #16231e;
+  color: #0f172a;
 }
 
 .metricGroups,
@@ -331,7 +330,7 @@ select {
 }
 
 .metricGroupLabel {
-  color: #5d6c66;
+  color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.76rem;
@@ -340,9 +339,9 @@ select {
 
 .metricButton {
   width: 100%;
-  padding: 14px;
+  padding: 16px;
   border-radius: 18px;
-  border: 1px solid rgba(20, 38, 31, 0.08);
+  border: 1px solid #e2e8f0;
   background: #fff;
   text-align: left;
   cursor: pointer;
@@ -356,8 +355,8 @@ select {
 }
 
 .metricButton.isActive {
-  background: #16231e;
-  color: #f4f4ef;
+  background: #0f172a;
+  color: #ffffff;
 }
 
 .metricButtonTop {
@@ -382,9 +381,9 @@ select {
 .secondaryButton,
 .primaryLink,
 .iconButton {
-  border: 1px solid rgba(20, 38, 31, 0.1);
+  border: 1px solid #dbe3ef;
   background: #fff;
-  color: #16231e;
+  color: #0f172a;
   cursor: pointer;
 }
 
@@ -399,8 +398,8 @@ select {
 }
 
 .secondaryButton.isActive {
-  background: #16231e;
-  color: #f4f4ef;
+  background: #0f172a;
+  color: #ffffff;
 }
 
 .iconButton {
@@ -451,18 +450,18 @@ select {
 }
 
 .status-complete {
-  background: rgba(44, 122, 78, 0.12);
-  color: #1d5a38;
+  background: #e8f7ee;
+  color: #1f6b45;
 }
 
 .status-partial {
-  background: rgba(177, 133, 21, 0.12);
-  color: #7a5a0d;
+  background: #fff4db;
+  color: #93610d;
 }
 
 .status-coming-soon {
-  background: rgba(121, 121, 121, 0.12);
-  color: #5f5f5f;
+  background: #eef2f7;
+  color: #64748b;
 }
 
 .chartCanvas {
@@ -476,10 +475,10 @@ select {
 
 .chartTooltip {
   min-width: 190px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 14px;
-  background: rgba(19, 34, 28, 0.96);
-  color: #fffdf7;
+  background: rgba(15, 23, 42, 0.96);
+  color: #ffffff;
 }
 
 .tooltipRows {
@@ -496,28 +495,50 @@ select {
 
 .rankingNote,
 .placeholderText {
-  color: #5d6c66;
+  color: #64748b;
 }
 
 .tableWrap {
   overflow-x: auto;
   margin-top: 18px;
+  padding: 6px 2px 2px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 th,
 td {
-  padding: 14px 10px;
+  padding: 16px 14px;
   border-bottom: 1px solid rgba(20, 38, 31, 0.08);
   text-align: left;
+  vertical-align: middle;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 18px;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 18px;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 thead th {
-  color: #62716b;
+  color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.74rem;
@@ -532,7 +553,7 @@ thead th {
 
 .emptyState {
   min-height: 220px;
-  border: 1px dashed rgba(20, 38, 31, 0.16);
+  border: 1px dashed #cbd5e1;
   border-radius: 22px;
   padding: 24px;
   display: grid;
@@ -566,9 +587,9 @@ thead th {
 }
 
 .clubCardMetric {
-  padding: 14px;
+  padding: 16px;
   border-radius: 18px;
-  background: rgba(20, 38, 31, 0.03);
+  background: #f8fafc;
 }
 
 .primaryLink {
@@ -633,17 +654,19 @@ thead th {
 }
 
 .clubIdentityText small {
-  color: #62716b;
+  color: #64748b;
 }
 
 .summaryGrid {
   margin-top: 18px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .detailGrid {
   margin-top: 18px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .financeGrid {
@@ -651,10 +674,10 @@ thead th {
 }
 
 .detailCard {
-  padding: 18px;
+  padding: 20px;
   border-radius: 20px;
-  background: rgba(20, 38, 31, 0.03);
-  border: 1px solid rgba(20, 38, 31, 0.08);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
 }
 
 .transferList,
@@ -663,7 +686,7 @@ thead th {
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .transferList li,
@@ -679,7 +702,7 @@ thead th {
 }
 
 .transferList small {
-  color: #62716b;
+  color: #64748b;
 }
 
 .compositionBar {
@@ -687,7 +710,7 @@ thead th {
   height: 16px;
   border-radius: 999px;
   overflow: hidden;
-  background: rgba(20, 38, 31, 0.08);
+  background: #e2e8f0;
   display: flex;
 }
 
@@ -696,21 +719,21 @@ thead th {
 }
 
 .compositionSegment.commercial {
-  background: #325f48;
+  background: #1e3a5f;
 }
 
 .compositionSegment.broadcast {
-  background: #6f9f87;
+  background: #4f83bd;
 }
 
 .compositionSegment.matchday {
-  background: #c8d6cc;
+  background: #93c5fd;
 }
 
 .sourceDrawerOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(16, 25, 21, 0.44);
+  background: rgba(15, 23, 42, 0.4);
   z-index: 30;
   display: flex;
   justify-content: flex-end;
@@ -719,10 +742,10 @@ thead th {
 .sourceDrawer {
   width: min(560px, 100%);
   height: 100%;
-  background: #fffdf8;
-  padding: 24px;
+  background: #ffffff;
+  padding: 28px;
   overflow-y: auto;
-  box-shadow: -18px 0 40px rgba(16, 25, 21, 0.16);
+  box-shadow: -18px 0 40px rgba(15, 23, 42, 0.12);
 }
 
 .sourceDrawerHeader {
@@ -733,9 +756,9 @@ thead th {
 }
 
 .sourceBlock {
-  padding-top: 18px;
-  border-top: 1px solid rgba(20, 38, 31, 0.08);
-  margin-top: 18px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 20px;
 }
 
 .sourceBlock h3 {
@@ -754,7 +777,7 @@ thead th {
 }
 
 .sourceField dt {
-  color: #62716b;
+  color: #64748b;
   font-size: 0.76rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -823,7 +846,7 @@ thead th {
   .controlsColumn,
   .contentColumn > .panel,
   .clubCard {
-    padding: 18px;
+    padding: 20px;
   }
 
   .chartCanvas,
@@ -831,7 +854,23 @@ thead th {
     height: 300px;
   }
 
+  th,
+  td {
+    padding: 14px 12px;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 14px;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 14px;
+  }
+
   .sourceDrawer {
     width: 100%;
+    padding: 22px;
   }
 }

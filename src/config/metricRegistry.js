@@ -236,7 +236,7 @@ export const compareMetricGroups = [
   {
     id: "transfers",
     label: "Transfers",
-    metricIds: ["grossTransferSpend", "transferIncome", "netTransferSpend", "incomingTransfers"],
+    metricIds: ["grossTransferSpend", "transferIncome", "netTransferSpend"],
   },
   {
     id: "finances",
