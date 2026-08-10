@@ -567,29 +567,36 @@ thead th {
 
 .clubsGrid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .clubCard {
   display: grid;
   gap: 18px;
+  min-width: 0;
 }
 
 .clubCardTop {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
   gap: 16px;
+  min-width: 0;
 }
 
 .clubCardMetrics {
   display: grid;
-  gap: 12px;
+  gap: 14px;
+  min-width: 0;
 }
 
 .clubCardMetric {
   padding: 16px;
   border-radius: 18px;
   background: #f8fafc;
+  display: grid;
+  gap: 6px;
+  min-width: 0;
 }
 
 .primaryLink {
@@ -599,6 +606,8 @@ thead th {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-width: 0;
 }
 
 .profileHeroTop {
@@ -630,6 +639,8 @@ thead th {
   display: inline-flex;
   align-items: center;
   gap: 14px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .clubAvatar {
@@ -641,6 +652,7 @@ thead th {
   place-items: center;
   font-weight: 900;
   letter-spacing: 0.06em;
+  flex: 0 0 auto;
 }
 
 .clubIdentity.isCompact .clubAvatar {
@@ -651,6 +663,14 @@ thead th {
 .clubIdentityText {
   display: grid;
   gap: 2px;
+  min-width: 0;
+}
+
+.clubIdentityText strong,
+.clubIdentityText small {
+  display: block;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .clubIdentityText small {
