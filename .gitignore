@@ -5,6 +5,9 @@ dist
 .env.local
 __pycache__
 .pytest_cache
+.swift-module-cache
+tmp
+tmpqlook
 
 # Optional large raw source files and extract bundles.
 # Keep PDFs, CSVs, JSON reference files, and sample exports tracked by default.

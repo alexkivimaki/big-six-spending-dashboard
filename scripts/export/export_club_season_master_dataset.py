@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from pathlib import Path
 
 import pandas as pd
@@ -66,6 +67,32 @@ def safe_json_list(series: pd.Series) -> str:
         if text and text not in values:
             values.append(text)
     return json.dumps(values, ensure_ascii=False)
+
+
+def sanitize_for_json(value):
+    if isinstance(value, dict):
+        return {key: sanitize_for_json(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [sanitize_for_json(item) for item in value]
+    if value is None or value is pd.NA:
+        return None
+    if isinstance(value, float) and math.isnan(value):
+        return None
+    if pd.isna(value):
+        return None
+    return value
+
+
+def dataframe_to_json_records(dataframe: pd.DataFrame) -> list[dict]:
+    records = dataframe.to_dict(orient="records")
+    return [sanitize_for_json(record) for record in records]
+
+
+def write_json(path: Path, records: list[dict]) -> None:
+    path.write_text(
+        json.dumps(records, indent=2, ensure_ascii=False, allow_nan=False) + "\n",
+        encoding="utf-8",
+    )
 
 
 def add_season_bounds(dataframe: pd.DataFrame) -> pd.DataFrame:
@@ -480,10 +507,7 @@ def write_per_league_exports(dataframe: pd.DataFrame, data_root: Path, frontend_
         csv_path = data_dir / "club_season_master.csv"
         json_path = frontend_dir / "clubSeasonMasterData.json"
         league_frame.to_csv(csv_path, index=False)
-        json_path.write_text(
-            json.dumps(league_frame.where(pd.notna(league_frame), None).to_dict(orient="records"), indent=2, ensure_ascii=False),
-            encoding="utf-8",
-        )
+        write_json(json_path, dataframe_to_json_records(league_frame))
 
 
 def main() -> int:
@@ -520,10 +544,7 @@ def main() -> int:
     master = master.sort_values(by=["league_key", "club_id", "season_start_year", "season"]).reset_index(drop=True)
 
     master.to_csv(output_csv, index=False)
-    output_json.write_text(
-        json.dumps(master.where(pd.notna(master), None).to_dict(orient="records"), indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
+    write_json(output_json, dataframe_to_json_records(master))
     write_per_league_exports(master, league_output_root, frontend_league_output_root)
 
     print(f"[saved] CSV: {output_csv}")

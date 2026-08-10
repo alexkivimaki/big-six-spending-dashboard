@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from pathlib import Path
 
 import pandas as pd
@@ -56,6 +57,20 @@ def safe_share(numerator, denominator):
     return float(numerator) / float(denominator)
 
 
+def sanitize_for_json(value):
+    if isinstance(value, dict):
+        return {key: sanitize_for_json(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [sanitize_for_json(item) for item in value]
+    if value is None or value is pd.NA:
+        return None
+    if isinstance(value, float) and math.isnan(value):
+        return None
+    if pd.isna(value):
+        return None
+    return value
+
+
 def main() -> int:
     args = parse_args()
     df = pd.read_csv(Path(args.input))
@@ -89,11 +104,9 @@ def main() -> int:
     json_output.parent.mkdir(parents=True, exist_ok=True)
 
     final_df.to_csv(csv_output, index=False)
-    json_records = []
-    for record in final_df.to_dict(orient="records"):
-        json_records.append({key: (None if pd.isna(value) else value) for key, value in record.items()})
+    json_records = [sanitize_for_json(record) for record in final_df.to_dict(orient="records")]
     json_output.write_text(
-        json.dumps(json_records, indent=2, ensure_ascii=True) + "\n",
+        json.dumps(json_records, indent=2, ensure_ascii=True, allow_nan=False) + "\n",
         encoding="utf-8",
     )
 

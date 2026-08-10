@@ -1,9 +1,6 @@
 :root {
-  color: #163126;
-  background:
-    radial-gradient(circle at top left, rgba(190, 220, 161, 0.44), transparent 32rem),
-    radial-gradient(circle at top right, rgba(219, 185, 120, 0.28), transparent 26rem),
-    linear-gradient(180deg, #f5f2e8 0%, #f4f7f1 48%, #edf3ee 100%);
+  color: #16231e;
+  background: #f4f4ef;
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,99 +10,169 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   min-width: 320px;
-}
-
-button,
-select,
-input {
-  font: inherit;
+  background:
+    linear-gradient(180deg, rgba(10, 43, 30, 0.03), transparent 20rem),
+    #f4f4ef;
 }
 
 button,
 select {
-  border: 0;
-}
-
-button:disabled {
-  cursor: not-allowed;
+  font: inherit;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 #root {
   min-height: 100vh;
 }
 
-.pageFrame {
+.appFrame {
   min-height: 100vh;
-  padding: 28px;
 }
 
-.pageShell {
-  max-width: 1480px;
+.appHeader {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(18px);
+  background: rgba(244, 244, 239, 0.88);
+  border-bottom: 1px solid rgba(20, 38, 31, 0.08);
+}
+
+.appHeaderInner,
+.appShell {
+  max-width: 1380px;
   margin: 0 auto;
+}
+
+.appHeaderInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 24px;
+}
+
+.appShell {
+  padding: 24px;
   display: grid;
   gap: 24px;
-  animation: page-enter 500ms ease;
+}
+
+.brandMark {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brandSquare {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #16231e;
+  color: #f4f4ef;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.brandText {
+  display: grid;
+  gap: 2px;
+}
+
+.brandText strong {
+  font-size: 0.98rem;
+}
+
+.brandText small {
+  color: #5d6c66;
+}
+
+.topNav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(20, 38, 31, 0.05);
+}
+
+.topNavLink {
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: #41514a;
+  font-weight: 700;
+}
+
+.topNavLink.active {
+  background: #16231e;
+  color: #f4f4ef;
 }
 
 .panel {
-  background: rgba(255, 251, 240, 0.78);
-  border: 1px solid rgba(31, 61, 48, 0.12);
-  border-radius: 28px;
-  box-shadow: 0 18px 42px rgba(18, 44, 35, 0.08);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 252, 0.82);
+  border: 1px solid rgba(20, 38, 31, 0.08);
+  border-radius: 26px;
+  box-shadow: 0 18px 42px rgba(18, 29, 24, 0.06);
 }
 
-.heroPanel,
-.featureSection,
-.summaryPanel,
-.spotlightPanel,
-.outlinePanel,
-.calloutPanel,
-.controlsPanel,
-.tablePanel,
-.statCard {
-  animation: rise 420ms ease both;
+.pageHero,
+.controlsColumn,
+.contentColumn > .panel,
+.clubCard,
+.profileHero {
+  animation: rise-in 340ms ease both;
 }
 
-.heroPanel {
+.pageHero,
+.profileHero,
+.controlsColumn,
+.contentColumn > .panel,
+.clubCard {
+  padding: 24px;
+}
+
+.pageHero {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
   gap: 24px;
-  padding: 30px;
+  align-items: start;
 }
 
-.heroCopy h1,
-.sectionHeading h2,
-.panelHeader h2 {
-  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+.pageHero h1,
+.profileHero h1,
+.sectionHeader h2,
+.panelLead h2,
+.sourceDrawerHeader h2 {
+  margin: 10px 0 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   letter-spacing: -0.04em;
+  line-height: 0.96;
 }
 
-.heroCopy h1 {
-  margin: 14px 0 12px;
-  font-size: clamp(2.7rem, 6vw, 5rem);
-  line-height: 0.92;
+.pageHero h1,
+.profileHero h1 {
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
 }
 
-.heroCopy p,
-.sectionHeading p,
-.panelHeader p,
-.featureCard p,
-.outlineCard p,
-.miniCard small,
-.statCard small {
-  color: #53655d;
+.pageHero p,
+.profileHero p,
+.sectionHeader p,
+.panelLead p,
+.sourceDrawerHeader p,
+.clubCardMetric small,
+.summaryCard small,
+.snapshotCard small,
+.heroStat small {
+  color: #5d6c66;
   line-height: 1.65;
 }
 
@@ -113,364 +180,235 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 7px 11px;
+  padding: 7px 10px;
   border-radius: 999px;
-  background: rgba(35, 76, 59, 0.08);
-  color: #244c3b;
-  font-size: 0.78rem;
-  font-weight: 800;
+  background: rgba(22, 35, 30, 0.06);
+  color: #294337;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.heroAside {
-  display: grid;
-  gap: 14px;
-  align-content: center;
-}
-
-.heroBadge,
-.heroCallout {
-  padding: 20px;
-  border-radius: 24px;
-  background: rgba(27, 59, 45, 0.94);
-  color: #f7f1df;
-  display: grid;
-  gap: 6px;
-}
-
-.heroBadge span,
-.heroCallout span {
-  color: rgba(247, 241, 223, 0.72);
-}
-
-.heroBadge strong,
-.heroCallout strong {
-  font-size: 1.15rem;
-}
-
-.heroCallout {
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 12px;
-}
-
-.statsGrid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.statCard {
-  padding: 20px;
-  display: grid;
-  gap: 8px;
-}
-
-.statCard span {
-  color: #5c6e66;
-  font-size: 0.82rem;
-  text-transform: uppercase;
+  font-size: 0.76rem;
   letter-spacing: 0.08em;
   font-weight: 800;
 }
 
-.statCard strong {
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.featureSection,
-.summaryPanel,
-.spotlightPanel,
-.outlinePanel,
-.calloutPanel,
-.tablePanel {
-  padding: 24px;
-}
-
-.sectionHeading,
-.panelHeader {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  align-items: flex-start;
-}
-
-.sectionHeading h2,
-.panelHeader h2 {
-  margin: 10px 0 0;
-  font-size: clamp(1.6rem, 3vw, 2.5rem);
-}
-
-.sectionHeading p,
-.panelHeader p {
-  max-width: 520px;
-  margin: 0;
-}
-
-.featureGrid {
-  margin-top: 20px;
+.heroStats {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 14px;
 }
 
-.featureCard,
-.outlineCard,
-.metricCard,
-.miniCard {
-  border-radius: 22px;
-  border: 1px solid rgba(31, 61, 48, 0.1);
-}
-
-.featureCard {
+.heroStat,
+.snapshotCard,
+.summaryCard {
   padding: 18px;
-  display: grid;
-  gap: 12px;
-  background: rgba(255, 255, 255, 0.56);
+  border-radius: 20px;
+  background: rgba(20, 38, 31, 0.03);
+  border: 1px solid rgba(20, 38, 31, 0.08);
 }
 
-.featureHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.featureIcon,
-.outlineIcon {
-  width: 42px;
-  height: 42px;
-  border-radius: 14px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(33, 83, 62, 0.08);
-}
-
-.featureCard h3,
-.outlineCard h3 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.featureCard strong {
-  color: #244c3b;
-}
-
-.statusPill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 0.74rem;
-  font-weight: 800;
+.heroStat span,
+.snapshotCard span,
+.summaryCard span,
+.clubCardMetric span {
+  display: block;
+  color: #62716b;
+  font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
+  font-weight: 800;
 }
 
-.status-ready {
-  background: rgba(58, 145, 102, 0.14);
-  color: #1f6b45;
+.heroStat strong,
+.snapshotCard strong,
+.summaryCard strong,
+.clubCardMetric strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.3rem;
 }
 
-.status-partial {
-  background: rgba(213, 154, 42, 0.15);
-  color: #92610d;
-}
-
-.status-blocked {
-  background: rgba(177, 72, 72, 0.12);
-  color: #8f3030;
-}
-
-.layoutGrid {
+.pageLayout {
   display: grid;
-  grid-template-columns: 390px minmax(0, 1fr);
+  grid-template-columns: 380px minmax(0, 1fr);
   gap: 24px;
   align-items: start;
 }
 
-.controlsPanel {
+.controlsColumn {
   position: sticky;
-  top: 20px;
-  padding: 22px;
+  top: 88px;
   display: grid;
-  gap: 22px;
+  gap: 24px;
 }
 
-.controlBlock {
+.panelLead h2 {
+  font-size: 2rem;
+}
+
+.controlSection {
+  display: grid;
+  gap: 12px;
+}
+
+.controlHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.controlHeader h3,
+.detailCard h3 {
+  margin: 0;
+}
+
+.clubPicker,
+.metricGrid,
+.heroStats,
+.snapshotGrid,
+.summaryGrid,
+.detailGrid,
+.clubsGrid {
   display: grid;
   gap: 14px;
 }
 
-.blockHeader {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: baseline;
+.clubToggle,
+.metricButton,
+.secondaryButton,
+.primaryLink,
+.iconButton {
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
 
-.blockHeader h3 {
-  margin: 0;
-  font-size: 1rem;
+.clubToggle:hover,
+.metricButton:hover:not(:disabled),
+.secondaryButton:hover,
+.primaryLink:hover,
+.iconButton:hover {
+  transform: translateY(-1px);
 }
 
-.blockHeader small {
-  color: #64776f;
-}
-
-.clubGrid {
-  display: grid;
-  gap: 10px;
-}
-
-.clubChip,
-.toggleButton,
-.metricCard {
-  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
-}
-
-.clubChip:hover,
-.toggleButton:hover,
-.metricCard:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(24, 57, 42, 0.08);
-}
-
-.clubChip {
+.clubToggle {
   width: 100%;
+  border: 1px solid rgba(20, 38, 31, 0.08);
+  border-radius: 18px;
   padding: 14px 16px;
+  background: #fff;
   display: flex;
   align-items: center;
   gap: 12px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.64);
-  border: 1px solid rgba(31, 61, 48, 0.08);
-  color: #18392b;
-  font-weight: 700;
+  cursor: pointer;
   text-align: left;
 }
 
-.clubChip.isSelected {
-  background: #173b2d;
-  color: #f8f1df;
+.clubToggle.isSelected {
+  background: #16231e;
+  color: #f4f4ef;
 }
 
-.clubSwatch {
+.clubToggleSwatch {
   width: 12px;
   height: 12px;
-  border-radius: 50%;
+  border-radius: 999px;
   flex: 0 0 auto;
 }
 
-.clubSwatch.large {
-  width: 20px;
-  height: 20px;
-}
-
-.metricGroup {
-  display: grid;
-  gap: 10px;
-}
-
-.metricGroupLabel {
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #6c7c74;
-  font-weight: 800;
-}
-
-.metricGrid {
-  display: grid;
-  gap: 10px;
-}
-
-.metricCard {
-  width: 100%;
-  padding: 14px;
-  background: rgba(255, 255, 255, 0.68);
-  color: #173b2d;
-  text-align: left;
-  display: grid;
-  gap: 8px;
-}
-
-.metricCard.isActive {
-  background: #173b2d;
-  color: #f8f1df;
-}
-
-.metricCard.isBlocked {
-  opacity: 0.7;
-  background: rgba(206, 193, 180, 0.45);
-  color: #6a6a6a;
-}
-
-.metricTopline {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-}
-
-.metricCoverage {
-  color: inherit;
-  opacity: 0.8;
-  font-size: 0.82rem;
-}
-
-.metricCard small {
-  color: inherit;
-  opacity: 0.82;
-  line-height: 1.45;
-}
-
-.metricLock {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.76rem;
-  font-weight: 700;
-}
-
-.splitBlock {
+.splitInputs {
   grid-template-columns: 1fr 1fr;
 }
 
 select {
   width: 100%;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(31, 61, 48, 0.1);
   padding: 14px;
-  color: #18392b;
+  border-radius: 16px;
+  border: 1px solid rgba(20, 38, 31, 0.1);
+  background: #fff;
+  color: #16231e;
 }
 
-.toggleRow {
+.metricGroups,
+.metricGroup {
+  display: grid;
+  gap: 12px;
+}
+
+.metricGroupLabel {
+  color: #5d6c66;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.metricButton {
+  width: 100%;
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(20, 38, 31, 0.08);
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+  display: grid;
+  gap: 8px;
+}
+
+.metricButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+}
+
+.metricButton.isActive {
+  background: #16231e;
+  color: #f4f4ef;
+}
+
+.metricButtonTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.metricButton small {
+  color: inherit;
+  opacity: 0.82;
+  line-height: 1.45;
+}
+
+.chartToggleRow {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-.toggleButton {
-  padding: 12px 14px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.66);
-  color: #173b2d;
+.secondaryButton,
+.primaryLink,
+.iconButton {
+  border: 1px solid rgba(20, 38, 31, 0.1);
+  background: #fff;
+  color: #16231e;
+  cursor: pointer;
+}
+
+.secondaryButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  padding: 12px 14px;
+  border-radius: 16px;
   font-weight: 700;
 }
 
-.toggleButton.isActive {
-  background: #173b2d;
-  color: #f8f1df;
+.secondaryButton.isActive {
+  background: #16231e;
+  color: #f4f4ef;
+}
+
+.iconButton {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
 }
 
 .contentColumn {
@@ -478,52 +416,73 @@ select {
   gap: 24px;
 }
 
-.summaryTiles,
-.calloutGrid,
-.spotlightGrid,
-.outlineGrid {
-  display: grid;
-  gap: 14px;
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
 }
 
-.summaryTiles {
-  margin-top: 20px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.sectionHeader h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
-.miniCard {
-  background: rgba(255, 255, 255, 0.62);
-  padding: 18px;
-  display: grid;
-  gap: 8px;
+.sectionHeaderMeta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.miniCard span {
-  color: #64776f;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+.coverageBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 0.74rem;
   font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
-.miniCard strong {
-  font-size: 1.2rem;
+.coverageBadge.isQuiet {
+  font-size: 0.68rem;
 }
 
-.chartWrap {
+.status-complete {
+  background: rgba(44, 122, 78, 0.12);
+  color: #1d5a38;
+}
+
+.status-partial {
+  background: rgba(177, 133, 21, 0.12);
+  color: #7a5a0d;
+}
+
+.status-coming-soon {
+  background: rgba(121, 121, 121, 0.12);
+  color: #5f5f5f;
+}
+
+.chartCanvas {
+  height: 420px;
   margin-top: 18px;
-  height: 440px;
+}
+
+.chartCanvas.compact {
+  height: 340px;
 }
 
 .chartTooltip {
-  background: rgba(21, 50, 38, 0.96);
-  color: #f8f1df;
+  min-width: 190px;
   padding: 12px;
   border-radius: 14px;
-  min-width: 180px;
+  background: rgba(19, 34, 28, 0.96);
+  color: #fffdf7;
 }
 
-.tooltipList {
+.tooltipRows {
   display: grid;
   gap: 8px;
   margin-top: 10px;
@@ -535,25 +494,14 @@ select {
   gap: 12px;
 }
 
-.chartEmpty {
-  margin-top: 18px;
-  min-height: 280px;
-  border-radius: 22px;
-  border: 1px dashed rgba(31, 61, 48, 0.2);
-  background: rgba(255, 255, 255, 0.45);
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 24px;
-}
-
-.chartEmpty h3 {
-  margin: 0 0 8px;
+.rankingNote,
+.placeholderText {
+  color: #5d6c66;
 }
 
 .tableWrap {
-  margin-top: 20px;
   overflow-x: auto;
+  margin-top: 18px;
 }
 
 table {
@@ -564,109 +512,262 @@ table {
 th,
 td {
   padding: 14px 10px;
-  border-bottom: 1px solid rgba(31, 61, 48, 0.08);
+  border-bottom: 1px solid rgba(20, 38, 31, 0.08);
   text-align: left;
 }
 
 thead th {
-  color: #667870;
-  font-size: 0.78rem;
+  color: #62716b;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  font-size: 0.74rem;
 }
 
-.clubCell {
+.tableClubLink {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  font-weight: 700;
 }
 
-.spotlightBanner {
-  margin-top: 20px;
-  padding: 18px;
+.emptyState {
+  min-height: 220px;
+  border: 1px dashed rgba(20, 38, 31, 0.16);
   border-radius: 22px;
-  border: 2px solid;
-  background: rgba(255, 255, 255, 0.66);
+  padding: 24px;
   display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.emptyState.compact {
+  min-height: 0;
+}
+
+.clubsGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.clubCard {
+  display: grid;
+  gap: 18px;
+}
+
+.clubCardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 16px;
 }
 
-.spotlightClub {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.spotlightClub strong {
-  display: block;
-}
-
-.spotlightClub small {
-  color: #667870;
-}
-
-.availabilityRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.availabilityPill {
-  padding: 7px 10px;
-  border-radius: 999px;
-  font-size: 0.74rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.availabilityPill.isOn {
-  background: rgba(58, 145, 102, 0.14);
-  color: #1f6b45;
-}
-
-.availabilityPill.isOff {
-  background: rgba(177, 72, 72, 0.12);
-  color: #8f3030;
-}
-
-.sourceLink {
-  margin-top: 18px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #244c3b;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.outlineGrid {
-  margin-top: 20px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.outlineCard {
-  padding: 18px;
-  background: rgba(255, 255, 255, 0.56);
+.clubCardMetrics {
   display: grid;
   gap: 12px;
 }
 
-.calloutGrid {
+.clubCardMetric {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(20, 38, 31, 0.03);
+}
+
+.primaryLink {
+  padding: 12px 14px;
+  border-radius: 16px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileHeroTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profileHeroMeta,
+.snapshotGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profileHeroText {
+  margin-top: 18px;
+}
+
+.snapshotGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.clubIdentity,
+.clubIdentityLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.clubAvatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  border: 2px solid;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.clubIdentity.isCompact .clubAvatar {
+  width: 40px;
+  height: 40px;
+}
+
+.clubIdentityText {
+  display: grid;
+  gap: 2px;
+}
+
+.clubIdentityText small {
+  color: #62716b;
+}
+
+.summaryGrid {
   margin-top: 18px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-@keyframes page-enter {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.detailGrid {
+  margin-top: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-@keyframes rise {
+.financeGrid {
+  align-items: start;
+}
+
+.detailCard {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(20, 38, 31, 0.03);
+  border: 1px solid rgba(20, 38, 31, 0.08);
+}
+
+.transferList,
+.miniList {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.transferList li,
+.miniList li {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.transferList span {
+  display: grid;
+  gap: 4px;
+}
+
+.transferList small {
+  color: #62716b;
+}
+
+.compositionBar {
+  margin-top: 16px;
+  height: 16px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(20, 38, 31, 0.08);
+  display: flex;
+}
+
+.compositionSegment {
+  height: 100%;
+}
+
+.compositionSegment.commercial {
+  background: #325f48;
+}
+
+.compositionSegment.broadcast {
+  background: #6f9f87;
+}
+
+.compositionSegment.matchday {
+  background: #c8d6cc;
+}
+
+.sourceDrawerOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 25, 21, 0.44);
+  z-index: 30;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sourceDrawer {
+  width: min(560px, 100%);
+  height: 100%;
+  background: #fffdf8;
+  padding: 24px;
+  overflow-y: auto;
+  box-shadow: -18px 0 40px rgba(16, 25, 21, 0.16);
+}
+
+.sourceDrawerHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.sourceBlock {
+  padding-top: 18px;
+  border-top: 1px solid rgba(20, 38, 31, 0.08);
+  margin-top: 18px;
+}
+
+.sourceBlock h3 {
+  margin: 0 0 14px;
+}
+
+.sourceBlock dl {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.sourceField {
+  display: grid;
+  gap: 4px;
+}
+
+.sourceField dt {
+  color: #62716b;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
+.sourceField dd {
+  margin: 0;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+@keyframes rise-in {
   from {
     opacity: 0;
     transform: translateY(16px);
@@ -677,75 +778,60 @@ thead th {
   }
 }
 
-@media (max-width: 1200px) {
-  .featureGrid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .summaryTiles,
-  .calloutGrid,
-  .outlineGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 980px) {
-  .pageFrame {
-    padding: 18px;
-  }
-
-  .heroPanel,
-  .layoutGrid,
-  .statsGrid,
-  .summaryTiles,
-  .calloutGrid,
-  .outlineGrid {
+@media (max-width: 1120px) {
+  .pageLayout,
+  .pageHero,
+  .clubsGrid,
+  .snapshotGrid,
+  .summaryGrid,
+  .detailGrid {
     grid-template-columns: 1fr;
   }
 
-  .featureGrid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .controlsPanel {
+  .controlsColumn {
     position: static;
   }
 
-  .sectionHeading,
-  .panelHeader {
+  .profileHeroTop,
+  .sectionHeader {
     display: grid;
   }
 }
 
-@media (max-width: 640px) {
-  .pageFrame {
-    padding: 12px;
+@media (max-width: 760px) {
+  .appHeaderInner,
+  .appShell {
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
-  .heroPanel,
-  .featureSection,
-  .summaryPanel,
-  .spotlightPanel,
-  .outlinePanel,
-  .calloutPanel,
-  .controlsPanel,
-  .tablePanel {
+  .appHeaderInner {
+    display: grid;
+  }
+
+  .topNav {
+    width: fit-content;
+  }
+
+  .splitInputs,
+  .chartToggleRow {
+    grid-template-columns: 1fr;
+  }
+
+  .pageHero,
+  .profileHero,
+  .controlsColumn,
+  .contentColumn > .panel,
+  .clubCard {
     padding: 18px;
-    border-radius: 22px;
   }
 
-  .featureGrid,
-  .calloutGrid,
-  .outlineGrid {
-    grid-template-columns: 1fr;
+  .chartCanvas,
+  .chartCanvas.compact {
+    height: 300px;
   }
 
-  .splitBlock,
-  .toggleRow {
-    grid-template-columns: 1fr;
-  }
-
-  .chartWrap {
-    height: 320px;
+  .sourceDrawer {
+    width: 100%;
   }
 }

@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from pathlib import Path
 
 import pandas as pd
@@ -17,12 +18,14 @@ WAGES_PATH = Path("data/clean/ai_agents/club_season_wages_clean.csv")
 PERFORMANCE_PATH = Path("data/clean/ai_agents/club_season_performance_clean.csv")
 FINANCES_PATH = Path("data/clean/ai_agents/club_season_finances_clean.csv")
 MANAGERS_PATH = Path("data/clean/ai_agents/managers_clean.csv")
+TRANSFER_ROWS_PATH = Path("data/clean/transfermarkt/club_transfer_rows_clean.csv")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-csv", default="data/final/club_season_dashboard.csv")
     parser.add_argument("--output-json", default="src/data/clubSeasonData.json")
+    parser.add_argument("--transfer-rows-json-output", default="src/data/clubTransferRowsData.json")
     parser.add_argument("--league-output-root", default="data/final/by_league")
     parser.add_argument("--frontend-league-output-root", default="src/data/by_league")
     return parser.parse_args()
@@ -53,6 +56,32 @@ def join_unique_text(series: pd.Series) -> str:
         if value not in unique_values:
             unique_values.append(value)
     return " | ".join(unique_values)
+
+
+def sanitize_for_json(value):
+    if isinstance(value, dict):
+        return {key: sanitize_for_json(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [sanitize_for_json(item) for item in value]
+    if value is None or value is pd.NA:
+        return None
+    if isinstance(value, float) and math.isnan(value):
+        return None
+    if pd.isna(value):
+        return None
+    return value
+
+
+def dataframe_to_json_records(dataframe: pd.DataFrame) -> list[dict]:
+    records = dataframe.to_dict(orient="records")
+    return [sanitize_for_json(record) for record in records]
+
+
+def write_json(path: Path, records: list[dict]) -> None:
+    path.write_text(
+        json.dumps(records, indent=2, ensure_ascii=False, allow_nan=False) + "\n",
+        encoding="utf-8",
+    )
 
 
 def get_join_keys(dataframe: pd.DataFrame) -> list[str]:
@@ -163,18 +192,19 @@ def write_per_league_exports(
         csv_path = data_dir / "club_season_dashboard.csv"
         json_path = frontend_dir / "clubSeasonData.json"
         league_frame.to_csv(csv_path, index=False)
-        records = league_frame.where(pd.notna(league_frame), None).to_dict(orient="records")
-        json_path.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
+        write_json(json_path, dataframe_to_json_records(league_frame))
 
 
 def main() -> int:
     args = parse_args()
     output_csv = Path(args.output_csv)
     output_json = Path(args.output_json)
+    transfer_rows_json_output = Path(args.transfer_rows_json_output)
     league_output_root = Path(args.league_output_root)
     frontend_league_output_root = Path(args.frontend_league_output_root)
     output_csv.parent.mkdir(parents=True, exist_ok=True)
     output_json.parent.mkdir(parents=True, exist_ok=True)
+    transfer_rows_json_output.parent.mkdir(parents=True, exist_ok=True)
     league_output_root.mkdir(parents=True, exist_ok=True)
     frontend_league_output_root.mkdir(parents=True, exist_ok=True)
 
@@ -187,6 +217,7 @@ def main() -> int:
     performance = load_csv_if_exists(PERFORMANCE_PATH, "performance")
     finances = load_csv_if_exists(FINANCES_PATH, "finances")
     managers = load_csv_if_exists(MANAGERS_PATH, "managers")
+    transfer_rows = load_csv_if_exists(TRANSFER_ROWS_PATH, "club_transfer_rows")
 
     dashboard = aggregate_transfers(transfers)
     if verified_transfers is not None:
@@ -238,9 +269,12 @@ def main() -> int:
         dashboard["club_name"] = dashboard["club_name"].fillna(dashboard["club_name_performance"])
 
     dashboard.to_csv(output_csv, index=False)
-    records = dashboard.where(pd.notna(dashboard), None).to_dict(orient="records")
-    output_json.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
+    write_json(output_json, dataframe_to_json_records(dashboard))
     write_per_league_exports(dashboard, league_output_root, frontend_league_output_root)
+
+    if transfer_rows is not None:
+        write_json(transfer_rows_json_output, dataframe_to_json_records(transfer_rows))
+        print(f"[saved] Transfer rows JSON: {transfer_rows_json_output}")
 
     print(f"[saved] CSV: {output_csv}")
     print(f"[saved] JSON: {output_json}")

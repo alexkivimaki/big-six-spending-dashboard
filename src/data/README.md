@@ -7,13 +7,14 @@ This folder holds generated JSON assets that mirror the canonical exports in `da
 - `clubSeasonData.json`
 - `clubSeasonMasterData.json`
 - `clubRevenueData.json`
+- `clubTransferRowsData.json`
 - per-league JSON mirrors under `by_league/{league_key}/`
 
 ## Working rule
 
 - Treat these files as generated app inputs, not hand-edited source files.
 - Keep data cleaning, validation, and reconciliation in `scripts/` and `data/`.
-- Build app adapters in `src/features/` or `src/shared/`, not in this folder.
+- Build app adapters in `src/pages/`, `src/components/`, `src/lib/`, or `src/shared/`, not in this folder.
 
 ## Relationship to the app
 
