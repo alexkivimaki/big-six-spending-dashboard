@@ -1,29 +1,33 @@
-import { compareMetricGroups } from "../config/metricRegistry";
+import { inflationConfig, VALUE_BASIS, valueBasisOptions } from "../config/valueBasis";
 import { clubConfigs } from "../config/clubConfig";
+import { ClubMarker } from "./ClubMarker";
 import { CoverageBadge } from "./CoverageBadge";
 
 export function CompareControls({
   chartType,
   endSeason,
+  metricCoverageById,
+  metricGroups,
   onChartTypeChange,
   onEndSeasonChange,
   onMetricChange,
   onStartSeasonChange,
   onToggleClub,
+  onValueBasisChange,
   seasons,
   selectedClubIds,
   selectedMetricId,
   startSeason,
-  metricCoverageById,
+  valueBasis,
 }) {
   return (
     <aside className="controlsColumn panel">
       <div className="panelLead">
         <span className="eyebrow">Compare clubs</span>
-        <h2>Choose clubs, seasons, and a metric</h2>
+        <h2>Choose clubs, seasons, and one metric</h2>
         <p>
-          Incomplete metrics stay visible. If a metric is only partly ready, the compare view makes
-          that explicit instead of filling the gaps with fake values.
+          The compare beta stays focused on squad investment. Metrics remain visible even when
+          their data layer is still partial or still being finalized.
         </p>
       </div>
 
@@ -41,7 +45,7 @@ export function CompareControls({
                 className={`clubToggle ${selected ? "isSelected" : ""}`}
                 onClick={() => onToggleClub(club.id)}
               >
-                <span className="clubToggleSwatch" style={{ background: club.colors.primary }} />
+                <ClubMarker club={club} size={18} />
                 <span>{club.name}</span>
               </button>
             );
@@ -82,21 +86,20 @@ export function CompareControls({
           <h3>Metric</h3>
         </div>
         <div className="metricGroups">
-          {compareMetricGroups.map((group) => (
+          {metricGroups.map((group) => (
             <div key={group.id} className="metricGroup">
               <span className="metricGroupLabel">{group.label}</span>
               <div className="metricGrid">
-                {group.metricIds.map((metricId) => {
-                  const metric = metricCoverageById[metricId].metric;
-                  const coverage = metricCoverageById[metricId].coverage;
-                  const disabled = coverage.status === "coming-soon" && !metric.compareEnabled;
+                {group.metrics.map((metric) => {
+                  const coverage = metricCoverageById[metric.id].coverage;
+                  const disabled = coverage.status === "coming-soon";
                   return (
                     <button
-                      key={metricId}
+                      key={metric.id}
                       type="button"
-                      className={`metricButton ${selectedMetricId === metricId ? "isActive" : ""}`}
+                      className={`metricButton ${selectedMetricId === metric.id ? "isActive" : ""}`}
                       disabled={disabled}
-                      onClick={() => onMetricChange(metricId)}
+                      onClick={() => onMetricChange(metric.id)}
                     >
                       <span className="metricButtonTop">
                         <strong>{metric.label}</strong>
@@ -110,6 +113,30 @@ export function CompareControls({
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="controlSection">
+        <div className="controlHeader">
+          <h3>Values</h3>
+        </div>
+        <div className="chartToggleRow">
+          {valueBasisOptions.map((option) => (
+            <button
+              key={option.id}
+              type="button"
+              className={`secondaryButton ${valueBasis === option.id ? "isActive" : ""}`}
+              onClick={() => onValueBasisChange(option.id)}
+              disabled={option.disabled}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+        <p className="controlNote">
+          {valueBasis === VALUE_BASIS.inflationAdjusted
+            ? `Inflation adjusted to ${inflationConfig.baseSeason} prices.`
+            : `Inflation-adjusted mode will use ${inflationConfig.baseSeason} prices once a finalized series is exported.`}
+        </p>
       </section>
 
       <section className="controlSection">

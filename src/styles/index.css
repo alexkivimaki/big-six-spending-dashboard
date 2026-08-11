@@ -308,11 +308,15 @@ a {
   color: #ffffff;
 }
 
-.clubToggleSwatch {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
+.clubMarker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
+}
+
+.clubMarker svg {
+  display: block;
 }
 
 .splitInputs {
@@ -359,6 +363,11 @@ select {
   opacity: 0.72;
 }
 
+.metricButton.isActive:disabled,
+.secondaryButton.isActive:disabled {
+  opacity: 1;
+}
+
 .metricButton.isActive {
   background: #0f172a;
   color: #ffffff;
@@ -392,6 +401,11 @@ select {
   cursor: pointer;
 }
 
+.secondaryButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.68;
+}
+
 .secondaryButton {
   display: inline-flex;
   align-items: center;
@@ -418,6 +432,33 @@ select {
 .contentColumn {
   display: grid;
   gap: 24px;
+}
+
+.metricMetaStrip {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.metricMetaItem {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: grid;
+  gap: 6px;
+}
+
+.metricMetaItem span,
+.controlNote {
+  color: #64748b;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.metricMetaItem strong {
+  font-size: 1rem;
 }
 
 .sectionHeader {
@@ -472,10 +513,36 @@ select {
 .chartCanvas {
   height: 420px;
   margin-top: 18px;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 12px;
 }
 
 .chartCanvas.compact {
   height: 340px;
+}
+
+.chartPlot {
+  min-height: 0;
+}
+
+.chartLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chartLegendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .chartTooltip {
@@ -484,6 +551,16 @@ select {
   border-radius: 14px;
   background: rgba(15, 23, 42, 0.96);
   color: #ffffff;
+}
+
+.chartTooltipHeader {
+  display: grid;
+  gap: 4px;
+}
+
+.chartTooltipHeader small,
+.chartTooltipFootnote {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .tooltipRows {
@@ -496,6 +573,12 @@ select {
   display: flex;
   justify-content: space-between;
   gap: 12px;
+}
+
+.tooltipClub {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .rankingNote,
@@ -652,11 +735,9 @@ thead th {
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  border: 2px solid;
+  border: 1px solid;
   display: grid;
   place-items: center;
-  font-weight: 900;
-  letter-spacing: 0.06em;
   flex: 0 0 auto;
 }
 
@@ -830,6 +911,7 @@ thead th {
   .pageLayout,
   .pageHero,
   .clubsGrid,
+  .metricMetaStrip,
   .snapshotGrid,
   .summaryGrid,
   .detailGrid {

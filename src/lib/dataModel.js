@@ -3,7 +3,8 @@ import clubSeasonMasterData from "../data/clubSeasonMasterData.json";
 import clubRevenueData from "../data/clubRevenueData.json";
 import clubTransferRowsData from "../data/clubTransferRowsData.json";
 import { clubConfigById, clubConfigBySlug, clubConfigs } from "../config/clubConfig";
-import { compareMetricGroups, metricRegistry } from "../config/metricRegistry";
+import { compareMetricGroups, getMetric, metricRegistry } from "../config/metricRegistry";
+import { VALUE_BASIS, inflationConfig } from "../config/valueBasis";
 
 const START_YEAR = 2008;
 
@@ -55,11 +56,42 @@ function createFinanceSources(masterRow, revenueRow) {
 
 function normalizeClubSeason(baseRow, masterRow, revenueRow) {
   const club = clubConfigById[baseRow.club_id];
-  const revenueOriginal = toNumber(masterRow?.total_revenue_original) ?? toNumber(revenueRow?.turnover_original);
+  const revenueOriginal =
+    toNumber(masterRow?.total_revenue_original) ?? toNumber(revenueRow?.turnover_original);
   const staffCostsOriginal =
     toNumber(masterRow?.official_staff_costs_original) ?? toNumber(revenueRow?.wage_bill_original);
+  const revenueEur =
+    toNumber(masterRow?.revenue_eur) ??
+    toNumber(revenueRow?.total_revenue_eur) ??
+    toNumber(baseRow.revenue_eur);
+  const staffCostsEur =
+    toNumber(masterRow?.official_staff_costs_eur) ??
+    toNumber(baseRow.official_staff_costs_eur);
+  const matchdayOriginal =
+    toNumber(masterRow?.matchday_revenue_original) ??
+    toNumber(revenueRow?.gate_and_matchday_income_original);
+  const broadcastOriginal =
+    toNumber(masterRow?.broadcast_revenue_original) ??
+    toNumber(revenueRow?.tv_and_broadcasting_original);
+  const commercialOriginal =
+    toNumber(masterRow?.commercial_revenue_original) ??
+    toNumber(revenueRow?.commercial_income_original);
+  const matchdayEur =
+    toNumber(masterRow?.matchday_revenue_eur) ??
+    toNumber(revenueRow?.matchday_revenue_eur);
+  const broadcastEur =
+    toNumber(masterRow?.broadcast_revenue_eur) ??
+    toNumber(revenueRow?.broadcast_revenue_eur);
+  const commercialEur =
+    toNumber(masterRow?.commercial_revenue_eur) ??
+    toNumber(revenueRow?.commercial_revenue_eur);
+  const sportingRevenueEur =
+    matchdayEur !== null && broadcastEur !== null ? matchdayEur + broadcastEur : null;
   const staffCostToRevenueRatio =
     revenueOriginal && staffCostsOriginal ? staffCostsOriginal / revenueOriginal : null;
+  const estimatedPlayerWagesEur =
+    toNumber(masterRow?.estimated_player_wages_eur) ??
+    toNumber(baseRow.estimated_player_wages_eur);
 
   return {
     clubId: club.id,
@@ -80,27 +112,38 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
       collectedAt: baseRow.collected_at_utc || null,
     },
     finance: {
-      currency: masterRow?.currency_original ?? "GBP",
+      currency: masterRow?.currency_original ?? baseRow.currency_original ?? "GBP",
       revenueOriginal,
+      revenueEur,
       staffCostsOriginal,
+      staffCostsEur,
       staffCostToRevenueRatio,
       profitBeforeTaxOriginal:
-        toNumber(masterRow?.profit_loss_before_tax_original) ?? toNumber(revenueRow?.profit_loss_before_tax_original),
-      netDebtOriginal: toNumber(masterRow?.net_debt_original) ?? toNumber(revenueRow?.net_debt_original),
-      matchdayOriginal:
-        toNumber(masterRow?.matchday_revenue_original) ?? toNumber(revenueRow?.gate_and_matchday_income_original),
-      broadcastOriginal:
-        toNumber(masterRow?.broadcast_revenue_original) ?? toNumber(revenueRow?.tv_and_broadcasting_original),
-      commercialOriginal:
-        toNumber(masterRow?.commercial_revenue_original) ?? toNumber(revenueRow?.commercial_income_original),
+        toNumber(masterRow?.profit_loss_before_tax_original) ??
+        toNumber(revenueRow?.profit_loss_before_tax_original),
+      profitBeforeTaxEur: toNumber(masterRow?.profit_loss_before_tax_eur),
+      netDebtOriginal:
+        toNumber(masterRow?.net_debt_original) ?? toNumber(revenueRow?.net_debt_original),
+      netDebtEur: toNumber(masterRow?.net_debt_eur),
+      matchdayOriginal,
+      matchdayEur,
+      broadcastOriginal,
+      broadcastEur,
+      commercialOriginal,
+      commercialEur,
+      sportingRevenueEur,
       playerAmortisationOriginal: toNumber(masterRow?.player_amortisation_original),
       profitOnPlayerSalesOriginal: toNumber(masterRow?.profit_on_player_sales_original),
-      hasData: revenueOriginal !== null || staffCostsOriginal !== null,
+      hasData:
+        revenueOriginal !== null ||
+        staffCostsOriginal !== null ||
+        revenueEur !== null ||
+        sportingRevenueEur !== null,
       ...createFinanceSources(masterRow, revenueRow),
     },
     performance: {
-      points: toNumber(masterRow?.points),
-      leaguePosition: toNumber(masterRow?.league_position),
+      points: toNumber(masterRow?.points) ?? toNumber(baseRow.points),
+      leaguePosition: toNumber(masterRow?.league_position) ?? toNumber(baseRow.league_position),
       wins: toNumber(masterRow?.wins),
       draws: toNumber(masterRow?.draws),
       losses: toNumber(masterRow?.losses),
@@ -131,10 +174,22 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
       notes: masterRow?.manager_notes ?? null,
       hasData: toBoolean(masterRow?.has_manager_data) || Boolean(masterRow?.primary_manager_name),
     },
+    wages: {
+      estimatedPlayerWagesEur,
+      estimatedPlayerWagesOriginal: toNumber(baseRow.estimated_player_wages_original),
+      estimatedPlayerWagesOriginalCurrency:
+        baseRow.estimated_player_wages_original_currency ?? null,
+      weeklyWagesOriginal: toNumber(baseRow.weekly_wages_original),
+      sourceName: baseRow.source_name_wages ?? null,
+      sourceUrl: baseRow.source_url ?? null,
+      confidence: baseRow.confidence_level_wages ?? null,
+      notes: baseRow.notes_wages ?? null,
+      requiresManualReview: toBoolean(baseRow.requires_manual_review),
+      hasData: estimatedPlayerWagesEur !== null,
+    },
     efficiency: {
-      rawPlayerCostEur: toNumber(masterRow?.raw_player_cost_eur),
-      costPerPoint: toNumber(masterRow?.cost_per_point),
-      estimatedPlayerWagesEur: toNumber(masterRow?.estimated_player_wages_eur),
+      rawPlayerCostEur: toNumber(masterRow?.raw_player_cost_eur) ?? toNumber(baseRow.raw_player_cost_eur),
+      costPerPoint: toNumber(masterRow?.cost_per_point) ?? toNumber(baseRow.cost_per_point),
     },
   };
 }
@@ -149,14 +204,15 @@ const revenueByKey = new Map(clubRevenueData.map((row) => [pairKey(row.club_id, 
 export const comparisonSeasons = sortSeasonsAscending([...new Set(baseRows.map((row) => row.season))]);
 
 export const clubSeasonRecords = baseRows.map((row) =>
-  normalizeClubSeason(row, masterByKey.get(pairKey(row.club_id, row.season)), revenueByKey.get(pairKey(row.club_id, row.season))),
+  normalizeClubSeason(
+    row,
+    masterByKey.get(pairKey(row.club_id, row.season)),
+    revenueByKey.get(pairKey(row.club_id, row.season)),
+  ),
 );
 
 export const clubSeasonRecordsByClub = Object.fromEntries(
-  clubConfigs.map((club) => [
-    club.id,
-    clubSeasonRecords.filter((row) => row.clubId === club.id),
-  ]),
+  clubConfigs.map((club) => [club.id, clubSeasonRecords.filter((row) => row.clubId === club.id)]),
 );
 
 export const clubTransferRows = clubTransferRowsData
@@ -179,6 +235,15 @@ export const clubTransferRows = clubTransferRowsData
     notes: row.notes || null,
   }));
 
+function inflationUnavailableForMetric(metric, valueBasis) {
+  return (
+    valueBasis === VALUE_BASIS.inflationAdjusted &&
+    metric.isMonetary &&
+    metric.supportsInflationAdjustment !== false &&
+    !inflationConfig.available
+  );
+}
+
 export function getClubBySlug(slug) {
   return clubConfigBySlug[slug] ?? null;
 }
@@ -198,22 +263,100 @@ export function getRowsInRange(clubIds, startSeason, endSeason) {
   );
 }
 
-export function getMetric(metricId) {
-  return metricRegistry[metricId];
+export function calculateMetricValue(row, metricId, valueBasis = VALUE_BASIS.nominal) {
+  const metric = getMetric(metricId);
+  if (!metric) return null;
+
+  if (inflationUnavailableForMetric(metric, valueBasis)) {
+    return metric.format === "percentage" ? calculateMetricValue(row, metricId, VALUE_BASIS.nominal) : null;
+  }
+
+  switch (metricId) {
+    case "transferSpend":
+    case "grossTransferSpend":
+      return row.transfers.grossSpendEur;
+    case "playerWages":
+      return row.wages.estimatedPlayerWagesEur;
+    case "grossSquadInvestment": {
+      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis);
+      const playerWages = calculateMetricValue(row, "playerWages", valueBasis);
+      return transferSpend !== null && playerWages !== null ? transferSpend + playerWages : null;
+    }
+    case "playerSales":
+    case "transferIncome":
+      return row.transfers.incomeEur;
+    case "netTransferSpend": {
+      if (row.transfers.netSpendEur !== null) return row.transfers.netSpendEur;
+      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis);
+      const playerSales = calculateMetricValue(row, "playerSales", valueBasis);
+      return transferSpend !== null && playerSales !== null ? transferSpend - playerSales : null;
+    }
+    case "netSquadInvestment": {
+      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis);
+      const playerWages = calculateMetricValue(row, "playerWages", valueBasis);
+      const playerSales = calculateMetricValue(row, "playerSales", valueBasis);
+      return transferSpend !== null && playerWages !== null && playerSales !== null
+        ? transferSpend + playerWages - playerSales
+        : null;
+    }
+    case "squadCostAfterSportingRevenue": {
+      const netSquadInvestment = calculateMetricValue(row, "netSquadInvestment", valueBasis);
+      const sportingRevenue = calculateMetricValue(row, "sportingRevenue", valueBasis);
+      return netSquadInvestment !== null && sportingRevenue !== null
+        ? netSquadInvestment - sportingRevenue
+        : null;
+    }
+    case "sportingRevenue":
+      return row.finance.sportingRevenueEur;
+    case "totalRevenue":
+      return row.finance.revenueEur;
+    case "squadInvestmentRevenueRatio": {
+      const netSquadInvestment = calculateMetricValue(row, "netSquadInvestment", valueBasis);
+      const totalRevenue = calculateMetricValue(row, "totalRevenue", valueBasis);
+      return netSquadInvestment !== null && totalRevenue ? netSquadInvestment / totalRevenue : null;
+    }
+    case "revenue":
+      return row.finance.revenueOriginal;
+    case "staffCosts":
+      return row.finance.staffCostsOriginal;
+    case "staffCostToRevenueRatio":
+      return row.finance.staffCostToRevenueRatio;
+    case "profitBeforeTax":
+      return row.finance.profitBeforeTaxOriginal;
+    case "netDebt":
+      return row.finance.netDebtOriginal;
+    case "points":
+      return row.performance.points;
+    case "leaguePosition":
+      return row.performance.leaguePosition;
+    case "trophies":
+      return row.achievements.majorTrophyCount;
+    case "rawPlayerCost":
+      return row.efficiency.rawPlayerCostEur;
+    case "costPerPoint":
+      return row.efficiency.costPerPoint;
+    default:
+      return null;
+  }
 }
 
-export function getMetricValue(metricId, row) {
-  return metricRegistry[metricId].getValue(row);
-}
-
-export function getMetricCoverage(metricId, rows, { compareMode = false } = {}) {
+export function getMetricCoverage(metricId, rows, { compareMode = false, valueBasis = VALUE_BASIS.nominal } = {}) {
   const metric = getMetric(metricId);
   const total = rows.length;
-  const filled = rows.filter((row) => getMetricValue(metricId, row) !== null).length;
+
+  if (!metric) {
+    return { status: "coming-soon", filled: 0, total };
+  }
 
   if ((compareMode && !metric.compareEnabled) || (!compareMode && !metric.profileEnabled)) {
-    return { status: "coming-soon", filled, total };
+    return { status: "coming-soon", filled: 0, total };
   }
+
+  if (inflationUnavailableForMetric(metric, valueBasis) && metric.format !== "percentage") {
+    return { status: "coming-soon", filled: 0, total };
+  }
+
+  const filled = rows.filter((row) => calculateMetricValue(row, metricId, valueBasis) !== null).length;
 
   if (!filled) {
     return { status: "coming-soon", filled, total };
@@ -226,19 +369,21 @@ export function getMetricCoverage(metricId, rows, { compareMode = false } = {}) 
   return { status: "partial", filled, total };
 }
 
-function aggregateMetric(metric, rows) {
-  if (!rows.length) return null;
+function aggregateMetricRows(metricId, rows, { valueBasis = VALUE_BASIS.nominal } = {}) {
+  const metric = getMetric(metricId);
+  if (!metric || !rows.length) return null;
 
   if (metric.aggregation.type === "sum") {
-    return rows.reduce((sum, row) => sum + metric.getValue(row), 0);
+    return rows.reduce((sum, row) => sum + calculateMetricValue(row, metricId, valueBasis), 0);
   }
 
   if (metric.aggregation.type === "average") {
-    return rows.reduce((sum, row) => sum + metric.getValue(row), 0) / rows.length;
+    return rows.reduce((sum, row) => sum + calculateMetricValue(row, metricId, valueBasis), 0) / rows.length;
   }
 
   if (metric.aggregation.type === "latest") {
-    return rows[rows.length - 1] ? metric.getValue(rows[rows.length - 1]) : null;
+    const latestRow = rows[rows.length - 1];
+    return latestRow ? calculateMetricValue(latestRow, metricId, valueBasis) : null;
   }
 
   if (metric.aggregation.type === "weighted-ratio") {
@@ -248,12 +393,26 @@ function aggregateMetric(metric, rows) {
     return numerator / denominator;
   }
 
+  if (metric.aggregation.type === "ratio-of-sums") {
+    const numerator = aggregateMetricRows(metric.aggregation.numeratorMetricId, rows, { valueBasis });
+    const denominator = aggregateMetricRows(metric.aggregation.denominatorMetricId, rows, { valueBasis });
+    if (numerator === null || denominator === null || denominator === 0) return null;
+    return numerator / denominator;
+  }
+
   return null;
 }
 
-export function getComparisonChartData(clubIds, startSeason, endSeason, metricId) {
+export function getComparisonChartData(
+  clubIds,
+  startSeason,
+  endSeason,
+  metricId,
+  { valueBasis = VALUE_BASIS.nominal } = {},
+) {
   const startYear = seasonToStartYear(startSeason);
   const endYear = seasonToStartYear(endSeason);
+
   return comparisonSeasons
     .filter((season) => {
       const year = seasonToStartYear(season);
@@ -263,19 +422,37 @@ export function getComparisonChartData(clubIds, startSeason, endSeason, metricId
       const row = { season };
       for (const clubId of clubIds) {
         const found = clubSeasonRecords.find((record) => record.clubId === clubId && record.season === season);
-        row[clubId] = found ? getMetricValue(metricId, found) : null;
+        row[clubId] = found ? calculateMetricValue(found, metricId, valueBasis) : null;
       }
       return row;
     });
 }
 
-export function getComparisonRanking(clubIds, startSeason, endSeason, metricId) {
+export function getComparisonRanking(
+  clubIds,
+  startSeason,
+  endSeason,
+  metricId,
+  { valueBasis = VALUE_BASIS.nominal } = {},
+) {
   const metric = getMetric(metricId);
-  if (!metric.compareEnabled) {
-    return { status: "coming-soon", rows: [], note: "This metric is not ready for cross-club comparison yet." };
+  if (!metric?.compareEnabled) {
+    return { status: "coming-soon", rows: [], note: "This metric is not configured for cross-club comparison yet." };
   }
 
   const selectedRows = getRowsInRange(clubIds, startSeason, endSeason);
+  const coverage = getMetricCoverage(metricId, selectedRows, { compareMode: true, valueBasis });
+  if (coverage.status === "coming-soon") {
+    return {
+      status: "coming-soon",
+      rows: [],
+      note:
+        valueBasis === VALUE_BASIS.inflationAdjusted && metric.isMonetary && !inflationConfig.available
+          ? inflationConfig.description
+          : "This metric does not yet have enough comparable data for a ranking.",
+    };
+  }
+
   const seasonsInRange = comparisonSeasons.filter((season) => {
     const year = seasonToStartYear(season);
     return year >= seasonToStartYear(startSeason) && year <= seasonToStartYear(endSeason);
@@ -284,7 +461,7 @@ export function getComparisonRanking(clubIds, startSeason, endSeason, metricId) 
   const seasonsByClub = clubIds.map((clubId) => {
     const set = new Set(
       selectedRows
-        .filter((row) => row.clubId === clubId && getMetricValue(metricId, row) !== null)
+        .filter((row) => row.clubId === clubId && calculateMetricValue(row, metricId, valueBasis) !== null)
         .map((row) => row.season),
     );
     return set;
@@ -306,14 +483,14 @@ export function getComparisonRanking(clubIds, startSeason, endSeason, metricId) 
     .map((clubId) => {
       const clubRows = selectedRows
         .filter((row) => row.clubId === clubId && seasonsToUse.includes(row.season))
-        .filter((row) => getMetricValue(metricId, row) !== null)
+        .filter((row) => calculateMetricValue(row, metricId, valueBasis) !== null)
         .sort((left, right) => left.seasonStartYear - right.seasonStartYear);
 
       if (!clubRows.length) return null;
 
       return {
         clubId,
-        value: aggregateMetric(metric, clubRows),
+        value: aggregateMetricRows(metricId, clubRows, { valueBasis }),
         seasonsUsed: clubRows.map((row) => row.season),
       };
     })
@@ -328,23 +505,25 @@ export function getComparisonRanking(clubIds, startSeason, endSeason, metricId) 
   }
 
   rankingRows.sort((left, right) => {
-    if (metric.higherIsBetter) return right.value - left.value;
-    return left.value - right.value;
+    if (metric.higherIsBetter === false) return left.value - right.value;
+    return right.value - left.value;
   });
 
   const note = useCommonPeriod
-    ? `Ranking uses ${commonSeasons[0]} to ${commonSeasons[commonSeasons.length - 1]}, the common period with available data.`
+    ? `Ranking uses ${commonSeasons[0]}-${commonSeasons[commonSeasons.length - 1]}, the common period with available data.`
     : metric.aggregation.type === "latest"
       ? `Ranking uses the latest comparable season in range: ${seasonsToUse[seasonsToUse.length - 1]}.`
-      : null;
+      : metric.aggregation.type === "ratio-of-sums"
+        ? "The selected-period ratio uses summed squad investment divided by summed revenue."
+        : null;
 
   return { status: "ready", rows: rankingRows, note };
 }
 
-export function getLatestMetricObservation(clubId, metricId) {
+export function getLatestMetricObservation(clubId, metricId, { valueBasis = VALUE_BASIS.nominal } = {}) {
   const rows = [...getClubRows(clubId)].sort((left, right) => right.seasonStartYear - left.seasonStartYear);
   for (const row of rows) {
-    const value = getMetricValue(metricId, row);
+    const value = calculateMetricValue(row, metricId, valueBasis);
     if (value !== null) {
       return { season: row.season, value, row };
     }
@@ -379,66 +558,108 @@ export function getClubProfileCoverage(clubId) {
   };
 }
 
-export function getSourceSectionsForMetric(metricId, row) {
+function getMetricMethodologySection(metricId, valueBasis = VALUE_BASIS.nominal) {
   const metric = getMetric(metricId);
-  const value = metric.formatValue(getMetricValue(metricId, row));
+  if (!metric) return null;
 
-  if (metric.category === "transfers") {
-    return [
-      {
-        title: `${row.clubName} · ${row.season}`,
-        fields: [
-          { label: "Metric", value: metric.label },
-          { label: "Reported value", value },
-          { label: "Source", value: row.transfers.sourceName || "—" },
-          { label: "Source URL", value: row.transfers.sourceUrl || "—", href: row.transfers.sourceUrl || null },
-          { label: "Collected", value: row.transfers.collectedAt || "—" },
-          { label: "Confidence", value: row.transfers.confidence || "—" },
-          { label: "Notes", value: row.transfers.notes || "—" },
-        ],
-      },
-    ];
+  const priceBasis =
+    metric.format === "percentage"
+      ? metric.inflationBehavior ?? "Same-period ratios are unchanged by inflation adjustment."
+      : valueBasis === VALUE_BASIS.inflationAdjusted
+        ? inflationConfig.available
+          ? `Inflation adjusted to ${inflationConfig.baseSeason} prices`
+          : inflationConfig.description
+        : "Nominal values";
+
+  return {
+    title: `${metric.label} methodology`,
+    fields: [
+      { label: "Metric", value: metric.label },
+      { label: "Formula", value: metric.formulaLabel || "—" },
+      { label: "Price basis", value: priceBasis },
+      { label: "Method", value: metric.methodologyNote || metric.description || "—" },
+      { label: "Source layer", value: metric.sourceType || "—" },
+    ],
+  };
+}
+
+function getSourceSectionsForMetric(metricId, row) {
+  const metric = getMetric(metricId);
+  if (!metric || !row) return [];
+  const value = metric.formatValue(calculateMetricValue(row, metricId));
+  const sections = [];
+
+  if (metric.sourceGroups?.includes("transfers")) {
+    sections.push({
+      title: `${row.clubName} · ${row.season} transfer layer`,
+      fields: [
+        { label: "Metric", value: metric.label },
+        { label: "Reported value", value },
+        { label: "Source", value: row.transfers.sourceName || "—" },
+        { label: "Source URL", value: row.transfers.sourceUrl || "—", href: row.transfers.sourceUrl || null },
+        { label: "Collected", value: row.transfers.collectedAt || "—" },
+        { label: "Confidence", value: row.transfers.confidence || "—" },
+        { label: "Notes", value: row.transfers.notes || "—" },
+      ],
+    });
   }
 
-  if (metric.category === "finances") {
-    return [
-      {
-        title: `${row.clubName} · ${row.season}`,
-        fields: [
-          { label: "Metric", value: metric.label },
-          { label: "Reported value", value },
-          { label: "Reported currency", value: row.finance.currency || "—" },
-          { label: "Source document", value: row.finance.sourceDocument || "—" },
-          { label: "Source URL", value: row.finance.sourceUrl || "—", href: row.finance.sourceUrl || null },
-          { label: "Financial year end", value: row.finance.reportingDate || "—" },
-          { label: "Confidence", value: row.finance.confidence || "—" },
-          { label: "Manual review", value: row.finance.requiresManualReview ? "Yes" : "No" },
-          { label: "Notes", value: row.finance.notes || "—" },
-        ],
-      },
-    ];
+  if (metric.sourceGroups?.includes("wages")) {
+    sections.push({
+      title: `${row.clubName} · ${row.season} wage layer`,
+      fields: [
+        { label: "Metric", value: "Player wages" },
+        {
+          label: "Reported value",
+          value:
+            row.wages.estimatedPlayerWagesOriginal !== null
+              ? `${row.wages.estimatedPlayerWagesOriginalCurrency ?? "Original currency"} ${row.wages.estimatedPlayerWagesOriginal.toLocaleString()}`
+              : "—",
+        },
+        { label: "Source", value: row.wages.sourceName || "Data collection in progress" },
+        { label: "Source URL", value: row.wages.sourceUrl || "—", href: row.wages.sourceUrl || null },
+        { label: "Confidence", value: row.wages.confidence || "—" },
+        { label: "Manual review", value: row.wages.requiresManualReview ? "Yes" : "No" },
+        { label: "Notes", value: row.wages.notes || "—" },
+      ],
+    });
   }
 
-  if (metric.category === "performance") {
-    return [
-      {
-        title: `${row.clubName} · ${row.season}`,
-        fields: [
-          { label: "Metric", value: metric.label },
-          { label: "Reported value", value },
-          { label: "Source", value: row.performance.sourceName || "—" },
-          { label: "Source URL", value: row.performance.sourceUrl || "—", href: row.performance.sourceUrl || null },
-          { label: "Evidence", value: row.performance.evidence || "—" },
-          { label: "Confidence", value: row.performance.confidence || "—" },
-          { label: "Notes", value: row.performance.notes || "—" },
-        ],
-      },
-    ];
+  if (metric.sourceGroups?.includes("finances")) {
+    sections.push({
+      title: `${row.clubName} · ${row.season} finance layer`,
+      fields: [
+        { label: "Metric", value: metric.label },
+        { label: "Reported value", value },
+        { label: "Reported currency", value: row.finance.currency || "—" },
+        { label: "Source document", value: row.finance.sourceDocument || "—" },
+        { label: "Source URL", value: row.finance.sourceUrl || "—", href: row.finance.sourceUrl || null },
+        { label: "Financial year end", value: row.finance.reportingDate || "—" },
+        { label: "Confidence", value: row.finance.confidence || "—" },
+        { label: "Manual review", value: row.finance.requiresManualReview ? "Yes" : "No" },
+        { label: "Notes", value: row.finance.notes || "—" },
+      ],
+    });
   }
 
-  return [
-    {
-      title: `${row.clubName} · ${row.season}`,
+  if (metric.sourceGroups?.includes("performance")) {
+    sections.push({
+      title: `${row.clubName} · ${row.season} performance layer`,
+      fields: [
+        { label: "Metric", value: metric.label },
+        { label: "Reported value", value },
+        { label: "Source", value: row.performance.sourceName || "—" },
+        { label: "Source URL", value: row.performance.sourceUrl || "—", href: row.performance.sourceUrl || null },
+        { label: "Evidence", value: row.performance.evidence || "—" },
+        { label: "Confidence", value: row.performance.confidence || "—" },
+        { label: "Notes", value: row.performance.notes || "—" },
+      ],
+    });
+  }
+
+  if (metric.sourceGroups?.includes("achievements")) {
+    sections.push({
+      title: `${row.clubName} · ${row.season} achievements layer`,
       fields: [
         { label: "Metric", value: metric.label },
         { label: "Reported value", value },
@@ -447,32 +668,43 @@ export function getSourceSectionsForMetric(metricId, row) {
         { label: "Confidence", value: row.achievements.confidence || "—" },
         { label: "Notes", value: row.achievements.notes || "—" },
       ],
-    },
-  ];
+    });
+  }
+
+  return sections;
 }
 
-export function getCompareSourceSections(metricId, clubIds, startSeason, endSeason) {
+export function getCompareSourceSections(
+  metricId,
+  clubIds,
+  startSeason,
+  endSeason,
+  valueBasis = VALUE_BASIS.nominal,
+) {
   const rows = getRowsInRange(clubIds, startSeason, endSeason);
-  return clubIds
-    .map((clubId) => {
-      const latestRow = [...rows]
-        .filter((row) => row.clubId === clubId && getMetricValue(metricId, row) !== null)
-        .sort((left, right) => right.seasonStartYear - left.seasonStartYear)[0];
+  const sections = [];
+  const methodologySection = getMetricMethodologySection(metricId, valueBasis);
+  if (methodologySection) sections.push(methodologySection);
 
-      if (!latestRow) return null;
-      return getSourceSectionsForMetric(metricId, latestRow)[0];
-    })
-    .filter(Boolean);
+  for (const clubId of clubIds) {
+    const latestRow = [...rows]
+      .filter((row) => row.clubId === clubId && calculateMetricValue(row, metricId, valueBasis) !== null)
+      .sort((left, right) => right.seasonStartYear - left.seasonStartYear)[0];
+
+    if (!latestRow) continue;
+    sections.push(...getSourceSectionsForMetric(metricId, latestRow));
+  }
+
+  return sections;
 }
 
 export function getProfileSectionSourceSections(clubId, metricIds) {
   return metricIds
-    .map((metricId) => {
+    .flatMap((metricId) => {
       const latest = getLatestMetricObservation(clubId, metricId);
-      if (!latest) return null;
-      return getSourceSectionsForMetric(metricId, latest.row)[0];
-    })
-    .filter(Boolean);
+      if (!latest) return [];
+      return getSourceSectionsForMetric(metricId, latest.row);
+    });
 }
 
 export function getProfileSectionStatus(clubId, metricIds) {

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import { clubConfigById } from "../config/clubConfig";
 import { formatCount } from "../shared/formatters";
+import { ClubMarker } from "./ClubMarker";
 
 export function ComparisonRanking({ metric, ranking }) {
   if (ranking.status === "coming-soon") {
@@ -41,7 +42,7 @@ export function ComparisonRanking({ metric, ranking }) {
                 <tr key={row.clubId}>
                   <td>
                     <Link className="tableClubLink" to={`/clubs/${club.slug}`}>
-                      <span className="clubToggleSwatch" style={{ background: club.colors.primary }} />
+                      <ClubMarker club={club} size={18} />
                       <strong>{club.name}</strong>
                     </Link>
                   </td>
