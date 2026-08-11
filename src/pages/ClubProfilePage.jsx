@@ -7,8 +7,11 @@ import { CoverageBadge } from "../components/CoverageBadge";
 import { SeasonHistoryTable } from "../components/SeasonHistoryTable";
 import { SectionHeader } from "../components/SectionHeader";
 import { SourceDrawer } from "../components/SourceDrawer";
+import { DISPLAY_CURRENCY, displayCurrencyOptions } from "../config/displayCurrency";
 import { getMetric, profileSnapshotMetricIds } from "../config/metricRegistry";
+import { VALUE_BASIS, inflationConfig, valueBasisOptions } from "../config/valueBasis";
 import {
+  calculateMetricValue,
   getClubBySlug,
   getClubProfileCoverage,
   getClubRows,
@@ -45,6 +48,8 @@ function SimpleTooltip({ active, payload, label, formatters }) {
 export function ClubProfilePage() {
   const { clubSlug } = useParams();
   const club = getClubBySlug(clubSlug);
+  const [displayCurrency, setDisplayCurrency] = useState(DISPLAY_CURRENCY.EUR);
+  const [valueBasis, setValueBasis] = useState(VALUE_BASIS.nominal);
   const [sourcePanel, setSourcePanel] = useState(null);
 
   const rows = useMemo(() => (club ? getClubRows(club.id) : []), [club]);
@@ -60,39 +65,61 @@ export function ClubProfilePage() {
 
   const descendingRows = [...rows].sort((left, right) => right.seasonStartYear - left.seasonStartYear);
   const latestSeasonRepresented = descendingRows[0]?.season ?? "—";
-  const profileCoverage = getClubProfileCoverage(club.id);
+  const profileCoverage = getClubProfileCoverage(club.id, { valueBasis, displayCurrency });
 
   const snapshotCards = profileSnapshotMetricIds.map((metricId) => {
     const metric = getMetric(metricId);
-    const observation = getLatestMetricObservation(club.id, metricId);
+    const observation = getLatestMetricObservation(club.id, metricId, { valueBasis, displayCurrency });
     return {
       metricId,
       label: metric.label,
-      value: observation ? metric.formatValue(observation.value) : "Coming soon",
+      value: observation ? metric.formatValue(observation.value, { displayCurrency }) : "Coming soon",
       note: observation ? observation.season : "No usable observation yet",
     };
   });
 
-  const transferStatus = getProfileSectionStatus(club.id, ["grossTransferSpend", "transferIncome", "netTransferSpend"]);
-  const financeStatus = getProfileSectionStatus(club.id, ["revenue", "staffCosts", "staffCostToRevenueRatio"]);
+  const transferStatus = getProfileSectionStatus(
+    club.id,
+    ["grossTransferSpend", "transferIncome", "netTransferSpend"],
+    { valueBasis, displayCurrency },
+  );
+  const financeStatus = getProfileSectionStatus(
+    club.id,
+    ["revenue", "staffCosts", "staffCostToRevenueRatio"],
+    { valueBasis, displayCurrency },
+  );
   const performanceStatus = getProfileSectionStatus(club.id, ["points", "leaguePosition", "trophies"]);
-  const seasonTableStatus = getProfileSectionStatus(club.id, ["netTransferSpend", "revenue", "points"]);
+  const seasonTableStatus = getProfileSectionStatus(
+    club.id,
+    ["netTransferSpend", "revenue", "points"],
+    { valueBasis, displayCurrency },
+  );
 
-  const latestTransferRow = getLatestMetricObservation(club.id, "netTransferSpend")?.row ?? null;
-  const latestFinanceRow = getLatestMetricObservation(club.id, "revenue")?.row ?? null;
+  const latestTransferRow =
+    getLatestMetricObservation(club.id, "netTransferSpend", { valueBasis, displayCurrency })?.row ?? null;
+  const latestFinanceRow =
+    getLatestMetricObservation(club.id, "revenue", { valueBasis, displayCurrency })?.row ?? null;
   const latestPerformanceRow = getLatestMetricObservation(club.id, "points")?.row ?? null;
+
+  const grossTransferMetric = getMetric("grossTransferSpend");
+  const transferIncomeMetric = getMetric("transferIncome");
+  const netTransferMetric = getMetric("netTransferSpend");
+  const revenueMetric = getMetric("revenue");
+  const staffCostsMetric = getMetric("staffCosts");
+  const profitBeforeTaxMetric = getMetric("profitBeforeTax");
+  const netDebtMetric = getMetric("netDebt");
 
   const transferChartData = rows.map((row) => ({
     season: row.season,
-    grossSpend: row.transfers.grossSpendEur,
-    income: row.transfers.incomeEur,
-    netSpend: row.transfers.netSpendEur,
+    grossSpend: calculateMetricValue(row, "grossTransferSpend", valueBasis, displayCurrency),
+    income: calculateMetricValue(row, "transferIncome", valueBasis, displayCurrency),
+    netSpend: calculateMetricValue(row, "netTransferSpend", valueBasis, displayCurrency),
   }));
 
   const financeChartData = rows.map((row) => ({
     season: row.season,
-    revenue: row.finance.revenueOriginal,
-    staffCosts: row.finance.staffCostsOriginal,
+    revenue: calculateMetricValue(row, "revenue", valueBasis, displayCurrency),
+    staffCosts: calculateMetricValue(row, "staffCosts", valueBasis, displayCurrency),
   }));
 
   const performanceChartData = rows.map((row) => ({
@@ -106,13 +133,30 @@ export function ClubProfilePage() {
 
   const seasonHistoryRows = descendingRows.map((row) => ({
     season: row.season,
-    grossSpend: formatCurrencyCompact(row.transfers.grossSpendEur, "EUR"),
-    income: formatCurrencyCompact(row.transfers.incomeEur, "EUR"),
-    netSpend: formatCurrencyCompact(row.transfers.netSpendEur, "EUR"),
-    revenue: formatCurrencyCompact(row.finance.revenueOriginal, "GBP"),
-    staffCosts: formatCurrencyCompact(row.finance.staffCostsOriginal, "GBP"),
+    grossSpend: grossTransferMetric.formatValue(
+      calculateMetricValue(row, "grossTransferSpend", valueBasis, displayCurrency),
+      { displayCurrency },
+    ),
+    income: transferIncomeMetric.formatValue(
+      calculateMetricValue(row, "transferIncome", valueBasis, displayCurrency),
+      { displayCurrency },
+    ),
+    netSpend: netTransferMetric.formatValue(
+      calculateMetricValue(row, "netTransferSpend", valueBasis, displayCurrency),
+      { displayCurrency },
+    ),
+    revenue: revenueMetric.formatValue(calculateMetricValue(row, "revenue", valueBasis, displayCurrency), {
+      displayCurrency,
+    }),
+    staffCosts: staffCostsMetric.formatValue(
+      calculateMetricValue(row, "staffCosts", valueBasis, displayCurrency),
+      { displayCurrency },
+    ),
     staffRatio: formatPercent(row.finance.staffCostToRevenueRatio),
-    profitBeforeTax: formatCurrencyCompact(row.finance.profitBeforeTaxOriginal, "GBP"),
+    profitBeforeTax: profitBeforeTaxMetric.formatValue(
+      calculateMetricValue(row, "profitBeforeTax", valueBasis, displayCurrency),
+      { displayCurrency },
+    ),
     points: formatCount(row.performance.points),
     leaguePosition: formatLeaguePosition(row.performance.leaguePosition),
     trophies: formatCount(row.achievements.majorTrophyCount),
@@ -123,7 +167,7 @@ export function ClubProfilePage() {
     setSourcePanel({
       title,
       subtitle,
-      sections: getProfileSectionSourceSections(club.id, metricIds),
+      sections: getProfileSectionSourceSections(club.id, metricIds, valueBasis, displayCurrency),
     });
   }
 
@@ -146,6 +190,46 @@ export function ClubProfilePage() {
             keeps transfers, finance, and sporting context together so the numbers stay useful.
           </p>
         </div>
+
+        <div className="profileToolbar">
+          <div className="profileToolbarGroup">
+            <span>Currency</span>
+            <div className="chartToggleRow">
+              {displayCurrencyOptions.map((option) => (
+                <button
+                  key={option.id}
+                  type="button"
+                  className={`secondaryButton ${displayCurrency === option.id ? "isActive" : ""}`}
+                  onClick={() => setDisplayCurrency(option.id)}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="profileToolbarGroup">
+            <span>Values</span>
+            <div className="chartToggleRow">
+              {valueBasisOptions.map((option) => (
+                <button
+                  key={option.id}
+                  type="button"
+                  className={`secondaryButton ${valueBasis === option.id ? "isActive" : ""}`}
+                  onClick={() => setValueBasis(option.id)}
+                  disabled={option.disabled}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <p className="controlNote profileToolbarNote">
+          {valueBasis === VALUE_BASIS.inflationAdjusted
+            ? `Money values are restated to ${inflationConfig.baseSeason} prices.`
+            : "Money values are shown in nominal season terms."}
+        </p>
 
         <div className="snapshotGrid">
           {snapshotCards.map((card) => (
@@ -178,14 +262,17 @@ export function ClubProfilePage() {
             <ComposedChart data={transferChartData} margin={{ top: 10, right: 8, left: 0, bottom: 24 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(19, 34, 28, 0.12)" />
               <XAxis dataKey="season" angle={-35} textAnchor="end" height={70} tick={{ fontSize: 12 }} />
-              <YAxis tickFormatter={(value) => `€${Math.round(value / 1_000_000)}m`} tick={{ fontSize: 12 }} />
+              <YAxis
+                tickFormatter={(value) => grossTransferMetric.axisTick(value, { displayCurrency })}
+                tick={{ fontSize: 12 }}
+              />
               <Tooltip
                 content={
                   <SimpleTooltip
                     formatters={{
-                      grossSpend: (value) => formatCurrencyCompact(value, "EUR"),
-                      income: (value) => formatCurrencyCompact(value, "EUR"),
-                      netSpend: (value) => formatCurrencyCompact(value, "EUR"),
+                      grossSpend: (value) => grossTransferMetric.formatValue(value, { displayCurrency }),
+                      income: (value) => transferIncomeMetric.formatValue(value, { displayCurrency }),
+                      netSpend: (value) => netTransferMetric.formatValue(value, { displayCurrency }),
                     }}
                   />
                 }
@@ -200,17 +287,38 @@ export function ClubProfilePage() {
         <div className="summaryGrid">
           <article className="summaryCard">
             <span>Gross spend</span>
-            <strong>{formatCurrencyCompact(latestTransferRow?.transfers.grossSpendEur, "EUR")}</strong>
+            <strong>
+              {grossTransferMetric.formatValue(
+                latestTransferRow
+                  ? calculateMetricValue(latestTransferRow, "grossTransferSpend", valueBasis, displayCurrency)
+                  : null,
+                { displayCurrency },
+              )}
+            </strong>
             <small>{latestTransferRow?.season ?? "Coming soon"}</small>
           </article>
           <article className="summaryCard">
             <span>Transfer income</span>
-            <strong>{formatCurrencyCompact(latestTransferRow?.transfers.incomeEur, "EUR")}</strong>
+            <strong>
+              {transferIncomeMetric.formatValue(
+                latestTransferRow
+                  ? calculateMetricValue(latestTransferRow, "transferIncome", valueBasis, displayCurrency)
+                  : null,
+                { displayCurrency },
+              )}
+            </strong>
             <small>{latestTransferRow?.season ?? "Coming soon"}</small>
           </article>
           <article className="summaryCard">
             <span>Net spend</span>
-            <strong>{formatCurrencyCompact(latestTransferRow?.transfers.netSpendEur, "EUR")}</strong>
+            <strong>
+              {netTransferMetric.formatValue(
+                latestTransferRow
+                  ? calculateMetricValue(latestTransferRow, "netTransferSpend", valueBasis, displayCurrency)
+                  : null,
+                { displayCurrency },
+              )}
+            </strong>
             <small>{latestTransferRow?.season ?? "Coming soon"}</small>
           </article>
           <article className="summaryCard">
@@ -266,7 +374,7 @@ export function ClubProfilePage() {
       <section className="panel profileSection">
         <SectionHeader
           title="Finances"
-          description="Revenue and staff costs stay central. Secondary finance fields are available, but kept less prominent."
+          description="Revenue and reported staff costs stay central. Wage-bill comparisons use the current club-accounts proxy rather than a pure player-payroll series."
           coverage={financeStatus}
           sourceAction={() =>
             openSectionSources("Finance data", `${club.name} annual reports`, [
@@ -285,13 +393,16 @@ export function ClubProfilePage() {
             <ComposedChart data={financeChartData} margin={{ top: 10, right: 8, left: 0, bottom: 24 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(19, 34, 28, 0.12)" />
               <XAxis dataKey="season" angle={-35} textAnchor="end" height={70} tick={{ fontSize: 12 }} />
-              <YAxis tickFormatter={(value) => `£${Math.round(value / 1_000_000)}m`} tick={{ fontSize: 12 }} />
+              <YAxis
+                tickFormatter={(value) => revenueMetric.axisTick(value, { displayCurrency })}
+                tick={{ fontSize: 12 }}
+              />
               <Tooltip
                 content={
                   <SimpleTooltip
                     formatters={{
-                      revenue: (value) => formatCurrencyCompact(value, "GBP"),
-                      staffCosts: (value) => formatCurrencyCompact(value, "GBP"),
+                      revenue: (value) => revenueMetric.formatValue(value, { displayCurrency }),
+                      staffCosts: (value) => staffCostsMetric.formatValue(value, { displayCurrency }),
                     }}
                   />
                 }
@@ -305,12 +416,26 @@ export function ClubProfilePage() {
         <div className="summaryGrid">
           <article className="summaryCard">
             <span>Revenue</span>
-            <strong>{formatCurrencyCompact(latestFinanceRow?.finance.revenueOriginal, "GBP")}</strong>
+            <strong>
+              {revenueMetric.formatValue(
+                latestFinanceRow
+                  ? calculateMetricValue(latestFinanceRow, "revenue", valueBasis, displayCurrency)
+                  : null,
+                { displayCurrency },
+              )}
+            </strong>
             <small>{latestFinanceRow?.season ?? "Coming soon"}</small>
           </article>
           <article className="summaryCard">
             <span>Staff costs</span>
-            <strong>{formatCurrencyCompact(latestFinanceRow?.finance.staffCostsOriginal, "GBP")}</strong>
+            <strong>
+              {staffCostsMetric.formatValue(
+                latestFinanceRow
+                  ? calculateMetricValue(latestFinanceRow, "staffCosts", valueBasis, displayCurrency)
+                  : null,
+                { displayCurrency },
+              )}
+            </strong>
             <small>{latestFinanceRow?.season ?? "Coming soon"}</small>
           </article>
           <article className="summaryCard">
@@ -320,16 +445,30 @@ export function ClubProfilePage() {
           </article>
           <article className="summaryCard">
             <span>Profit before tax</span>
-            <strong>{formatCurrencyCompact(latestFinanceRow?.finance.profitBeforeTaxOriginal, "GBP")}</strong>
+            <strong>
+              {profitBeforeTaxMetric.formatValue(
+                latestFinanceRow
+                  ? calculateMetricValue(latestFinanceRow, "profitBeforeTax", valueBasis, displayCurrency)
+                  : null,
+                { displayCurrency },
+              )}
+            </strong>
             <small>{latestFinanceRow?.season ?? "Coming soon"}</small>
           </article>
           <article className="summaryCard">
             <span>Net debt</span>
-            <strong>{formatCurrencyCompact(latestFinanceRow?.finance.netDebtOriginal, "GBP")}</strong>
+            <strong>
+              {netDebtMetric.formatValue(
+                latestFinanceRow
+                  ? calculateMetricValue(latestFinanceRow, "netDebt", valueBasis, displayCurrency)
+                  : null,
+                { displayCurrency },
+              )}
+            </strong>
             <small>{latestFinanceRow?.season ?? "Coming soon"}</small>
           </article>
           <article className="summaryCard">
-            <span>Estimated player wages</span>
+            <span>Player wages estimate</span>
             <strong>Coming soon</strong>
             <small>Data collection in progress</small>
           </article>
@@ -361,9 +500,33 @@ export function ClubProfilePage() {
                   />
                 </div>
                 <ul className="miniList">
-                  <li>Commercial: {formatCurrencyCompact(latestFinanceRow.finance.commercialOriginal, "GBP")}</li>
-                  <li>Broadcasting: {formatCurrencyCompact(latestFinanceRow.finance.broadcastOriginal, "GBP")}</li>
-                  <li>Matchday: {formatCurrencyCompact(latestFinanceRow.finance.matchdayOriginal, "GBP")}</li>
+                  <li>
+                    Commercial:{" "}
+                    {formatCurrencyCompact(
+                      valueBasis === VALUE_BASIS.inflationAdjusted
+                        ? latestFinanceRow.finance.commercial.real?.[displayCurrency]
+                        : latestFinanceRow.finance.commercial.nominal?.[displayCurrency],
+                      displayCurrency,
+                    )}
+                  </li>
+                  <li>
+                    Broadcasting:{" "}
+                    {formatCurrencyCompact(
+                      valueBasis === VALUE_BASIS.inflationAdjusted
+                        ? latestFinanceRow.finance.broadcast.real?.[displayCurrency]
+                        : latestFinanceRow.finance.broadcast.nominal?.[displayCurrency],
+                      displayCurrency,
+                    )}
+                  </li>
+                  <li>
+                    Matchday:{" "}
+                    {formatCurrencyCompact(
+                      valueBasis === VALUE_BASIS.inflationAdjusted
+                        ? latestFinanceRow.finance.matchday.real?.[displayCurrency]
+                        : latestFinanceRow.finance.matchday.nominal?.[displayCurrency],
+                      displayCurrency,
+                    )}
+                  </li>
                 </ul>
               </>
             ) : (
@@ -374,8 +537,24 @@ export function ClubProfilePage() {
           <article className="detailCard">
             <h3>Secondary finance metrics</h3>
             <ul className="miniList">
-              <li>Player amortisation: {formatCurrencyCompact(latestFinanceRow?.finance.playerAmortisationOriginal, "GBP")}</li>
-              <li>Profit on player sales: {formatCurrencyCompact(latestFinanceRow?.finance.profitOnPlayerSalesOriginal, "GBP")}</li>
+              <li>
+                Player amortisation:{" "}
+                {formatCurrencyCompact(
+                  valueBasis === VALUE_BASIS.inflationAdjusted
+                    ? latestFinanceRow?.finance.playerAmortisation.real?.[displayCurrency]
+                    : latestFinanceRow?.finance.playerAmortisation.nominal?.[displayCurrency],
+                  displayCurrency,
+                )}
+              </li>
+              <li>
+                Profit on player sales:{" "}
+                {formatCurrencyCompact(
+                  valueBasis === VALUE_BASIS.inflationAdjusted
+                    ? latestFinanceRow?.finance.profitOnPlayerSales.real?.[displayCurrency]
+                    : latestFinanceRow?.finance.profitOnPlayerSales.nominal?.[displayCurrency],
+                  displayCurrency,
+                )}
+              </li>
             </ul>
           </article>
         </div>

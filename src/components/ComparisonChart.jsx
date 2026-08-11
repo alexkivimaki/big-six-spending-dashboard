@@ -1,3 +1,5 @@
+import { useEffect, useMemo, useState } from "react";
+
 import {
   Bar,
   BarChart,
@@ -133,6 +135,29 @@ export function ComparisonChart({
   selectedClubIds,
   valueBasis,
 }) {
+  const [isVerySmallScreen, setIsVerySmallScreen] = useState(() =>
+    typeof window !== "undefined" ? window.matchMedia("(max-width: 560px)").matches : false,
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") return undefined;
+
+    const mediaQuery = window.matchMedia("(max-width: 560px)");
+    const handleChange = (event) => setIsVerySmallScreen(event.matches);
+
+    setIsVerySmallScreen(mediaQuery.matches);
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  const seasonTickInterval = useMemo(() => {
+    if (!isVerySmallScreen) return 0;
+    if (chartData.length >= 12) return 1;
+    if (chartData.length >= 8) return 0;
+    return 0;
+  }, [chartData.length, isVerySmallScreen]);
+
   const hasValues = chartData.some((row) => selectedClubIds.some((clubId) => row[clubId] !== null));
 
   if (!hasValues) {
@@ -156,7 +181,15 @@ export function ComparisonChart({
           {chartType === "line" ? (
             <LineChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 28 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(19, 34, 28, 0.12)" />
-              <XAxis dataKey="season" angle={-35} textAnchor="end" height={72} tick={{ fontSize: 12 }} />
+              <XAxis
+                dataKey="season"
+                angle={isVerySmallScreen ? -28 : -35}
+                textAnchor="end"
+                height={isVerySmallScreen ? 58 : 72}
+                tick={{ fontSize: 12 }}
+                interval={seasonTickInterval}
+                minTickGap={isVerySmallScreen ? 18 : 8}
+              />
               <YAxis
                 reversed={metric.reverseAxis}
                 tickFormatter={(value) => metric.axisTick(value, { displayCurrency })}
@@ -170,7 +203,15 @@ export function ComparisonChart({
           ) : (
             <BarChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 28 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(19, 34, 28, 0.12)" />
-              <XAxis dataKey="season" angle={-35} textAnchor="end" height={72} tick={{ fontSize: 12 }} />
+              <XAxis
+                dataKey="season"
+                angle={isVerySmallScreen ? -28 : -35}
+                textAnchor="end"
+                height={isVerySmallScreen ? 58 : 72}
+                tick={{ fontSize: 12 }}
+                interval={seasonTickInterval}
+                minTickGap={isVerySmallScreen ? 18 : 8}
+              />
               <YAxis
                 reversed={metric.reverseAxis}
                 tickFormatter={(value) => metric.axisTick(value, { displayCurrency })}

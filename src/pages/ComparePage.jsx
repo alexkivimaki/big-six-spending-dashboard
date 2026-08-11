@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 import { CompareControls } from "../components/CompareControls";
 import { ComparisonChart } from "../components/ComparisonChart";
@@ -28,6 +29,7 @@ export function ComparePage() {
   const [chartType, setChartType] = useState("line");
   const [valueBasis, setValueBasis] = useState(VALUE_BASIS.nominal);
   const [displayCurrency, setDisplayCurrency] = useState(DISPLAY_CURRENCY.EUR);
+  const [mobileControlsOpen, setMobileControlsOpen] = useState(false);
   const [sourcePanel, setSourcePanel] = useState(null);
 
   const metricGroups = useMemo(() => getMetricOptionsForCompare(), []);
@@ -106,6 +108,14 @@ export function ComparePage() {
     setSelectedMetricId(nextMetricId);
   }
 
+  function openMobileControls() {
+    setMobileControlsOpen(true);
+  }
+
+  function closeMobileControls() {
+    setMobileControlsOpen(false);
+  }
+
   function openMetricSourcePanel() {
     setSourcePanel({
       title: selectedMetric.label,
@@ -155,6 +165,7 @@ export function ComparePage() {
 
       <section className="pageLayout">
         <CompareControls
+          className="compareControlsDesktop"
           chartType={chartType}
           endSeason={endSeason}
           metricCoverageById={metricCoverageById}
@@ -175,6 +186,19 @@ export function ComparePage() {
         />
 
         <section className="contentColumn">
+          <section className="compareMobileBar panel">
+            <button type="button" className="secondaryButton compareMobileMenuButton" onClick={openMobileControls}>
+              <Menu size={18} />
+              <span>Selections</span>
+            </button>
+            <div className="compareMobileSummary">
+              <strong>{selectedMetric.label}</strong>
+              <small>
+                {selectionLabel} · {selectedClubIds.length} clubs · {displayCurrency}
+              </small>
+            </div>
+          </section>
+
           <section className="panel">
             <SectionHeader
               title={selectedMetric.label}
@@ -236,6 +260,58 @@ export function ComparePage() {
         subtitle={sourcePanel?.subtitle ?? ""}
         sections={sourcePanel?.sections ?? []}
       />
+
+      {mobileControlsOpen ? (
+        <div className="mobileControlsOverlay" role="dialog" aria-modal="true" aria-label="Dashboard selections">
+          <button
+            type="button"
+            className="mobileControlsBackdrop"
+            aria-label="Close dashboard selections"
+            onClick={closeMobileControls}
+          />
+          <div className="mobileControlsDrawer">
+            <div className="mobileControlsHeader">
+              <div>
+                <span className="eyebrow">Selections</span>
+                <h2>Compare setup</h2>
+              </div>
+              <button type="button" className="iconButton" aria-label="Close dashboard selections" onClick={closeMobileControls}>
+                <X size={18} />
+              </button>
+            </div>
+
+            <CompareControls
+              className="compareControlsMobile"
+              chartType={chartType}
+              endSeason={endSeason}
+              metricCoverageById={metricCoverageById}
+              metricGroups={metricGroups}
+              onChartTypeChange={setChartType}
+              onEndSeasonChange={changeEndSeason}
+              onMetricChange={changeMetric}
+              onStartSeasonChange={changeStartSeason}
+              onToggleClub={toggleClub}
+              onDisplayCurrencyChange={setDisplayCurrency}
+              onValueBasisChange={setValueBasis}
+              displayCurrency={displayCurrency}
+              seasons={comparisonSeasons}
+              selectedClubIds={selectedClubIds}
+              selectedMetricId={selectedMetricId}
+              startSeason={startSeason}
+              valueBasis={valueBasis}
+            />
+
+            <div className="mobileControlsFooter">
+              <button type="button" className="secondaryButton" onClick={closeMobileControls}>
+                Close
+              </button>
+              <button type="button" className="secondaryButton drawerApplyButton isActive" onClick={closeMobileControls}>
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </>
   );
 }

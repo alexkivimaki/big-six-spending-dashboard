@@ -441,6 +441,33 @@ select {
   gap: 24px;
 }
 
+.compareMobileBar {
+  display: none;
+  align-items: center;
+  gap: 14px;
+}
+
+.compareMobileMenuButton {
+  flex: 0 0 auto;
+}
+
+.compareMobileSummary {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.compareMobileSummary strong,
+.compareMobileSummary small {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.compareMobileSummary small {
+  color: #64748b;
+  line-height: 1.5;
+}
+
 .metricMetaStrip {
   margin-top: 16px;
   display: grid;
@@ -723,6 +750,28 @@ thead th {
   margin-top: 18px;
 }
 
+.profileToolbar {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.profileToolbarGroup {
+  display: grid;
+  gap: 10px;
+}
+
+.profileToolbarGroup > span {
+  color: #475569;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.profileToolbarNote {
+  margin: 12px 0 0;
+}
+
 .snapshotGrid {
   margin-top: 20px;
   display: grid;
@@ -903,6 +952,58 @@ thead th {
   overflow-wrap: anywhere;
 }
 
+.mobileControlsOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobileControlsBackdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(15, 23, 42, 0.42);
+  cursor: pointer;
+}
+
+.mobileControlsDrawer {
+  position: relative;
+  width: min(440px, 100%);
+  height: 100%;
+  background: #f8fafc;
+  border-left: 1px solid #e2e8f0;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: -18px 0 40px rgba(15, 23, 42, 0.16);
+}
+
+.mobileControlsHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.mobileControlsHeader h2 {
+  margin: 10px 0 0;
+  font-size: 1.8rem;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+}
+
+.compareControlsMobile {
+  position: static;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  animation: none;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -929,6 +1030,15 @@ thead th {
     position: static;
   }
 
+  .compareControlsDesktop {
+    display: none;
+  }
+
+  .compareMobileBar {
+    display: flex;
+  }
+
+  .profileToolbar,
   .profileHeroTop,
   .sectionHeader {
     display: grid;
@@ -964,9 +1074,29 @@ thead th {
     padding: var(--panel-padding-mobile);
   }
 
-  .chartCanvas,
-  .chartCanvas.compact {
-    height: 300px;
+  .compareMobileBar {
+    padding: 16px var(--panel-padding-mobile);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+.chartCanvas,
+.chartCanvas.compact {
+  height: 300px;
+}
+
+.chartCanvas {
+  min-height: 0;
+}
+
+  .chartLegend {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .sectionHeaderMeta {
+    justify-content: flex-start;
   }
 
   th,
@@ -987,5 +1117,32 @@ thead th {
   .sourceDrawer {
     width: 100%;
     padding: 22px;
+  }
+
+  .mobileControlsDrawer {
+    width: 100%;
+    padding: 16px 14px 18px;
+  }
+
+  .mobileControlsFooter {
+    position: sticky;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 14px 0 0;
+    margin-top: 18px;
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0) 0%, #f8fafc 22px, #f8fafc 100%);
+  }
+
+  .drawerApplyButton {
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+  }
+}
+
+@media (max-width: 560px) {
+  .chartCanvas,
+  .chartCanvas.compact {
+    height: 380px;
   }
 }

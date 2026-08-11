@@ -5,6 +5,7 @@ import { ClubMarker } from "./ClubMarker";
 import { CoverageBadge } from "./CoverageBadge";
 
 export function CompareControls({
+  className = "",
   chartType,
   endSeason,
   metricCoverageById,
@@ -20,11 +21,14 @@ export function CompareControls({
   seasons,
   selectedClubIds,
   selectedMetricId,
+  showChartSelector = false,
   startSeason,
   valueBasis,
 }) {
+  const classes = ["controlsColumn", "panel", className].filter(Boolean).join(" ");
+
   return (
-    <aside className="controlsColumn panel">
+    <aside className={classes}>
       <div className="panelLead">
         <span className="eyebrow">Compare clubs</span>
         <h2>Choose clubs, seasons, and one metric</h2>
@@ -86,40 +90,6 @@ export function CompareControls({
 
       <section className="controlSection">
         <div className="controlHeader">
-          <h3>Metric</h3>
-        </div>
-        <div className="metricGroups">
-          {metricGroups.map((group) => (
-            <div key={group.id} className="metricGroup">
-              <span className="metricGroupLabel">{group.label}</span>
-              <div className="metricGrid">
-                {group.metrics.map((metric) => {
-                  const coverage = metricCoverageById[metric.id].coverage;
-                  const disabled = coverage.status === "coming-soon";
-                  return (
-                    <button
-                      key={metric.id}
-                      type="button"
-                      className={`metricButton ${selectedMetricId === metric.id ? "isActive" : ""}`}
-                      disabled={disabled}
-                      onClick={() => onMetricChange(metric.id)}
-                    >
-                      <span className="metricButtonTop">
-                        <strong>{metric.label}</strong>
-                        <CoverageBadge coverage={coverage} quiet />
-                      </span>
-                      <small>{metric.description}</small>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="controlSection">
-        <div className="controlHeader">
           <h3>Currency</h3>
         </div>
         <div className="chartToggleRow">
@@ -165,21 +135,57 @@ export function CompareControls({
 
       <section className="controlSection">
         <div className="controlHeader">
-          <h3>Chart</h3>
+          <h3>Metric</h3>
         </div>
-        <div className="chartToggleRow">
-          {["line", "bar"].map((option) => (
-            <button
-              key={option}
-              type="button"
-              className={`secondaryButton ${chartType === option ? "isActive" : ""}`}
-              onClick={() => onChartTypeChange(option)}
-            >
-              {option === "line" ? "Line" : "Bar"}
-            </button>
+        <div className="metricGroups">
+          {metricGroups.map((group) => (
+            <div key={group.id} className="metricGroup">
+              <span className="metricGroupLabel">{group.label}</span>
+              <div className="metricGrid">
+                {group.metrics.map((metric) => {
+                  const coverage = metricCoverageById[metric.id].coverage;
+                  const disabled = coverage.status === "coming-soon";
+                  return (
+                    <button
+                      key={metric.id}
+                      type="button"
+                      className={`metricButton ${selectedMetricId === metric.id ? "isActive" : ""}`}
+                      disabled={disabled}
+                      onClick={() => onMetricChange(metric.id)}
+                    >
+                      <span className="metricButtonTop">
+                        <strong>{metric.label}</strong>
+                        <CoverageBadge coverage={coverage} quiet />
+                      </span>
+                      <small>{metric.description}</small>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           ))}
         </div>
       </section>
+
+      {showChartSelector ? (
+        <section className="controlSection">
+          <div className="controlHeader">
+            <h3>Chart</h3>
+          </div>
+          <div className="chartToggleRow">
+            {["line", "bar"].map((option) => (
+              <button
+                key={option}
+                type="button"
+                className={`secondaryButton ${chartType === option ? "isActive" : ""}`}
+                onClick={() => onChartTypeChange(option)}
+              >
+                {option === "line" ? "Line" : "Bar"}
+              </button>
+            ))}
+          </div>
+        </section>
+      ) : null}
     </aside>
   );
 }

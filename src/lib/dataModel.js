@@ -171,6 +171,67 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
     eurReal: [masterRow?.sporting_revenue_eur_real_2025_26, revenueRow?.sporting_revenue_eur_real_2025_26],
     usdReal: [masterRow?.sporting_revenue_usd_real_2025_26, revenueRow?.sporting_revenue_usd_real_2025_26],
   });
+  const financeMatchday = buildCurrencyValues({
+    gbp: [masterRow?.matchday_revenue_gbp, revenueRow?.matchday_revenue_gbp, matchdayOriginal],
+    eur: [masterRow?.matchday_revenue_eur, revenueRow?.matchday_revenue_eur, matchdayEur],
+    usd: [masterRow?.matchday_revenue_usd, revenueRow?.matchday_revenue_usd],
+    gbpReal: [masterRow?.matchday_revenue_gbp_real_2025_26, revenueRow?.matchday_revenue_gbp_real_2025_26],
+    eurReal: [masterRow?.matchday_revenue_eur_real_2025_26, revenueRow?.matchday_revenue_eur_real_2025_26],
+    usdReal: [masterRow?.matchday_revenue_usd_real_2025_26, revenueRow?.matchday_revenue_usd_real_2025_26],
+  });
+  const financeBroadcast = buildCurrencyValues({
+    gbp: [masterRow?.broadcast_revenue_gbp, revenueRow?.broadcast_revenue_gbp, broadcastOriginal],
+    eur: [masterRow?.broadcast_revenue_eur, revenueRow?.broadcast_revenue_eur, broadcastEur],
+    usd: [masterRow?.broadcast_revenue_usd, revenueRow?.broadcast_revenue_usd],
+    gbpReal: [masterRow?.broadcast_revenue_gbp_real_2025_26, revenueRow?.broadcast_revenue_gbp_real_2025_26],
+    eurReal: [masterRow?.broadcast_revenue_eur_real_2025_26, revenueRow?.broadcast_revenue_eur_real_2025_26],
+    usdReal: [masterRow?.broadcast_revenue_usd_real_2025_26, revenueRow?.broadcast_revenue_usd_real_2025_26],
+  });
+  const financeCommercial = buildCurrencyValues({
+    gbp: [masterRow?.commercial_revenue_gbp, revenueRow?.commercial_revenue_gbp, commercialOriginal],
+    eur: [masterRow?.commercial_revenue_eur, revenueRow?.commercial_revenue_eur, commercialEur],
+    usd: [masterRow?.commercial_revenue_usd, revenueRow?.commercial_revenue_usd],
+    gbpReal: [masterRow?.commercial_revenue_gbp_real_2025_26, revenueRow?.commercial_revenue_gbp_real_2025_26],
+    eurReal: [masterRow?.commercial_revenue_eur_real_2025_26, revenueRow?.commercial_revenue_eur_real_2025_26],
+    usdReal: [masterRow?.commercial_revenue_usd_real_2025_26, revenueRow?.commercial_revenue_usd_real_2025_26],
+  });
+  const financeProfitBeforeTax = buildCurrencyValues({
+    gbp: [
+      masterRow?.profit_loss_before_tax_gbp,
+      revenueRow?.profit_loss_before_tax_gbp,
+      masterRow?.profit_loss_before_tax_original,
+      revenueRow?.profit_loss_before_tax_original,
+    ],
+    eur: [masterRow?.profit_loss_before_tax_eur, revenueRow?.profit_loss_before_tax_eur],
+    usd: [masterRow?.profit_loss_before_tax_usd, revenueRow?.profit_loss_before_tax_usd],
+    gbpReal: [masterRow?.profit_loss_before_tax_gbp_real_2025_26, revenueRow?.profit_loss_before_tax_gbp_real_2025_26],
+    eurReal: [masterRow?.profit_loss_before_tax_eur_real_2025_26, revenueRow?.profit_loss_before_tax_eur_real_2025_26],
+    usdReal: [masterRow?.profit_loss_before_tax_usd_real_2025_26, revenueRow?.profit_loss_before_tax_usd_real_2025_26],
+  });
+  const financeNetDebt = buildCurrencyValues({
+    gbp: [masterRow?.net_debt_gbp, revenueRow?.net_debt_gbp, masterRow?.net_debt_original, revenueRow?.net_debt_original],
+    eur: [masterRow?.net_debt_eur, revenueRow?.net_debt_eur],
+    usd: [masterRow?.net_debt_usd, revenueRow?.net_debt_usd],
+    gbpReal: [masterRow?.net_debt_gbp_real_2025_26, revenueRow?.net_debt_gbp_real_2025_26],
+    eurReal: [masterRow?.net_debt_eur_real_2025_26, revenueRow?.net_debt_eur_real_2025_26],
+    usdReal: [masterRow?.net_debt_usd_real_2025_26, revenueRow?.net_debt_usd_real_2025_26],
+  });
+  const financePlayerAmortisation = buildCurrencyValues({
+    gbp: [masterRow?.player_amortisation_gbp, masterRow?.player_amortisation_original],
+    eur: [masterRow?.player_amortisation_eur],
+    usd: [masterRow?.player_amortisation_usd],
+    gbpReal: [masterRow?.player_amortisation_gbp_real_2025_26],
+    eurReal: [masterRow?.player_amortisation_eur_real_2025_26],
+    usdReal: [masterRow?.player_amortisation_usd_real_2025_26],
+  });
+  const financeProfitOnPlayerSales = buildCurrencyValues({
+    gbp: [masterRow?.profit_on_player_sales_gbp, masterRow?.profit_on_player_sales_original],
+    eur: [masterRow?.profit_on_player_sales_eur],
+    usd: [masterRow?.profit_on_player_sales_usd],
+    gbpReal: [masterRow?.profit_on_player_sales_gbp_real_2025_26],
+    eurReal: [masterRow?.profit_on_player_sales_eur_real_2025_26],
+    usdReal: [masterRow?.profit_on_player_sales_usd_real_2025_26],
+  });
 
   return {
     clubId: club.id,
@@ -226,23 +287,30 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
       staffCostsOriginal,
       staffCostsEur,
       staffCostToRevenueRatio,
+      profitBeforeTax: financeProfitBeforeTax,
       profitBeforeTaxOriginal:
         toNumber(masterRow?.profit_loss_before_tax_original) ??
         toNumber(revenueRow?.profit_loss_before_tax_original),
       profitBeforeTaxEur: toNumber(masterRow?.profit_loss_before_tax_eur),
+      netDebt: financeNetDebt,
       netDebtOriginal:
         toNumber(masterRow?.net_debt_original) ?? toNumber(revenueRow?.net_debt_original),
       netDebtEur: toNumber(masterRow?.net_debt_eur),
+      matchday: financeMatchday,
       matchdayOriginal,
       matchdayEur,
+      broadcast: financeBroadcast,
       broadcastOriginal,
       broadcastEur,
+      commercial: financeCommercial,
       commercialOriginal,
       commercialEur,
       sportingRevenue: financeSportingRevenue,
       sportingRevenueOriginal,
       sportingRevenueEur,
+      playerAmortisation: financePlayerAmortisation,
       playerAmortisationOriginal: toNumber(masterRow?.player_amortisation_original),
+      profitOnPlayerSales: financeProfitOnPlayerSales,
       profitOnPlayerSalesOriginal: toNumber(masterRow?.profit_on_player_sales_original),
       hasData:
         revenueOriginal !== null ||
@@ -437,15 +505,15 @@ export function calculateMetricValue(
       return netSquadInvestment !== null && totalRevenue ? netSquadInvestment / totalRevenue : null;
     }
     case "revenue":
-      return row.finance.revenueOriginal;
+      return getCurrencyValue(row.finance.revenue, valueBasis, displayCurrency);
     case "staffCosts":
-      return row.finance.staffCostsOriginal;
+      return getCurrencyValue(row.finance.staffCosts, valueBasis, displayCurrency);
     case "staffCostToRevenueRatio":
       return row.finance.staffCostToRevenueRatio;
     case "profitBeforeTax":
-      return row.finance.profitBeforeTaxOriginal;
+      return getCurrencyValue(row.finance.profitBeforeTax, valueBasis, displayCurrency);
     case "netDebt":
-      return row.finance.netDebtOriginal;
+      return getCurrencyValue(row.finance.netDebt, valueBasis, displayCurrency);
     case "points":
       return row.performance.points;
     case "leaguePosition":
@@ -486,9 +554,12 @@ export function getMetricCoverage(
   }
 
   const filled = rows.filter((row) => calculateMetricValue(row, metricId, valueBasis, displayCurrency) !== null).length;
+  const hasDataSomewhere = clubSeasonRecords.some(
+    (row) => calculateMetricValue(row, metricId, valueBasis, displayCurrency) !== null,
+  );
 
   if (!filled) {
-    return { status: "coming-soon", filled, total };
+    return { status: hasDataSomewhere ? "partial" : "coming-soon", filled, total };
   }
 
   if (filled === total) {
@@ -685,13 +756,16 @@ export function getClubTransferLeaders(clubId, season, direction) {
     .slice(0, 5);
 }
 
-export function getClubProfileCoverage(clubId) {
+export function getClubProfileCoverage(
+  clubId,
+  { valueBasis = VALUE_BASIS.nominal, displayCurrency = DISPLAY_CURRENCY.EUR } = {},
+) {
   const rows = getClubRows(clubId);
   return {
-    transfers: getMetricCoverage("netTransferSpend", rows),
-    finance: getMetricCoverage("revenue", rows),
-    performance: getMetricCoverage("points", rows),
-    trophies: getMetricCoverage("trophies", rows),
+    transfers: getMetricCoverage("netTransferSpend", rows, { valueBasis, displayCurrency }),
+    finance: getMetricCoverage("revenue", rows, { valueBasis, displayCurrency }),
+    performance: getMetricCoverage("points", rows, { valueBasis, displayCurrency }),
+    trophies: getMetricCoverage("trophies", rows, { valueBasis, displayCurrency }),
   };
 }
 
@@ -845,18 +919,29 @@ export function getCompareSourceSections(
   return sections;
 }
 
-export function getProfileSectionSourceSections(clubId, metricIds) {
+export function getProfileSectionSourceSections(
+  clubId,
+  metricIds,
+  valueBasis = VALUE_BASIS.nominal,
+  displayCurrency = DISPLAY_CURRENCY.EUR,
+) {
   return metricIds
     .flatMap((metricId) => {
-      const latest = getLatestMetricObservation(clubId, metricId);
+      const latest = getLatestMetricObservation(clubId, metricId, { valueBasis, displayCurrency });
       if (!latest) return [];
-      return getSourceSectionsForMetric(metricId, latest.row);
+      return getSourceSectionsForMetric(metricId, latest.row, valueBasis, displayCurrency);
     });
 }
 
-export function getProfileSectionStatus(clubId, metricIds) {
+export function getProfileSectionStatus(
+  clubId,
+  metricIds,
+  { valueBasis = VALUE_BASIS.nominal, displayCurrency = DISPLAY_CURRENCY.EUR } = {},
+) {
   const rows = getClubRows(clubId);
-  const totals = metricIds.map((metricId) => getMetricCoverage(metricId, rows));
+  const totals = metricIds.map((metricId) =>
+    getMetricCoverage(metricId, rows, { valueBasis, displayCurrency }),
+  );
   if (!totals.some((item) => item.filled > 0)) {
     return { status: "coming-soon", filled: 0, total: rows.length };
   }
