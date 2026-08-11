@@ -4,11 +4,12 @@ import {
   formatLeaguePosition,
   formatPercent,
 } from "../shared/formatters";
+import { DISPLAY_CURRENCY } from "./displayCurrency";
 import { VALUE_BASIS } from "./valueBasis";
 
 function formatCurrencyAxisTick(value, currency = "EUR") {
   if (value === null || value === undefined || Number.isNaN(value)) return "—";
-  const symbol = currency === "GBP" ? "£" : "€";
+  const symbol = currency === "GBP" ? "£" : currency === "USD" ? "$" : "€";
   const numeric = Number(value);
   const absolute = Math.abs(numeric);
   const sign = numeric < 0 ? "-" : "";
@@ -26,6 +27,16 @@ function formatCurrencyAxisTick(value, currency = "EUR") {
   }
 
   return `${sign}${symbol}${Math.round(absolute)}`;
+}
+
+function makeCurrencyFormatter(defaultCurrency = DISPLAY_CURRENCY.EUR) {
+  return (value, { displayCurrency = defaultCurrency } = {}) =>
+    formatCurrencyCompact(value, displayCurrency);
+}
+
+function makeCurrencyAxisTickFormatter(defaultCurrency = DISPLAY_CURRENCY.EUR) {
+  return (value, { displayCurrency = defaultCurrency } = {}) =>
+    formatCurrencyAxisTick(value, displayCurrency);
 }
 
 const sumAggregation = { type: "sum" };
@@ -55,8 +66,8 @@ export const metricRegistry = {
     sourceType: "Transfermarkt club transfer pages",
     sourceGroups: ["transfers"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.EUR),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.EUR),
     aggregation: sumAggregation,
     higherIsBetter: null,
     compareEnabled: true,
@@ -67,47 +78,47 @@ export const metricRegistry = {
   },
   playerWages: {
     id: "playerWages",
-    label: "Player wages",
-    shortLabel: "Player wages",
+    label: "Wage bill",
+    shortLabel: "Wage bill",
     category: "squad-spending",
-    description: "Estimated or observed player wage costs for the season.",
-    formulaLabel: "Player wages = estimated or observed player wage costs",
+    description: "Current wage proxy using the club accounts wage bill / staff-cost figure for the season.",
+    formulaLabel: "Wage bill = current wage proxy from club accounts",
     methodologyNote:
-      "Player wages remain separate from official staff costs. The compare view will not substitute staff costs and label them as player wages.",
-    sourceType: "Capology / future wage normalization pipeline",
-    sourceGroups: ["wages"],
+      "For now, this uses the available wage bill / official staff-cost figure from club accounts as the dashboard's wage proxy.",
+    sourceType: "Official annual reports and filings",
+    sourceGroups: ["finances"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.GBP),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.GBP),
     aggregation: sumAggregation,
     higherIsBetter: null,
     compareEnabled: true,
     profileEnabled: true,
     isMonetary: true,
     supportsInflationAdjustment: true,
-    requiredFields: ["wages.estimatedPlayerWagesEur"],
+    requiredFields: ["finance.staffCostsOriginal"],
   },
   grossSquadInvestment: {
     id: "grossSquadInvestment",
     label: "Gross squad investment",
     shortLabel: "Gross squad investment",
     category: "squad-spending",
-    description: "Total annual investment in player acquisition and player wages before player sales.",
-    formulaLabel: "Transfer spend + player wages",
+    description: "Total annual investment in player acquisition and wage bill before player sales.",
+    formulaLabel: "Transfer spend + wage bill",
     methodologyNote:
-      "This metric requires normalized player-wage data. Until that layer is ready, it stays unavailable instead of estimating from staff costs.",
-    sourceType: "Derived from transfer and wage datasets",
-    sourceGroups: ["transfers", "wages"],
+      "This currently uses the club accounts wage bill / staff-cost figure as the dashboard's wage proxy.",
+    sourceType: "Derived from transfer and finance datasets",
+    sourceGroups: ["transfers", "finances"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.EUR),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.EUR),
     aggregation: sumAggregation,
     higherIsBetter: null,
     compareEnabled: true,
     profileEnabled: true,
     isMonetary: true,
     supportsInflationAdjustment: true,
-    requiredFields: ["transfers.grossSpendEur", "wages.estimatedPlayerWagesEur"],
+    requiredFields: ["transfers.grossSpendEur", "finance.staffCostsOriginal"],
   },
   playerSales: {
     id: "playerSales",
@@ -120,8 +131,8 @@ export const metricRegistry = {
     sourceType: "Transfermarkt club transfer pages",
     sourceGroups: ["transfers"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.EUR),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.EUR),
     aggregation: sumAggregation,
     higherIsBetter: true,
     compareEnabled: true,
@@ -142,8 +153,8 @@ export const metricRegistry = {
     sourceType: "Transfermarkt club transfer pages",
     sourceGroups: ["transfers"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.EUR),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.EUR),
     aggregation: sumAggregation,
     higherIsBetter: null,
     compareEnabled: true,
@@ -158,21 +169,21 @@ export const metricRegistry = {
     shortLabel: "Net squad investment",
     category: "offsets",
     description: "Total player investment after accounting for revenue from player sales.",
-    formulaLabel: "Transfer spend + player wages - player sales",
+    formulaLabel: "Transfer spend + wage bill - player sales",
     methodologyNote:
-      "This is the core investment metric for the dashboard. It remains unavailable until the player-wage layer is finalized.",
-    sourceType: "Derived from transfer and wage datasets",
-    sourceGroups: ["transfers", "wages"],
+      "This is the core investment metric for the dashboard. For now it uses the available wage bill / staff-cost figure as the wage proxy.",
+    sourceType: "Derived from transfer and finance datasets",
+    sourceGroups: ["transfers", "finances"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.EUR),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.EUR),
     aggregation: sumAggregation,
     higherIsBetter: null,
     compareEnabled: true,
     profileEnabled: true,
     isMonetary: true,
     supportsInflationAdjustment: true,
-    requiredFields: ["transfers.grossSpendEur", "wages.estimatedPlayerWagesEur", "transfers.incomeEur"],
+    requiredFields: ["transfers.grossSpendEur", "finance.staffCostsOriginal", "transfers.incomeEur"],
   },
   squadCostAfterSportingRevenue: {
     id: "squadCostAfterSportingRevenue",
@@ -182,12 +193,12 @@ export const metricRegistry = {
     description: "Measured squad costs after player sales and sporting revenue are taken into account.",
     formulaLabel: "Net squad investment - sporting revenue",
     methodologyNote:
-      "This requires both player-wage data and a finalized sporting-revenue series, so the app keeps it disabled until both are ready.",
-    sourceType: "Derived from transfer, wage, and finance datasets",
-    sourceGroups: ["transfers", "wages", "finances"],
+      "This currently uses the available wage bill / staff-cost figure together with matchday and broadcasting income from club accounts.",
+    sourceType: "Derived from transfer and finance datasets",
+    sourceGroups: ["transfers", "finances"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.EUR),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.EUR),
     aggregation: sumAggregation,
     higherIsBetter: null,
     compareEnabled: true,
@@ -196,9 +207,10 @@ export const metricRegistry = {
     supportsInflationAdjustment: true,
     requiredFields: [
       "transfers.grossSpendEur",
-      "wages.estimatedPlayerWagesEur",
+      "finance.staffCostsOriginal",
       "transfers.incomeEur",
-      "finance.sportingRevenueEur",
+      "finance.matchdayOriginal",
+      "finance.broadcastOriginal",
     ],
   },
   sportingRevenue: {
@@ -209,19 +221,19 @@ export const metricRegistry = {
     description: "Football-generated revenue from match activity and competition-related distributions.",
     formulaLabel: "Sporting revenue = matchday revenue + broadcasting / competition revenue",
     methodologyNote:
-      "The compare view only uses a standardized sporting-revenue value when the necessary normalized finance fields are available.",
-    sourceType: "Derived from normalized matchday and broadcasting revenue fields",
+      "For now, this is gate and matchday income plus TV and broadcasting income from the club accounts.",
+    sourceType: "Derived from matchday and broadcasting revenue fields",
     sourceGroups: ["finances"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.GBP),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.GBP),
     aggregation: sumAggregation,
     higherIsBetter: true,
     compareEnabled: true,
     profileEnabled: true,
     isMonetary: true,
     supportsInflationAdjustment: true,
-    requiredFields: ["finance.sportingRevenueEur"],
+    requiredFields: ["finance.matchdayOriginal", "finance.broadcastOriginal"],
   },
   totalRevenue: {
     id: "totalRevenue",
@@ -231,19 +243,19 @@ export const metricRegistry = {
     description: "Reported total club revenue for the relevant financial period.",
     formulaLabel: "Total revenue = reported total club revenue",
     methodologyNote:
-      "Cross-club comparison uses normalized EUR values only. Original-currency values stay available in club profiles but are not compared here.",
+      "The exported finance layer is stored in club-accounts currency and then converted into the selected display currency for comparison.",
     sourceType: "Official annual reports and filings",
     sourceGroups: ["finances"],
     format: "currency",
-    formatValue: (value) => formatCurrencyCompact(value, "EUR"),
-    axisTick: (value) => formatCurrencyAxisTick(value, "EUR"),
+    formatValue: makeCurrencyFormatter(DISPLAY_CURRENCY.GBP),
+    axisTick: makeCurrencyAxisTickFormatter(DISPLAY_CURRENCY.GBP),
     aggregation: sumAggregation,
     higherIsBetter: true,
     compareEnabled: true,
     profileEnabled: true,
     isMonetary: true,
     supportsInflationAdjustment: true,
-    requiredFields: ["finance.revenueEur"],
+    requiredFields: ["finance.revenueOriginal"],
   },
   squadInvestmentRevenueRatio: {
     id: "squadInvestmentRevenueRatio",
@@ -255,7 +267,7 @@ export const metricRegistry = {
     methodologyNote:
       "For selected-period rankings this uses a ratio of sums, not a sum or simple average of annual percentages.",
     sourceType: "Derived from squad investment and total revenue",
-    sourceGroups: ["transfers", "wages", "finances"],
+    sourceGroups: ["transfers", "finances"],
     format: "percentage",
     formatValue: (value) => formatPercent(value),
     axisTick: (value) => `${Math.round(value * 100)}%`,
@@ -269,9 +281,9 @@ export const metricRegistry = {
       "Inflation adjustment does not change a same-period ratio when the numerator and denominator are measured consistently.",
     requiredFields: [
       "transfers.grossSpendEur",
-      "wages.estimatedPlayerWagesEur",
+      "finance.staffCostsOriginal",
       "transfers.incomeEur",
-      "finance.revenueEur",
+      "finance.revenueOriginal",
     ],
   },
 

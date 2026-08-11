@@ -32,7 +32,7 @@ function ActiveMarkerDot({ cx, cy, club }) {
   );
 }
 
-function ChartTooltip({ active, payload, label, metric, valueBasis }) {
+function ChartTooltip({ active, payload, label, metric, valueBasis, displayCurrency }) {
   if (!active || !payload?.length) return null;
   const rows = dedupePayload(payload);
 
@@ -51,7 +51,7 @@ function ChartTooltip({ active, payload, label, metric, valueBasis }) {
                 <ClubMarker club={club} size={16} />
                 {club?.name ?? entry.dataKey}
               </span>
-              <strong>{metric.formatValue(entry.value)}</strong>
+              <strong>{metric.formatValue(entry.value, { displayCurrency })}</strong>
             </div>
           );
         })}
@@ -128,6 +128,7 @@ export function ComparisonChart({
   chartData,
   chartType,
   coverage,
+  displayCurrency,
   metric,
   selectedClubIds,
   valueBasis,
@@ -156,16 +157,28 @@ export function ComparisonChart({
             <LineChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 28 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(19, 34, 28, 0.12)" />
               <XAxis dataKey="season" angle={-35} textAnchor="end" height={72} tick={{ fontSize: 12 }} />
-              <YAxis reversed={metric.reverseAxis} tickFormatter={metric.axisTick} tick={{ fontSize: 12 }} />
-              <Tooltip content={<ChartTooltip metric={metric} valueBasis={valueBasis} />} />
+              <YAxis
+                reversed={metric.reverseAxis}
+                tickFormatter={(value) => metric.axisTick(value, { displayCurrency })}
+                tick={{ fontSize: 12 }}
+              />
+              <Tooltip
+                content={<ChartTooltip displayCurrency={displayCurrency} metric={metric} valueBasis={valueBasis} />}
+              />
               {selectedClubIds.flatMap((clubId) => renderLineSeries(clubId))}
             </LineChart>
           ) : (
             <BarChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 28 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(19, 34, 28, 0.12)" />
               <XAxis dataKey="season" angle={-35} textAnchor="end" height={72} tick={{ fontSize: 12 }} />
-              <YAxis reversed={metric.reverseAxis} tickFormatter={metric.axisTick} tick={{ fontSize: 12 }} />
-              <Tooltip content={<ChartTooltip metric={metric} valueBasis={valueBasis} />} />
+              <YAxis
+                reversed={metric.reverseAxis}
+                tickFormatter={(value) => metric.axisTick(value, { displayCurrency })}
+                tick={{ fontSize: 12 }}
+              />
+              <Tooltip
+                content={<ChartTooltip displayCurrency={displayCurrency} metric={metric} valueBasis={valueBasis} />}
+              />
               {selectedClubIds.map((clubId) => {
                 const club = clubConfigById[clubId];
                 return (

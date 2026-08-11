@@ -8,7 +8,7 @@ export function formatCurrencyCompact(value, currency = "EUR", fallback = "—")
   const numeric = Number(value);
   const sign = numeric < 0 ? "-" : "";
   const absolute = Math.abs(numeric);
-  const symbol = currency === "GBP" ? "£" : "€";
+  const symbol = currency === "GBP" ? "£" : currency === "USD" ? "$" : "€";
 
   if (absolute >= 1_000_000_000) {
     return `${sign}${symbol}${(absolute / 1_000_000_000).toFixed(2)}bn`;

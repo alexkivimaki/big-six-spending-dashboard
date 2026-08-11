@@ -3,6 +3,7 @@ import clubSeasonMasterData from "../data/clubSeasonMasterData.json";
 import clubRevenueData from "../data/clubRevenueData.json";
 import clubTransferRowsData from "../data/clubTransferRowsData.json";
 import { clubConfigById, clubConfigBySlug, clubConfigs } from "../config/clubConfig";
+import { DISPLAY_CURRENCY, fxReference } from "../config/displayCurrency";
 import { compareMetricGroups, getMetric, metricRegistry } from "../config/metricRegistry";
 import { VALUE_BASIS, inflationConfig } from "../config/valueBasis";
 
@@ -40,6 +41,19 @@ function intersect(listOfSets) {
 
 function sortSeasonsAscending(seasons) {
   return [...seasons].sort((left, right) => seasonToStartYear(left) - seasonToStartYear(right));
+}
+
+function convertAmount(value, fromCurrency, toCurrency) {
+  if (value === null || value === undefined || fromCurrency === null || toCurrency === null) return null;
+  if (fromCurrency === toCurrency) return value;
+
+  const rates = fxReference.ratesPerEuro;
+  const fromRate = rates[fromCurrency];
+  const toRate = rates[toCurrency];
+  if (!fromRate || !toRate) return null;
+
+  const valueInEuro = fromCurrency === DISPLAY_CURRENCY.EUR ? value : value / fromRate;
+  return toCurrency === DISPLAY_CURRENCY.EUR ? valueInEuro : valueInEuro * toRate;
 }
 
 function createFinanceSources(masterRow, revenueRow) {
@@ -87,6 +101,8 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
     toNumber(revenueRow?.commercial_revenue_eur);
   const sportingRevenueEur =
     matchdayEur !== null && broadcastEur !== null ? matchdayEur + broadcastEur : null;
+  const sportingRevenueOriginal =
+    matchdayOriginal !== null && broadcastOriginal !== null ? matchdayOriginal + broadcastOriginal : null;
   const staffCostToRevenueRatio =
     revenueOriginal && staffCostsOriginal ? staffCostsOriginal / revenueOriginal : null;
   const estimatedPlayerWagesEur =
@@ -131,6 +147,7 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
       broadcastEur,
       commercialOriginal,
       commercialEur,
+      sportingRevenueOriginal,
       sportingRevenueEur,
       playerAmortisationOriginal: toNumber(masterRow?.player_amortisation_original),
       profitOnPlayerSalesOriginal: toNumber(masterRow?.profit_on_player_sales_original),
@@ -263,56 +280,65 @@ export function getRowsInRange(clubIds, startSeason, endSeason) {
   );
 }
 
-export function calculateMetricValue(row, metricId, valueBasis = VALUE_BASIS.nominal) {
+export function calculateMetricValue(
+  row,
+  metricId,
+  valueBasis = VALUE_BASIS.nominal,
+  displayCurrency = DISPLAY_CURRENCY.EUR,
+) {
   const metric = getMetric(metricId);
   if (!metric) return null;
 
   if (inflationUnavailableForMetric(metric, valueBasis)) {
-    return metric.format === "percentage" ? calculateMetricValue(row, metricId, VALUE_BASIS.nominal) : null;
+    return metric.format === "percentage"
+      ? calculateMetricValue(row, metricId, VALUE_BASIS.nominal, displayCurrency)
+      : null;
   }
 
   switch (metricId) {
     case "transferSpend":
     case "grossTransferSpend":
-      return row.transfers.grossSpendEur;
+      return convertAmount(row.transfers.grossSpendEur, DISPLAY_CURRENCY.EUR, displayCurrency);
     case "playerWages":
-      return row.wages.estimatedPlayerWagesEur;
+      return convertAmount(row.finance.staffCostsOriginal, DISPLAY_CURRENCY.GBP, displayCurrency);
     case "grossSquadInvestment": {
-      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis);
-      const playerWages = calculateMetricValue(row, "playerWages", valueBasis);
+      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis, displayCurrency);
+      const playerWages = calculateMetricValue(row, "playerWages", valueBasis, displayCurrency);
       return transferSpend !== null && playerWages !== null ? transferSpend + playerWages : null;
     }
     case "playerSales":
     case "transferIncome":
-      return row.transfers.incomeEur;
+      return convertAmount(row.transfers.incomeEur, DISPLAY_CURRENCY.EUR, displayCurrency);
     case "netTransferSpend": {
-      if (row.transfers.netSpendEur !== null) return row.transfers.netSpendEur;
-      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis);
-      const playerSales = calculateMetricValue(row, "playerSales", valueBasis);
+      if (row.transfers.netSpendEur !== null) {
+        return convertAmount(row.transfers.netSpendEur, DISPLAY_CURRENCY.EUR, displayCurrency);
+      }
+      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis, displayCurrency);
+      const playerSales = calculateMetricValue(row, "playerSales", valueBasis, displayCurrency);
       return transferSpend !== null && playerSales !== null ? transferSpend - playerSales : null;
     }
     case "netSquadInvestment": {
-      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis);
-      const playerWages = calculateMetricValue(row, "playerWages", valueBasis);
-      const playerSales = calculateMetricValue(row, "playerSales", valueBasis);
+      const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis, displayCurrency);
+      const playerWages = calculateMetricValue(row, "playerWages", valueBasis, displayCurrency);
+      const playerSales = calculateMetricValue(row, "playerSales", valueBasis, displayCurrency);
       return transferSpend !== null && playerWages !== null && playerSales !== null
         ? transferSpend + playerWages - playerSales
         : null;
     }
     case "squadCostAfterSportingRevenue": {
-      const netSquadInvestment = calculateMetricValue(row, "netSquadInvestment", valueBasis);
-      const sportingRevenue = calculateMetricValue(row, "sportingRevenue", valueBasis);
+      const netSquadInvestment = calculateMetricValue(row, "netSquadInvestment", valueBasis, displayCurrency);
+      const sportingRevenue = calculateMetricValue(row, "sportingRevenue", valueBasis, displayCurrency);
       return netSquadInvestment !== null && sportingRevenue !== null
         ? netSquadInvestment - sportingRevenue
         : null;
     }
     case "sportingRevenue":
-      return row.finance.sportingRevenueEur;
+      return convertAmount(row.finance.sportingRevenueOriginal, DISPLAY_CURRENCY.GBP, displayCurrency);
     case "totalRevenue":
-      return row.finance.revenueEur;
+      return convertAmount(row.finance.revenueOriginal, DISPLAY_CURRENCY.GBP, displayCurrency);
     case "squadInvestmentRevenueRatio": {
-      const netSquadInvestment = calculateMetricValue(row, "netSquadInvestment", valueBasis);
-      const totalRevenue = calculateMetricValue(row, "totalRevenue", valueBasis);
+      const netSquadInvestment = calculateMetricValue(row, "netSquadInvestment", valueBasis, displayCurrency);
+      const totalRevenue = calculateMetricValue(row, "totalRevenue", valueBasis, displayCurrency);
       return netSquadInvestment !== null && totalRevenue ? netSquadInvestment / totalRevenue : null;
     }
     case "revenue":
@@ -340,7 +366,15 @@ export function calculateMetricValue(row, metricId, valueBasis = VALUE_BASIS.nom
   }
 }
 
-export function getMetricCoverage(metricId, rows, { compareMode = false, valueBasis = VALUE_BASIS.nominal } = {}) {
+export function getMetricCoverage(
+  metricId,
+  rows,
+  {
+    compareMode = false,
+    valueBasis = VALUE_BASIS.nominal,
+    displayCurrency = DISPLAY_CURRENCY.EUR,
+  } = {},
+) {
   const metric = getMetric(metricId);
   const total = rows.length;
 
@@ -356,7 +390,7 @@ export function getMetricCoverage(metricId, rows, { compareMode = false, valueBa
     return { status: "coming-soon", filled: 0, total };
   }
 
-  const filled = rows.filter((row) => calculateMetricValue(row, metricId, valueBasis) !== null).length;
+  const filled = rows.filter((row) => calculateMetricValue(row, metricId, valueBasis, displayCurrency) !== null).length;
 
   if (!filled) {
     return { status: "coming-soon", filled, total };
@@ -369,21 +403,25 @@ export function getMetricCoverage(metricId, rows, { compareMode = false, valueBa
   return { status: "partial", filled, total };
 }
 
-function aggregateMetricRows(metricId, rows, { valueBasis = VALUE_BASIS.nominal } = {}) {
+function aggregateMetricRows(
+  metricId,
+  rows,
+  { valueBasis = VALUE_BASIS.nominal, displayCurrency = DISPLAY_CURRENCY.EUR } = {},
+) {
   const metric = getMetric(metricId);
   if (!metric || !rows.length) return null;
 
   if (metric.aggregation.type === "sum") {
-    return rows.reduce((sum, row) => sum + calculateMetricValue(row, metricId, valueBasis), 0);
+    return rows.reduce((sum, row) => sum + calculateMetricValue(row, metricId, valueBasis, displayCurrency), 0);
   }
 
   if (metric.aggregation.type === "average") {
-    return rows.reduce((sum, row) => sum + calculateMetricValue(row, metricId, valueBasis), 0) / rows.length;
+    return rows.reduce((sum, row) => sum + calculateMetricValue(row, metricId, valueBasis, displayCurrency), 0) / rows.length;
   }
 
   if (metric.aggregation.type === "latest") {
     const latestRow = rows[rows.length - 1];
-    return latestRow ? calculateMetricValue(latestRow, metricId, valueBasis) : null;
+    return latestRow ? calculateMetricValue(latestRow, metricId, valueBasis, displayCurrency) : null;
   }
 
   if (metric.aggregation.type === "weighted-ratio") {
@@ -394,8 +432,8 @@ function aggregateMetricRows(metricId, rows, { valueBasis = VALUE_BASIS.nominal 
   }
 
   if (metric.aggregation.type === "ratio-of-sums") {
-    const numerator = aggregateMetricRows(metric.aggregation.numeratorMetricId, rows, { valueBasis });
-    const denominator = aggregateMetricRows(metric.aggregation.denominatorMetricId, rows, { valueBasis });
+    const numerator = aggregateMetricRows(metric.aggregation.numeratorMetricId, rows, { valueBasis, displayCurrency });
+    const denominator = aggregateMetricRows(metric.aggregation.denominatorMetricId, rows, { valueBasis, displayCurrency });
     if (numerator === null || denominator === null || denominator === 0) return null;
     return numerator / denominator;
   }
@@ -408,7 +446,7 @@ export function getComparisonChartData(
   startSeason,
   endSeason,
   metricId,
-  { valueBasis = VALUE_BASIS.nominal } = {},
+  { valueBasis = VALUE_BASIS.nominal, displayCurrency = DISPLAY_CURRENCY.EUR } = {},
 ) {
   const startYear = seasonToStartYear(startSeason);
   const endYear = seasonToStartYear(endSeason);
@@ -422,7 +460,7 @@ export function getComparisonChartData(
       const row = { season };
       for (const clubId of clubIds) {
         const found = clubSeasonRecords.find((record) => record.clubId === clubId && record.season === season);
-        row[clubId] = found ? calculateMetricValue(found, metricId, valueBasis) : null;
+        row[clubId] = found ? calculateMetricValue(found, metricId, valueBasis, displayCurrency) : null;
       }
       return row;
     });
@@ -433,7 +471,7 @@ export function getComparisonRanking(
   startSeason,
   endSeason,
   metricId,
-  { valueBasis = VALUE_BASIS.nominal } = {},
+  { valueBasis = VALUE_BASIS.nominal, displayCurrency = DISPLAY_CURRENCY.EUR } = {},
 ) {
   const metric = getMetric(metricId);
   if (!metric?.compareEnabled) {
@@ -441,7 +479,7 @@ export function getComparisonRanking(
   }
 
   const selectedRows = getRowsInRange(clubIds, startSeason, endSeason);
-  const coverage = getMetricCoverage(metricId, selectedRows, { compareMode: true, valueBasis });
+  const coverage = getMetricCoverage(metricId, selectedRows, { compareMode: true, valueBasis, displayCurrency });
   if (coverage.status === "coming-soon") {
     return {
       status: "coming-soon",
@@ -461,7 +499,7 @@ export function getComparisonRanking(
   const seasonsByClub = clubIds.map((clubId) => {
     const set = new Set(
       selectedRows
-        .filter((row) => row.clubId === clubId && calculateMetricValue(row, metricId, valueBasis) !== null)
+        .filter((row) => row.clubId === clubId && calculateMetricValue(row, metricId, valueBasis, displayCurrency) !== null)
         .map((row) => row.season),
     );
     return set;
@@ -483,14 +521,14 @@ export function getComparisonRanking(
     .map((clubId) => {
       const clubRows = selectedRows
         .filter((row) => row.clubId === clubId && seasonsToUse.includes(row.season))
-        .filter((row) => calculateMetricValue(row, metricId, valueBasis) !== null)
+        .filter((row) => calculateMetricValue(row, metricId, valueBasis, displayCurrency) !== null)
         .sort((left, right) => left.seasonStartYear - right.seasonStartYear);
 
       if (!clubRows.length) return null;
 
       return {
         clubId,
-        value: aggregateMetricRows(metricId, clubRows, { valueBasis }),
+        value: aggregateMetricRows(metricId, clubRows, { valueBasis, displayCurrency }),
         seasonsUsed: clubRows.map((row) => row.season),
       };
     })
@@ -520,10 +558,14 @@ export function getComparisonRanking(
   return { status: "ready", rows: rankingRows, note };
 }
 
-export function getLatestMetricObservation(clubId, metricId, { valueBasis = VALUE_BASIS.nominal } = {}) {
+export function getLatestMetricObservation(
+  clubId,
+  metricId,
+  { valueBasis = VALUE_BASIS.nominal, displayCurrency = DISPLAY_CURRENCY.EUR } = {},
+) {
   const rows = [...getClubRows(clubId)].sort((left, right) => right.seasonStartYear - left.seasonStartYear);
   for (const row of rows) {
-    const value = calculateMetricValue(row, metricId, valueBasis);
+    const value = calculateMetricValue(row, metricId, valueBasis, displayCurrency);
     if (value !== null) {
       return { season: row.season, value, row };
     }
@@ -558,7 +600,11 @@ export function getClubProfileCoverage(clubId) {
   };
 }
 
-function getMetricMethodologySection(metricId, valueBasis = VALUE_BASIS.nominal) {
+function getMetricMethodologySection(
+  metricId,
+  valueBasis = VALUE_BASIS.nominal,
+  displayCurrency = DISPLAY_CURRENCY.EUR,
+) {
   const metric = getMetric(metricId);
   if (!metric) return null;
 
@@ -577,16 +623,33 @@ function getMetricMethodologySection(metricId, valueBasis = VALUE_BASIS.nominal)
       { label: "Metric", value: metric.label },
       { label: "Formula", value: metric.formulaLabel || "—" },
       { label: "Price basis", value: priceBasis },
+      ...(metric.isMonetary
+        ? [
+            { label: "Display currency", value: displayCurrency },
+            {
+              label: "FX reference",
+              value: `${fxReference.sourceName} · ${fxReference.referenceDate}`,
+              href: fxReference.sourceUrl,
+            },
+          ]
+        : []),
       { label: "Method", value: metric.methodologyNote || metric.description || "—" },
       { label: "Source layer", value: metric.sourceType || "—" },
     ],
   };
 }
 
-function getSourceSectionsForMetric(metricId, row) {
+function getSourceSectionsForMetric(
+  metricId,
+  row,
+  valueBasis = VALUE_BASIS.nominal,
+  displayCurrency = DISPLAY_CURRENCY.EUR,
+) {
   const metric = getMetric(metricId);
   if (!metric || !row) return [];
-  const value = metric.formatValue(calculateMetricValue(row, metricId));
+  const value = metric.formatValue(calculateMetricValue(row, metricId, valueBasis, displayCurrency), {
+    displayCurrency,
+  });
   const sections = [];
 
   if (metric.sourceGroups?.includes("transfers")) {
@@ -600,27 +663,6 @@ function getSourceSectionsForMetric(metricId, row) {
         { label: "Collected", value: row.transfers.collectedAt || "—" },
         { label: "Confidence", value: row.transfers.confidence || "—" },
         { label: "Notes", value: row.transfers.notes || "—" },
-      ],
-    });
-  }
-
-  if (metric.sourceGroups?.includes("wages")) {
-    sections.push({
-      title: `${row.clubName} · ${row.season} wage layer`,
-      fields: [
-        { label: "Metric", value: "Player wages" },
-        {
-          label: "Reported value",
-          value:
-            row.wages.estimatedPlayerWagesOriginal !== null
-              ? `${row.wages.estimatedPlayerWagesOriginalCurrency ?? "Original currency"} ${row.wages.estimatedPlayerWagesOriginal.toLocaleString()}`
-              : "—",
-        },
-        { label: "Source", value: row.wages.sourceName || "Data collection in progress" },
-        { label: "Source URL", value: row.wages.sourceUrl || "—", href: row.wages.sourceUrl || null },
-        { label: "Confidence", value: row.wages.confidence || "—" },
-        { label: "Manual review", value: row.wages.requiresManualReview ? "Yes" : "No" },
-        { label: "Notes", value: row.wages.notes || "—" },
       ],
     });
   }
@@ -680,19 +722,20 @@ export function getCompareSourceSections(
   startSeason,
   endSeason,
   valueBasis = VALUE_BASIS.nominal,
+  displayCurrency = DISPLAY_CURRENCY.EUR,
 ) {
   const rows = getRowsInRange(clubIds, startSeason, endSeason);
   const sections = [];
-  const methodologySection = getMetricMethodologySection(metricId, valueBasis);
+  const methodologySection = getMetricMethodologySection(metricId, valueBasis, displayCurrency);
   if (methodologySection) sections.push(methodologySection);
 
   for (const clubId of clubIds) {
     const latestRow = [...rows]
-      .filter((row) => row.clubId === clubId && calculateMetricValue(row, metricId, valueBasis) !== null)
+      .filter((row) => row.clubId === clubId && calculateMetricValue(row, metricId, valueBasis, displayCurrency) !== null)
       .sort((left, right) => right.seasonStartYear - left.seasonStartYear)[0];
 
     if (!latestRow) continue;
-    sections.push(...getSourceSectionsForMetric(metricId, latestRow));
+    sections.push(...getSourceSectionsForMetric(metricId, latestRow, valueBasis, displayCurrency));
   }
 
   return sections;

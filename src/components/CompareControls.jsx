@@ -1,5 +1,6 @@
 import { inflationConfig, VALUE_BASIS, valueBasisOptions } from "../config/valueBasis";
 import { clubConfigs } from "../config/clubConfig";
+import { displayCurrencyOptions, fxReference } from "../config/displayCurrency";
 import { ClubMarker } from "./ClubMarker";
 import { CoverageBadge } from "./CoverageBadge";
 
@@ -13,7 +14,9 @@ export function CompareControls({
   onMetricChange,
   onStartSeasonChange,
   onToggleClub,
+  onDisplayCurrencyChange,
   onValueBasisChange,
+  displayCurrency,
   seasons,
   selectedClubIds,
   selectedMetricId,
@@ -113,6 +116,27 @@ export function CompareControls({
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="controlSection">
+        <div className="controlHeader">
+          <h3>Currency</h3>
+        </div>
+        <div className="chartToggleRow">
+          {displayCurrencyOptions.map((option) => (
+            <button
+              key={option.id}
+              type="button"
+              className={`secondaryButton ${displayCurrency === option.id ? "isActive" : ""}`}
+              onClick={() => onDisplayCurrencyChange(option.id)}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+        <p className="controlNote">
+          Display conversions use {fxReference.sourceName} on {fxReference.referenceDate}.
+        </p>
       </section>
 
       <section className="controlSection">

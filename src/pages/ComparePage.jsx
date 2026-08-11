@@ -6,6 +6,7 @@ import { ComparisonRanking } from "../components/ComparisonRanking";
 import { SectionHeader } from "../components/SectionHeader";
 import { SourceDrawer } from "../components/SourceDrawer";
 import { clubConfigs } from "../config/clubConfig";
+import { DISPLAY_CURRENCY } from "../config/displayCurrency";
 import { getMetric, getMetricFormulaText } from "../config/metricRegistry";
 import { VALUE_BASIS } from "../config/valueBasis";
 import {
@@ -26,6 +27,7 @@ export function ComparePage() {
   const [selectedMetricId, setSelectedMetricId] = useState("netSquadInvestment");
   const [chartType, setChartType] = useState("line");
   const [valueBasis, setValueBasis] = useState(VALUE_BASIS.nominal);
+  const [displayCurrency, setDisplayCurrency] = useState(DISPLAY_CURRENCY.EUR);
   const [sourcePanel, setSourcePanel] = useState(null);
 
   const metricGroups = useMemo(() => getMetricOptionsForCompare(), []);
@@ -41,21 +43,33 @@ export function ComparePage() {
       for (const metric of group.metrics) {
         records[metric.id] = {
           metric,
-          coverage: getMetricCoverage(metric.id, selectedRows, { compareMode: true, valueBasis }),
+          coverage: getMetricCoverage(metric.id, selectedRows, {
+            compareMode: true,
+            valueBasis,
+            displayCurrency,
+          }),
         };
       }
     }
     return records;
-  }, [metricGroups, selectedRows, valueBasis]);
+  }, [metricGroups, selectedRows, valueBasis, displayCurrency]);
 
   const chartData = useMemo(
-    () => getComparisonChartData(selectedClubIds, startSeason, endSeason, selectedMetricId, { valueBasis }),
-    [selectedClubIds, startSeason, endSeason, selectedMetricId, valueBasis],
+    () =>
+      getComparisonChartData(selectedClubIds, startSeason, endSeason, selectedMetricId, {
+        valueBasis,
+        displayCurrency,
+      }),
+    [selectedClubIds, startSeason, endSeason, selectedMetricId, valueBasis, displayCurrency],
   );
 
   const ranking = useMemo(
-    () => getComparisonRanking(selectedClubIds, startSeason, endSeason, selectedMetricId, { valueBasis }),
-    [selectedClubIds, startSeason, endSeason, selectedMetricId, valueBasis],
+    () =>
+      getComparisonRanking(selectedClubIds, startSeason, endSeason, selectedMetricId, {
+        valueBasis,
+        displayCurrency,
+      }),
+    [selectedClubIds, startSeason, endSeason, selectedMetricId, valueBasis, displayCurrency],
   );
 
   const selectionLabel = formatSeasonRange(startSeason, endSeason);
@@ -96,7 +110,14 @@ export function ComparePage() {
     setSourcePanel({
       title: selectedMetric.label,
       subtitle: `${selectionLabel} · ${selectedClubIds.length} selected clubs`,
-      sections: getCompareSourceSections(selectedMetricId, selectedClubIds, startSeason, endSeason, valueBasis),
+      sections: getCompareSourceSections(
+        selectedMetricId,
+        selectedClubIds,
+        startSeason,
+        endSeason,
+        valueBasis,
+        displayCurrency,
+      ),
     });
   }
 
@@ -143,7 +164,9 @@ export function ComparePage() {
           onMetricChange={changeMetric}
           onStartSeasonChange={changeStartSeason}
           onToggleClub={toggleClub}
+          onDisplayCurrencyChange={setDisplayCurrency}
           onValueBasisChange={setValueBasis}
+          displayCurrency={displayCurrency}
           seasons={comparisonSeasons}
           selectedClubIds={selectedClubIds}
           selectedMetricId={selectedMetricId}
@@ -167,6 +190,10 @@ export function ComparePage() {
                 <strong>{getMetricFormulaText(selectedMetricId, valueBasis)}</strong>
               </div>
               <div className="metricMetaItem">
+                <span>Currency</span>
+                <strong>{displayCurrency}</strong>
+              </div>
+              <div className="metricMetaItem">
                 <span>Values</span>
                 <strong>{valueBasis === VALUE_BASIS.nominal ? "Nominal" : "Inflation adjusted"}</strong>
               </div>
@@ -178,6 +205,7 @@ export function ComparePage() {
               coverage={selectedCoverage}
               metric={selectedMetric}
               selectedClubIds={selectedClubIds}
+              displayCurrency={displayCurrency}
               valueBasis={valueBasis}
             />
           </section>
@@ -196,7 +224,7 @@ export function ComparePage() {
               sourceAction={openMetricSourcePanel}
               eyebrow="Ranking"
             />
-            <ComparisonRanking metric={selectedMetric} ranking={ranking} />
+            <ComparisonRanking displayCurrency={displayCurrency} metric={selectedMetric} ranking={ranking} />
           </section>
         </section>
       </section>

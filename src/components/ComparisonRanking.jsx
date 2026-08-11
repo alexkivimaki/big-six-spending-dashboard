@@ -4,7 +4,7 @@ import { clubConfigById } from "../config/clubConfig";
 import { formatCount } from "../shared/formatters";
 import { ClubMarker } from "./ClubMarker";
 
-export function ComparisonRanking({ metric, ranking }) {
+export function ComparisonRanking({ displayCurrency, metric, ranking }) {
   if (ranking.status === "coming-soon") {
     return (
       <div className="emptyState compact">
@@ -46,7 +46,7 @@ export function ComparisonRanking({ metric, ranking }) {
                       <strong>{club.name}</strong>
                     </Link>
                   </td>
-                  <td>{metric.formatValue(row.value)}</td>
+                  <td>{metric.formatValue(row.value, { displayCurrency })}</td>
                   <td>{formatCount(row.seasonsUsed.length)}</td>
                 </tr>
               );
