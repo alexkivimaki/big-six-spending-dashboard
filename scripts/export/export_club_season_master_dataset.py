@@ -11,6 +11,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from economic_factors import add_currency_views, load_economic_factors, merge_economic_factors
+
 
 TRANSFERS_PATH = Path("data/clean/transfermarkt/club_season_transfers_clean.csv")
 MANAGER_SPELLS_PATH = Path("data/clean/transfermarkt/club_season_manager_spells_clean.csv")
@@ -25,6 +27,7 @@ PREMIER_LEAGUE_RAW_PERFORMANCE_DIR = Path(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--economic-factors-input", default="data/reference/economic_factors.csv")
     parser.add_argument("--output-csv", default="data/final/club_season_master.csv")
     parser.add_argument("--output-json", default="src/data/clubSeasonMasterData.json")
     parser.add_argument("--league-output-root", default="data/final/by_league")
@@ -246,7 +249,7 @@ def aggregate_achievement_rows(dataframe: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
-def aggregate_finances(dataframe: pd.DataFrame) -> pd.DataFrame:
+def aggregate_finances(dataframe: pd.DataFrame, economic_factors: pd.DataFrame) -> pd.DataFrame:
     frame = dataframe.copy()
     numeric_columns = [
         "total_revenue_original",
@@ -276,10 +279,42 @@ def aggregate_finances(dataframe: pd.DataFrame) -> pd.DataFrame:
         if column in frame.columns:
             frame[column] = pd.to_numeric(frame[column], errors="coerce")
 
+    frame["sporting_revenue_original"] = frame.apply(
+        lambda row: (
+            float(row["matchday_revenue_original"]) + float(row["broadcast_revenue_original"])
+            if pd.notna(row["matchday_revenue_original"]) and pd.notna(row["broadcast_revenue_original"])
+            else None
+        ),
+        axis=1,
+    )
+    frame = merge_economic_factors(frame, economic_factors)
+    frame = add_currency_views(
+        frame,
+        [
+            "total_revenue_original",
+            "matchday_revenue_original",
+            "broadcast_revenue_original",
+            "commercial_revenue_original",
+            "sporting_revenue_original",
+            "staff_costs_original",
+            "net_debt_original",
+            "player_amortisation_original",
+            "profit_on_player_sales_original",
+            "profit_loss_before_tax_original",
+        ],
+        currency_column="currency_original",
+    )
+
     frame = frame.rename(
         columns={
             "total_revenue_eur": "revenue_eur",
             "staff_costs_original": "official_staff_costs_original",
+            "staff_costs_gbp": "official_staff_costs_gbp",
+            "staff_costs_eur": "official_staff_costs_eur",
+            "staff_costs_usd": "official_staff_costs_usd",
+            "staff_costs_gbp_real_2025_26": "official_staff_costs_gbp_real_2025_26",
+            "staff_costs_eur_real_2025_26": "official_staff_costs_eur_real_2025_26",
+            "staff_costs_usd_real_2025_26": "official_staff_costs_usd_real_2025_26",
             "pages_used": "finance_pages_used",
             "classification_notes": "finance_classification_notes",
             "women_team_treatment_notes": "finance_women_team_treatment_notes",
@@ -289,6 +324,7 @@ def aggregate_finances(dataframe: pd.DataFrame) -> pd.DataFrame:
             "source_document": "finance_source_document",
             "source_url": "finance_source_url",
             "notes": "finance_notes",
+            "economic_factor_notes": "finance_economic_factor_notes",
         }
     )
     return frame
@@ -442,10 +478,15 @@ def add_derived_fields(dataframe: pd.DataFrame) -> pd.DataFrame:
         "points",
         "estimated_player_wages_eur",
         "official_staff_costs_eur",
+        "official_staff_costs_original",
         "revenue_eur",
+        "total_revenue_original",
         "matchday_revenue_eur",
+        "matchday_revenue_original",
         "broadcast_revenue_eur",
+        "broadcast_revenue_original",
         "commercial_revenue_eur",
+        "commercial_revenue_original",
     ]
     for column in numeric_columns:
         if column not in frame.columns:
@@ -454,10 +495,18 @@ def add_derived_fields(dataframe: pd.DataFrame) -> pd.DataFrame:
 
     frame["raw_player_cost_eur"] = frame["net_transfer_spend_eur"] + frame["estimated_player_wages_eur"]
     frame["cost_per_point"] = frame["raw_player_cost_eur"] / frame["points"]
-    frame["wage_to_revenue_ratio"] = frame["official_staff_costs_eur"] / frame["revenue_eur"]
-    frame["matchday_share"] = frame["matchday_revenue_eur"] / frame["revenue_eur"]
-    frame["broadcast_share"] = frame["broadcast_revenue_eur"] / frame["revenue_eur"]
-    frame["commercial_share"] = frame["commercial_revenue_eur"] / frame["revenue_eur"]
+    frame["wage_to_revenue_ratio"] = (
+        frame["official_staff_costs_eur"] / frame["revenue_eur"]
+    ).fillna(frame["official_staff_costs_original"] / frame["total_revenue_original"])
+    frame["matchday_share"] = (
+        frame["matchday_revenue_eur"] / frame["revenue_eur"]
+    ).fillna(frame["matchday_revenue_original"] / frame["total_revenue_original"])
+    frame["broadcast_share"] = (
+        frame["broadcast_revenue_eur"] / frame["revenue_eur"]
+    ).fillna(frame["broadcast_revenue_original"] / frame["total_revenue_original"])
+    frame["commercial_share"] = (
+        frame["commercial_revenue_eur"] / frame["revenue_eur"]
+    ).fillna(frame["commercial_revenue_original"] / frame["total_revenue_original"])
 
     frame["has_performance_data"] = frame["points"].notna()
     frame["has_finance_data"] = frame["total_revenue_original"].notna() if "total_revenue_original" in frame.columns else False
@@ -518,6 +567,7 @@ def main() -> int:
     frontend_league_output_root = Path(args.frontend_league_output_root)
     output_csv.parent.mkdir(parents=True, exist_ok=True)
     output_json.parent.mkdir(parents=True, exist_ok=True)
+    economic_factors = load_economic_factors(Path(args.economic_factors_input))
 
     transfers = load_csv(TRANSFERS_PATH, "transfers", required=True)
     if transfers is None:
@@ -536,7 +586,11 @@ def main() -> int:
     master = merge_optional(master, aggregate_achievement_rows(achievement_rows) if achievement_rows is not None else None, "achievement_rows")
     master = merge_optional(master, aggregate_performance(performance) if performance is not None else None, "performance")
     master = merge_optional(master, raw_premier_league_performance, "raw_premier_league_performance")
-    master = merge_optional(master, aggregate_finances(finances) if finances is not None else None, "finances")
+    master = merge_optional(
+        master,
+        aggregate_finances(finances, economic_factors) if finances is not None else None,
+        "finances",
+    )
 
     master = add_derived_fields(master)
     master = drop_redundant_columns(master)

@@ -135,7 +135,7 @@ export function CompareControls({
           ))}
         </div>
         <p className="controlNote">
-          Display conversions use {fxReference.sourceName} on {fxReference.referenceDate}.
+          {fxReference.description}
         </p>
       </section>
 
@@ -159,7 +159,7 @@ export function CompareControls({
         <p className="controlNote">
           {valueBasis === VALUE_BASIS.inflationAdjusted
             ? `Inflation adjusted to ${inflationConfig.baseSeason} prices.`
-            : `Inflation-adjusted mode will use ${inflationConfig.baseSeason} prices once a finalized series is exported.`}
+            : `Switch to inflation-adjusted values to restate money figures in ${inflationConfig.baseSeason} prices.`}
         </p>
       </section>
 

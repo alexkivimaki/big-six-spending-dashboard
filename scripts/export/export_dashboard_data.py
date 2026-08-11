@@ -11,6 +11,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from economic_factors import add_currency_views, load_economic_factors, merge_economic_factors
+
 
 TRANSFER_PATH = Path("data/clean/transfermarkt/club_season_transfers_clean.csv")
 VERIFIED_TRANSFER_PATH = Path("data/clean/transfermarkt/club_season_transfers_verified_clean.csv")
@@ -23,6 +25,7 @@ TRANSFER_ROWS_PATH = Path("data/clean/transfermarkt/club_transfer_rows_clean.csv
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--economic-factors-input", default="data/reference/economic_factors.csv")
     parser.add_argument("--output-csv", default="data/final/club_season_dashboard.csv")
     parser.add_argument("--output-json", default="src/data/clubSeasonData.json")
     parser.add_argument("--transfer-rows-json-output", default="src/data/clubTransferRowsData.json")
@@ -207,6 +210,7 @@ def main() -> int:
     transfer_rows_json_output.parent.mkdir(parents=True, exist_ok=True)
     league_output_root.mkdir(parents=True, exist_ok=True)
     frontend_league_output_root.mkdir(parents=True, exist_ok=True)
+    economic_factors = load_economic_factors(Path(args.economic_factors_input))
 
     transfers = load_csv_if_exists(TRANSFER_PATH, "transfers", required=True)
     if transfers is None:
@@ -236,6 +240,20 @@ def main() -> int:
         else:
             print("[warn] managers_clean.csv does not contain season, so it is not merged into the club-season dashboard export.")
 
+    dashboard = merge_economic_factors(dashboard, economic_factors)
+    dashboard = add_currency_views(
+        dashboard,
+        [
+            "gross_transfer_spend_eur",
+            "transfer_income_eur",
+            "net_transfer_spend_eur",
+            "estimated_player_wages_eur",
+            "official_staff_costs_eur",
+            "revenue_eur",
+        ],
+        fixed_source_currency="EUR",
+    )
+
     for column in [
         "gross_transfer_spend_eur",
         "transfer_income_eur",
@@ -260,6 +278,11 @@ def main() -> int:
         dashboard["league_position"] = pd.NA
 
     dashboard["raw_player_cost_eur"] = dashboard["net_transfer_spend_eur"] + dashboard["estimated_player_wages_eur"]
+    dashboard["raw_player_cost_gbp"] = dashboard["net_transfer_spend_gbp"] + dashboard["estimated_player_wages_gbp"]
+    dashboard["raw_player_cost_usd"] = dashboard["net_transfer_spend_usd"] + dashboard["estimated_player_wages_usd"]
+    dashboard["raw_player_cost_eur_real_2025_26"] = (
+        dashboard["net_transfer_spend_eur_real_2025_26"] + dashboard["estimated_player_wages_eur_real_2025_26"]
+    )
     dashboard["cost_per_point"] = dashboard["raw_player_cost_eur"] / dashboard["points"]
     dashboard["wage_to_revenue_ratio"] = dashboard["official_staff_costs_eur"] / dashboard["revenue_eur"]
 

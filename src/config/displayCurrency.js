@@ -5,15 +5,12 @@ export const DISPLAY_CURRENCY = {
 };
 
 export const fxReference = {
-  sourceName: "ECB euro foreign exchange reference rates",
-  sourceUrl:
-    "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
-  referenceDate: "2026-08-11",
-  ratesPerEuro: {
-    EUR: 1,
-    GBP: 0.85483,
-    USD: 1.154,
-  },
+  sourceName: "ONS average sterling exchange rates",
+  sourceUrl: "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/thap/mret",
+  secondarySourceUrl:
+    "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/auss/mret",
+  referenceDate: "season-aware",
+  description: "Currency views use exported season-level GBP/EUR and GBP/USD factors rather than a single spot date.",
 };
 
 export const displayCurrencyOptions = [

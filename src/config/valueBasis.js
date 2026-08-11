@@ -4,9 +4,11 @@ export const VALUE_BASIS = {
 };
 
 export const inflationConfig = {
-  available: false,
+  available: true,
   baseSeason: "2025/26",
-  description: "Inflation-adjusted values are not available yet because no finalized price index series has been exported into the app.",
+  description: "Inflation-adjusted values are restated to 2025/26 prices using ONS CPI.",
+  sourceName: "ONS CPI INDEX 00: ALL ITEMS 2015=100 (D7BT)",
+  sourceUrl: "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7bt/mm23?lang=english",
 };
 
 export const valueBasisOptions = [

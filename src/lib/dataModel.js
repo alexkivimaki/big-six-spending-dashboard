@@ -43,17 +43,41 @@ function sortSeasonsAscending(seasons) {
   return [...seasons].sort((left, right) => seasonToStartYear(left) - seasonToStartYear(right));
 }
 
-function convertAmount(value, fromCurrency, toCurrency) {
-  if (value === null || value === undefined || fromCurrency === null || toCurrency === null) return null;
-  if (fromCurrency === toCurrency) return value;
+function firstNumber(...values) {
+  for (const value of values) {
+    const numeric = toNumber(value);
+    if (numeric !== null) return numeric;
+  }
+  return null;
+}
 
-  const rates = fxReference.ratesPerEuro;
-  const fromRate = rates[fromCurrency];
-  const toRate = rates[toCurrency];
-  if (!fromRate || !toRate) return null;
+function buildCurrencyValues({
+  gbp = [],
+  eur = [],
+  usd = [],
+  gbpReal = [],
+  eurReal = [],
+  usdReal = [],
+} = {}) {
+  return {
+    nominal: {
+      [DISPLAY_CURRENCY.GBP]: firstNumber(...gbp),
+      [DISPLAY_CURRENCY.EUR]: firstNumber(...eur),
+      [DISPLAY_CURRENCY.USD]: firstNumber(...usd),
+    },
+    real: {
+      [DISPLAY_CURRENCY.GBP]: firstNumber(...gbpReal),
+      [DISPLAY_CURRENCY.EUR]: firstNumber(...eurReal),
+      [DISPLAY_CURRENCY.USD]: firstNumber(...usdReal),
+    },
+  };
+}
 
-  const valueInEuro = fromCurrency === DISPLAY_CURRENCY.EUR ? value : value / fromRate;
-  return toCurrency === DISPLAY_CURRENCY.EUR ? valueInEuro : valueInEuro * toRate;
+function getCurrencyValue(values, valueBasis, displayCurrency) {
+  if (!values) return null;
+  return valueBasis === VALUE_BASIS.inflationAdjusted
+    ? values.real?.[displayCurrency] ?? null
+    : values.nominal?.[displayCurrency] ?? null;
 }
 
 function createFinanceSources(masterRow, revenueRow) {
@@ -70,44 +94,83 @@ function createFinanceSources(masterRow, revenueRow) {
 
 function normalizeClubSeason(baseRow, masterRow, revenueRow) {
   const club = clubConfigById[baseRow.club_id];
-  const revenueOriginal =
-    toNumber(masterRow?.total_revenue_original) ?? toNumber(revenueRow?.turnover_original);
-  const staffCostsOriginal =
-    toNumber(masterRow?.official_staff_costs_original) ?? toNumber(revenueRow?.wage_bill_original);
-  const revenueEur =
-    toNumber(masterRow?.revenue_eur) ??
-    toNumber(revenueRow?.total_revenue_eur) ??
-    toNumber(baseRow.revenue_eur);
-  const staffCostsEur =
-    toNumber(masterRow?.official_staff_costs_eur) ??
-    toNumber(baseRow.official_staff_costs_eur);
-  const matchdayOriginal =
-    toNumber(masterRow?.matchday_revenue_original) ??
-    toNumber(revenueRow?.gate_and_matchday_income_original);
-  const broadcastOriginal =
-    toNumber(masterRow?.broadcast_revenue_original) ??
-    toNumber(revenueRow?.tv_and_broadcasting_original);
-  const commercialOriginal =
-    toNumber(masterRow?.commercial_revenue_original) ??
-    toNumber(revenueRow?.commercial_income_original);
-  const matchdayEur =
-    toNumber(masterRow?.matchday_revenue_eur) ??
-    toNumber(revenueRow?.matchday_revenue_eur);
-  const broadcastEur =
-    toNumber(masterRow?.broadcast_revenue_eur) ??
-    toNumber(revenueRow?.broadcast_revenue_eur);
-  const commercialEur =
-    toNumber(masterRow?.commercial_revenue_eur) ??
-    toNumber(revenueRow?.commercial_revenue_eur);
+  const revenueOriginal = firstNumber(masterRow?.total_revenue_original, revenueRow?.turnover_original);
+  const staffCostsOriginal = firstNumber(masterRow?.official_staff_costs_original, revenueRow?.wage_bill_original);
+  const revenueEur = firstNumber(masterRow?.revenue_eur, revenueRow?.total_revenue_eur, baseRow.revenue_eur);
+  const staffCostsEur = firstNumber(masterRow?.official_staff_costs_eur, baseRow.official_staff_costs_eur);
+  const matchdayOriginal = firstNumber(
+    masterRow?.matchday_revenue_original,
+    revenueRow?.gate_and_matchday_income_original,
+  );
+  const broadcastOriginal = firstNumber(
+    masterRow?.broadcast_revenue_original,
+    revenueRow?.tv_and_broadcasting_original,
+  );
+  const commercialOriginal = firstNumber(
+    masterRow?.commercial_revenue_original,
+    revenueRow?.commercial_income_original,
+  );
+  const matchdayEur = firstNumber(masterRow?.matchday_revenue_eur, revenueRow?.matchday_revenue_eur);
+  const broadcastEur = firstNumber(masterRow?.broadcast_revenue_eur, revenueRow?.broadcast_revenue_eur);
+  const commercialEur = firstNumber(masterRow?.commercial_revenue_eur, revenueRow?.commercial_revenue_eur);
   const sportingRevenueEur =
     matchdayEur !== null && broadcastEur !== null ? matchdayEur + broadcastEur : null;
   const sportingRevenueOriginal =
     matchdayOriginal !== null && broadcastOriginal !== null ? matchdayOriginal + broadcastOriginal : null;
   const staffCostToRevenueRatio =
     revenueOriginal && staffCostsOriginal ? staffCostsOriginal / revenueOriginal : null;
-  const estimatedPlayerWagesEur =
-    toNumber(masterRow?.estimated_player_wages_eur) ??
-    toNumber(baseRow.estimated_player_wages_eur);
+  const estimatedPlayerWagesEur = firstNumber(masterRow?.estimated_player_wages_eur, baseRow.estimated_player_wages_eur);
+  const economicFactorsComplete =
+    toBoolean(masterRow?.economic_factors_complete) || toBoolean(revenueRow?.economic_factors_complete) || toBoolean(baseRow.economic_factors_complete);
+
+  const grossSpend = buildCurrencyValues({
+    gbp: [baseRow.gross_transfer_spend_gbp],
+    eur: [baseRow.gross_transfer_spend_eur],
+    usd: [baseRow.gross_transfer_spend_usd],
+    gbpReal: [baseRow.gross_transfer_spend_gbp_real_2025_26],
+    eurReal: [baseRow.gross_transfer_spend_eur_real_2025_26],
+    usdReal: [baseRow.gross_transfer_spend_usd_real_2025_26],
+  });
+  const income = buildCurrencyValues({
+    gbp: [baseRow.transfer_income_gbp],
+    eur: [baseRow.transfer_income_eur],
+    usd: [baseRow.transfer_income_usd],
+    gbpReal: [baseRow.transfer_income_gbp_real_2025_26],
+    eurReal: [baseRow.transfer_income_eur_real_2025_26],
+    usdReal: [baseRow.transfer_income_usd_real_2025_26],
+  });
+  const netSpend = buildCurrencyValues({
+    gbp: [baseRow.net_transfer_spend_gbp],
+    eur: [baseRow.net_transfer_spend_eur],
+    usd: [baseRow.net_transfer_spend_usd],
+    gbpReal: [baseRow.net_transfer_spend_gbp_real_2025_26],
+    eurReal: [baseRow.net_transfer_spend_eur_real_2025_26],
+    usdReal: [baseRow.net_transfer_spend_usd_real_2025_26],
+  });
+  const financeRevenue = buildCurrencyValues({
+    gbp: [masterRow?.total_revenue_gbp, revenueRow?.total_revenue_gbp, revenueRow?.turnover_gbp, revenueOriginal],
+    eur: [masterRow?.revenue_eur, masterRow?.total_revenue_eur, revenueRow?.total_revenue_eur, revenueRow?.turnover_eur, revenueEur],
+    usd: [masterRow?.total_revenue_usd, revenueRow?.total_revenue_usd, revenueRow?.turnover_usd],
+    gbpReal: [masterRow?.total_revenue_gbp_real_2025_26, revenueRow?.total_revenue_gbp_real_2025_26, revenueRow?.turnover_gbp_real_2025_26],
+    eurReal: [masterRow?.total_revenue_eur_real_2025_26, revenueRow?.total_revenue_eur_real_2025_26, revenueRow?.turnover_eur_real_2025_26],
+    usdReal: [masterRow?.total_revenue_usd_real_2025_26, revenueRow?.total_revenue_usd_real_2025_26, revenueRow?.turnover_usd_real_2025_26],
+  });
+  const financeStaffCosts = buildCurrencyValues({
+    gbp: [masterRow?.official_staff_costs_gbp, revenueRow?.wage_bill_gbp, staffCostsOriginal],
+    eur: [masterRow?.official_staff_costs_eur, revenueRow?.wage_bill_eur, revenueRow?.staff_costs_eur, staffCostsEur],
+    usd: [masterRow?.official_staff_costs_usd, revenueRow?.wage_bill_usd, revenueRow?.staff_costs_usd],
+    gbpReal: [masterRow?.official_staff_costs_gbp_real_2025_26, revenueRow?.wage_bill_gbp_real_2025_26, revenueRow?.staff_costs_gbp_real_2025_26],
+    eurReal: [masterRow?.official_staff_costs_eur_real_2025_26, revenueRow?.wage_bill_eur_real_2025_26, revenueRow?.staff_costs_eur_real_2025_26],
+    usdReal: [masterRow?.official_staff_costs_usd_real_2025_26, revenueRow?.wage_bill_usd_real_2025_26, revenueRow?.staff_costs_usd_real_2025_26],
+  });
+  const financeSportingRevenue = buildCurrencyValues({
+    gbp: [masterRow?.sporting_revenue_gbp, revenueRow?.sporting_revenue_gbp, sportingRevenueOriginal],
+    eur: [masterRow?.sporting_revenue_eur, revenueRow?.sporting_revenue_eur, sportingRevenueEur],
+    usd: [masterRow?.sporting_revenue_usd, revenueRow?.sporting_revenue_usd],
+    gbpReal: [masterRow?.sporting_revenue_gbp_real_2025_26, revenueRow?.sporting_revenue_gbp_real_2025_26],
+    eurReal: [masterRow?.sporting_revenue_eur_real_2025_26, revenueRow?.sporting_revenue_eur_real_2025_26],
+    usdReal: [masterRow?.sporting_revenue_usd_real_2025_26, revenueRow?.sporting_revenue_usd_real_2025_26],
+  });
 
   return {
     clubId: club.id,
@@ -115,9 +178,36 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
     clubName: club.name,
     season: baseRow.season,
     seasonStartYear: seasonToStartYear(baseRow.season),
+    economics: {
+      gbpToEurRate: firstNumber(baseRow.gbp_to_eur_rate, masterRow?.gbp_to_eur_rate, revenueRow?.gbp_to_eur_rate),
+      eurToUsdRate: firstNumber(baseRow.eur_to_usd_rate, masterRow?.eur_to_usd_rate, revenueRow?.eur_to_usd_rate),
+      gbpToUsdRate: firstNumber(baseRow.gbp_to_usd_rate, masterRow?.gbp_to_usd_rate, revenueRow?.gbp_to_usd_rate),
+      inflationAdjustmentToBase: firstNumber(
+        baseRow.inflation_adjustment_to_2025_26,
+        masterRow?.inflation_adjustment_to_2025_26,
+        revenueRow?.inflation_adjustment_to_2025_26,
+      ),
+      realPriceBasisLabel:
+        baseRow.real_price_basis_label ??
+        masterRow?.real_price_basis_label ??
+        revenueRow?.real_price_basis_label ??
+        `${inflationConfig.baseSeason} prices`,
+      fxSource: baseRow.fx_source ?? masterRow?.fx_source ?? revenueRow?.fx_source ?? null,
+      inflationSource:
+        baseRow.inflation_source ?? masterRow?.inflation_source ?? revenueRow?.inflation_source ?? null,
+      notes:
+        baseRow.economic_factor_notes ??
+        masterRow?.finance_economic_factor_notes ??
+        revenueRow?.economic_factor_notes ??
+        null,
+      complete: economicFactorsComplete,
+    },
     transfers: {
+      grossSpend,
       grossSpendEur: toNumber(baseRow.gross_transfer_spend_eur),
+      income,
       incomeEur: toNumber(baseRow.transfer_income_eur),
+      netSpend,
       netSpendEur: toNumber(baseRow.net_transfer_spend_eur),
       incomingCount: toNumber(baseRow.incoming_transfer_count),
       outgoingCount: toNumber(baseRow.outgoing_transfer_count),
@@ -129,8 +219,10 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
     },
     finance: {
       currency: masterRow?.currency_original ?? baseRow.currency_original ?? "GBP",
+      revenue: financeRevenue,
       revenueOriginal,
       revenueEur,
+      staffCosts: financeStaffCosts,
       staffCostsOriginal,
       staffCostsEur,
       staffCostToRevenueRatio,
@@ -147,6 +239,7 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
       broadcastEur,
       commercialOriginal,
       commercialEur,
+      sportingRevenue: financeSportingRevenue,
       sportingRevenueOriginal,
       sportingRevenueEur,
       playerAmortisationOriginal: toNumber(masterRow?.player_amortisation_original),
@@ -155,7 +248,8 @@ function normalizeClubSeason(baseRow, masterRow, revenueRow) {
         revenueOriginal !== null ||
         staffCostsOriginal !== null ||
         revenueEur !== null ||
-        sportingRevenueEur !== null,
+        sportingRevenueEur !== null ||
+        financeRevenue.nominal[DISPLAY_CURRENCY.EUR] !== null,
       ...createFinanceSources(masterRow, revenueRow),
     },
     performance: {
@@ -298,9 +392,9 @@ export function calculateMetricValue(
   switch (metricId) {
     case "transferSpend":
     case "grossTransferSpend":
-      return convertAmount(row.transfers.grossSpendEur, DISPLAY_CURRENCY.EUR, displayCurrency);
+      return getCurrencyValue(row.transfers.grossSpend, valueBasis, displayCurrency);
     case "playerWages":
-      return convertAmount(row.finance.staffCostsOriginal, DISPLAY_CURRENCY.GBP, displayCurrency);
+      return getCurrencyValue(row.finance.staffCosts, valueBasis, displayCurrency);
     case "grossSquadInvestment": {
       const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis, displayCurrency);
       const playerWages = calculateMetricValue(row, "playerWages", valueBasis, displayCurrency);
@@ -308,10 +402,11 @@ export function calculateMetricValue(
     }
     case "playerSales":
     case "transferIncome":
-      return convertAmount(row.transfers.incomeEur, DISPLAY_CURRENCY.EUR, displayCurrency);
+      return getCurrencyValue(row.transfers.income, valueBasis, displayCurrency);
     case "netTransferSpend": {
-      if (row.transfers.netSpendEur !== null) {
-        return convertAmount(row.transfers.netSpendEur, DISPLAY_CURRENCY.EUR, displayCurrency);
+      const exportedValue = getCurrencyValue(row.transfers.netSpend, valueBasis, displayCurrency);
+      if (exportedValue !== null) {
+        return exportedValue;
       }
       const transferSpend = calculateMetricValue(row, "transferSpend", valueBasis, displayCurrency);
       const playerSales = calculateMetricValue(row, "playerSales", valueBasis, displayCurrency);
@@ -333,9 +428,9 @@ export function calculateMetricValue(
         : null;
     }
     case "sportingRevenue":
-      return convertAmount(row.finance.sportingRevenueOriginal, DISPLAY_CURRENCY.GBP, displayCurrency);
+      return getCurrencyValue(row.finance.sportingRevenue, valueBasis, displayCurrency);
     case "totalRevenue":
-      return convertAmount(row.finance.revenueOriginal, DISPLAY_CURRENCY.GBP, displayCurrency);
+      return getCurrencyValue(row.finance.revenue, valueBasis, displayCurrency);
     case "squadInvestmentRevenueRatio": {
       const netSquadInvestment = calculateMetricValue(row, "netSquadInvestment", valueBasis, displayCurrency);
       const totalRevenue = calculateMetricValue(row, "totalRevenue", valueBasis, displayCurrency);
@@ -627,10 +722,19 @@ function getMetricMethodologySection(
         ? [
             { label: "Display currency", value: displayCurrency },
             {
-              label: "FX reference",
-              value: `${fxReference.sourceName} · ${fxReference.referenceDate}`,
+              label: "FX source",
+              value: fxReference.description,
               href: fxReference.sourceUrl,
             },
+            ...(valueBasis === VALUE_BASIS.inflationAdjusted
+              ? [
+                  {
+                    label: "Inflation source",
+                    value: inflationConfig.description,
+                    href: inflationConfig.sourceUrl,
+                  },
+                ]
+              : []),
           ]
         : []),
       { label: "Method", value: metric.methodologyNote || metric.description || "—" },
