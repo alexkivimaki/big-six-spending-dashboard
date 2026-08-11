@@ -133,6 +133,7 @@ export function ComparisonChart({
   displayCurrency,
   metric,
   selectedClubIds,
+  showLegend = true,
   valueBasis,
 }) {
   const [isVerySmallScreen, setIsVerySmallScreen] = useState(() =>
@@ -174,8 +175,8 @@ export function ComparisonChart({
   }
 
   return (
-    <div className="chartCanvas">
-      <ChartLegend selectedClubIds={selectedClubIds} />
+    <div className={`chartCanvas ${showLegend ? "" : "noLegend"}`.trim()}>
+      {showLegend ? <ChartLegend selectedClubIds={selectedClubIds} /> : null}
       <div className="chartPlot">
         <ResponsiveContainer width="100%" height="100%">
           {chartType === "line" ? (

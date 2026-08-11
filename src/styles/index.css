@@ -38,12 +38,9 @@ a {
 }
 
 .appHeader {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 20;
-  backdrop-filter: blur(12px);
-  background: rgba(248, 250, 252, 0.92);
-  border-bottom: 1px solid #e2e8f0;
+  background: transparent;
 }
 
 .appHeaderInner,
@@ -69,19 +66,7 @@ a {
 .brandMark {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-}
-
-.brandSquare {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  background: #0f172a;
-  color: #ffffff;
-  font-weight: 800;
-  letter-spacing: 0.04em;
+  gap: 0;
 }
 
 .brandText {
@@ -90,27 +75,78 @@ a {
 }
 
 .brandText strong {
-  font-size: 0.98rem;
+  font-size: 1rem;
 }
 
 .brandText small {
   color: #64748b;
 }
 
+.brandTextSolo strong {
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.appHeaderMenuButton {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #dbe3ef;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #0f172a;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.appHeaderMenuButton:hover {
+  transform: translateY(-1px);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+}
+
 .topNav {
+  border: 1px solid #e2e8f0;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.12);
+}
+
+.topNavInline {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px;
+  gap: 6px;
+  padding: 4px;
   border-radius: 999px;
-  background: #eef2f7;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.appHeaderFloatingMenu {
+  position: fixed;
+  top: 16px;
+  right: var(--shell-padding);
+  z-index: 30;
+}
+
+.appHeaderFloatingMenu .topNavMenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 220px;
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 18px;
 }
 
 .topNavLink {
-  padding: 10px 16px;
+  padding: 9px 13px;
   border-radius: 999px;
   color: #475569;
   font-weight: 700;
+  font-size: 0.92rem;
+  line-height: 1.1;
 }
 
 .topNavLink.active {
@@ -550,6 +586,10 @@ select {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
   gap: 12px;
+}
+
+.chartCanvas.noLegend {
+  grid-template-rows: minmax(0, 1fr);
 }
 
 .chartCanvas.compact {
@@ -1004,6 +1044,445 @@ thead th {
   animation: none;
 }
 
+.compareDashboardPanel {
+  padding: var(--panel-padding);
+  display: grid;
+  gap: 18px;
+  animation: rise-in 340ms ease both;
+}
+
+.compareDashboardHeader {
+  display: grid;
+  gap: 0;
+}
+
+.compareDashboardHeader h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  font-weight: 800;
+}
+
+.compareControlsDisclosure {
+  display: grid;
+  gap: 10px;
+}
+
+.compareControlsTrigger {
+  width: fit-content;
+  border: 1px solid rgba(219, 227, 239, 0.92);
+  background: rgba(255, 255, 255, 0.92);
+  color: #0f172a;
+  border-radius: 14px;
+  padding: 11px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow:
+    0 1px 0 rgba(15, 23, 42, 0.04),
+    0 8px 18px rgba(15, 23, 42, 0.05);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.compareControlsTrigger:hover {
+  transform: translateY(-1px);
+  border-color: rgba(148, 163, 184, 0.75);
+  box-shadow:
+    0 1px 0 rgba(15, 23, 42, 0.04),
+    0 10px 22px rgba(15, 23, 42, 0.07);
+}
+
+.compareControlsCompact {
+  display: grid;
+  grid-template-columns:
+    minmax(248px, 1.5fr)
+    minmax(124px, 0.72fr)
+    minmax(124px, 0.72fr)
+    minmax(250px, 1.3fr)
+    minmax(156px, 0.85fr)
+    minmax(250px, 1.2fr);
+  gap: 10px;
+  align-items: end;
+  padding: 12px;
+  border-radius: 22px;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  background: linear-gradient(180deg, rgba(251, 253, 255, 0.98) 0%, rgba(244, 247, 251, 0.96) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 12px 30px rgba(15, 23, 42, 0.04);
+}
+
+.compactField,
+.compactDropdown,
+.compactToggleField {
+  min-width: 0;
+}
+
+.compactField,
+.compactToggleField {
+  display: grid;
+  gap: 5px;
+}
+
+.compactField > span,
+.compactDropdownCopy span,
+.compactToggleField > span {
+  color: #64748b;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
+.compactSelectShell,
+.compactDropdownSummary,
+.compactToggleGroup {
+  height: 50px;
+  padding: 10px 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(219, 227, 239, 0.92);
+  background: #ffffff;
+  box-shadow:
+    0 1px 0 rgba(15, 23, 42, 0.04),
+    0 8px 18px rgba(15, 23, 42, 0.05);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.compactFieldMetric {
+  min-width: 180px;
+}
+
+.compactFieldClubs {
+  min-width: 0;
+}
+
+.clubBadgeSelector {
+  height: 50px;
+  padding: 5px 6px;
+  border-radius: 14px;
+  border: 1px solid rgba(219, 227, 239, 0.92);
+  background: #ffffff;
+  box-shadow:
+    0 1px 0 rgba(15, 23, 42, 0.04),
+    0 8px 18px rgba(15, 23, 42, 0.05);
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 6px;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.clubBadgeButton {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease,
+    opacity 160ms ease;
+}
+
+.clubBadgeButton:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: rgba(248, 250, 252, 0.9);
+}
+
+.clubBadgeButton.isSelected {
+  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(37, 99, 235, 0.22),
+    0 10px 18px rgba(37, 99, 235, 0.14);
+}
+
+.clubBadgeButton.isSelected .clubMarker {
+  transform: scale(1.04);
+}
+
+.clubBadgeButton:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.compactDropdown {
+  position: relative;
+}
+
+.compactDropdownSummary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.compactDropdownCopy {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.compactSelectShell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 42px;
+}
+
+.compactField select {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #0f172a;
+  appearance: none;
+  outline: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.compactSelectChevron {
+  position: absolute;
+  right: 14px;
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+.compactDropdownSummary::-webkit-details-marker {
+  display: none;
+}
+
+.compactDropdownCopy strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.compactField:hover .compactSelectShell,
+.compactFieldClubs:hover .clubBadgeSelector,
+.compactToggleField:hover .compactToggleGroup {
+  border-color: rgba(148, 163, 184, 0.75);
+  box-shadow:
+    0 1px 0 rgba(15, 23, 42, 0.04),
+    0 10px 22px rgba(15, 23, 42, 0.07);
+}
+
+.compactField:focus-within .compactSelectShell,
+.compactFieldClubs:focus-within .clubBadgeSelector,
+.compactToggleField:focus-within .compactToggleGroup {
+  border-color: rgba(15, 23, 42, 0.18);
+  box-shadow:
+    0 0 0 4px rgba(15, 23, 42, 0.06),
+    0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.compactDropdownChevron {
+  color: #94a3b8;
+  flex: 0 0 auto;
+  transition: transform 160ms ease, color 160ms ease;
+}
+
+.compactDropdown[open] .compactDropdownChevron {
+  transform: rotate(180deg);
+  color: #0f172a;
+}
+
+.compactDropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 12;
+  width: min(360px, calc(100vw - 48px));
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(226, 232, 240, 0.98);
+  background: #ffffff;
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.12),
+    0 2px 8px rgba(15, 23, 42, 0.05);
+  display: grid;
+  gap: 8px;
+}
+
+.clubDropdownMenu {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.clubDropdownOption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.clubDropdownOption:hover,
+.clubDropdownOption.isSelected {
+  background: #f8fafc;
+}
+
+.clubDropdownOption:hover {
+  transform: translateY(-1px);
+}
+
+.clubDropdownOption.isSelected {
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.06);
+}
+
+.clubDropdownOption input {
+  margin: 0;
+  accent-color: #0f172a;
+}
+
+.compactToggleGroup {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 6px;
+  padding: 5px;
+  background:
+    linear-gradient(180deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.96) 100%);
+}
+
+.compactToggleGroupWide {
+  min-width: 0;
+}
+
+.compactToggleButton {
+  flex: 1 1 0;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: #475569;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease,
+    opacity 160ms ease;
+}
+
+.compactToggleButton:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.compactToggleButton:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+
+.compactToggleButton.isActive {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #0f172a;
+  box-shadow:
+    0 1px 0 rgba(15, 23, 42, 0.04),
+    0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
+.compactToggleButton:not(.isActive):hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.compactToggleButton:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+}
+
+.compactToggleButton span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.15;
+}
+
+.compareDashboardPanel .chartCanvas {
+  margin-top: 0;
+}
+
+.compareMetricInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.compareMetricInfoText {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.compareMetricInfoText strong {
+  font-size: 1rem;
+}
+
+.compareMetricInfoText p,
+.compareSubsectionHeader p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.compareMetricInfoMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.compareRankingSection {
+  margin-top: 4px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.compareSubsectionHeader {
+  display: grid;
+  gap: 8px;
+}
+
+.compareSubsectionHeader h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -1038,6 +1517,20 @@ thead th {
     display: flex;
   }
 
+  .compareControlsCompact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .compactFieldClubs,
+  .compactFieldMetric,
+  .compactToggleFieldWide {
+    grid-column: span 2;
+  }
+
+  .compareMetricInfo {
+    display: grid;
+  }
+
   .profileToolbar,
   .profileHeroTop,
   .sectionHeader {
@@ -1054,24 +1547,54 @@ thead th {
 
   .appHeaderInner {
     display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
   }
 
-  .topNav {
+  .topNavInline {
     width: fit-content;
   }
 
+  .appHeaderFloatingMenu {
+    right: 14px;
+  }
+
   .splitInputs,
-  .chartToggleRow {
-    grid-template-columns: 1fr;
+  .chartToggleRow,
+  .compareControlsCompact {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .pageHero,
+  .compareDashboardPanel,
   .profileHero,
   .controlsColumn,
   .contentColumn > .panel,
   .profileSection,
   .clubCard {
     padding: var(--panel-padding-mobile);
+  }
+
+  .compactFieldClubs,
+  .compactFieldMetric,
+  .compactToggleFieldWide {
+    grid-column: span 3;
+  }
+
+  .compactToggleGroup {
+    width: 100%;
+  }
+
+  .clubBadgeSelector {
+    height: 48px;
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .compactSelectShell,
+  .compactDropdownSummary,
+  .compactToggleGroup {
+    height: 46px;
   }
 
   .compareMobileBar {
