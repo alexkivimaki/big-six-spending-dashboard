@@ -35,6 +35,20 @@ export function ClubMarkerSvg({ club, size = 18 }) {
   );
 }
 
+function BadgeImage({ club, size, className = "" }) {
+  return (
+    <img
+      className={`clubBadgeImage ${className}`.trim()}
+      src={club.badge}
+      alt=""
+      width={size}
+      height={size}
+      loading="lazy"
+      decoding="async"
+    />
+  );
+}
+
 export function ClubMarker({ club, size = 18, className = "" }) {
   return (
     <span
@@ -42,8 +56,25 @@ export function ClubMarker({ club, size = 18, className = "" }) {
       style={{ width: size, height: size }}
       aria-hidden="true"
     >
-      <ClubMarkerSvg club={club} size={size} />
+      {club.badge ? <BadgeImage club={club} size={size} /> : <ClubMarkerSvg club={club} size={size} />}
     </span>
+  );
+}
+
+export function ClubChartMarker({ club, size = 18 }) {
+  if (!club.badge) {
+    return <ClubMarkerSvg club={club} size={size} />;
+  }
+
+  return (
+    <image
+      href={club.badge}
+      x="0"
+      y="0"
+      width={size}
+      height={size}
+      preserveAspectRatio="xMidYMid meet"
+    />
   );
 }
 

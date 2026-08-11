@@ -12,7 +12,7 @@ import {
 
 import { clubConfigById } from "../config/clubConfig";
 import { VALUE_BASIS } from "../config/valueBasis";
-import { ClubMarker, ClubMarkerSvg } from "./ClubMarker";
+import { ClubChartMarker, ClubMarker } from "./ClubMarker";
 
 function dedupePayload(payload) {
   const seen = new Set();
@@ -27,7 +27,7 @@ function ActiveMarkerDot({ cx, cy, club }) {
   if (cx === undefined || cy === undefined) return null;
   return (
     <g transform={`translate(${cx - 9}, ${cy - 9})`}>
-      <ClubMarkerSvg club={club} size={18} />
+      <ClubChartMarker club={club} size={18} />
     </g>
   );
 }
@@ -82,6 +82,8 @@ function ChartLegend({ selectedClubIds }) {
 function renderLineSeries(clubId) {
   const club = clubConfigById[clubId];
   const activeDot = (props) => <ActiveMarkerDot {...props} club={club} />;
+  const lineWidth = club.visuals.chart.lineWidth ?? 3;
+  const haloWidth = club.visuals.chart.haloWidth ?? lineWidth + 3;
 
   if (club.visuals.chart.halo) {
     return [
@@ -89,7 +91,7 @@ function renderLineSeries(clubId) {
         key={`${clubId}-halo`}
         dataKey={clubId}
         stroke={club.visuals.chart.halo}
-        strokeWidth={6}
+        strokeWidth={haloWidth}
         dot={false}
         activeDot={false}
         connectNulls={false}
@@ -99,7 +101,7 @@ function renderLineSeries(clubId) {
         key={clubId}
         dataKey={clubId}
         stroke={club.visuals.chart.line}
-        strokeWidth={3}
+        strokeWidth={lineWidth}
         dot={false}
         activeDot={activeDot}
         connectNulls={false}
@@ -113,7 +115,7 @@ function renderLineSeries(clubId) {
       key={clubId}
       dataKey={clubId}
       stroke={club.visuals.chart.line}
-      strokeWidth={3}
+      strokeWidth={lineWidth}
       dot={false}
       activeDot={activeDot}
       connectNulls={false}

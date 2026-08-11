@@ -1,3 +1,10 @@
+import arsenalBadge from "../assets/club-badges/Arsenal_FC.png";
+import chelseaBadge from "../assets/club-badges/chelsea.png";
+import liverpoolBadge from "../assets/club-badges/liverpool.png";
+import manCityBadge from "../assets/club-badges/manchester-city.png";
+import manUnitedBadge from "../assets/club-badges/Manchester_United_FC_crest.png";
+import tottenhamBadge from "../assets/club-badges/tottenham-hotspur-football-club-logo.png";
+
 export const clubConfigs = [
   {
     id: "arsenal",
@@ -12,7 +19,7 @@ export const clubConfigs = [
     },
     visuals: {
       marker: {
-        kind: "cannon",
+        kind: "circle",
         fill: "#E63946",
         stroke: "#E63946",
       },
@@ -21,6 +28,7 @@ export const clubConfigs = [
         fill: "#E63946",
         stroke: "#E63946",
         halo: null,
+        lineWidth: 3,
       },
       identity: {
         background: "#FFF1F2",
@@ -29,6 +37,7 @@ export const clubConfigs = [
         stroke: "#E63946",
       },
     },
+    badge: arsenalBadge,
     crest: null,
   },
   {
@@ -53,6 +62,7 @@ export const clubConfigs = [
         fill: "#034694",
         stroke: "#034694",
         halo: null,
+        lineWidth: 3,
       },
       identity: {
         background: "#E8F0FF",
@@ -61,6 +71,7 @@ export const clubConfigs = [
         stroke: "#034694",
       },
     },
+    badge: chelseaBadge,
     crest: null,
   },
   {
@@ -85,6 +96,7 @@ export const clubConfigs = [
         fill: "#8B1E2D",
         stroke: "#8B1E2D",
         halo: null,
+        lineWidth: 3,
       },
       identity: {
         background: "#FCECEE",
@@ -93,6 +105,7 @@ export const clubConfigs = [
         stroke: "#8B1E2D",
       },
     },
+    badge: liverpoolBadge,
     crest: null,
   },
   {
@@ -117,6 +130,7 @@ export const clubConfigs = [
         fill: "#6CABDD",
         stroke: "#6CABDD",
         halo: null,
+        lineWidth: 3,
       },
       identity: {
         background: "#E8F5FF",
@@ -125,6 +139,7 @@ export const clubConfigs = [
         stroke: "#6CABDD",
       },
     },
+    badge: manCityBadge,
     crest: null,
   },
   {
@@ -149,6 +164,7 @@ export const clubConfigs = [
         fill: "#F5A623",
         stroke: "#F5A623",
         halo: null,
+        lineWidth: 3,
       },
       identity: {
         background: "#FFF5E5",
@@ -157,6 +173,7 @@ export const clubConfigs = [
         stroke: "#F5A623",
       },
     },
+    badge: manUnitedBadge,
     crest: null,
   },
   {
@@ -181,6 +198,8 @@ export const clubConfigs = [
         fill: "#FFFFFF",
         stroke: "#132257",
         halo: "#132257",
+        lineWidth: 2.35,
+        haloWidth: 4.4,
       },
       identity: {
         background: "#EEF3FF",
@@ -189,6 +208,7 @@ export const clubConfigs = [
         stroke: "#132257",
       },
     },
+    badge: tottenhamBadge,
     crest: null,
   },
 ];

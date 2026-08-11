@@ -319,6 +319,13 @@ a {
   display: block;
 }
 
+.clubBadgeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 .splitInputs {
   grid-template-columns: 1fr 1fr;
 }
