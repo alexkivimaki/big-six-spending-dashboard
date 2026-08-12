@@ -163,7 +163,7 @@ export function ComparisonChart({
     return 0;
   }, [chartData.length, isVerySmallScreen]);
   const chartMargin = isVerySmallScreen
-    ? { top: 34, right: 8, left: 0, bottom: 28 }
+    ? { top: 34, right: 12, left: 0, bottom: 28 }
     : { top: 28, right: 8, left: 0, bottom: 28 };
 
   const hasValues = chartData.some((row) => selectedClubIds.some((clubId) => row[clubId] !== null));
@@ -200,6 +200,7 @@ export function ComparisonChart({
               />
               <YAxis
                 reversed={metric.reverseAxis}
+                width={isVerySmallScreen ? 44 : 60}
                 tickFormatter={(value) => metric.axisTick(value, { displayCurrency })}
                 tick={{ fontSize: 12 }}
               />
@@ -226,6 +227,7 @@ export function ComparisonChart({
               />
               <YAxis
                 reversed={metric.reverseAxis}
+                width={isVerySmallScreen ? 44 : 60}
                 tickFormatter={(value) => metric.axisTick(value, { displayCurrency })}
                 tick={{ fontSize: 12 }}
               />

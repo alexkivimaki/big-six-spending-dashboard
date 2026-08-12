@@ -1487,6 +1487,15 @@ thead th {
   line-height: 1.55;
 }
 
+.compareMetricFormula {
+  color: #334155 !important;
+  font-size: 0.92rem;
+}
+
+.compareMetricFormula span {
+  font-weight: 800;
+}
+
 .compareMetricInfoMeta {
   display: flex;
   align-items: center;
@@ -1691,8 +1700,27 @@ thead th {
 }
 
 @media (max-width: 560px) {
+  .appShell {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .compareDashboardPanel {
+    width: 100%;
+    min-width: 0;
+    padding: 16px;
+  }
+
   .chartCanvas,
   .chartCanvas.compact {
     height: 611px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .chartPlot,
+  .chartPlot .recharts-responsive-container {
+    width: 100% !important;
+    min-width: 0;
   }
 }

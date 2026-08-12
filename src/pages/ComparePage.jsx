@@ -177,6 +177,9 @@ export function ComparePage() {
           <div className="compareMetricInfoText">
             <strong>{selectedMetric.label}</strong>
             <p>{selectedMetric.description}</p>
+            <p className="compareMetricFormula">
+              <span>Formula:</span> {selectedMetric.formulaLabel}
+            </p>
           </div>
           <div className="compareMetricInfoMeta">
             <CoverageBadge coverage={selectedCoverage} />
