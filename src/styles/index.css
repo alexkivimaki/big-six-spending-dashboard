@@ -17,6 +17,7 @@ body {
   margin: 0;
   min-width: 320px;
   background: #f8fafc;
+  overflow-x: hidden;
 }
 
 button,
@@ -35,6 +36,7 @@ a {
 
 .appFrame {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .appHeader {
@@ -61,6 +63,7 @@ a {
   padding: 28px var(--shell-padding) 40px;
   display: grid;
   gap: 24px;
+  min-width: 0;
 }
 
 .brandMark {
@@ -581,7 +584,7 @@ select {
 }
 
 .chartCanvas {
-  height: 420px;
+  height: 520px;
   margin-top: 18px;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
@@ -593,7 +596,7 @@ select {
 }
 
 .chartCanvas.compact {
-  height: 340px;
+  height: 380px;
 }
 
 .chartPlot {
@@ -620,39 +623,63 @@ select {
 }
 
 .chartTooltip {
-  min-width: 190px;
-  padding: 14px;
+  min-width: 170px;
+  max-width: 220px;
+  padding: 10px 11px;
   border-radius: 14px;
   background: rgba(15, 23, 42, 0.96);
   color: #ffffff;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.2);
 }
 
 .chartTooltipHeader {
   display: grid;
-  gap: 4px;
+  gap: 2px;
+}
+
+.chartTooltipHeader strong {
+  font-size: 0.92rem;
 }
 
 .chartTooltipHeader small,
 .chartTooltipFootnote {
   color: rgba(255, 255, 255, 0.72);
+  font-size: 0.74rem;
 }
 
 .tooltipRows {
   display: grid;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 6px;
+  margin-top: 8px;
 }
 
 .tooltipRow {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
+  align-items: center;
+}
+
+.tooltipRow strong {
+  font-size: 0.88rem;
 }
 
 .tooltipClub {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
+  font-size: 0.84rem;
+  min-width: 0;
+}
+
+.tooltipClub svg,
+.tooltipClub img {
+  flex: 0 0 auto;
+}
+
+.tooltipValue {
+  white-space: nowrap;
+  text-align: right;
 }
 
 .rankingNote,
@@ -1605,7 +1632,7 @@ thead th {
 
 .chartCanvas,
 .chartCanvas.compact {
-  height: 300px;
+  height: 546px;
 }
 
 .chartCanvas {
@@ -1666,6 +1693,6 @@ thead th {
 @media (max-width: 560px) {
   .chartCanvas,
   .chartCanvas.compact {
-    height: 380px;
+    height: 611px;
   }
 }

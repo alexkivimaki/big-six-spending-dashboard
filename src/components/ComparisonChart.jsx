@@ -36,7 +36,11 @@ function ActiveMarkerDot({ cx, cy, club }) {
 
 function ChartTooltip({ active, payload, label, metric, valueBasis, displayCurrency }) {
   if (!active || !payload?.length) return null;
-  const rows = dedupePayload(payload);
+  const rows = dedupePayload(payload).sort((left, right) => {
+    const leftValue = typeof left.value === "number" ? left.value : Number.NEGATIVE_INFINITY;
+    const rightValue = typeof right.value === "number" ? right.value : Number.NEGATIVE_INFINITY;
+    return rightValue - leftValue;
+  });
 
   return (
     <div className="chartTooltip">
@@ -51,9 +55,9 @@ function ChartTooltip({ active, payload, label, metric, valueBasis, displayCurre
             <div key={entry.dataKey} className="tooltipRow">
               <span className="tooltipClub">
                 <ClubMarker club={club} size={16} />
-                {club?.name ?? entry.dataKey}
+                {club?.shortName ?? club?.name ?? entry.dataKey}
               </span>
-              <strong>{metric.formatValue(entry.value, { displayCurrency })}</strong>
+              <strong className="tooltipValue">{metric.formatValue(entry.value, { displayCurrency })}</strong>
             </div>
           );
         })}
@@ -158,6 +162,9 @@ export function ComparisonChart({
     if (chartData.length >= 8) return 0;
     return 0;
   }, [chartData.length, isVerySmallScreen]);
+  const chartMargin = isVerySmallScreen
+    ? { top: 34, right: 8, left: 0, bottom: 28 }
+    : { top: 28, right: 8, left: 0, bottom: 28 };
 
   const hasValues = chartData.some((row) => selectedClubIds.some((clubId) => row[clubId] !== null));
 
@@ -180,7 +187,7 @@ export function ComparisonChart({
       <div className="chartPlot">
         <ResponsiveContainer width="100%" height="100%">
           {chartType === "line" ? (
-            <LineChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 28 }}>
+            <LineChart data={chartData} margin={chartMargin}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(19, 34, 28, 0.12)" />
               <XAxis
                 dataKey="season"
@@ -197,12 +204,16 @@ export function ComparisonChart({
                 tick={{ fontSize: 12 }}
               />
               <Tooltip
+                allowEscapeViewBox={isVerySmallScreen ? { x: false, y: true } : { x: false, y: false }}
                 content={<ChartTooltip displayCurrency={displayCurrency} metric={metric} valueBasis={valueBasis} />}
+                offset={41}
+                reverseDirection={isVerySmallScreen ? { x: false, y: true } : { x: false, y: false }}
+                wrapperStyle={{ zIndex: 8, pointerEvents: "none" }}
               />
               {selectedClubIds.flatMap((clubId) => renderLineSeries(clubId))}
             </LineChart>
           ) : (
-            <BarChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 28 }}>
+            <BarChart data={chartData} margin={chartMargin}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(19, 34, 28, 0.12)" />
               <XAxis
                 dataKey="season"
@@ -219,7 +230,11 @@ export function ComparisonChart({
                 tick={{ fontSize: 12 }}
               />
               <Tooltip
+                allowEscapeViewBox={isVerySmallScreen ? { x: false, y: true } : { x: false, y: false }}
                 content={<ChartTooltip displayCurrency={displayCurrency} metric={metric} valueBasis={valueBasis} />}
+                offset={41}
+                reverseDirection={isVerySmallScreen ? { x: false, y: true } : { x: false, y: false }}
+                wrapperStyle={{ zIndex: 8, pointerEvents: "none" }}
               />
               {selectedClubIds.map((clubId) => {
                 const club = clubConfigById[clubId];
